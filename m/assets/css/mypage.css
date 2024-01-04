@@ -1,0 +1,1010 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 마이페이지 스타일 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 마이페이지:공통 ] ========================================================================================== */
+/* -------------------- 목록개수 + 오른쪽버튼 ---------------------------------------- */
+.inquiry_cont .list_num {position:relative; padding:0; height:6.667vw;}
+.inquiry_cont .list_num p {line-height:1.714em;}
+.inquiry_cont .list_num .btn_wrap[btn-type="sub_bt"]{margin-top:0;position:absolute;top:0;right:0;}
+.inquiry_cont .list_num .btn_wrap[btn-type="sub_bt"] .btn{padding:1.667vw 2.222vw; font-weight:400;}
+
+/* ============================== [ 마이페이지: 메인 ] ========================================================================================== */
+/* 마에피이지 공통 */
+.mypage.main .noti_copy.gray_02 p ~ p{margin-top:3.333vw;}
+
+/* 나의정보 */
+.mypage.main .member_info_wrap{height:46.667vw;background: linear-gradient(151.06deg, #4AA5FF -9.46%, #417FDE 89.27%);padding:11.111vw 5.556vw 0;box-sizing:border-box;}
+.mypage.main .member_info_wrap .memb_area{display:flex;align-items:center;justify-content:space-between;margin-bottom:6.667vw;}
+.mypage.main .member_info_wrap .memb_area .mem_rating{width:13.333vw;height:13.333vw;margin-right:3.333vw;}
+.mypage.main .my_badge.img img{width:100%;}
+.mypage.main .my_badge.txt{width:13.333vw;height:13.333vw;background-color:#fff;border-radius:13.333vw;padding-top:4.722vw;box-sizing:border-box;}
+.mypage.main .my_badge.txt p{font-size:3.333vw;font-weight:700;color:#3182F6;text-align:center}
+.mypage.main .member_info_wrap .mem_name p{color:#fff;font-weight:800;font-size:5.556vw;line-height:1.2em;}
+.mypage.main .member_info_wrap .mem_name .txt_link.more{color:#fff;background:url("../images/common/arrow_right_wh.svg") right center no-repeat;background-size:3.333vw;}
+.mypage.main .member_info_wrap .mem_info{display:flex;align-items:center;}
+.mypage.main .member_info_wrap .memb_area .btn_wrap[btn-type="sub_bt"]{margin-top:0;}
+.mypage.main .member_info_wrap .memb_area .btn_wrap .btn.h_24{border:0.278vw solid #fff;background-color:transparent;padding-left:2.222vw;padding-right:2.222vw;font-weight:600;}
+.mypage.main .save_area{padding:6.389vw 0;margin-top:-27.778vw;}
+.mypage.main .save_area ul{display:flex;}
+.mypage.main .save_area ul{text-align:center}
+.mypage.main .save_area ul li{flex:1;position:relative;}
+.mypage.main .save_area ul li ~ li:before{width:0.278vw;height:13.333vw;content:'';background-color:#eee;display:block;position:absolute;position:absolute;left:0;top:calc(50% - 6.667vw)}
+.mypage.main .save_area ul li h3{font-size:3.889vw;margin-bottom:2.222vw;}
+.mypage.main .save_area ul li > p{text-align:center;}
+.mypage.main .save_area ul li > p span{color:#3182F6;font-weight:700;position:relative;text-decoration:underline;}
+.mypage.main .save_area ul li:nth-child(2) p span{text-decoration:none;}
+
+/* 주문/배송조회 상태 */
+.mypage.main .my_info_deta{padding:15.000vw 5.556vw 4.444vw;}
+.mypage.main .my_info_deta .my_ord_area{margin-top:4.444vw;}
+.mypage.main .my_ord_area .tit{display:flex;justify-content:space-between;align-items:center;margin:1.111vw 0 4.722vw;}
+.mypage.main .my_ord_area .tit h3 strong{font-weight:800;display:inline-block;vertical-align:middle;}
+.mypage.main .my_ord_area .tit h3 span{color:#999;font-size:3.056vw;padding-left:1.667vw;display:inline-block;vertical-align:middle;}
+.mypage.main .my_ord_area .btn_arrow{display:block;width:4.444vw;height:4.444vw;}
+.mypage.main .my_ord_area .tit .arrow_right{background:url("../images/common/arrow_right_lgy.svg") center no-repeat;background-size:4.444vw;width:100%;height:100%;display:block;}
+.mypage.main .order_step{margin-bottom:5.556vw;}
+.mypage.main .order_step ul{display:flex;justify-content:space-between;}
+.mypage.main .order_step li{position:relative;text-align:center;}
+.mypage.main .order_step li .order_num{width:13.333vw;height:13.333vw;border-radius:13.333vw;background-color:#F9FAFC;display:flex;align-items:center;justify-content:center;margin-bottom:3.333vw;}
+.mypage.main .order_step li .order_num p{color:#3182F6;font-weight:800;text-align:center;}
+.mypage.main .order_step li .txt_12_gy{color:#666;font-size:3.333vw;text-align:center;}
+.mypage.main .ord_sta_area{display:flex;flex-wrap:wrap;padding-top:4.444vw;align-items:center;position:relative;width:calc(100% + 8.889vw);margin-left:-4.444vw;}
+.mypage.main .ord_sta_area:before{width:100%;display:block;height:0.278vw;background-color:#E2E5EB;content:'';position:absolute;top:0;left:0;}
+.mypage.main .ord_sta_area .txt_status{text-align:center;position:relative;width:33.333%;}
+.mypage.main .ord_sta_area .txt_status ~ .txt_status::before{width:0.278vw;height:4.444vw;display:block;content:'';background-color:#eee;position:absolute;left:0;top:calc(50% - 2.222vw);}
+.mypage.main .ord_sta_area .txt_status span{font-size:3.333vw;color:#666;display:inline-block;vertical-align:middle;}
+.mypage.main .ord_sta_area .txt_status strong{font-size:3.889vw;color:#3182F6;font-weight:800;display:inline-block;vertical-align:middle;}
+
+/* 나의 메뉴 */
+.mypage.main .my_menu_area{display:flex;justify-content:space-between;margin-top:4.444vw;padding:4.444vw 3.333vw;}
+.mypage.main .my_menu{text-align:center;flex:1;position:relative;}
+.mypage.main .my_menu > p{font-size:3.333vw;margin-top:2.222vw;}
+.mypage.main .my_menu .amou_box{position:relative;width:6.667vw;display:inline-block;}
+.mypage.main .my_menu .amou_box .amount{color:#fff;font-size:3.056vw;font-weight:bold;text-align:center;display:block;height:5.000vw;min-width:5.000vw;border-radius:5.000vw;background-color:#FEBA02;position:absolute;top:-2.222vw;right:-3.889vw;box-sizing:border-box;padding:0 0.833vw;}
+.mypage.main .my_menu .amou_box .icon_24{/* background-color:#ddd; */ background-repeat:no-repeat; background-size:6.667vw; display:block; height:6.667vw; width:6.667vw;}
+.mypage.main .my_menu .amou_box .question{background-image:url("../images/common/icon_message.svg");}
+.mypage.main .my_menu .amou_box .review{background-image:url("../images/common/icon_edit02.svg");}
+.mypage.main .my_menu .amou_box .purchase{background-image:url("../images/common/icon_clock02.svg");}
+.mypage.main .my_menu .amou_box .interest{background-image:url("../images/common/icon_heart.svg");}
+
+/* 나의 메뉴:툴팁 */
+.mypage.main .my_menu .tool_area {left:50%; top:-9.167vw; transform:translateX(-50%); width:34.444vw;}
+.mypage.main .my_menu .tool_area .tooltip_bk {padding:1.667vw 3.333vw;}
+.mypage.main .my_menu .tool_area .tooltip_bk p {font-size:3.333vw; font-weight:400;}
+
+/* 메뉴 링크 리스트 */
+.mypage.main .my_link{padding:5.000vw 5.556vw 4.722vw;position:relative;display:flex;justify-content:space-between;background-color:#fff;align-items:center;}
+.mypage.main .my_link ~ .my_link{border-top:0.278vw solid #E2E5EB;}
+.mypage.main .my_link p{font-size:3.889vw;line-height:1.214em}
+.mypage.main .my_link .arrow_right,
+.mypage.main .my_link_menu .arrow_right{background:url("../images/common/arrow_right_lgy.svg") center no-repeat;background-size:4.444vw;width:4.444vw;height:4.444vw;display:inline-block;vertical-align:middle;}
+
+/* 메뉴 아코디언 */
+.mypage.main .my_link_acc{padding:0;}
+.mypage.main .my_link_acc .accodn_wrap{width:100%;border:0;padding:0;border-radius:0;}
+.mypage.main .my_link_acc .accodn_wrap .view_fix{min-height:14.444vw;padding:5.000vw 5.556vw 4.722vw;box-sizing:border-box;}
+.mypage.main .my_link_acc .accodn_wrap .view_fix p{font-size:3.889vw;line-height:1.214em;}
+.mypage.main .my_link_acc .accodn_wrap .view_fix .ctrl_trg{width:100%;height:100%;top:0;background:none;}
+.mypage.main .my_link_acc .accodn_wrap .view_fix .ctrl_trg:after{width:4.444vw;height:4.444vw;top:calc(50% - 2.222vw);right:5.556vw;background:url("../images/common/icon_plus_lgy.svg") no-repeat;background-size:4.444vw;display:block;content:'';position:absolute;transition:transform .3s;transform:rotate(-90deg);}
+.mypage.main .my_link_acc .accodn_wrap.open .view_fix .ctrl_trg{transform:rotate(0deg);}
+.mypage.main .my_link_acc .accodn_wrap.open .view_fix .ctrl_trg:after{background:url("../images/common/icon_minus_lgy.svg") no-repeat;background-size:4.444vw;transform:rotate(0deg);}
+.mypage.main .my_link_acc .accodn_wrap .open_cotn{padding:0;border-top:0;}
+
+/* 2depth menu */
+.mypage.main .my_link_menu{padding:0 5.556vw 6.667vw;}
+.mypage.main .my_link_menu li{position:relative;}
+.mypage.main .my_link_menu li ~ li{margin-top:3.333vw;}
+.mypage.main .my_link_menu li span{color:#666;font-size:3.889vw;line-height:1.214em;}
+.mypage.main .my_link_menu li .arrow_right{position:absolute;right:0;top:0;}
+
+/* ============================== [ 마이페이지: 주문/배송 조회 ] ========================================================================================== */
+/* -------------------- 주문/배송 조회:목록 ---------------------------------------- */
+/* setting */
+.mypage.my_order .btn_wrap .btn.h_24{font-weight:400;padding:1.944vw 1.111vw;}
+
+/* 기간설정 영역 */
+.mypage .date_area{background-color:#fff;padding:6.667vw 5.556vw 0}
+.mypage .date_area .form_date{margin-top:4.444vw;}
+.mypage .tab_2dep_wrap{padding:6.667vw 0 4.444vw;background-color:#fff;}
+.mypage .tab_2dep_wrap .tab_menu .swiper{padding:0 5.556vw;}
+.date_area + .div_gap{padding-bottom:0;}
+.date_area + .div_gap:before{top:75%;}
+
+/* 기간별 상품명 조회하기 */
+.ord_search{display:flex;}
+.ord_search div.search_inp{margin-top:0;flex:1;}
+.ord_search .btn_wrap[btn-type="sub_bt"]{margin-top:0;}
+.ord_search .btn{height:11.667vw;width:21.111vw;font-size:3.889vw;padding:3.333vw 0 3.611vw;margin-left:2.222vw;}
+
+/* 검색 input */
+.search_inp {overflow:hidden; position:relative;}
+.search_inp .form_txt{width:100%;}
+.search_inp .form_txt input {border:0.278vw solid #E2E5EB;background-color:#fff; border-radius:1.389vw;box-sizing:border-box;padding:3.611vw 8.333vw 3.611vw 4.444vw;font-size:3.889vw;width:100%;height:11.667vw;line-height:1.214em;}
+.search_inp .form_txt input {transition:border 0.2s;}
+.search_inp .form_txt input:focus {border-color:#3182F6;}
+
+/* 기간조회팝업 */
+.ord_search .del {background-image:url(../../assets/images/common/icon_close_circle.svg); margin-top:-2.778vw; height:5.556vw; width:5.556vw;background-repeat:no-repeat; background-position: 0 0; background-size:100%;position:absolute; right:4.444vw; top:50%;display:none;}
+.date_layer_pop{position:absolute;top:15.556vw;left:0;width:100%;background-color:#fff;padding:6.667vw 5.556vw;box-sizing:border-box;z-index:9999;border-radius:0 0 5.556vw 5.556vw;display:none;}
+.date_layer_pop .txt_12_gy{font-size:3.333vw;color:#666;line-height:1.166em;margin:4.444vw 0 2.778vw;text-align:right;}
+.srch_open .date_layer_pop{display:block;}
+
+/* 주문/배송 목록(일반/정기/선물) */
+.ord_prd_area{padding-top:6.667vw;}
+.my_order .ord_list_sec ~ .ord_list_sec{margin-top:6.667vw;padding-top:6.667vw;border-top:2.222vw solid #eee;}
+.top_ord_info{display:flex;justify-content:space-between;padding-bottom:4.444vw;}
+.top_ord_info .txt_link.more{color:#666;font-weight:bold;}
+
+.top_ord_info .ord_info_lef{display:flex;align-items:center;}
+.top_ord_info .txt_date{font-weight:bold;font-family:lato;}
+.top_ord_info .flag_bor ~ .txt_date{margin-left:2.222vw;}
+.top_ord_info .txt_prd_num{color:#999;font-size:3.333vw;font-family:lato;margin-left:1.667vw;position:relative;padding-left:1.667vw;}
+.top_ord_info .txt_prd_num::before{position:absolute;left:0;top:0.556vw;width:0.278vw;height:2.778vw;background-color:#bbb;content:'';display:block;}
+
+/* 리뷰작성(버튼&툴팁) */
+.review_wrap{position:absolute;bottom:0;right:0;z-index:1;width:40%;text-align:right;}
+.review_wrap .btn_review{color:#666;font-size:3.333vw;}
+.review_wrap .tooltip_review{border:0.278vw solid #000;padding:1.111vw;border-radius:1.389vw;position:absolute;bottom:calc(100% + 1.389vw);right:0;background-color:#fff;}
+.review_wrap .tooltip_review:after{background:url("../images/common/bg_tooltip_down.png") no-repeat;background-size:2.778vw;position:absolute;bottom:-2.500vw;left:calc(50% - 1.389vw);width:2.778vw;height:2.778vw;display:block;content:'';}
+.review_wrap .tooltip_review p{font-size:3.056vw;}
+.review_wrap .tooltip_review p span{font-family:lato;}
+.btn_wrap.btn_review .btn {font-size:3.333vw;}
+.btn_review .icon_16{width:4.444vw;height:4.444vw;display:inline-block;margin-right:1.111vw;vertical-align:middle;margin-top:-0.556vw;}
+.btn_review .icon_16.edit{background:url("../images/common/icon_edit.svg") no-repeat;background-size:4.444vw;}
+.btn_review .icon_16.photo{background:url("../images/common/icon_photo.svg") no-repeat;background-size:4.444vw;}
+
+/* 배송조회 툴팁 */
+.ord_list_box .tit_ord_area .btn_tool_wrap .btn_tooltip{padding-left:2.222vw;padding-right:2.222vw;height:6.667vw;font-weight:400;}
+.tit_ord_area .btn_deliv_tip{width:auto;height:auto;}
+.ord_list_box .btn_deliv_tip .btn_tooltip:after{bottom:-3.889vw;}
+.ord_list_box .btn_deliv_tip .tooltip{top:calc(100% + 3.056vw)}
+.deliv_num p{line-height:1.166em;font-size:3.333vw}
+.deliv_num p ~ p{margin-top:4.444vw;}
+
+/* 리뷰쓰기버튼 툴팁(블랙) */
+.my_order .ord_list_box .btn_wrap,
+.my_order_vw .ord_list_box .btn_wrap{overflow:visible;}
+.btn_revw{position:relative;}
+.btn_revw .tool_area{text-align:center; bottom:calc(100% + 0.556vw); width:100%;}
+.btn_revw .tool_area .tooltip_bk{display:inline-block; padding:1.111vw 3.333vw;width:auto;}
+.btn_revw .tool_area .tooltip_bk p{font-size:3.333vw;font-weight:400;}
+
+/* 최종 결제금액 */
+.final_payment{margin-top:4.444vw;}
+.final_payment .dl_layout .dl_div .tit{font-weight:700;font-size:4.444vw;}
+.final_payment .amount p{display:flex;font-size:5.000vw;}
+.final_payment .amount p strong{font-weight:bold;color:#3182F6;font-family:lato;}
+.final_payment .amount p span{font-weight:700;}
+
+/* 수령인 */
+.recip_wrap{margin-top:2.778vw}
+.bg_f9fafc{background-color:#F9FAFC;}
+.recip_area{position:relative;}
+.ord_list_sec .recip_area .btn_wrap{margin:0;}
+.recip_area .dl_div{justify-content:start;width:calc(100% - 17.778vw);}
+.recip_area .dl_layout .dl_div .tit,
+.recip_area .dl_layout .dl_div .tit ~ *{margin:0;}
+.recip_area .tit{color:#666;font-size:3.333vw;padding-right:1.667vw;position:relative;}
+.recip_area .tit:after{width:0.278vw;height:2.778vw;background:#D8D8D8;position:absolute;content:'';right:0;top:50%;margin-top:-1.389vw;}
+.recip_area .dl_layout .dl_div .txt_con{padding-left:1.667vw;flex:1;position:relative;}
+.recip_area .txt_con p{font-size:3.333vw;font-weight:600;}
+.recip_area .btn{position:absolute;right:4.444vw;top:3.333vw}
+
+/* 더보기 */
+.ord_deli_cont .btn_wrap.more_wrap{padding:0 5.556vw;margin-top:6.667vw}
+
+/* 취소/교환/반품 목록 */
+.txt_date_c{color:#999;font-size:3.333vw;display:flex;align-items:center;}
+.noti_sec{padding:6.667vw 5.556vw 0;}
+.data_none + .noti_sec{padding-top:11.111vw;}
+
+/* -------------------- 주문/배송 조회:상세 ---------------------------------------- */
+/* 주문상품 */
+.ord_top_sec .top_ord_info{background-color:#fff;padding:6.667vw 5.556vw 4.444vw}
+
+/* 주문자명 */
+.ord_name_sec .cont p{font-size:3.889vw;line-height:1.428em;}
+.ord_name_sec .cont .box_gy.bg_f9fafc{border:0.278vw solid #E2E5EB}
+
+/* 하단버튼 */
+.ord_vw_cotn > .btn_wrap{padding:4.444vw 5.556vw 0;background-color:#fff;margin-top:0;}
+
+/* 주문상세: 선물상품 */
+.ord_gift_sec .pymnt_sec{margin-top:6.667vw;}
+.ord_gift_sec .obj_wrap .txt,
+.ord_gift_sec .obj_wrap .txt p{font-weight:600;font-size:3.889vw;}
+
+/* 선물메세지 */
+.ord_gift_sec .gift_info_area{position:relative;}
+.ord_gift_sec .img_wrap{border-radius:2.778vw;overflow:hidden;}
+.ord_gift_sec .img_wrap img{width:100%;display:block;}
+.ord_gift_sec .form_text_area{position:absolute;width:calc(100% - 8.889vw);left:4.444vw;bottom:4.444vw;background-color:#fff;border-radius:2.778vw;}
+.ord_gift_sec .form_text_area .text_area{height:40.833vw;}
+.ord_gift_sec .form_text_area .text_area textarea{height:100%;font-size:3.889vw;line-height:1.571em;}
+
+/* 재전송버튼 */
+.btn_resend{display:inline-block;padding:1.389vw 3.333vw 1.667vw 3.333vw;border-radius:3.333vw;line-height:1;}
+.btn_resend span{display:inline-block;vertical-align:middle;font-weight:600;font-size:3.056vw;line-height:1.181em;}
+.btn_resend.kakao .icon_14{width:3.889vw;height:3.889vw;background:url("../../assets/images/common/icon_kakao.svg") no-repeat;background-size:100%;display:inline-block;vertical-align:middle;}
+.btn_resend.kakao{background-color:#FEE000;}
+.txt_lato{font-family:lato;}
+.btn_resend.sms{background-color:#3182F6;margin-left:1.111vw;}
+.btn_resend.sms span{color:#fff}
+
+/* 취소/교환/반품 상세 */
+/* 사유 영역 */
+.box_reason{margin-top:2.222vw;}
+.box_reason .dl_div{align-items:flex-start;}
+.box_reason .dl_layout .dl_div .tit{margin-right:0;color:#666;font-size:3.333vw;line-height:1.166em;display:flex;align-items:center;}
+.box_reason .dl_layout .dl_div .tit ~ *{margin-left:0;line-height:1.166em;font-size:3.333vw;}
+.box_reason .dl_layout .dl_div .txt{flex:1;}
+.box_reason .dl_layout .dl_div .txt p{font-size:3.333vw;font-weight:600;}
+
+/* 취소 후 결제금액 */
+.after_p_sec .tit .txt_14_gy{margin-left:-0.556vw;}
+.txt_14_gy{font-size:3.889vw;color:#666;vertical-align:middle;}
+
+/* 섹션별 간격 */
+.my_order_vw .ord_vw_sec.pa_tb0{padding:0 5.556vw}
+.my_order_vw .ord_vw_sec{padding:6.667vw 5.556vw}
+
+/* -------------------- 취소/교환/반품 정보 ---------------------------------------- */
+.prd_return_pop .retn_son_sec{padding:6.667vw 5.556vw;background-color:#fff;}
+.prd_return_pop .retn_son_sec ~ .retn_son_sec{margin-top:2.222vw;}
+.prd_return_pop .retn_son_sec .reason_artc ~ .reason_artc{margin-top:6.667vw;}
+.prd_return_pop .retn_son_sec .box_bor_wh{padding:4.444vw;}
+.prd_return_pop .retn_son_sec .box_bor_wh p{font-size:3.889vw;line-height:1.571em;}
+.prd_return_pop .retn_son_sec .rv_photo{padding:0;margin-top:4.444vw;}
+.prd_return_pop .retn_son_sec .noti_copy.gray_02 p {line-height:5.556vw;}
+.prd_return_pop .retn_son_sec .noti_copy.gray_02 p ~ p{margin-top:2.222vw;}
+
+
+/* -------------------- 구매확정 ---------------------------------------- */
+.purc_info .txt{text-align:center;}
+.purc_info .txt_14_gy{font-size:3.889vw;color:#666;margin-top:4.444vw;line-height:1.571em;}
+.purc_info{padding:6.667vw 5.556vw;}
+.purc_info .box_bor_wh{margin-top:11.111vw;}
+.purc_info .dl_layout .dl_div ~ .dl_div{margin-top:3.333vw;}
+.purc_info .dl_layout .dl_div .tit{font-size:3.889vw;}
+.purc_info .dl_layout .dl_div .txt_price p{font-size:3.889vw;font-weight:700;}
+.purc_comt_cotn .prd_sel_wrap .sale_info .prd_num_12 p{font-weight:600;}
+.purc_comt_pop .noti_copy{padding:6.667vw 5.556vw 0;}
+.purc_comt_pop .noti_copy .tit_12{margin-bottom:2.222vw;}
+
+
+/* ============================== [ 마이페이지: 1:1 문의내역 ] ========================================================================================== */
+/* 1:1문의내역 목록 */
+.inquiry .date_area{padding-bottom:6.667vw;}
+.inquiry_cont .inqu_list{margin-bottom:6.667vw;}
+.inquiry_cont .noti_copy{margin-top:6.667vw;padding:0 5.556vw;}
+.inquiry_cont .data_none{padding-left:0;padding-right:0;}
+
+/* 문의수정 */
+.inqu_modi_cont{padding-top:6.667vw;}
+.inqu_modi_cont .modi_sec{padding:0 5.556vw 0;}
+.tit_sec_wrap .txt_12_gy{font-size:3.333vw;color:#666}
+.tit_sec_wrap .tit_field ~ .txt_12_gy{margin-top:3.333vw;}
+.modi_sec.modi_sec02{padding:0;}
+.modi_sec.modi_sec02 .tit_sec_wrap{padding:0 5.556vw;}
+.modi_sec.modi_sec02 .btn_inqu_area{padding:0 5.556vw 4.444vw;}
+.modi_sec .txt_12_gy{font-size:3.333vw; color:#666; margin-top:2.222vw;}
+.btn_wrap.btn_inqu_area .btn.h_36{padding-left:2.778vw;padding-right:2.778vw;border-radius:2.778vw;font-weight:400;}
+.btn_wrap.btn_inqu_area .btn.h_36.on{font-weight:700;color:#fff;background-color:#3182F6;border-color:#3182F6;}
+.btn_wrap.btn_inqu_area .btn.h_36 ~ .btn.h_36{margin-left:2.222vw;}
+.prd_sel_wrap{padding:6.667vw 5.556vw;}
+.prd_sel_wrap .box_bor_wh ~ .box_bor_wh{margin-top:3.333vw;}
+.inqu_modi_cont .modi_sec.modi_sec03{padding-top:0;}
+.modi_sec.modi_sec03 .btn_wrap{margin-top:11.111vw;}
+.answer_cnk_list .form_chk .group ~ .group{margin-left:3.333vw;}
+
+/* 상품없음 */
+.prd_sel_none .sel_none {padding:0 5.556vw;}
+.prd_sel_none .sel_none .data_none{margin-top:0;}
+.prd_sel_none .sel_none .msg_wrap {margin-top:4.444vw;}
+
+/* 상품 선택 */
+.prd_sel_con{}
+.prd_sel_sec{background-color:#fff;padding:6.667vw 5.556vw 4.444vw;}
+.prd_sel_sec02{padding:6.667vw 5.556vw 0;}
+.prd_sel_sec02 .form_chk.box ~ .form_chk.box {margin-top:4.444vw;}
+.prd_date_area{display:flex;justify-content:space-between;margin-bottom:4.444vw;}
+.prd_date_area .form_chk .group .txt{font-weight:700}
+.ord_numb{color:#999;font-size:3.333vw;align-items:center;line-height:1.166em;}
+.ord_numb span{padding-top:0.833vw;display:inline-block;}
+
+/* ============================== [ 마이페이지: 나의 적립금 ] ========================================================================================== */
+.sd_top_wrap{padding:6.667vw 5.556vw 4.444vw;}
+.sd_money_info{height:26.111vw;background: linear-gradient(151.06deg, #4AA5FF -9.46%, #417FDE 89.27%);border-radius:2.778vw;padding:6.667vw 9.167vw 0;box-sizing: border-box;display:flex;justify-content:space-between;margin-bottom:4.444vw;}
+.sd_money_info > div{text-align:center;}
+.sd_money_info > div h4 span{font-size:3.889vw;font-weight:600;line-height:1.214em;color:#fff;vertical-align:middle;display:inline-block;}
+.sd_money_info > div h4 a{display:inline-block;vertical-align:middle;width:4.444vw;height:4.444vw;}
+.sd_money_info > div > p{font-size:5.000vw;font-family:lato;font-weight:800;margin-top:2.500vw;line-height:1.055em;color:#fff}
+.sd_money_info .icon_16{width:4.444vw;height:4.444vw;display:inline-block;}
+.sd_money_info .icon_16.question{background:url("../images/common/icon_question_wh.svg") no-repeat;background-size:100%;}
+.sd_top_wrap .box_bor_wh{padding:5.556vw 4.444vw 6.667vw;}
+.sd_top_wrap .box_bor_wh .tit_14{font-weight:800}
+.sd_top_wrap .blue_btn_set{margin:4.444vw 0;}
+.sd_cotn_wrap .tab_menu.line{margin-bottom:6.667vw}
+.sd_top_wrap .box_bor_wh .btn_wrap {margin-top:4.444vw;}
+/* 툴팁 */
+.sd_money_info .tooltip_box .tooltip p{font-size:3.333vw;line-height:1.666em;text-align:left;}
+.sd_money_info > div .tooltip_wrap .tooltip_box{left:-9.167vw;}
+.sd_money_info > div + div .tooltip_wrap.tip_right .tooltip_box{right:-9.167vw;left:auto;}
+
+/* 적립금 리스트 */
+.sd_list_sec{padding:0 5.556vw;}
+.sd_artic{display:flex;padding:6.667vw 0;justify-content:space-between;}
+.sd_artic:first-child{padding-top:0;}
+.sd_artic ~ .sd_artic{border-top:0.278vw solid #E2E5EB}
+.sd_artic .lef_cotn{flex:1;margin-right:5.000vw;}
+.sd_artic .tit{font-size:3.889vw;line-height:1.571em;}
+.sd_artic .txt{margin-top:2.222vw;}
+.sd_artic .txt p{color:#666;font-size:3.333vw;}
+.sd_artic .txt p ~ p{margin-top:1.111vw;}
+.sd_artic .txt p .icon_stick{margin:0 1.111vw;background-color:#EEE;}
+.sd_artic .rit_cotn{padding-top:0.556vw;}
+.sd_artic .rit_cotn p{font-weight:bold;font-size:5.000vw;font-family:lato;}
+
+/* 비활성화 */
+.sd_artic.on_dim .txt p,
+.sd_artic.on_dim .tit,
+.sd_artic.on_dim .rit_cotn p{color:#c7c7c7}
+
+/* 데이터 없음 */
+.sd_cotn_wrap .data_none{background-color:#fff;}
+
+/* 정렬순 */
+.sequ_area{display:flex;padding:0 5.556vw;margin-bottom:4.444vw;}
+.sequ_area a{font-size:3.889vw;font-weight:600;color:#999;}
+.sequ_area a.on{color:#111;font-weight:800;}
+.sequ_area a ~ a{position:relative;padding-left:2.222vw;margin-left:1.667vw;}
+.sequ_area a ~ a:before{width:0.556vw;height:0.556vw;border-radius:0.556vw;background-color:#D8D8D8;position:absolute;top:50%;left:0;content:'';}
+
+/* ============================== [ 마이페이지: 나의 쿠폰 ] ========================================================================================== */
+/* 코드 등록 폼 */
+.coup_top_area{padding:6.667vw 5.556vw;background-color:#fff;}
+.coup_top_area .tit_14{margin-bottom:4.444vw;}
+.coup_top_area .form_inpt .txt input{height:11.667vw;line-height:3em;}
+.coup_top_area .input_set .form_inpt{width:78.75%;}
+.coup_top_area .input_set .btn_wrap{width:calc(21.25% - 2.222vw);}
+
+/* 유의사항 */
+.coup_cotn_wrap .noti_copy{padding:0 5.556vw;margin-top:6.667vw;}
+
+/* 쿠폰리스트 */
+.coupon_wrap{padding:6.667vw 5.556vw 0;}
+
+/* ============================== [ 마이페이지: 정기배송관리 ] ========================================================================================== */
+/* -------------------- 정기배송관리: 상세 ---------------------------------------- */
+/* 상단 주문정보 */
+.delv_vw_cotn .top_ord_info{padding-bottom:0; background-color:#fff;display:block;}
+.delv_vw_cotn .top_ord_info ~ .top_ord_info {margin-top:3.333vw;}
+.delv_vw_cotn .ord_info_lef {padding:6.667vw 5.556vw 5.278vw;}
+.delv_vw_cotn .ord_info_lef .tit_14.color_bl{margin-left:auto;}
+.delv_vw_cotn .ord_info_area {display:flex; align-items:center; flex-wrap:wrap;padding:4.444vw 5.556vw;}
+.delv_vw_cotn .ord_info_area .txt_status ~ .txt_status{margin-left:6.667vw;}
+.delv_vw_cotn .ord_info_area .txt_status .tit {color:#666666; line-height:1.429em; }
+.delv_vw_cotn .ord_info_area .txt_status p {font-size:3.333vw; etter-spacing:-0.054vw; line-height:1.429em;}
+.delv_vw_cotn .ord_info_area .icon_stick {margin:0 1.111vw;height:2.222vw;background-color:#E2E5EB;}
+
+/* 정기배송 정보 */
+.delv_vw_cotn .reg_deliv_sec{padding:0 5.556vw;}
+.delv_vw_cotn .reg_d_area ~ .reg_d_area{margin-top:6.667vw;}
+.delv_vw_cotn .reg_d_area > .tit_14{margin-bottom:3.333vw}
+.delv_vw_cotn .box_dv_info .dl_layout .dl_div .tit{font-size:3.889vw;}
+.delv_vw_cotn .box_dv_info .dl_layout .dl_div .txt_link{font-size:3.889vw;font-weight:700;color:#111}
+.reg_deliv_sec .pymnt_sec .obj_wrap .obj_div,
+.reg_deliv_sec .pymnt_sec .obj_wrap .obj_div .tit,
+.reg_deliv_sec .pymnt_sec .obj_wrap .price,
+.reg_deliv_sec .pymnt_sec .obj_wrap .price p{font-size:3.333vw;line-height:1.25em;}
+
+/* 회차정보 */
+.st_date_wrap .box_bor_wh{padding:4.444vw;}
+.st_date_wrap .deliv_date_wrap{margin-top:0;}
+.st_date_wrap .deliv_date_wrap .tit_count {margin-bottom:4.444vw;}
+.st_date_wrap .deliv_date_wrap .box_gy{margin-top:3.333vw;}
+
+/* 정기배송 시작일 */
+.st_date_wrap .ord_list_sec > .pymnt_sec{margin-top:3.611vw;padding-top:4.444vw;border-top:0.278vw solid #E2E5EB}
+.st_date_wrap .acc_open_cotn .pymnt_sec{margin-top:0;}
+
+/* 결제금액 타이틀*/
+.st_date_wrap .obj_wrap.acc_layout .obj_div{align-items:center;}
+.st_date_wrap .obj_wrap.acc_layout .obj_div .tit{font-size:3.889vw;font-weight:700;position:relative;padding-right:6.667vw;}
+.st_date_wrap .obj_wrap.acc_layout .price p{font-size:4.444vw;}
+.st_date_wrap .ord_list_sec > .pymnt_sec .acc_layout{padding-right:0;}
+.st_date_wrap .deliv_noti{margin-top:4.444vw;}
+
+/* 할인금액: 할인값 비활성화 */
+.dl_layout .dl_div.no_val .tit,
+.obj_pymnt_det .dl_div.no_val .txt_price p{color:#999}
+
+/* 비활성화버튼 */
+.delv_vw_cotn .btn_wrap.inactv .bc_fff{background-color:#F9FAFC; border: 0.278vw solid #E2E5EB;}
+
+/* -------------------- 정기배송해지: 상세 ---------------------------------------- */
+.txt_prd_num.txt{font-family:'Pretendard';}
+.delv_vw_cotn .tit_count .txt_14_bk{color:#111;font-weight:700;font-size:3.889vw;margin-left:auto;}
+
+/* -------------------- 배송횟수수정 ---------------------------------------- */
+.period_pop.btm_popup > .contents {max-height:none;}
+.perd_wrap .perd_list {height:38vh; padding-right:0.278vw; overflow-y:auto;}
+.perd_wrap .perd_list .form_rdo.box_slim .cotn {padding:2.222vw 4.444vw 2.222vw 12.222vw}
+.perd_wrap .noti_copy {margin-top:6.667vw;}
+
+/* ============================== [ 마이페이지 : 취소/교환/반품 신청 ] ========================================================================================== */
+
+.my_req .ord_vw_sec{padding:6.667vw 5.556vw;}
+.my_req .ord_vw_sec.pa_tb0{padding:0 5.556vw;}
+.ord_sec_01 {margin-top:0; padding:0 5.556vw;}
+.ord_sec_02 {margin-top:0; padding:6.667vw 5.556vw 0;}
+
+/* 상품선택목록 */
+.ord_select_wrap .ord_err_msg,
+.ord_select_wrap .ord_gift_wrap {padding-left:6.667vw;}
+.ord_select_wrap .prd_group_h.on_dim .img_area,
+.ord_select_wrap .prd_group_h.on_dim .prd_verti_info,
+.ord_select_wrap .prd_group_h.on_dim .ord_gift_wrap .gift_box {opacity:.3;}
+.prod_h_wrap.prd_check .form_chk .group {height:100%; width:calc(100% - 4.167vw);}
+.prod_h_wrap.prd_rdo .form_rdo .group {z-index:1;}
+.ord_select_wrap .ord_list_box .ord_prd_list .prd_group_h ~ .prd_group_h{margin-top:4.444vw;}
+
+/* 취소/교환/반품신청 */
+.req_wrap .ord_deli_cont {padding:6.667vw 0;}
+.req_wrap .ord_list_sec .btn_wrap {margin-top:0;}
+.req_wrap .ord_list_sec .btn_wrap .btn.h_24 {padding:1.944vw 2.222vw;}
+.refund_info .tit_area {padding-bottom:0;}
+.refund_info.ord_vw_sec .cont {border-top:none;}
+.refund_info .noti_copy {margin-top:6.667vw;}
+.refund_info .btn_wrap {margin-top:0;}
+.refund_info .btn_wrap .btn.h_24 {padding:1.944vw 2.222vw;}
+.refund_info .form_chk {margin-top:4.444vw;}
+.acct_box .tit_acct {font-size:3.889vw; width:22.222vw;}
+.acct_box .txt {display:flex; align-items:center;}
+.acct_box .txt strong {font-size:3.889vw; font-weight:600;}
+.ord_add_img .add_li_area {margin-top:0;}
+.ord_info_sec .dl_layout .dl_div ~ .dl_div {margin-top:4.444vw;}
+.ord_info_sec .dl_layout .dl_div .tit {font-size:3.889vw;}
+.ord_info_sec .dl_layout .dl_div .txt_info {font-size:3.889vw; font-weight:700;}
+.ord_form_sec .form_text_area {margin-top:3.333vw;}
+.img_err_msg {margin-top:4.444vw;}
+.ord_err_msg {margin-top:3.333vw;}
+
+/* 하단버튼 */
+.req_wrap > .btn_wrap {margin-top:11.111vw; padding:0 5.556vw;}
+.req_wrap .ord_vw_sec ~ .btn_wrap {background-color:#fff; margin-top:0; padding:4.444vw 5.556vw 0;}
+
+/* ============================== [ 마이페이지 : 취소/교환/반품 신청완료 ] ========================================================================================== */
+/* -------------------- 신청완료 ---------------------------------------- */
+/* 주문정보 */
+.cmplt_cotn .result_info {padding:11.111vw 5.556vw 6.667vw;}
+.result_info .box_bor_wh {padding:4.444vw;}
+.result_info .dl_layout .dl_div ~ .dl_div {margin-top:3.333vw;}
+.result_info .dl_layout .dl_div .tit {font-size:3.889vw;}
+.result_info .dl_layout .dl_div .data {font-family:lato; font-weight:700; font-size:3.889vw;}
+
+/* 상품목록 */
+.cmplt_cotn .ord_list_sec {padding:6.667vw 5.556vw;}
+
+/* 유의사항 */
+.cmplt_cotn .noti_copy {padding:0 5.556vw;}
+.cmplt_cotn .noti_copy.recvcd_noti {margin-top:6.667vw;}
+.cmplt_cotn .noti_copy.recvcd_noti {margin-top:6.667vw;}
+.cmplt_cotn .noti_copy .txt_link {color:#111; margin-top:2.222vw; padding-left:2.222vw;}
+
+/* 하단버튼 */
+.cancel_cmplt .btn_wrap {margin-top:11.111vw; padding:0 5.556vw;}
+.cancel_cmplt .ord_list_sec + .btn_wrap {margin-top:6.667vw;}
+
+/* -------------------- 오류페이지 ---------------------------------------- */
+/* setting */
+.pymnt_err #header .menu_wrap,
+.connect_err #header .menu_wrap,
+.connect_err #header .sub_head .go_back {display:none;}
+
+/* 유의사항 */
+.connect_err .cmplt_cotn .noti_copy,
+.pymnt_err .cmplt_cotn .noti_copy{margin-top:6.667vw;}
+
+.connect_err .btn_wrap,
+.pymnt_err .btn_wrap{margin-top:63.056vw; padding:0 5.556vw;}
+.connect_err .noti_copy,
+.pymnt_err .noti_copy{margin-top:6.667vw; padding:0 5.556vw;}
+.connect_err .noti_copy .txt_link,
+.pymnt_err .noti_copy .txt_link{margin-top:0;padding-left:0;color:#666;}
+
+
+/* ************************************************************************************************************************************************************
+						《 나의리뷰 》
+************************************************************************************************************************************************************ */
+/* -------------------- 작성가능 리뷰목록 ---------------------------------------- */
+.my_rv_wrap {padding-bottom:11.111vw;}
+.my_rv_wrap .rv_li_wrap {padding:6.667vw 5.556vw 0;}
+.rv_li_wrap .rv_li_set + .rv_li_set {margin-top:6.667vw;}
+.rv_li_wrap .rv_li_set .cotn {padding:4.444vw;}
+.rv_li_set .rv_top_info {display:flex; align-items:center; margin-bottom:4.444vw;}
+.rv_li_set .rv_top_info .txt_date {font-family:lato; font-size:3.889vw; font-weight:700;}
+.rv_li_set .rv_top_info .txt_prd_num {color:#999; font-size:3.333vw; margin-left:auto;}
+.rv_li_set .ord_list_box {border-radius:2.778vw; box-sizing:border-box; border:0.278vw solid #E2E5EB; padding:0;}
+.rv_li_set .ord_list_box + .ord_list_box {margin-top:4.444vw;}
+.rv_li_set .prd_verti_info .object_area .prd_num_12 {margin-right:auto}
+.rv_li_set .prd_verti_info .object_area .dead_line {margin-left:auto;}
+
+/* 유의사항+버튼 */
+.my_rv_wrap .rv_sec {margin-top:6.667vw; padding:0 5.556vw; position:relative;}
+.my_rv_wrap > .btn_wrap {margin-top:11.111vw; padding:0 5.556vw;}
+.my_rv_wrap .rv_photo {margin-top:4.444vw;}
+.my_rv_wrap .rv_photo .img_wrap {height:20.556vw; width:20.556vw;}
+.my_rv_wrap .rv_set > .btn_wrap {margin-top:4.444vw;}
+
+/* -------------------- 리뷰등록/수정 ---------------------------------------- */
+.my_rv_wrap .rv_prd_wrap {padding:6.667vw 6.667vw 0;}
+.rv_prd_wrap .prd_group_h .txt .brand {color:#666;}
+.rv_prd_wrap .prd_group_h .txt .name {font-size:3.889vw; font-weight:600; line-height:1.429em; -webkit-line-clamp:1;}
+.rv_prd_wrap .prd_group_h .gift_info .gift_name {font-size:3.333vw; line-height:1.667em; margin-top:1.111vw;}
+.review_w .rv_write_wrap .add_img_wrap .tit_area {position:relative;}
+.review_w .rv_write_wrap .tooltip_review {border:0.278vw solid #000; padding:1.111vw; border-radius:1.398vw; position:absolute; top:calc(100% - 13.889vw); right:0; background-color:#fff;}
+.review_w .rv_write_wrap .tooltip_review:after {content:''; background:url("../images/common/bg_tooltip_down.png") no-repeat; background-size:2.778vw; display:block; position:absolute; right:7.500vw; bottom:-2.5vw; height:2.778vw; width:2.778vw;}
+.review_w .rv_write_wrap .tooltip_review p {font-family:'lato', Pretendard; font-size:3.056vw;}
+.review_w .rv_write_wrap .tooltip_review span {font-weight:bold;}
+.review_w .rv_write_wrap .add_img_wrap .txt_12_gy {font-size:3.333vw; color:#666; margin-top:3.333vw;}
+/* 리뷰작성영역 */
+.my_rv_wrap .rv_write_wrap {padding:6.667vw 5.556vw 0;}
+.rv_write_wrap .rv_write {border:0.278vw solid #E2E5EB;padding:6.667vw 0;border-width:0.278vw 0;margin-bottom:6.667vw;}
+.rv_write_wrap .rv_write .tit_write {font-size:4.444vw; font-weight:600; line-height:1.188em; text-align:center;}
+.star_wrap {position:relative; width:52.222vw; margin:6.667vw auto 0;}
+.star_wrap .star_score {position:absolute; left:0; top:0; height:8.889vw; width:0;}
+.star_wrap .point {height:7.222vw; overflow:hidden;}
+.point.star_bg {width:52.222vw; box-sizing:border-box;}
+.star_wrap .point img {height:100%; padding:0 1.389vw;}
+.star_wrap .star_range {height:100%; width:52.222vw; position:absolute; left:0; top:0; opacity:0; cursor:pointer;}
+.rv_write .rdo_value {position:relative; margin-top:6.667vw; padding:0 11.944vw;}
+.rv_write .rdo_value .form_rdo {position:relative; display:flex; justify-content:space-between; height:auto;}
+.rv_write .msg_wrap {margin-top:4.444vw;}
+.rdo_value .form_rdo .group {padding-left:0;}
+.rdo_value .form_rdo .icon_rv_value {background-repeat:no-repeat; background-position:0 0; background-size:11.111vw 11.111vw; display:block; margin:0 auto; height:11.111vw; width:11.111vw;}
+.rdo_value .form_rdo .icon_rv_value.grade_01 {background-image:url(../images/common/icon_rv_grade_01.svg);}
+.rdo_value .form_rdo .icon_rv_value.grade_02 {background-image:url(../images/common/icon_rv_grade_02.svg);}
+.rdo_value .form_rdo .icon_rv_value.grade_03 {background-image:url(../images/common/icon_rv_grade_03.svg);}
+.rdo_value .form_rdo .txt_value {display:block; font-size:3.333vw; color:#666; margin-top:4.444vw;}
+.rdo_value .form_rdo input:checked ~ .icon_rv_value.grade_01 {background-image:url(../images/common/icon_rv_grade_on_01.svg);}
+.rdo_value .form_rdo input:checked ~ .icon_rv_value.grade_02 {background-image:url(../images/common/icon_rv_grade_on_02.svg);}
+.rdo_value .form_rdo input:checked ~ .icon_rv_value.grade_03 {background-image:url(../images/common/icon_rv_grade_on_03.svg);}
+.rdo_value .form_rdo input:checked ~ .txt_value {color:#3182F6; font-weight:600;}
+.rdo_value .line_tot {border-top:0.278vw dashed #E2E5EB; display:block; width:100%; position:absolute; left:0; top:5.556vw; z-index:-1;}
+.rv_write_wrap .form_text_area .msg_wrap {margin-top:2.222vw;}
+.rv_write_wrap .add_img_wrap {margin-top:8.889vw;}
+.rv_write_wrap .add_img_wrap .msg_wrap {margin-top:2.222vw;}
+.prd_verti_info .prd_label ~ .prd_label {margin-top:1.111vw;}
+.prd_verti_info .prd_label p {min-width:11.944vw;}
+.prd_verti_info .prd_label .txt {font-size:3.333vw; margin-top:1.111vw; padding-left:1.111vw; display:-webkit-box; overflow:hidden; text-overflow:ellipsis; white-space:normal; word-wrap:normal; -webkit-line-clamp:1; -webkit-box-orient:vertical; line-height:1.833em; width:calc(100% - 15.278vw);}
+.prd_verti_info .review_wrap + .txt h1 {line-height:1.167em;}
+.review_w .review_wrap {display:flex; align-items:center; position:relative; margin-bottom:2.222vw; width:100%;}
+.review_w .review_wrap .btn_review ~ .btn_review {margin-left:2.222vw;}
+.review_w .review_wrap .btn_review.disabled i {opacity:0.2;}
+.review_w .review_wrap .btn_review.disabled {color:#C7C7C7;}
+
+/* ************************************************************************************************************************************************************
+						《 나의관심상품 》
+************************************************************************************************************************************************************ */
+/* -------------------- 관심상품 ---------------------------------------- */
+/* 목록정렬 */
+.wish_wrap .sort_area {padding:5.556vw 5.556vw 0;}
+.wish_wrap .sort_area .all_del {display:flex; align-items:center;}
+.wish_wrap .sort_area .all_del .btn_wrap {margin:0 0 0 auto;}
+.wish_wrap .sort_area .all_del .btn_wrap .btn.h_24 {font-weight:400; padding-left:1.111vw; padding-right:1.111vw;}
+.wish_wrap .sort_area .amount_sort {margin-top:5.556vw;}
+
+/* 관심상품목록 */
+.prd_wish_wrap{margin-top:4.722vw;border-top:0.278vw solid #E2E5EB;}
+.wish_wrap .noti_copy {padding:0 5.556vw;}
+.wish_wrap .noti_copy.gray_02 p ~ p {margin-top:1.111vw;}
+.wish_wrap .noti_copy .txt_link {color:#111; display:block; margin-top:2.222vw; padding-left:2.222vw;}
+.wish_wrap .data_none {margin:4.444vw 0 6.667vw; padding:24.167vw 0;}
+
+/* 관심상품&장바구니 버튼*/
+.prd_wish_list .prd_group .txt{margin-top:2.222vw;}
+.prd_wish_list .prd_btn{text-align:right;padding:3.333vw 0;border-bottom:0.278vw solid #E2E5EB;position:relative;z-index:3;}
+.prd_wish_list .prd_btn a {background-repeat:no-repeat; background-position:0 0; box-sizing:border-box;border:0.278vw solid #E2E5EB; border-radius:50%; height:7.778vw; width:7.778vw;display:inline-block;}
+.prd_wish_list .prd_btn a ~ a {margin-left:2.222vw;}
+.prd_wish_list .prd_btn .wish {background-image:url(../images/common/icon_wish_off.png); background-size:cover; position:relative;}
+.prd_wish_list .prd_btn .wish.on {background-image:url(../images/common/icon_wish_on.png);}
+.prd_wish_list .prd_btn .cart {background-image:url(../images/common/cart.svg); background-position:center; background-size:3.889vw;}
+
+/* 최근구매상품 */
+.prd_recent_wrap {margin-top:6.667vw; padding-top:5.556vw; border-top:0.278vw solid #E2E5EB;}
+.prd_recent_wrap .sort_area {padding-top:0;}
+.prd_recent_wrap .prd_recent_list {margin-top:5.556vw;}
+.prd_recent_wrap .prod_h_wrap {padding:0 5.556vw;}
+.prd_recent_wrap .prod_h_wrap + .prod_h_wrap {margin-top:6.667vw;}
+.prd_recent_wrap .prod_h_wrap .prd_date {margin-bottom:3.333vw;}
+.prd_recent_wrap .prd_recent_list .prd_group_h .btn_close{width:3.333vw;height:3.333vw;position:absolute;top:0;right:0;background:url("../images/common/icon_close.svg") no-repeat;background-size:100%;z-index:2;}
+
+/* 추천상품 */
+.prd_rec .tit {overflow:hidden; box-sizing:border-box; margin-bottom:4.444vw; padding:0 5.556vw;}
+.prd_rec .tit span {color:#3182F6;}
+.prd_rec .tab_menu {margin-bottom:4.444vw;}
+.prd_rec .tab_menu .swiper {padding:0 5.556vw;}
+
+/* ************************************************************************************************************************************************************
+						《 정기배송관리 》
+************************************************************************************************************************************************************ */
+
+/* -------------------- 정기배송관리목록 ---------------------------------------- */
+
+/* 상단영역 */
+.deliv_top_area {background-color:#fff; padding:0 5.556vw; display:flex; align-items:center; height:14.444vw;}
+.deliv_noti {display:flex;}
+.deliv_noti p {background:url(../images/common/icon_noti.svg) no-repeat left 0.556vw; background-size:4.444vw 4.444vw; color:#666; font-size:3.333vw; line-height:1.667em; padding-left:6.111vw;}
+.deliv_noti p strong {font-weight:600; color:#111;}
+
+/* 결제예정금액 */
+.ord_deliv_cotn .top_ord_info .txt_date {margin-left:0;}
+.ord_deliv_cotn .ord_list_sec ~ .ord_list_sec {margin-top:6.667vw;}
+.ord_deliv_cotn .tit_ord_area {background-color:#fff; padding:0; margin:0 4.444vw; height:15.000vw;}
+.ord_deliv_cotn .tit_ord_area .amount p {display:flex; font-size:5.000vw; font-weight:700;}
+.ord_deliv_cotn .tit_ord_area .amount p strong {font-family:lato; color:#3182F6;}
+
+/* 배송정보 */
+.ord_deliv_cotn .ord_info_area {border-bottom:0.278vw solid #E2E5EB; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; padding-bottom:4.444vw; margin-bottom:4.444vw;}
+.ord_deliv_cotn .ord_info_area .txt_status p {font-size:3.333vw; line-height:1.429em; letter-spacing:-0.054vw;}
+.ord_deliv_cotn .ord_info_area .txt_status .tit {color:#666666;}
+
+/* 상품목록 */
+.ord_deliv_cotn .ord_prd_list {border-bottom:0.278vw solid #E2E5EB; padding-bottom:4.444vw; margin-bottom:4.444vw;}
+.ord_deliv_cotn .ord_prd_list .prod_h_wrap .txt_ord_prd {font-size:3.333vw; max-width:100%; flex-direction:column;}
+.ord_deliv_cotn .prd_num_14 p {font-weight:600;}
+
+/* 회차정보 */
+.deliv_date_wrap {margin-top:4.444vw;}
+.deliv_date_wrap .tit_count {display:flex; align-items:center;}
+.deliv_date_wrap .tit_count p {margin-right:1.111vw; font-weight:600; font-size:3.889vw;}
+.deliv_date_wrap .tit_count .pymnt_state{color:#3182F6;}
+.deliv_date_wrap.cmplt .tit_count .pymnt_state {color:#111}
+.deliv_date_wrap.fail .tit_count .pymnt_state {color:#ff5f01;}
+.deliv_date_wrap .tit_count .icon_info {height:5.556vw; width:5.556vw; background:url(../images/common/icon_info.svg) no-repeat; background-size:5.556vw;display:block;}
+.deliv_date_wrap .tit_count .btn_tool_wrap{display:none;width:5.556vw;height:5.556vw;}
+.deliv_date_wrap.cancel .tit_count .pymnt_state ~ .btn_tool_wrap,
+.deliv_date_wrap.fail .tit_count .pymnt_state ~ .btn_tool_wrap{display:block;}
+.deliv_date_wrap .box_gy {margin-top:4.444vw;}
+.deliv_date_wrap .fail_date .tit,
+.deliv_date_wrap .cancel_date .tit{font-weight:600;}
+.deliv_date_wrap .fail_date *{color:#ff5f01;}
+.deliv_date_wrap .cancel_date *{color:#3182F6;}
+
+/* 툴팁 */
+.deliv_date_wrap .tooltip_wrap .tooltip_box .tooltip p{font-size:3.333vw;font-weight:400;line-height:1.666em;}
+.deliv_date_wrap .tooltip_wrap .tooltip_box{width:calc(100vw - 11.111vw - 8.889vw);}
+.deliv_date_wrap .tooltip_wrap .btn_tool_wrap .btn_tooltip:after{bottom:-2.778vw;}
+
+/* 비활성화버튼 */
+.ord_deliv_cotn .btn_wrap.inactv .bc_fff {background-color:#F9FAFC; border:0.278vw solid #E2E5EB;}
+
+/* 완료해지날짜 */
+.ord_date_wrap {margin-top:4.444vw;}
+.ord_date_wrap .obj_div{display:flex; align-items:center;}
+.ord_date_wrap .obj_div > .tit_14{font-weight:400;}
+.ord_date_wrap .obj_div > .date {margin-left:auto;}
+.ord_date_wrap .box_gy{border-radius:1.389vw;}
+
+/* -------------------- 결제정보관리 ---------------------------------------- */
+/* 정기결제수단 */
+.regul_pay_sec {padding:6.667vw 5.556vw;}
+.regul_pay_sec .dl_layout .dl_div, .regul_pay_sec .dl_layout {overflow:visible;}
+.regul_pay_sec .regul_pay_box {display:flex;}
+.regul_pay_sec .regul_pay_box .img {height:15.278vw; width:24.444vw;}
+.regul_pay_sec .regul_pay_box .img img {width:100%; height:100%; object-fit:cover;}
+.regul_pay_box .card_info {margin-left:4.444vw; width:calc(100% - 28.889vw);}
+.regul_pay_box .card_info .tit {margin-bottom:2.222vw; position:relative;}
+.regul_pay_box .card_info .tit .tit_14 {line-height:1.5em;}
+.regul_pay_box .card_info .txt {font-size:3.889vw; color:#666}
+.regul_pay_box .card_info .btn_wrap {position:absolute; top:0; right:0;}
+.regul_pay_box .card_info .btn_wrap .btn.h_24 {padding-left:1.111vw; padding-right:1.111vw; font-weight:400;}
+.regul_pay_sec .deliv_noti {margin-top:4.444vw}
+.regul_pay_wrap > .btn_wrap {margin-top:11.111vw;}
+.regul_pay_sec .noti_copy {margin-top:6.667vw;}
+
+/* 데이터없음 */
+.regul_pay_sec .data_none {padding:15.556vw 0 0 0;}
+.regul_pay_sec .data_none .sb_copy {color:#666; font-size:3.333vw; line-height:1.250em; margin-top:4.444vw;}
+
+/* 쿠폰자동적용 */
+.regul_acc_area {margin:0;}
+.regul_acc_area .accodn_wrap {border:none; border-radius:0;}
+.regul_acc_area .accodn_wrap .view_fix {padding:3.889vw 0; min-height:0;}
+.regul_acc_area .accodn_wrap .btn_switch {margin-right:2.222vw;}
+.regul_acc_area .accodn_wrap .dl_layout .dl_div .tit {line-height:1.500em;}
+
+/* ============================== [ 앱설정 ] ========================================================================================== */
+.setting_wrap {padding:6.667vw 5.556vw 0;}
+.box_wrap {border-radius: 2.778vw; border:0.278vw solid #e3e5eb; overflow:hidden;}
+.box_wrap ~ .box_wrap {margin-top:4.444vw;}
+.box_wrap .set_wrap {border-top:0.278vw solid #e3e5eb; background-color:#fff; display:flex; align-items:center; justify-content:space-between; padding:4.722vw 4.444vw;}
+.box_wrap .set_wrap:first-child {border-top:none;}
+.box_wrap .set_wrap .tit {font-size:3.889vw;}
+.box_wrap .date {font-size:3.333vw; color:#666666;}
+.setting_wrap .push p {font-size:3.333vw; line-height:1.667em;}
+.setting_wrap .push .txt {color:#666666; padding-top:2.222vw;}
+.box_wrap.cash .set_wrap .txt_link {color:#C7C7C7;}
+.box_wrap.cash .set_wrap.active .txt_link {color:#666666;}
+.box_wrap.update .set_wrap .ex {font-size:3.333vw; color:#F55F0D;}
+.box_wrap.update .set_wrap .now{display:none;}
+.box_wrap.update .set_wrap.active .ex {display:none;}
+.box_wrap.update .set_wrap.active .now{font-size:3.333vw; color:#3182F6; display:inline-block;}
+
+/* ============================== [ 마이페이지 : 대량구매 ] ========================================================================================== */
+/* -------------------- 대량구매 견적문의 ---------------------------------------- */
+.large_pur .date_area {background-color:#fff; padding:6.667vw 5.556vw;}
+.large_pur .date_area .blue_btn_set {margin-bottom:4.444vw;}
+.large_pur .inqu_list .tit_inqu {margin-top:4.444vw;}
+.large_pur .inqu_list .tit_inqu .tit_area span {margin-right:1.111vw;}
+.large_pur .inqu_list .tit_inqu .inqu_info {margin-top:2.222vw;}
+.large_pur .inqu_list .tit_inqu .sort {margin-top:0;}
+.large_pur .inqu_list .tit_inqu .sort span {font-size:3.889vw; font-weight:400;}
+.large_pur .ask_area .btn_wrap.h_32 {flex-direction:column; margin-top:4.444vw;}
+.large_pur .ask_area .btn_wrap.h_32 .btn {border-radius:1.389vw; font-size:3.333vw; height:8.889vw; line-height:2em;}
+.large_pur .ask_area .exp_info {color:#F55F0D; font-size:3.333vw; margin-top:2.222vw;}
+.large_pur .ask_area .modify_area {margin-top:3.333vw;}
+
+/* -------------------- 대량구매 견적신청 ---------------------------------------- */
+.large_pur_wrap {padding:6.667vw 0 11.111vw;}
+.large_pur_wrap .modi_sec {padding:0 5.556vw;}
+.large_pur_wrap .modi_sec.store_tit .form_chk {padding-top:4.444vw;}
+.large_pur_wrap .modi_sec .tit_sec_wrap.with_chk{display:flex; align-items:center; justify-content:space-between;}
+.large_pur_wrap .modi_sec.modi_sec02 {padding:0; margin-bottom:0;}
+.large_pur_wrap .modi_sec.modi_sec02 .prd_sel_wrap {margin-bottom:6.667vw;}
+.large_pur_wrap .modi_sec.modi_sec02 .prd_sel_dir .direct {padding:0 5.556vw;}
+.large_pur_wrap .modi_sec.modi_sec02 .direct .tooltip_wrap {text-align:center; padding-top:4.444vw;}
+.large_pur_wrap .modi_sec.modi_sec02 .direct .tooltip_wrap .cotn_wrap p {font-size:3.333vw;}
+.large_pur_wrap .modi_sec.modi_sec02 .direct .tooltip_wrap .tooltip {padding:0; overflow:hidden;}
+.large_pur_wrap .modi_sec.modi_sec02 .direct .tooltip_wrap .tooltip img {display:block; width:100%;}
+.large_pur_wrap .add_img_wrap .tit_sec_wrap .tit_field {display:flex; align-items:center; justify-content:space-between;}
+.large_pur_wrap .add_img_wrap .add_noti {align-items:normal;}
+.large_pur_wrap .add_img_wrap .noti_copy {padding:4.444vw 0 0 1.667vw;}
+.large_pur_wrap .add_file .file_wrap {background-color:#F9FAFC; border:0.278vw solid #E2E5EB; border-radius:2.778vw; box-sizing:border-box; display:flex; align-items:center; justify-content:space-between; height:14.444vw; padding:4.444vw;}
+.large_pur_wrap .add_file .file_wrap ~ .file_wrap {margin-top:3.333vw;}
+.large_pur_wrap .add_file .file_wrap span {color:#666666; font-size:3.889vw;}
+.large_pur_wrap .add_file .file_wrap .icon {background:url(../images/common/icon_del_gray.png)no-repeat; background-size:contain; display:block; width:5.556vw; height:5.556vw;}
+
+/* ============================== [ 비회원 마이페이지 : 주문조회 ] ========================================================================================== */
+/* setting */
+.non_mem #header .menu_wrap .btn_menu.alarm {display:none;}
+.mypage.non_mem .ord_select_wrap {margin-top:6.667vw;}
+
+/* -------------------- 메인 ---------------------------------------- */
+.non_mem .my_link:last-child {border-bottom:0.278vw solid #E2E5EB;}
+.non_mem .ad_bnr_wrap {margin-top:11.111vw; padding:0 5.556vw;}
+.non_mem .ad_bnr_wrap .img_wrap {border-radius:2.222vw; position:relative; width:100%; height:100%; overflow:hidden;}
+.non_mem .ad_bnr_wrap .img_wrap img {display:block; width:100%;}
+.non_mem .my_info_deta {padding-bottom:6.667vw;}
+.non_mem .my_info_deta .my_ord_area {margin-top: -27.778vw}
+
+/* -------------------- 주문/배송 조회:목록 ---------------------------------------- */
+/* 상단 탭메뉴 */
+.non_mem.my_order .tab_menu {background-color:#fff; padding:6.667vw 0 4.444vw;}
+.non_mem.my_order .tab_menu .swiper {padding:0 5.556vw;}
+
+/* -------------------- 주문취소/교환/반품:목록 ---------------------------------------- */
+.non_mem.my_order .tab_menu.line {padding:0 5.556vw;}
+.non_mem.my_order .data_none {margin-bottom:11.111vw;}
+.non_mem.my_order .noti_copy {margin:6.667vw 5.556vw 0;}
+.non_mem .err_msg ~ .err_msg {margin-top:3.333vw;}
+
+/* ============================== [ 간편결제관리 ] ========================================================================================== */
+.simple_pay_wrap {padding:6.667vw 5.556vw 0;}
+.simple_pay_wrap .admin_wrap {background:#fff; border:0.278vw solid #E2E5EB; border-radius:2.778vw; margin-bottom:6.667vw;}
+.simple_pay_wrap .admin_wrap .admin_set {background:url(../images/common/arrow_right_bk.svg) no-repeat right 4.444vw center; background-size:5.556vw; display:flex; align-items:center; padding:4.444vw; position:relative;}
+.simple_pay_wrap .admin_wrap .admin_set i {background-size:5.556vw; background-position:center; background-repeat:no-repeat; display:block; width:5.556vw; height:5.556vw;}
+.simple_pay_wrap .admin_wrap .admin_set .card {background-image:url(../images/common/icon_card.svg);}
+.simple_pay_wrap .admin_wrap .admin_set .lock {background-image:url(../images/common/icon_lock.svg);}
+.simple_pay_wrap .admin_wrap .admin_set .one_touch {background-image:url(../images/common/icon_btn.svg);}
+.simple_pay_wrap .admin_wrap .admin_set p {font-size:3.889vw; padding-left:2.222vw;}
+.simple_pay_wrap .admin_wrap .admin_set ~ .admin_set {border-top:0.278vw solid #E2E5EB;}
+.simple_pay_wrap .noti_copy p {line-height:1.667em;}
+
+/* ************************************************************************************************************************************************************
+						《 팝업 》
+************************************************************************************************************************************************************ */
+/* ============================== [ 마이페이지 : 취소/교환/반품 신청 ] ========================================================================================== */
+
+/* -------------------- 환불계좌 등록/변경 ---------------------------------------- */
+.refund_acct {padding-top:6.667vw;}
+.refund_acct .acct_info {padding:0 5.556vw;}
+.refund_acct .acct_info + .acct_info {margin-top:6.667vw;}
+.refund_acct .acct_info .tit_area .dl_layout .dl_div .tit {line-height:1.188em;}
+.refund_acct .acct_info .txt {margin-top:4.444vw;}
+.refund_acct .btn_bank_pop {background:#ffffff url(../images/common/arrow_right_bk.svg) no-repeat right 3.889vw center; background-size:5.556vw 5.556vw; border:0.278vw solid #e2e5eb; border-radius:2.778vw; box-sizing:border-box; margin-bottom:3.333vw; padding:5.000vw 4.444vw 4.722vw; position:relative; height:14.444vw; width:100%;}
+.refund_acct .btn_bank_pop .tit {font-size:3.889vw;}
+.refund_acct .noti_copy {padding:0 5.556vw;}
+
+/* -------------------- 은행선택 ---------------------------------------- */
+.bank_list {padding:6.667vw 5.556vw 0;}
+.bank_list ul {display:flex; flex-wrap:wrap;}
+.bank_list li {width:calc(33.33% - 1.667vw); margin-right:2.222vw;}
+.bank_list li:nth-child(n+4) {margin-top:2.222vw;}
+.bank_list li:nth-child(3n) {margin-right:0;}
+.bank_list li .btn_bank {display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative; overflow:hidden; background-color:#fff; border:0.278vw solid #E2E5EB; box-shadow:0.000vw 0.000vw 2.222vw rgba(0, 0, 0, 0.04); border-radius:1.389vw; box-sizing:border-box; height:22.500vw; width:100%;}
+.bank_list li.on .btn_bank {border:0.556vw solid #3182F6;}
+.btn_bank .img {height:6.667vw; width:6.667vw;}
+.btn_bank .img img {height:100%; width:100%;}
+.btn_bank .name {margin-top:1.667vw; font-size:3.611vw; color:#333; line-height:1.231em;}
+
+/* ============================== [ 마이페이지: 쿠폰 ] ========================================================================================== */
+/* -------------------- 쿠폰적용상품 ---------------------------------------- */
+.my_coupn_cotn {}
+.my_coupn_cotn .tab_menu.line {position:sticky; left:0; top:-0.278vw; z-index:11;}
+.my_coupn_cotn .tab_menu.btn {background-color:#fff; position:sticky; left:0;top:13.056vw; padding:6.667vw 0 4.444vw; z-index:10;}
+.my_coupn_cotn .coupn_btn_tab {padding-left:5.556vw;}
+.my_coupn_cotn .coupn_set {border-bottom:0.278vw solid #E2E5EB;}
+.my_coupn_cotn .coupn_set .info_cotn {background:#fff; border:none; border-radius:0; box-shadow:none; width:100%;}
+.my_coupn_cotn .list_num {margin:6.667vw 0 0;}
+.my_coupn_cotn .best_tit_area {display:flex; align-items:center; padding:0 5.556vw;}
+.my_coupn_cotn .best_tit_area .txt {font-size:3.889vw; line-height:1.429em;}
+.my_coupn_cotn .best_tit_area .btn_all {background:url(../images/common/arrow_right_bk.svg) no-repeat right center; background-size:4.444vw 4.444vw; display:inline-block; font-size:3.333vw; padding-right:5.556vw; margin-left:auto;}
+.my_coupn_cotn .category_wrap {background:#fff; position:sticky; left:0; top:13.056vw; padding-top:3.333vw; z-index:11;}
+
+
+
+
+/* -------------------- 일반배송 : UI 재설정 ---------------------------------------- */
+.ord_list_box.item .btn_wrap:not(.btn_deliv_tip > div, .list .btn_wrap,.recip_area .btn_wrap[btn-type="sub_bt"]){
+	display: none;
+}
+.ord_list_box.item .btn_tool_wrap{
+	display: none;
+}
+.ord_list_box.item .recip_wrap{
+	display: none;
+ }
+/* -------------------- 툴팁 컬러 설정 ---------------------------------------- */
+.ord_list_box.item.common .flag_bor{
+ color: #3182F6;
+}
+.ord_list_box.item.common.gift .flag_bor{
+	color: #F55F0D;
+ }
+ .ord_list_box.item.routine .flag_bor{
+	color: #FE9902;
+ }
+
+.ord_list_box.item .txt_14{
+	display: none;
+}
+/* -------------------- 일반배송 ---------------------------------------- */
+.ord_list_box.item.common.wait .txt_14.wait,
+.ord_list_box.item.complete .txt_14.complete,
+.ord_list_box.item.common.complete_ck .txt_14.complete_ck,
+.ord_list_box.item.ready .txt_14.ready,
+.ord_list_box.item.shipping .txt_14.shipping,
+.ord_list_box.item.finish .txt_14.finish,
+.ord_list_box.item.confirm .txt_14.confirm,
+.ord_list_box.item.common.confirm_review .txt_14.confirm_review,
+/* 취소 */
+.ord_list_box.item.common.application .txt_14.application,
+.ord_list_box.item.common.cancel .txt_14.cancel,
+.ord_list_box.item.common.cancel_return .txt_14.cancel_return,
+/* 미수령 */
+.ord_list_box.item.common.not_received .txt_14.not_received,
+.ord_list_box.item.common.received .txt_14.received,
+/* 교환 */
+.ord_list_box.item.common.change_ck_b .txt_14.change_ck_b,
+.ord_list_box.item.common.change_ck .txt_14.change_ck,
+.ord_list_box.item.common.change_ck_a .txt_14.change_ck_a,
+.ord_list_box.item.common.change_ready .txt_14.change_ready,
+.ord_list_box.item.common.change_shipping .txt_14.change_shipping,
+.ord_list_box.item.common.change_confirm .txt_14.change_confirm,
+/* 반품 */
+.ord_list_box.item.common.retrun_ck_b .txt_14.retrun_ck_b,
+.ord_list_box.item.common.retrun .txt_14.retrun,
+.ord_list_box.item.common.retrun_ck .txt_14.retrun_ck,
+.ord_list_box.item.common.retrun_ck_a .txt_14.retrun_ck_a,
+.ord_list_box.item.common.return_confirm .txt_14.return_confirm
+{
+	display: inline-block;
+}
+/* 상태에 따라 내부 박스 오픈 */
+.ord_list_box.item.common.wait .btn_wrap.wait,
+.ord_list_box.item.common.complete .btn_wrap.complete,
+.ord_list_box.item.common.complete_ck .btn_wrap.complete_ck,
+.ord_list_box.item.common.ready .btn_wrap.ready,
+.ord_list_box.item.common.shipping .btn_wrap.shipping,
+.ord_list_box.item.common.finish .btn_wrap.finish,
+.ord_list_box.item.common.confirm .btn_wrap.confirm,
+.ord_list_box.item.common.confirm_review .btn_wrap.confirm_review,
+/* 취소 */
+.ord_list_box.item.common.application .btn_wrap.application,
+.ord_list_box.item.common.cancel .btn_wrap.cancel,
+.ord_list_box.item.common.cancel_return .btn_wrap.cancel_return,
+/* 미수령 */
+.ord_list_box.item.common.not_received .btn_wrap.not_received,
+.ord_list_box.item.common.received .btn_wrap.received,
+/* 교환 */
+.ord_list_box.item.common.change_ck_b .btn_wrap.change_ck_b,
+.ord_list_box.item.common.change_ck .btn_wrap.change_ck,
+.ord_list_box.item.common.change_ck_a .btn_wrap.change_ck_a,
+.ord_list_box.item.common.change_ready .btn_wrap.change_ready,
+.ord_list_box.item.common.change_shipping .btn_wrap.change_shipping,
+.ord_list_box.item.common.change_confirm .btn_wrap.change_confirm,
+/* 반품 */
+.ord_list_box.item.common.retrun_ck_b .btn_wrap.retrun_ck_b,
+.ord_list_box.item.common.retrun .btn_wrap.retrun,
+.ord_list_box.item.common.retrun_ck .btn_wrap.retrun_ck,
+.ord_list_box.item.common.retrun_ck_a .btn_wrap.retrun_ck_a,
+.ord_list_box.item.common.return_confirm .btn_wrap.return_confirm
+{
+  display: flex;
+	margin-top: 4.444vw;
+}
+
+/* 배송조회 툴팁 */
+.ord_list_box.item.shipping .btn_tool_wrap,
+.ord_list_box.item.finish .btn_tool_wrap,
+.ord_list_box.item.cancel .btn_tool_wrap,
+.ord_list_box.item.confirm .btn_tool_wrap,
+.ord_list_box.item.not_received .btn_tool_wrap,
+.ord_list_box.item.received .btn_tool_wrap,
+.ord_list_box.item.change_ck .btn_tool_wrap,
+.ord_list_box.item.change_shipping .btn_tool_wrap,
+.ord_list_box.item.change_confirm .btn_tool_wrap,
+.ord_list_box.item.gift_shipping .btn_tool_wrap,
+.ord_list_box.item.gift_confirm .btn_tool_wrap,
+.ord_list_box.item.gift_finish .btn_tool_wrap,
+.ord_list_box.item.confirm_review .btn_tool_wrap,
+.ord_list_box.item.retrun_ck_b .btn_tool_wrap,
+.ord_list_box.item.retrun .btn_tool_wrap{
+	display: inline-block;
+}
+.ord_list_box.item .list .btn_wrap{
+	display: flex;
+}
+.ord_list_box.item.common.wait .btn_wrap.change{
+	margin-top: 4.444vw;
+	display: flex;
+}
+
+/* -------------------- 정기배송 ---------------------------------------- */
+.ord_list_box.item.routine .btn_wrap.routine{
+	margin-top: 4.444vw;
+	display: flex;
+}
+.ord_list_box.item.routine.shipping .btn_wrap.routine_shipping,
+.ord_list_box.item.routine.complete .btn_wrap.complete,
+.ord_list_box.item.routine.finish .btn_wrap.routine_finish,
+.ord_list_box.item.routine.confirm .btn_wrap.routine_confirm{
+	margin-top: 4.444vw;
+	display: flex;
+}
+
+
+/* -------------------- 선물배송 ---------------------------------------- */
+/* .ord_list_box.item.common.gift.gift_complete .recip_wrap{
+ display: block;
+} */
+
+.ord_list_box.item.common.gift.gift_complete .btn_wrap.gift_complete,
+.ord_list_box.item.common.gift.gift_ready .btn_wrap.gift_ready,
+.ord_list_box.item.common.gift.gift_shipping .btn_wrap.gift_shipping,
+.ord_list_box.item.common.gift.gift_finish .btn_wrap.gift_finish,
+.ord_list_box.item.common.gift.gift_confirm .btn_wrap.gift_confirm{
+ display: flex;
+}
+.ord_list_box.item.common.gift.gift_complete .txt_14.gift_complete,
+.ord_list_box.item.common.gift.gift_ready .txt_14.gift_ready,
+.ord_list_box.item.common.gift.gift_shipping .txt_14.gift_shipping,
+.ord_list_box.item.common.gift.gift_finish .txt_14.gift_finish,
+.ord_list_box.item.common.gift.gift_confirm .txt_14.gift_confirm{
+ display: inline-block;
+}
+
+/* 날짜 (취소신청|교환신청|반품신청)  */
+.ord_list_box.item .txt_date_c.create_date {
+	display: none;
+}
+.ord_list_box.item.application .txt_date_c.create_date,
+.ord_list_box.item.change_ck_b .txt_date_c.create_date,
+.ord_list_box.item.retrun_ck_b .txt_date_c.create_date {
+	display: block;
+}

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>기업회원 가입:정보 입력</title>
+	<link rel="stylesheet" href="../assets/css/member.css"><!-- 회원 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="member"><!-- [회원 class="member"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 타이틀 -->
+			<div class="sub_tit_36">
+				<h1 class="tit_36">기업회원 가입</h1><!-- 2022-10-20_수정 -->
+			</div>
+			<!--// 타이틀 -->
+			<!-- 기업회원 가입:정보입력 -->
+			<div class="sub">
+				<div class="wd_mem comp_wr_wrap">
+                    <!-- 입력폼 -->
+                    <div class="form_sec">
+                        <!-- 상호명 -->
+                        <div class="form_inpt h_62">
+                            <div class="tit_field">
+                                <p>
+                                    <span>상호명</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="" value="(주)가나다 주식회사" disabled>
+                            </div>
+                        </div>
+                        <!--// 상호명 -->
+                        <!-- 사업자등록번호 -->
+                        <div class="form_inpt h_62 wrn">
+                            <div class="tit_field">
+                                <p>
+                                    <span>사업자등록번호</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="tel" placeholder="" value="123-45-67890" disabled>
+                            </div>
+                        </div>
+                        <!--// 사업자등록번호 -->
+                        <!-- 업태/업종 -->
+                        <div class="form_inpt h_62 wrn">
+                            <div class="tit_field">
+                                <p>
+                                    <span>업태/업종</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="" value="도매 및 소매업 / 전자상거래 소매업" disabled>
+                            </div>
+                        </div>
+                        <!--// 업태/업종 -->
+
+                        <div class="div_gap_bor"></div>
+
+                        <!-- 기업회원 아이디 (사업자등록번호) -->
+                        <div class="form_inpt h_62">
+                            <div class="tit_field">
+                                <p>
+                                    <span>기업회원 아이디 (사업자등록번호)</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="" value="1234567890" disabled>
+                            </div>
+                        </div>
+                        <!--// 기업회원 아이디 (사업자등록번호) -->
+                        <!-- 비밀번호 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>비밀번호</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="password" placeholder="영문, 숫자, 특수문자 조합 8~16자" value=""><!-- 2022-10-20_수정 -->
+                                <button class="btn_pw show"><span class="blind">암호보기</span></button>
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button>
+                            </div>
+                            <div class="val_check">
+                                <span class="pass">영문</span><!-- 조건 충족 시 class="pass" -->
+                                <span class="pass">숫자</span>
+                                <span class="fail">특수문자</span>
+                                <span>조합 8~16자</span>
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">특수문자를 입력해 주세요.</p>
+                            </div>
+                        </div>
+                        <!--// 비밀번호 -->
+                        <!-- 비밀번호 확인 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>비밀번호 확인</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="password" placeholder="비밀번호 다시 입력" value=""><!-- 2022-10-20_수정 -->
+                                <button class="btn_pw show"><span class="blind">암호보기</span></button>
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button>
+                            </div>
+                            <div class="val_check">
+                                <span class="pass">영문</span><!-- 조건 충족 시 class="pass" -->
+                                <span class="pass">숫자</span>
+                                <span class="fail">특수문자</span>
+                                <span>조합 8~16자</span>
+                                <span class="pass">일치</span>
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">특수문자를 입력해 주세요.</p>
+                            </div>
+                        </div>
+                        <!--// 비밀번호 확인 -->
+                        <!-- 사업장 주소 -->
+                        <div class="form_inpt h_62 form_addrs wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>사업장 주소 (사업자등록증에 기재된 주소)</span>
+                                </p>
+                            </div>
+                            <div class="addrs_inp_area">
+                                <div class="txt">
+                                    <input type="text" placeholder="주소를 입력해 주세요." value="서울시 강남구 학동로 146 와일리타워" disabled="">
+                                </div>
+                                <div class="btn_wrap" btn-type="sub_bt">
+                                    <div class="btn_cotn">
+                                        <a href="#none" class="btn bc_bk h_62 w_100">주소찾기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <input type="tel" placeholder="상세 주소를 입력해 주세요." value="">
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 사업장 주소 -->
+                        <!-- 대표자 이름 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>대표자 이름</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="사업자등록증에 기재된 대표자 이름 입력" value="">
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 대표자 이름 -->
+                        <!-- 대표 전화번호 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>대표 전화번호</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="tel" placeholder="숫자만 입력" value="">
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 대표 전화번호 -->
+                        <!-- 대표 팩스번호 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p>
+                                    <span>대표 팩스번호</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="tel" placeholder="숫자만 입력" value="">
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 대표 팩스번호 -->
+                        <!--  파일 첨부 -->
+                        <div class="form_inpt h_62 add_file wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>첨부파일</span>
+                                </p>
+                                <p class="info_copy">최대 20MB 이하의 JPG, PNG, GIF, PDF 파일만 첨부 가능합니다.</p><!-- 2022-10-20_수정 -->
+                            </div>
+                            <!-- 1세트 -->
+                            <div class="file_set"><!-- 파일첨부 시 class="add" 추가 -->
+                                <!-- 첨부버튼 -->
+                                <div class="btn_wrap" btn-type="sub_bt">
+                                    <div class="btn_cotn">
+                                        <label for="add_file" class="btn bc_fff_02 add_file h_62">
+                                            <span>첨부</span>
+                                            <input type="file" id="add_file">
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--// 첨부버튼 -->
+
+                                <!-- 파일명노출 -->
+                                <div class="txt">
+                                    <input type="text" placeholder="사업자등록증을 등록해 주세요." readonly="">
+                                    <button type="button" class="i_sp_20 del"><span class="blind">첨부파일 삭제</span></button>
+                                </div>
+                                <!--// 파일명노출 -->
+                            </div>
+                            <!--// 1세트 -->
+                            <div class="file_set add">
+                                <div class="btn_wrap" btn-type="sub_bt">
+                                    <div class="btn_cotn">
+                                        <label for="add_file" class="btn bc_fff_02 add_file h_62">
+                                            <span>첨부</span>
+                                            <input type="file" id="add_file">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="txt">
+                                    <input type="text" placeholder="사용인감계를 등록해 주세요." readonly="" value="사용인감계파일명길어지면말줄임되는게좋겠습니다.pdf">
+                                    <button type="button" class="i_sp_20 del"><span class="blind">첨부파일 삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--//  파일 첨부 -->
+                        <div class="div_gap_bor"></div>
+
+                        <!-- 세금계산서 담당자 -->
+                        <h4 class="tit_22">세금계산서 담당자</h4>
+                        <!-- 담당자 소속부서 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 소속부서</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="소속부서 입력" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 담당자 소속부서 -->
+                        <!-- 담당자 이름 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 이름</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="이름 입력" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 담당자 이름 -->
+                        <!-- 담당자 연락처 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 연락처</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="숫자만 입력" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!-- 담당자 연락처 -->
+                        <!-- 담당자 이메일  -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 이메일</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="예시) example@email.com" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 담당자 이메일 -->
+                        <!--// 세금계산서 담당자 -->
+
+                        <div class="div_gap_bor"></div>
+
+                        <!-- 구매 담당자 -->
+                        <h4 class="tit_22">구매 담당자</h4>
+                        <!-- 담당자 소속부서  -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 소속부서</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="소속부서 입력" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 담당자 소속부서 -->
+                        <!-- 담당자 이름 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 이름</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="이름 입력" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 담당자 이름 -->
+                        <!-- 담당자 연락처 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 연락처</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="tel" placeholder="숫자만 입력" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 담당자 연락처 -->
+                        <!-- 담당자 이메일 -->
+                        <div class="form_inpt h_62 wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>담당자 이메일</span>
+                                </p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="예시) example@email.com" value=""><!-- 2022-10-25_수정 -->
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">얼럿메시지 영역</p>
+                            </div>
+                        </div>
+                        <!--// 담당자 이메일 -->
+                        <!--// 구매 담당자 -->
+
+                        <!-- 약관동의 -->
+                        <div class="form_policy">
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>약관에 동의해 주세요</span>
+                                </p>
+                            </div>
+                            <div class="ui_drop_layout">
+                                <div class="tit_chk_area">
+                                    <div class="form_chk">
+                                        <label class="group">
+                                            <input type="checkbox" checked="">
+                                            <i class="icon"></i>
+                                            <strong class="txt">전체동의</strong>
+                                            <span class="blind">선택</span>
+                                        </label>
+                                    </div>
+                                    <div class="ui_ctrl"><i class="i_sp_20 arr_down"></i></div>
+                                </div>
+                            </div>
+                            <!-- 아코디언 컨텐츠영역 -->
+                            <div class="ui_drop_cotn btn_acc_cotn">
+                                <div class="dl_layout">
+                                    <div class="dl_div">
+                                        <div class="tit">
+                                            <div class="form_chk">
+                                                <label class="group">
+                                                    <input type="checkbox" checked="">
+                                                    <i class="icon"></i>
+                                                    <span class="txt">(필수) 만 14세 이상 회원입니다</span>
+                                                    <span class="blind">선택</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="txt_link">
+                                            <a href="#none">약관보기</a>
+                                        </p>
+                                    </div>
+                                    <div class="dl_div">
+                                        <div class="tit">
+                                            <div class="form_chk">
+                                                <label class="group">
+                                                    <input type="checkbox" checked="">
+                                                    <i class="icon"></i>
+                                                    <span class="txt">(필수) 쇼핑몰 이용약관 동의</span>
+                                                    <span class="blind">선택</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="txt_link">
+                                            <a href="#none">약관보기</a>
+                                        </p>
+                                    </div>
+                                    <div class="dl_div">
+                                        <div class="tit">
+                                            <div class="form_chk">
+                                                <label class="group">
+                                                    <input type="checkbox" checked="">
+                                                    <i class="icon"></i>
+                                                    <span class="txt">(필수) 개인정보 수집 및 이용 동의</span>
+                                                    <span class="blind">선택</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="txt_link">
+                                            <a href="#none">약관보기</a>
+                                        </p>
+                                    </div>
+                                     <!-- 2022-10-20_수정 -->
+                                     <div class="dl_div">
+                                        <div class="tit">
+                                            <div class="form_chk">
+                                                <label class="group">
+                                                    <input type="checkbox" checked="">
+                                                    <i class="icon"></i>
+                                                    <span class="txt">(필수) 개인정보 처리방침 동의</span>
+                                                    <span class="blind">선택</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="txt_link">
+                                            <a href="#none">약관보기</a>
+                                        </p>
+                                    </div>
+                                    <!--// 2022-10-20_수정 -->
+
+                                    <div class="dl_div">
+                                        <div class="tit">
+                                            <div class="form_chk">
+                                                <label class="group">
+                                                    <input type="checkbox" checked="">
+                                                    <i class="icon"></i>
+                                                    <span class="txt">(필수) 주문 상품 정보에 대한 동의</span>
+                                                    <span class="blind">선택</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="txt_link">
+                                            <a href="#none">약관보기</a>
+                                        </p>
+                                    </div>
+                                    <div class="dl_div">
+                                        <div class="tit">
+                                            <div class="form_chk">
+                                                <label class="group">
+                                                    <input type="checkbox" checked="">
+                                                    <i class="icon"></i>
+                                                    <span class="txt">(필수) 결제대행 서비스 이용약관 동의</span>
+                                                    <span class="blind">선택</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="depth_poli">
+                                        <div class="dl_div">
+                                            <p class="tit">전자금융거래 이용약관</p>
+                                            <p class="txt_link">
+                                                <a href="#none">약관보기</a>
+                                            </p>
+                                        </div>
+                                        <div class="dl_div">
+                                            <p class="tit">개인정보 수집 및 이용동의</p>
+                                            <p class="txt_link">
+                                                <a href="#none">약관보기</a>
+                                            </p>
+                                        </div>
+                                        <div class="dl_div">
+                                            <p class="tit">개인정보 취급위탁에 대한 동의</p>
+                                            <p class="txt_link">
+                                                <a href="#none">약관보기</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 아코디언 컨텐츠영역 -->
+                        </div>
+                        <!--// 약관동의 -->
+                    </div>
+                    <!--// 입력폼 -->
+                    <!-- 버튼 -->
+                    <div class="mem_btn_wrap">
+                        <div class="btn_wrap" btn-type="main_bt_01">
+                            <div class="btn_cotn">
+                                <a href="#none" class="btn" bt_role="confirm">가입신청완료</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 버튼 -->
+				</div>
+			</div>
+			<!--// 기업회원 가입:정보입력 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

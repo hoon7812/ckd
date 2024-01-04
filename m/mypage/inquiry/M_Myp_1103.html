@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>마이페이지 상품선택</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body class="up"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- 팝업:마이페이지 상품선택 -->
+<section class="full_popup full_01 prd_select_pop on"><!-- 관심상품 선택 class="prd_select_pop" 추가, 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">주문상품 선택</h1>
+		<a href="#none" class="closed">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents bg_gy">
+		<!-- 주문상품 선택 -->
+		<div class="prd_sel_con">
+			<div class="prd_sel_sec">
+				<!-- 2022-11-04_수정 -->
+				<div class="blue_btn_set">
+					<a href="#none" class="on">1개월</a><!-- 활성화 시 class="on" 추가 -->
+					<a href="#none">3개월</a>
+					<a href="#none">6개월</a>
+				</div>
+				<!--// 2022-11-04_수정 -->
+			</div>
+			<!-- 주문일자별 상품선택 -->
+			<div class="prd_sel_sec02">
+				<div class="prd_date_area">
+					<div class="form_chk">
+						<label class="group">
+							<input type="checkbox" checked="">
+							<i class="icon"></i>
+							<span class="txt">2022.03.12</span>
+							<span class="blind">선택</span>
+						</label>
+					</div>
+					<div class="ord_numb">
+						<span>123456789123</span>
+					</div>
+				</div>
+				<div class="prd_choice_list">
+					<!-- 세트 -->
+					<div class="form_chk box in_prd on">
+						<label class="group">
+							<input type="checkbox" checked="">
+							<i class="icon"></i>
+							<span class="blind">선택</span>
+						</label>
+						<div class="cotn">
+							 <div class="prod_h_wrap">
+								<div class="prd_group_h on_dim"><!-- 상태값필요할때 class="on_dim"추가 -->
+									<div class="cotn">
+										<div class="prd_artic">
+											<!-- 이미지 -->
+											<div class="img_area">
+												<figure class="img">
+													<img src="../../assets/images/temp/prd_01.jpg" alt="">
+												</figure>
+												<p class="status_txt">품절</p>
+											</div>
+											<!--// 이미지 -->
+
+											<!-- 판매정보 -->
+											<div class="prd_verti_info">
+												<!-- 상품명 -->
+												<div class="txt">
+													<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+												</div>
+												<!--// 상품명 -->
+											</div>
+											<!--// 판매정보 -->
+										</div>
+									</div>
+								</div>
+							 </div>
+						</div>
+					</div>
+					<!--// 세트 -->
+					<div class="form_chk box in_prd">
+						<label class="group">
+							<input type="checkbox">
+							<i class="icon"></i>
+							<span class="blind">선택</span>
+						</label>
+						<div class="cotn">
+							 <div class="prod_h_wrap">
+								<div class="prd_group_h">
+									<div class="cotn">
+										<div class="prd_artic">
+											<!-- 이미지 -->
+											<div class="img_area">
+												<figure class="img">
+													<img src="../../assets/images/temp/prd_01.jpg" alt="">
+												</figure>
+											</div>
+											<!--// 이미지 -->
+
+											<!-- 판매정보 -->
+											<div class="prd_verti_info">
+												<!-- 상품명 -->
+												<div class="txt">
+													<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+												</div>
+												<!--// 상품명 -->
+											</div>
+											<!--// 판매정보 -->
+										</div>
+									</div>
+								</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 주문일자별 상품선택 -->
+			<div class="prd_sel_sec02">
+				<div class="prd_date_area">
+					<div class="form_chk">
+						<label class="group">
+							<input type="checkbox">
+							<i class="icon"></i>
+							<span class="txt">2022.03.12</span>
+							<span class="blind">선택</span>
+						</label>
+					</div>
+					<div class="ord_numb">
+						<span>123456789123</span>
+					</div>
+				</div>
+				<div class="prd_choice_list">
+					<!-- 세트 -->
+					<div class="form_chk box in_prd">
+						<label class="group">
+							<input type="checkbox">
+							<i class="icon"></i>
+							<span class="blind">선택</span>
+						</label>
+						<div class="cotn">
+							 <div class="prod_h_wrap">
+								<div class="prd_group_h on_dim"><!-- 상태값필요할때 class="on_dim"추가 -->
+									<div class="cotn">
+										<div class="prd_artic">
+											<!-- 이미지 -->
+											<div class="img_area">
+												<figure class="img">
+													<img src="../../assets/images/temp/prd_01.jpg" alt="">
+												</figure>
+												<p class="status_txt">판매중지</p>
+											</div>
+											<!--// 이미지 -->
+
+											<!-- 판매정보 -->
+											<div class="prd_verti_info">
+												<!-- 상품명 -->
+												<div class="txt">
+													<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+												</div>
+												<!--// 상품명 -->
+											</div>
+											<!--// 판매정보 -->
+										</div>
+									</div>
+								</div>
+							 </div>
+						</div>
+					</div>
+					<!--// 세트 -->
+					<div class="form_chk box in_prd">
+						<label class="group">
+							<input type="checkbox">
+							<i class="icon"></i>
+							<span class="blind">선택</span>
+						</label>
+						<div class="cotn">
+							 <div class="prod_h_wrap">
+								<div class="prd_group_h">
+									<div class="cotn">
+										<div class="prd_artic">
+											<!-- 이미지 -->
+											<div class="img_area">
+												<figure class="img">
+													<img src="../../assets/images/temp/prd_01.jpg" alt="">
+												</figure>
+											</div>
+											<!--// 이미지 -->
+
+											<!-- 판매정보 -->
+											<div class="prd_verti_info">
+												<!-- 상품명 -->
+												<div class="txt">
+													<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+												</div>
+												<!--// 상품명 -->
+											</div>
+											<!--// 판매정보 -->
+										</div>
+									</div>
+								</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 주문상품 선택 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_fixed">
+		<div class="btn_wrap" btn-type="main_bt">
+			<a href="#none" class="btn" bt_role="cancel">취소</a>
+			<a href="#none" class="btn" bt_role="confirm">등록</a> <!-- 2022-11-04_수정 -->
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+
+</section>
+<!--// 팝업:마이페이지 상품선택 -->
+
+</body>
+</html>

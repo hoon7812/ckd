@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>헤더</title>
+</head>
+
+<body>
+<!-- #HEADER -->
+<header id="header">
+	<div class="head_wrap">
+		<!-- 서브헤드 -->
+		<div class="sub_head">
+			<h1 class="sub_tit">페이지타이틀</h1>
+			<a href="#none" class="go_back">
+				<span class="blind">뒤로가기</span>
+			</a>
+			<!-- 검색&카테고리헤드 -->
+			<div class="srch_form">
+				<!-- 검색필드 -->
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+						<div class="bt_area">
+							<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+							<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+						</div>
+					</div>
+					<button type="button" class="cancel">취소</button>
+				</div>
+				<!--// 검색필드 -->
+
+				<!-- 추천검색어 -->
+				<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+					<ul>
+						<!-- 검색어1세트 -->
+						<li>
+							<p>
+								<a href="#none"><span class="inc">유산균</span></a>
+							</p>
+							<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+						</li>
+						<!--// 검색어1세트 -->
+						<li>
+							<p>
+								<a href="#none">락토핏 <span class="inc">유산균</span></a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none">종근당 <span class="inc">유산균</span></a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none"><span class="inc">유산균</span>다이어트</a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none">생<span class="inc">유산균</span>코어</a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none">어린이 <span class="inc">유산균</span></a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none">종근당 <span class="inc">유산균</span></a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+						<li>
+							<p>
+								<a href="#none"><span class="inc">유산균</span>다이어트</a>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<!--// 추천검색어 -->
+			</div>
+			<!--// 검색&카테고리헤드 -->
+		</div>
+		<!--// 서브헤드 -->
+
+		<!-- 메인헤드 -->
+		<div class="idx_head">
+			<h1 class="logo">
+				<a href="#none">
+					<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+				</a>
+			</h1>
+			<div class="search">
+				<p>유산균 건강</p>
+				<i class="search"></i>
+				<a href="#none" class="go_view"><span class="blind">검색</span></a>
+			</div>
+		</div>
+		<!--// 메인헤드 -->
+
+		<!-- 버튼메뉴 -->
+		<div class="menu_wrap">
+			<div class="btn_menu home">
+				<a href="#none">
+					<span class="blind">메인으로이동</span>
+				</a>
+			</div>
+			<div class="btn_menu alarm on"><!-- 알람있을경우 class="on" 추가 -->
+				<a href="#none">
+					<span class="blind">알람</span>
+					<span class="amount">99</span>
+				</a>
+				<div class="new_arrive">
+					<p><i class="icon_new"></i>새로운 알림 도착</p>
+				</div>
+			</div>
+			<div class="btn_menu search">
+				<a href="#none">
+					<span class="blind">검색</span>
+				</a>
+			</div>
+			<div class="btn_menu cart on"><!-- 장바구니상품추가 class="on" 추가 -->
+				<a href="#none">
+					<span class="blind">장바구니</span>
+					<span class="amount">8</span>
+				</a>
+			</div>
+			<div class="btn_menu share">
+				<a href="#none">
+					<span class="blind">공유하기</span>
+				</a>
+			</div>
+		</div>
+		<!--// 버튼메뉴 -->
+	</div>
+
+	<!-- 예시용헤더:기본:실제개발하는헤더아님 -->
+	<div class="temp_home">
+		<div class="head_wrap">
+			<div class="sub_head">
+				<h1 class="sub_tit">페이지타이틀</h1>
+				<a href="#none" class="go_back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<!-- 검색&카테고리헤드 -->
+				<div class="srch_form">
+					<!-- 검색필드 -->
+					<div class="form_cotn">
+						<div class="input_set">
+							<input type="text" placeholder="검색어를 입력하세요">
+							<div class="bt_area">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+								<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+							</div>
+						</div>
+						<button type="button" class="cancel">취소</button>
+					</div>
+					<!--// 검색필드 -->
+
+					<!-- 추천검색어 -->
+					<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+						<ul>
+							<!-- 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span></a>
+								</p>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</li>
+							<!--// 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none">락토핏 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">생<span class="inc">유산균</span>코어</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">어린이 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!--// 추천검색어 -->
+				</div>
+				<!--// 검색&카테고리헤드 -->
+			</div>
+			<div class="idx_head">
+				<h1 class="logo">
+					<a href="#none">
+						<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+					</a>
+				</h1>
+				<div class="search">
+					<p>유산균 건강</p>
+					<i class="search"></i>
+					<a href="#none" class="go_view"><span class="blind">검색</span></a>
+				</div>
+			</div>
+			<div class="menu_wrap">
+				<div class="btn_menu home">
+					<a href="#none">
+						<span class="blind">메인으로이동</span>
+					</a>
+				</div>
+				<div class="btn_menu alarm on">
+					<a href="#none">
+						<span class="blind">알람</span>
+						<span class="amount">99</span>
+					</a>
+				</div>
+				<div class="btn_menu search">
+					<a href="#none">
+						<span class="blind">검색</span>
+					</a>
+				</div>
+				<div class="btn_menu cart">
+					<a href="#none">
+						<span class="blind">장바구니</span>
+						<span class="amount">8</span>
+					</a>
+				</div>
+				<div class="btn_menu share">
+					<a href="#none">
+						<span class="blind">공유하기</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 예시용헤더:기본:실제개발하는헤더아님 -->
+
+	<!-- 예시용헤더:상품목록/상세:실제개발하는헤더아님 -->
+	<div class="temp_prd">
+		<div class="head_wrap">
+			<div class="sub_head">
+				<h1 class="sub_tit">★할인율UP★락토핏 생유산균 코어 선물세트 1세트 (6개월분)</h1>
+				<a href="#none" class="go_back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<!-- 검색&카테고리헤드 -->
+				<div class="srch_form">
+					<!-- 검색필드 -->
+					<div class="form_cotn">
+						<div class="input_set">
+							<input type="text" placeholder="검색어를 입력하세요">
+							<div class="bt_area">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+								<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+							</div>
+						</div>
+						<button type="button" class="cancel">취소</button>
+					</div>
+					<!--// 검색필드 -->
+
+					<!-- 추천검색어 -->
+					<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+						<ul>
+							<!-- 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span></a>
+								</p>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</li>
+							<!--// 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none">락토핏 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">생<span class="inc">유산균</span>코어</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">어린이 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!--// 추천검색어 -->
+				</div>
+				<!--// 검색&카테고리헤드 -->
+			</div>
+			<div class="idx_head">
+				<h1 class="logo">
+					<a href="#none">
+						<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+					</a>
+				</h1>
+				<div class="search">
+					<p>유산균 건강</p>
+					<i class="search"></i>
+					<a href="#none" class="go_view"><span class="blind">검색</span></a>
+				</div>
+			</div>
+			<div class="menu_wrap">
+				<div class="btn_menu home">
+					<a href="#none">
+						<span class="blind">메인으로이동</span>
+					</a>
+				</div>
+				<div class="btn_menu alarm">
+					<a href="#none">
+						<span class="blind">알람</span>
+						<span class="amount">99</span>
+					</a>
+				</div>
+				<div class="btn_menu search">
+					<a href="#none">
+						<span class="blind">검색</span>
+					</a>
+				</div>
+				<div class="btn_menu cart">
+					<a href="#none">
+						<span class="blind">장바구니</span>
+						<span class="amount">8</span>
+					</a>
+				</div>
+				<div class="btn_menu share">
+					<a href="#none">
+						<span class="blind">공유하기</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 예시용헤더:상품목록/상세:실제개발하는헤더아님 -->
+
+	<!-- 예시용헤더:서비스:실제개발하는헤더아님 -->
+	<div class="temp_service">
+		<div class="head_wrap">
+			<div class="sub_head">
+				<h1 class="sub_tit">페이지타이틀</h1>
+				<a href="#none" class="go_back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<!-- 검색&카테고리헤드 -->
+				<div class="srch_form">
+					<!-- 검색필드 -->
+					<div class="form_cotn">
+						<div class="input_set">
+							<input type="text" placeholder="검색어를 입력하세요">
+							<div class="bt_area">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+								<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+							</div>
+						</div>
+						<button type="button" class="cancel">취소</button>
+					</div>
+					<!--// 검색필드 -->
+
+					<!-- 추천검색어 -->
+					<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+						<ul>
+							<!-- 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span></a>
+								</p>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</li>
+							<!--// 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none">락토핏 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">생<span class="inc">유산균</span>코어</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">어린이 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!--// 추천검색어 -->
+				</div>
+				<!--// 검색&카테고리헤드 -->
+			</div>
+			<div class="idx_head">
+				<h1 class="logo">
+					<a href="#none">
+						<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+					</a>
+				</h1>
+				<div class="search">
+					<p>유산균 건강</p>
+					<i class="search"></i>
+					<a href="#none" class="go_view"><span class="blind">검색</span></a>
+				</div>
+			</div>
+			<div class="menu_wrap">
+				<div class="btn_menu home">
+					<a href="#none">
+						<span class="blind">메인으로이동</span>
+					</a>
+				</div>
+				<div class="btn_menu alarm on">
+					<a href="#none">
+						<span class="blind">알람</span>
+						<span class="amount">4</span>
+					</a>
+				</div>
+				<div class="btn_menu search">
+					<a href="#none">
+						<span class="blind">검색</span>
+					</a>
+				</div>
+				<div class="btn_menu cart">
+					<a href="#none">
+						<span class="blind">장바구니</span>
+						<span class="amount">8</span>
+					</a>
+				</div>
+				<div class="btn_menu share" style="display:block">
+					<a href="#none">
+						<span class="blind">공유하기</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 예시용헤더:서비스:실제개발하는헤더아님 -->
+
+	<!-- 예시용헤더:메인:실제개발하는헤더아님 -->
+	<div class="temp_main">
+		<div class="head_wrap">
+			<div class="sub_head">
+				<h1 class="sub_tit">페이지타이틀</h1>
+				<a href="#none" class="go_back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<!-- 검색&카테고리헤드 -->
+				<div class="srch_form">
+					<!-- 검색필드 -->
+					<div class="form_cotn">
+						<div class="input_set">
+							<input type="text" placeholder="검색어를 입력하세요">
+							<div class="bt_area">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+								<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+							</div>
+						</div>
+						<button type="button" class="cancel">취소</button>
+					</div>
+					<!--// 검색필드 -->
+
+					<!-- 추천검색어 -->
+					<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+						<ul>
+							<!-- 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span></a>
+								</p>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</li>
+							<!--// 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none">락토핏 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">생<span class="inc">유산균</span>코어</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">어린이 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!--// 추천검색어 -->
+				</div>
+				<!--// 검색&카테고리헤드 -->
+			</div>
+			<div class="idx_head">
+				<h1 class="logo">
+					<a href="#none">
+						<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+					</a>
+				</h1>
+				<div class="search">
+					<p>유산균 건강</p>
+					<i class="search"></i>
+					<a href="#none" class="go_view"><span class="blind">검색</span></a>
+				</div>
+			</div>
+			<div class="menu_wrap">
+				<div class="btn_menu home">
+					<a href="#none">
+						<span class="blind">메인으로이동</span>
+					</a>
+				</div>
+				<div class="btn_menu alarm on">
+					<a href="#none">
+						<span class="blind">알람</span>
+						<span class="amount">4</span>
+					</a>
+				</div>
+				<div class="btn_menu search">
+					<a href="#none">
+						<span class="blind">검색</span>
+					</a>
+				</div>
+				<div class="btn_menu cart">
+					<a href="#none">
+						<span class="blind">장바구니</span>
+						<span class="amount">8</span>
+					</a>
+				</div>
+				<div class="btn_menu share">
+					<a href="#none">
+						<span class="blind">공유하기</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 예시용헤더:메인:실제개발하는헤더아님 -->
+
+	<!-- 예시용헤더:검색&카테고리:실제개발하는헤더아님 -->
+	<div class="temp_search">
+		<div class="head_wrap">
+			<div class="sub_head">
+				<h1 class="sub_tit">페이지타이틀</h1>
+				<a href="#none" class="go_back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<!-- 검색&카테고리헤드 -->
+				<div class="srch_form">
+					<!-- 검색필드 -->
+					<div class="form_cotn">
+						<div class="input_set">
+							<input type="text" placeholder="검색어를 입력하세요">
+							<div class="bt_area">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+								<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+							</div>
+						</div>
+						<button type="button" class="cancel">취소</button>
+					</div>
+					<!--// 검색필드 -->
+
+					<!-- 추천검색어 -->
+					<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+						<ul>
+							<!-- 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span></a>
+								</p>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</li>
+							<!--// 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none">락토핏 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">생<span class="inc">유산균</span>코어</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">어린이 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!--// 추천검색어 -->
+				</div>
+				<!--// 검색&카테고리헤드 -->
+			</div>
+			<div class="idx_head">
+				<h1 class="logo">
+					<a href="#none">
+						<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+					</a>
+				</h1>
+				<div class="search">
+					<p>유산균 건강</p>
+					<i class="search"></i>
+					<a href="#none" class="go_view"><span class="blind">검색</span></a>
+				</div>
+			</div>
+			<div class="menu_wrap">
+				<div class="btn_menu home">
+					<a href="#none">
+						<span class="blind">메인으로이동</span>
+					</a>
+				</div>
+				<div class="btn_menu alarm on">
+					<a href="#none">
+						<span class="blind">알람</span>
+						<span class="amount">4</span>
+					</a>
+				</div>
+				<div class="btn_menu search">
+					<a href="#none">
+						<span class="blind">검색</span>
+					</a>
+				</div>
+				<div class="btn_menu cart">
+					<a href="#none">
+						<span class="blind">장바구니</span>
+						<span class="amount">8</span>
+					</a>
+				</div>
+				<div class="btn_menu share">
+					<a href="#none">
+						<span class="blind">공유하기</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 예시용헤더:검색&카테고리:실제개발하는헤더아님 -->
+</header>
+<!--// #HEADER -->
+</body>
+</html>

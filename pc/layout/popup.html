@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>팝업가이드</title>
+	<link rel="stylesheet" href="../assets/css/popup.css">
+</head>
+
+<body class=""><!-- 팝업open : class="dim" 추가 -->
+<!-- #WRAP -->
+<div id="wrap" style="width:1192px;">
+	<p class="g_tit">알럿</p>
+	<div class="g_ex">
+		<p>알럿 버튼 : class="btn_alert" 필수 선언</p>
+		<p>알럿 버튼 : open-layer-class="팝업구분값" 필수 추가</p>
+		<p>알럿 : class="팝업구분값" 필수 추가 (위와 같은 값으로 맞춰야함)</p>
+	</div>
+
+	<div class="btn_wrap" btn-type="main_bt_01">
+		<div class="btn_cotn">
+			<a href="#none" class="btn btn_alert" bt_role="confirm" open-layer-class="alert_01">버튼1개</a>
+		</div>
+	</div>
+	<div class="btn_wrap" btn-type="main_bt_01">
+		<div class="btn_cotn">
+			<a href="#none" class="btn btn_alert" bt_role="confirm" open-layer-class="alert_02">버튼2개</a>
+		</div>
+	</div>
+	<div class="btn_wrap" btn-type="main_bt_01">
+		<div class="btn_cotn">
+			<a href="#none" class="btn btn_alert" bt_role="confirm" open-layer-class="alert_03">경고아이콘 추가</a>
+		</div>
+	</div>
+
+	<!-- 알럿팝업 -->
+	<section class="alert_pop alert_01"><!-- 팝업open : class="on"추가, style="display:block;" -->
+		<!-- 컨텐츠 -->
+		<div class="cotn">
+			<p class="tit_22">단기카드대출 이용 동의</p>
+			<p class="sb_txt">이용 동의 후 신청이 가능합니다.<br>이용 동의하시겠습니까?</p>
+		</div>
+		<!--// 컨텐츠 -->
+
+		<!-- 버튼 -->
+		<div class="btn_wrap" btn-type="main_bt_02">
+			<div class="btn_cotn">
+				<button type="button" class="btn closed" bt_role="confirm">확인</button>
+			</div>
+		</div>
+		<!--// 버튼 -->
+
+		<!-- 닫기 -->
+		<a href="#none" class="closed">
+			<i class="i_sp_24 cross"></i>
+			<span class="blind">팝업 닫기</span>
+		</a>
+		<!--// 닫기 -->
+	</section>
+	<!--// 알럿팝업 -->
+
+	<!-- 알럿팝업 -->
+	<section class="alert_pop alert_02"><!-- 팝업open : class="on"추가, style="display:block;" -->
+		<!-- 컨텐츠 -->
+		<div class="cotn">
+			<p class="tit_22">단기카드대출 이용 동의</p>
+			<p class="sb_txt">이용 동의 후 신청이 가능합니다.<br>이용 동의하시겠습니까?</p>
+		</div>
+		<!--// 컨텐츠 -->
+
+		<!-- 버튼 -->
+		<div class="btn_wrap" btn-type="main_bt_02">
+			<div class="btn_cotn">
+				<button type="button" class="btn" bt_role="cancel">취소</button>
+				<button type="button" class="btn closed" bt_role="confirm">확인</button>
+			</div>
+		</div>
+		<!--// 버튼 -->
+
+		<!-- 닫기 -->
+		<a href="#none" class="closed">
+			<i class="i_sp_24 cross"></i>
+			<span class="blind">팝업 닫기</span>
+		</a>
+		<!--// 닫기 -->
+	</section>
+	<!--// 알럿팝업 -->
+
+	<!-- 알럿팝업 -->
+	<section class="alert_pop alert_03"><!-- 팝업open : class="on"추가, style="display:block;" -->
+		<!-- 컨텐츠 -->
+		<div class="cotn">
+			<p class="tit_22">단기카드대출 이용 동의</p>
+			<i class="icon_wrn"></i>
+			<p class="sb_txt">이용 동의 후 신청이 가능합니다.<br>이용 동의하시겠습니까?</p>
+		</div>
+		<!--// 컨텐츠 -->
+
+		<!-- 버튼 -->
+		<div class="btn_wrap" btn-type="main_bt_02">
+			<div class="btn_cotn">
+				<button type="button" class="btn closed" bt_role="confirm">확인</button>
+			</div>
+		</div>
+		<!--// 버튼 -->
+
+		<!-- 닫기 -->
+		<a href="#none" class="closed">
+			<i class="i_sp_24 cross"></i>
+			<span class="blind">팝업 닫기</span>
+		</a>
+		<!--// 닫기 -->
+	</section>
+	<!--// 알럿팝업 -->
+
+	<hr class="div_gap">
+
+	<p class="g_tit">팝업</p>
+	<div class="g_ex">
+		<p>팝업 버튼 : class="full_open" 필수 선언</p>
+		<p>팝업 버튼 : open-full-pop="팝업구분값" 필수 추가</p>
+		<p>팝업 : class="팝업구분값" 필수 추가 (위와 같은 값으로 맞춰야함)</p>
+	</div>
+
+	<div class="btn_wrap" btn-type="main_bt_01">
+		<div class="btn_cotn">
+			<a href="#none" class="btn full_open" bt_role="confirm" open-full-pop="full_01">팝업</a>
+		</div>
+	</div>
+
+	<!-- 팝업 -->
+	<section class="full_pop full_01"><!-- 팝업open : class="on"추가, style="display:block;" -->
+		<!-- 헤더 -->
+		<header class="head">
+			<!-- 타이틀 -->
+			<h1 class="tit_22">팝업</h1>
+			<!--// 타이틀 -->
+
+			<!-- 닫기 -->
+			<a href="#none" class="closed">
+				<i class="i_sp_24 cross"></i>
+				<span class="blind">팝업 닫기</span>
+			</a>
+			<!--// 닫기 -->
+		</header>
+		<!--// 헤더 -->
+
+		<!-- 컨텐츠 -->
+		<div class="cotn">
+			<p>팝업 컨텐츠 영역</p>
+			<p>정당의 설립은 자유이며, 복수정당제는 보장된다. 정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다. 정당의 목적이나 활동이 민주적 기본질서에 위배될 때에는 정부는 헌법재판소에 그 해산을 제소할 수 있고, 정당은 헌법재판소의 심판에 의하여 해산된다.
+			대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.
+			정당의 설립은 자유이며, 복수정당제는 보장된다. 정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다. 정당의 목적이나 활동이 민주적 기본질서에 위배될 때에는 정부는 헌법재판소에 그 해산을 제소할 수 있고, 정당은 헌법재판소의 심판에 의하여 해산된다.
+			대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 국회의원의 임기는 4년으로 한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다.</p>
+		</div>
+		<!--// 컨텐츠 -->
+
+		<!-- 하단버튼 -->
+		<div class="btn_wrap" btn-type="main_bt_02">
+			<div class="btn_cotn">
+				<button type="button" class="btn" bt_role="cancel">취소</button>
+				<button type="button" class="btn closed" bt_role="confirm">확인</button>
+			</div>
+		</div>
+		<!--// 하단버튼 -->
+	</section>
+	<!--// 팝업 -->
+
+	<hr class="div_gap">
+
+	<p class="g_tit">토스트팝업</p>
+	<div class="g_ex">
+		<p>토스트 팝업 버튼 : class="btn_toast" 필수 선언</p>
+		<p>토스트 팝업 버튼 : open-toast-pop="팝업구분값" 필수 추가</p>
+		<p>토스트 팝업 : class="팝업구분값" 필수 추가 (위와 같은 값으로 맞춰야함)</p>
+	</div>
+
+	<div class="btn_wrap" btn-type="main_bt_01">
+		<div class="btn_cotn">
+			<a href="#none" class="btn btn_toast" bt_role="confirm" open-toast-pop="toast_01">토스트팝업</a>
+		</div>
+	</div>
+
+	<!-- 토스트팝업 -->
+	<div class="toast_pop toast_01">
+		<p>정기배송 상품을 장바구니에 담았습니다. </p>
+	</div>
+	<!--// 토스트팝업 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

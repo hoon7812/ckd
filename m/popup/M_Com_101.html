@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>달력 - 요일선택</title>
+</head>
+
+<body class="dim"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+    <!-- 달력팝업 -->
+    <section class="pop_calendar alert_popup alert_01" style="display:block;"><!-- 팝업open : style="display:block;" 추가 -->
+		<!-- 컨텐츠 -->
+		<div class="contents">
+            <div class="calendar_wrap">
+                <div class="month_area">
+                     <div class="txt_mon_info">
+                        <p class="tit_16">2021년 9월</p>
+                        <a href="#none" class="btn_mon">
+                            <i class="icon_20 next"></i>
+                            <span class="blind">년월선택 페이지 이동</span>
+                        </a>
+                     </div>
+                     <div class="rit_btn_mon">
+                        <a href="#none" class="btn_mon">
+                            <i class="icon_20 prev"></i>
+                            <span class="blind">지난달</span>
+                        </a>
+                        <a href="#none" class="btn_mon">
+                            <i class="icon_20 next"></i>
+                            <span class="blind">다음달</span>
+                        </a>
+                     </div>
+                </div>
+                <table class="tb_calendar">
+                    <colgroup></colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="sun">일</th>
+                            <th scope="col">월</th>
+                            <th scope="col">화</th>
+                            <th scope="col">수</th>
+                            <th scope="col">목</th>
+                            <th scope="col">금</th>
+                            <th scope="col" class="sat">토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--
+                            [달력 표기]
+                            지난날 class="disabled" ,
+                            결제일 class="payment" ,
+                            오늘 class="today" ,
+                            사용자가 선택한 날짜 class=" select_date" ,
+                            여신기간 표시 class="selected" 시작일 class="start" 종료일 class="end" ,
+                         -->
+                        <tr>
+                            <td class="sun">
+                                <button class="disabled">
+                                    <span class="date">1</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="disabled">
+                                    <span class="date">2</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="disabled">
+                                    <span class="date">3</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="today">
+                                    <span class="date">4</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">5</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">6</span>
+                                </button>
+                            </td>
+                            <td class="sat">
+                                <button>
+                                    <span class="date">7</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sun">
+                                <button>
+                                    <span class="date">8</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="select_date">
+                                    <span class="date">9</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">10</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">11</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">12</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">13</span>
+                                </button>
+                            </td>
+                            <td class="sat">
+                                <button>
+                                    <span class="date">14</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sun">
+                                <button>
+                                    <span class="date">15</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">16</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">17</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">18</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">19</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">20</span>
+                                </button>
+                            </td>
+                            <td class="sat">
+                                <button>
+                                    <span class="date">21</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sun">
+                                <button>
+                                    <span class="date">22</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">23</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">24</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">25</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">26</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">27</span>
+                                </button>
+                            </td>
+                            <td class="sat">
+                                <button>
+                                    <span class="date">28</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sun">
+                                <button>
+                                    <span class="date">29</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">29</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">30</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="date">31</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="disabled">
+                                    <span class="date">1</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="disabled">
+                                    <span class="date">2</span>
+                                </button>
+                            </td>
+                            <td class="sat">
+                                <button class="disabled">
+                                    <span class="date">3</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+		</div>
+		<!--// 컨텐츠 -->
+		<!-- 버튼 -->
+		<div class="alert_btn_wrap">
+			<button type="button" class="btn" bt_role="confirm"><span>완료</span></button>
+		</div>
+		<!--// 버튼 -->
+	</section>
+    <!--// 달력팝업 -->
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>알림함</title>
+	<link rel="stylesheet" href="../assets/css/app.css"><!-- app설정 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="notify_box"><!-- [알림함 class="notify_box"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!-- 2022-07-05_수정 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 앱 알림함 -->
+			<div class="sub">
+				<!-- 상단 고정영역 -->
+				<div class="fixed_wrap">
+					<!-- 탭메뉴 -->
+					<div class="tab_menu btn">
+						<div class="swiper teb_cat">
+							<div class="swiper-wrapper">
+								<!-- 1세트 -->
+								<div class="btn_tab swiper-slide on">
+									<a href="#none">
+										<span>전체</span>
+									</a>
+								</div>
+								<!--// 1세트 -->
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>주문배송</span>
+									</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>재입고/재구매</span>
+									</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>쿠폰&혜택</span>
+									</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>리뷰</span>
+									</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>문의</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 탭메뉴 -->
+					<div class="edit_wrap">
+						<div class="info_area">
+							<p>받은 알림은 <span class="emp">15</span>일간 보관됩니다.</p>
+						</div>
+						<!-- 편집버튼 -->
+						<div class="edit_btn"><!-- 편집버튼 클릭 class="on"추가, 데이터 없음 style="display:none" -->
+							<i class="trash"></i>
+							<div class="btn_wrap">
+								<a href="#none" class="btn jkd_b h_24">
+									<i class="edit"></i>
+									편집<!-- edit_btn on 일 때-> '편집끄기' 텍스트 수정 -->
+								</a>
+							</div>
+						</div>
+						<!--// 편집버튼 -->
+					</div>
+				</div>
+				<!--// 상단 고정영역 -->
+				<!-- 전체 알람 리스트 -->
+				<div class="notice_wrap on"><!-- 편집버튼 클릭 class="on"추가 -->
+					<hr class="div_gap">
+					<!-- 날짜별 알림 목록 1세트 -->
+					<div class="date_wrap today"><!-- 당일 class="today" 추가 -->
+						<div class="date">
+							<p>2022년 5월 3일</p>
+						</div>
+						<!-- 알림 목록 1세트 -->
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">회원가입 완료</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">12:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									종근당 건강 쇼핑몰 가입을 축하드립니다.<br>앞으로 다양한 소식과 혜택을 드리는 종근당 건강이 되도록<br>최선을 다하는 종근당이 되겠습니다.
+								</p>
+							</div>
+							<!-- 가입 이벤트 슬라이드 -->
+							<div class="mem_slide_wrap">
+								<div class="mem_evnt swiper">
+									<div class="swiper-wrapper">
+										<div class="mem_bnr swiper-slide">
+											<figure class="img"><img src="../assets/images/app/notify_bnr_01.jpg" alt=""></figure>
+										</div>
+										<div class="mem_bnr swiper-slide">
+											<figure class="img"><img src="../assets/images/app/notify_bnr_02.jpg" alt=""></figure>
+										</div>
+										<div class="mem_bnr swiper-slide">
+											<figure class="img"><img src="../assets/images/temp/prd_01.jpg" alt=""></figure>
+										</div>
+										<div class="mem_bnr swiper-slide">
+											<figure class="img"><img src="../assets/images/brand/brand_info_bnr.jpg" alt=""></figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// 가입 이벤트 슬라이드 -->
+							<div class="btn_wrap" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">첫구매 혜택보기</a>
+							</div>
+						</div>
+						<!--// 알림 목록 1세트 -->
+					</div>
+					<!--// 날짜별 알림 목록 1세트 -->
+					<div class="date_wrap">
+						<hr class="div_gap">
+						<div class="date">
+							<p>2022년 5월 3일</p>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">배송중</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">12:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									락토핏 생유산균 골드 5X 선물세트 외 2건의 상품을 판매자<br>가 고객님께 보내드리기 위해 상품을 준비하고 있습니다.
+								</p>
+							</div>
+							<div class="box_wrap deliv"><!-- 배송안내 class="deliv"추가 -->
+								<div class="cotn">
+									<div class="status_wrap">
+										<div class="status on"><!-- 상태진행중 class="on"추가 -->
+											<i class="icon_prepare"></i>
+											<p class="txt">상품준비</p>
+										</div>
+										<div class="status">
+											<i class="icon_start"></i>
+											<p class="txt">배송시작</p>
+										</div>
+										<div class="status">
+											<i class="icon_ing"></i>
+											<p class="txt">배송중</p>
+										</div>
+										<div class="status">
+											<i class="icon_done"></i>
+											<p class="txt">배송완료</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">주문상세보기</a>
+								<a href="#none" class="btn bc_fff_02 h_32">배송조회</a>
+							</div>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">상품 품절안내</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<p class="sub_txt">
+									홍길동님 정기배송 신청하신 상품이 재고가 없어 상품을<br>발송할 수 없습니다. 상품 주문 정보를 변경해 주세요.
+								</p>
+							</div>
+							<div class="btn_wrap h_32" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">정기배송 관리</a>
+							</div>
+						</div>
+					</div>
+					<div class="date_wrap">
+						<hr class="div_gap">
+						<div class="date">
+							<p>2022년 4월 30일</p>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">이달의 등급</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">12:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									락토핏 생유산균 골드 5X 선물세트 외 2건의 상품을 판매자<br>가 고객님께 보내드리기 위해 상품을 준비하고 있습니다.
+								</p>
+							</div>
+							<div class="box_wrap">
+								<div class="cotn">
+									<div class="img_wrap">
+										<img src="../assets/images/temp/badge_g.png" alt="">
+									</div>
+									<div class="info_wrap">
+										<p class="tit_14">Gold</p>
+										<p class="txt">최근 3개월간 30만원 이상 구매</p>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">쿠폰&혜택 보기</a>
+							</div>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">쿠폰소멸예정안내</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">15:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									홍길동님 5월 구매등급은 패밀리등급 입니다.<br>쿠폰 받고 할인혜택 놓치지 마세요!
+								</p>
+							</div>
+							<div class="box_wrap">
+								<div class="cotn">
+									<div class="img_wrap">
+										<img src="../assets/images/app/icon_discount.png" alt="">
+									</div>
+									<div class="info_wrap">
+										<p class="txt">락토핏 무료배송 쿠폰 외 <span class="emp">2</span>건이<br>만료일까지 <span class="emp">7</span>일 남았습니다</p>
+									</div>
+								</div>
+							</div>
+							<div class="btn_wrap h_32" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">내 할인쿠폰 확인</a>
+							</div>
+						</div>
+					</div>
+					<div class="date_wrap">
+						<hr class="div_gap">
+						<div class="date">
+							<p>2022년 4월 29일</p>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">문의 접수완료</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">12:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									홍길동 고객님 락토핏 생유산균 골드 5X 선물세트의 상품에 <br>대한 문의가 등록 되었습니다.
+								</p>
+							</div>
+							<div class="btn_wrap h_32" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">문의내역 확인</a>
+							</div>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">문의 답변완료</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">12:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									홍길동 고객님 락토핏 생유산균 골드 5X 선물세트의 상품문의에 답변이 등록 되었습니다. 마이페이지 &gt; 문의내역에서 답변을 확인 하실 수 있습니다.
+								</p>
+							</div>
+							<div class="btn_wrap h_32" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">문의내역 확인</a>
+							</div>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">리뷰 작성안내</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">12:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									홍길동 고객님 락토핏 생유산균 골드 5X 선물세트의 상품문의에 답변이 등록 되었습니다. 마이페이지 &gt; 문의내역에서 답변을 확인 하실 수 있습니다.
+								</p>
+							</div>
+							<div class="btn_wrap h_32" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">문의내역 확인</a>
+							</div>
+						</div>
+					</div>
+					<div class="date_wrap">
+						<hr class="div_gap">
+						<div class="date">
+							<p>2022년 4월 29일</p>
+						</div>
+						<div class="noti">
+							<div class="txt_wrap">
+								<div class="tit_wrap">
+									<div class="tit_chk">
+										<h3 class="tit_16">종근당 건강 공지사항 안내</h3>
+										<div class="form_chk">
+											<label class="group">
+												<input type="checkbox" checked="">
+												<i class="icon"></i>
+												<span class="blind">선택</span>
+											</label>
+										</div>
+									</div>
+									<div class="time_wrap">
+										<div class="chk_label">
+											<p>확인함</p>
+										</div>
+										<p class="time">12:00</p>
+									</div>
+								</div>
+								<p class="sub_txt">
+									안녕하십니까? 종근당건강몰 회원여러분 종근당건강몰에서 안내말씀드립니다. 여름맞이 프로모션 이벤트가 종료되었습니다
+								</p>
+							</div>
+							<div class="img_wrap notify">
+								<img src="../assets/images/app/notify_bnr_03.png" alt="">
+							</div>
+							<div class="btn_wrap h_32" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02 h_32">공지사항 확인</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 전체 알람 리스트 -->
+				<!-- 데이터 없음 -->
+				<div class="data_none">
+					<div class="cotn">
+						<i class="icon_none"></i>
+						<p class="mn_copy">알림이 없습니다</p>
+					</div>
+				</div>
+				<!--// 데이터 없음 -->
+			</div>
+			<!--// 앱 알림함 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

@@ -1,0 +1,5512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" type="text/css" href="status.css" />
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<title>종근당건강몰 모바일 STATUS</title>
+</head>
+
+<body>
+<h1>종근당건강몰 Mobile STATUS</h1>
+<div class="note">
+	<ul>
+		<li><strong>업데이트 관리자:</strong> <span>WYLIE 이운주</span></li>
+		<li>
+			<p>용어정리</p>
+			<dl>
+				<dt>알럿</dt>
+				<dd>시스템알럿 대신 띄우는 팝업</dd>
+				<dt>전체팝업</dt>
+				<dd>디바이스 전체를 덮어쓰는 팝업</dd>
+				<dt>바닥팝업</dt>
+				<dd>화면 아래에서 올라오는 팝업, 디바이스 1/3 ~ 3/4을 차지함</dd>
+			</dl>
+		</li>
+		<li>status의 팝업 화면은 팝업을 띄웠을 때의 화면 입니다.</li>
+		<li>팝업은 부모 페이지내에 레이어팝업 형태로 개발에서 추가 합니다. <strong>팝업 가이드 참고</strong></li>
+		<li class="page">
+			<strong>진행현황 : </strong>
+			전체페이지: <em class="total"></em> /
+			완료페이지: <em class="end"></em> /
+			진행률: <em class="progress"></em>%
+		</li>
+	</ul>
+</div>
+<nav class="site_nav">
+	<ul>
+		<li class="all on"><a href="#none">메뉴전체보기</a></li>
+		<li class=""><a href="#none">메인</a></li>
+		<li class=""><a href="#none">검색</a></li>
+		<li class=""><a href="#none">상품</a></li>
+		<li class=""><a href="#none">서비스</a></li>
+		<li class=""><a href="#none">장바구니/주문결제</a></li>
+		<li class=""><a href="#none">마이페이지</a></li>
+		<li class=""><a href="#none">회원</a></li>
+		<li class=""><a href="#none">쿠폰&amp;혜택</a></li>
+		<li class=""><a href="#none">이벤트</a></li>
+		<li class=""><a href="#none">고객센터</a></li>
+		<li class=""><a href="#none">APP</a></li>
+		<li class=""><a href="#none">약관</a></li>
+		<li class=""><a href="#none">메일링</a></li>
+		<li class=""><a href="#none">개발공통팝업템플릿</a></li>
+		<li class=""><a href="../layout/guide.html" target="_blank">레이아웃가이드:새창</a></li>
+	</ul>
+</nav>
+
+<div class="menu_wrap all">
+	<!-- 메인 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>메인</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu01 end">
+					<td class="depth01">메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../main/M_Main_001.html" target="_blank" class="link">/main/M_Main_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment">
+						<p>2022-08-01_수정</p>
+						<p>2022-11-21_수정</p>
+						<p>2023-01-03_수정</p>
+					</td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01"></td>
+					<td>이벤트 전체보기</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../main/M_Main_003.html" target="_blank" class="link">/main/M_Main_003</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-20</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-08-02_수정</p>
+					</td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01"></td>
+					<td>일반회원 팝업</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../main/M_Main_002.html" target="_blank" class="link">/main/M_Main_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-28</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01"></td>
+					<td>임직원 팝업</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../main/M_Main_002_pop.html" target="_blank" class="link">/main/M_Main_002_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-28</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 메인 -->
+
+	<!-- 검색&카테고리 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>검색 &amp; 카테고리</h1>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">카테고리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/M_Cat_001.html" target="_blank" class="link">/search/M_Cat_001</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment">
+						<p>🔶 헤더영역 참고용 페이지</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">기능별</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/M_Cat_002.html" target="_blank" class="link">/search/M_Cat_002</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">대상별</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/M_Cat_003.html" target="_blank" class="link">/search/M_Cat_003</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">검색결과</td>
+					<td>있음/없음</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/M_Sea_200.html" target="_blank" class="link">/search/M_Sea_200</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-06-20</td>
+					<td class="comment"></td>
+				</tr>
+				<!-- <tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>정렬필터</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/popup/M_Sea_201</p></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-04</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>브랜드필터</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/popup/M_Sea_203</p></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-04</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>혜택필터</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/popup/M_Sea_204</p></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-04</td>
+					<td class="comment"></td>
+				</tr> 2022-06-14 18:10:17 필터팝업 영역 페이지 안으로 이동함. 사용 안함 -->
+				<tr class="menu08 end">
+					<td class="depth01">브랜드</td>
+					<td>전체 브랜드</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/M_Cat_400.html" target="_blank" class="link">/search/M_Cat_400</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>카테고리</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/M_Cat_401.html" target="_blank" class="link">/search/M_Cat_401</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">상품목록</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Cat_100.html" target="_blank" class="link">/product/M_Cat_100</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-04-25</td>
+					<td class="comment">
+						<p>2022-11-02_수정</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 검색&카테고리 -->
+
+	<!-- 상품 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>상품</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu02 end">
+					<td class="depth01">상품상세</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Pro_201.html" target="_blank" class="link">/product/M_Pro_201</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-05-18</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>쿠폰다운받기</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_202.html" target="_blank" class="link">/product/M_Pro_202</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-25</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>배송비절약상품</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_203.html" target="_blank" class="link">/product/M_Pro_203</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>상품고시정보</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_204_01.html" target="_blank" class="link">/product/M_Pro_204_01</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-18</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>취소/교환/반품안내</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_204_02.html" target="_blank" class="link">/product/M_Pro_204_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-18</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>재입고알림신청</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_210.html" target="_blank" class="link">/product/M_Pro_210</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-17</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>Q&amp;A등록</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_215.html" target="_blank" class="link">/product/M_Pro_215</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-25</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>포토리뷰 모아보기</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_211_02.html" target="_blank" class="link">/product/M_Pro_211_02</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-11-28</td>
+					<td class="comment">
+						<p>2022-11-28 페이지추가</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>포토리뷰 내용보기</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../product/M_Pro_211_03.html" target="_blank" class="link">/product/M_Pro_211_03</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-11-28</td>
+					<td class="comment">
+						<p>2022-11-28 페이지추가</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>리뷰빅이미지</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Pro_213.html" target="_blank" class="link">/popup/M_Pro_213</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-04-25</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>공유하기</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Pro_216.html" target="_blank" class="link">/popup/M_Pro_216</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-04-21</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">상세 공통</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">상세:하단고정 버튼</td>
+					<td>하단고정 버튼</td>
+					<td>정기배송 포함</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/common/btn_botm_type01.html" target="_blank" class="link">/product/common/btn_botm_type01</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-16</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>정기배송 미포함</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/common/btn_botm_type02.html" target="_blank" class="link">/product/common/btn_botm_type02</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-16</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>상품 품절</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/common/M_Pro_208.html" target="_blank" class="link">/product/common/M_Pro_208</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-17</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">상세:옵션선택 팝업</td>
+					<td>일반구매</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../product/common/M_Pro_207.html" target="_blank" class="link">/product/common/M_Pro_207</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-16</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>정기배송</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../product/common/M_Pro_206.html" target="_blank" class="link">/product/common/M_Pro_206</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-16</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>선물하기</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../product/common/M_Pro_205.html" target="_blank" class="link">/product/common/M_Pro_205</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-16</td>
+					<td class="comment">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 상품 -->
+
+	<!--서비스 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>서비스</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu02 end">
+					<td class="depth01">핫딜</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Hot_001.html" target="_blank" class="link">/product/M_Hot_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-26</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">베스트</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Bes_001.html" target="_blank" class="link">/product/M_Bes_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-26</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">신제품</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_New_001.html" target="_blank" class="link">/product/M_New_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-26</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">선물하기</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Gif_001.html" target="_blank" class="link">/product/M_Gif_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-26</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">정기배송</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Del_001.html" target="_blank" class="link">/product/M_Del_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-26</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">기획전</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Pro_001.html" target="_blank" class="link">/product/M_Pro_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/M_Pro_002.html" target="_blank" class="link">/product/M_Pro_002</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--//서비스 -->
+
+	<!-- 장바구니-주문결제 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>장바구니-주문결제</h1>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">장바구니</td>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">일반배송</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../cart/M_Bag_601.html" target="_blank" class="link">/cart/M_Bag_601</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-24</td>
+					<td class="comment">
+						<p>2022-08-10_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">정기배송</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../cart/M_Bag_603.html" target="_blank" class="link">/cart/M_Bag_603</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-24</td>
+					<td class="comment">
+						<p>2022-08-10_추가</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>정기배송 담기</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../cart/M_Bag_603_pop.html" target="_blank" class="link">/cart/M_Bag_603_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-26</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">비로그인 구매하기</td>
+					<td></td>
+					<td>회원혜택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../cart/M_Bag_605.html" target="_blank" class="link">/cart/M_Bag_605</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-27</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">주문결제:회원</td>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">주문결제</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_101.html" target="_blank" class="link">/payment/M_Ord_101</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-06-02</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>배송지관리:배송지목록</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1301_1.html" target="_blank" class="link">/popup/M_Myp_1301_1</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-10-31</td>
+					<td class="comment">
+						<p>2022-11-24_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>배송지관리:등록</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1302.html" target="_blank" class="link">/popup/M_Myp_1302</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-09</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-31_수정</p>
+						<p>2022-11-08_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>배송지관리:수정</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1302_1.html" target="_blank" class="link">/popup/M_Myp_1302_1</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-25</td>
+					<td class="comment">
+						<p>2022-11-24_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>쿠폰선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../payment/M_Ord_103_pop.html" target="_blank" class="link">/payment/M_Ord_103_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>주문완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_121.html" target="_blank" class="link">/payment/M_Ord_121</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>재구매알림신청</td>
+					<td>등록</td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_111.html" target="_blank" class="link">/payment/M_Ord_111</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment">
+						<p>2022-07-01_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>완료</td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_112.html" target="_blank" class="link">/payment/M_Ord_112</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 type01 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>주문실패</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_131.html" target="_blank" class="link">/payment/M_Ord_131</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment"></td>
+				</tr>
+
+				<!-- 주문결제:비회원 -->
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">주문결제:비회원</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">주문결제</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_201.html" target="_blank" class="link">/payment/M_Ord_201</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-03</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>비회원구매약관동의</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_202.html" target="_blank" class="link">/payment/M_Ord_202</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>주문완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_221.html" target="_blank" class="link">/payment/M_Ord_221</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01 end"></td>
+					<td>주문실패</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_131.html" target="_blank" class="link">/payment/M_Ord_131</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment"></td>
+				</tr>
+				<!--// 주문결제:비회원 -->
+
+				<!-- 선물하기 -->
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">선물하기</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">선물하기</td>
+					<td>카카오전송/문자전송</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_301.html" target="_blank" class="link">/payment/M_Ord_301</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-07</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>선물받는분정보확인</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../payment/M_Ord_303.html" target="_blank" class="link">/payment/M_Ord_303</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-07</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>결제완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_311.html" target="_blank" class="link">/payment/M_Ord_311</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-07</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">선물받기</td>
+					<td>정보입력</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_401.html" target="_blank" class="link">/payment/M_Ord_401</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-07</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>선물받기완료</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_402.html" target="_blank" class="link">/payment/M_Ord_402</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-07</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>배송조회</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_403.html" target="_blank" class="link">/payment/M_Ord_403</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-07</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>선불받기취소</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_404.html" target="_blank" class="link">/payment/M_Ord_404</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-07</td>
+					<td class="comment"></td>
+				</tr>
+				<!--// 선물하기 -->
+
+				<!-- 정기배송 -->
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">정기배송</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">정기배송신청</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_501.html" target="_blank" class="link">/payment/M_Ord_501</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>2022-07-05_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>배송지관리</td>
+					<td>목록</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1301.html" target="_blank" class="link">/popup/M_Myp_1301</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-06</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+						<p>2022-11-24_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>등록/수정</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1302.html" target="_blank" class="link">/popup/M_Myp_1302</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-09</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-31_수정</p>
+						<p>2022-11-08_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>시작일선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Ord_502.html" target="_blank" class="link">/popup/M_Ord_502</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>배송횟수 선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../payment/M_Ord_504.html" target="_blank" class="link">/payment/M_Ord_504</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>배송주기 선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../payment/M_Ord_505.html" target="_blank" class="link">/payment/M_Ord_505</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>정기/반복결제 이용약관</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../payment/M_Ord_503.html" target="_blank" class="link">/payment/M_Ord_503</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>2022-08-02_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>신청완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_511.html" target="_blank" class="link">/payment/M_Ord_511</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>신청실패</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/M_Ord_131.html" target="_blank" class="link">/payment/M_Ord_131</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment"></td>
+				</tr>
+				<!--// 정기배송 -->
+			</tbody>
+		</table>
+	</section>
+	<!--// 장바구니-주문결제 -->
+
+	<!-- 마이페이지 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>마이페이지</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu01 end">
+					<td class="depth01">메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/M_Myp_101.html" target="_blank" class="link">/mypage/M_Myp_101</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment">
+						<p>2022-11-14_수정</p>
+						<p>2022-11-16_수정</p>
+						<p>2022-11-25_수정</p>
+						<p>2022-12-19_수정</p>
+					</td>
+				</tr>
+			</tbody>
+
+			<!-- 마이페이지:주문/배송조회 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">주문/배송조회</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01">주문/배송조회</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_202.html" target="_blank" class="link">/mypage/order/M_Myp_202</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-06</td>
+					<td class="comment">
+						<p>2022-11-14_수정</p>
+						<p>2022-11-15_수정</p>
+						<p>2022-11-21_수정</p>
+						<p>2022-11-24_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>구매확정</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/order/M_Myp_202_pop.html" target="_blank" class="link">/mypage/order/M_Myp_202_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-11-21</td>
+					<td class="comment">
+						<p>2022-11-21 페이지추가</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>달력 요일선택</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/M_Com_101.html" target="_blank" class="link">/popup/M_Com_101</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-12</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>달력 날짜선택</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/M_Com_102.html" target="_blank" class="link">/popup/M_Com_102</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-12</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td>일반배송</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_203.html" target="_blank" class="link">/mypage/order/M_Myp_203</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-18</td>
+					<td class="comment">
+						<p>2022-11-14_수정</p>
+						<p>2022-11-17_수정</p>
+						<p>2022-11-21_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>선물상품</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_204.html" target="_blank" class="link">/mypage/order/M_Myp_204</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-18</td>
+					<td class="comment">
+						<p>2022-11-14_수정</p>
+						<p>2022-11-15_수정</p>
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>문의선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Myp_302_pop.html" target="_blank" class="link">/popup/M_Myp_302_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-04-25</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>주문취소/취소신청</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_303.html" target="_blank" class="link">/mypage/order/M_Myp_303</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>주문취소입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_303_02.html" target="_blank" class="link">/mypage/order/M_Myp_303_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>취소신청입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_303_03.html" target="_blank" class="link">/mypage/order/M_Myp_303_03</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>환불/입금계좌관리</td>
+					<td>등록</td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/manage/M_Myp_504.html" target="_blank" class="link">/mypage/manage/M_Myp_504</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>은행선택</td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/manage/M_Myp_504_pop.html" target="_blank" class="link">/mypage/manage/M_Myp_504_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td>주문취소완료</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_304.html" target="_blank" class="link">/mypage/order/M_Myp_304</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>취소신청완료</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_304_02.html" target="_blank" class="link">/mypage/order/M_Myp_304_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<!-- <tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>교환</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_402.html" target="_blank" class="link">/mypage/order/M_Myp_402</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr> -->
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>교환</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_403.html" target="_blank" class="link">/mypage/order/M_Myp_403</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_403_02.html" target="_blank" class="link">/mypage/order/M_Myp_403_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-16_수정</p>
+						<p>2022-11-17_수정</p>
+						<p>2022-11-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_404.html" target="_blank" class="link">/mypage/order/M_Myp_404</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<!-- <tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_502.html" target="_blank" class="link">/mypage/order/M_Myp_502</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr> -->
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_503.html" target="_blank" class="link">/mypage/order/M_Myp_503</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_503_02.html" target="_blank" class="link">/mypage/order/M_Myp_503_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_505.html" target="_blank" class="link">/mypage/order/M_Myp_505</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_5.html" target="_blank" class="link">/popup/alert_msg_5</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 주의문구추가 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>미수령신고</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_601.html" target="_blank" class="link">/mypage/order/M_Myp_601</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_601_02.html" target="_blank" class="link">/mypage/order/M_Myp_601_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_602.html" target="_blank" class="link">/mypage/order/M_Myp_602</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:주문/배송조회 -->
+
+			<!-- 마이페이지:주문취소/교환/반품 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">주문취소/교환/반품</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01">주문취소/교환/반품</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_301.html" target="_blank" class="link">/mypage/order/M_Myp_301</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-14_수정</p>
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>취소</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_302.html" target="_blank" class="link">/mypage/order/M_Myp_302</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2022-11-16_수정</p>
+						<p>2022-11-17_수정</p>
+						<p>2022-11-24_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_502.html" target="_blank" class="link">/mypage/order/M_Myp_502</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>교환:교환신청들어간일반상품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_402.html" target="_blank" class="link">/mypage/order/M_Myp_402</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>교환:교환승인후배송된교환상품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_402_02.html" target="_blank" class="link">/mypage/order/M_Myp_402_02</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2023-01-17</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>취소/교환/반품 정보</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/order/M_Myp_502_pop.html" target="_blank" class="link">/mypage/order/M_Myp_502_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-19</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+						<p>2022-11-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>결제오류</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_603.html" target="_blank" class="link">/mypage/order/M_Myp_603</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>접속오류</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_604.html" target="_blank" class="link">/mypage/order/M_Myp_604</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:주문취소/교환/반품 -->
+
+			<!-- 마이페이지:간편결제관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">간편결제관리</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01">간편결제 관리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_1000.html" target="_blank" class="link">/mypage/order/M_Myp_1000</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:간편결제관리 -->
+
+			<!-- 마이페이지:정기배송관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">정기배송관리</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01">정기배송관리</td>
+					<td>신청내역</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/deliv/M_Myp_701.html" target="_blank" class="link">/mypage/deliv/M_Myp_701</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>시작일선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Ord_502.html" target="_blank" class="link">/popup/M_Ord_502</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>정기배송 상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/deliv/M_Myp_703.html" target="_blank" class="link">/mypage/deliv/M_Myp_703</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-02</td>
+					<td class="comment"></td>
+				</tr>
+
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>배송횟수 수정</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../mypage/deliv/M_Myp_704.html" target="_blank" class="link">/mypage/deliv/M_Myp_704</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>배송주기 수정</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../mypage/deliv/M_Myp_705.html" target="_blank" class="link">/mypage/deliv/M_Myp_705</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-31</td>
+					<td class="comment">
+						<p>2022-07-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>결제정보관리</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/deliv/M_Myp_711.html" target="_blank" class="link">/mypage/deliv/M_Myp_711</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>완료/해지내역</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/deliv/M_Myp_721.html" target="_blank" class="link">/mypage/deliv/M_Myp_721</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>정기배송해지 상세</td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/deliv/M_Myp_722.html" target="_blank" class="link">/mypage/deliv/M_Myp_722</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-02</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>정기배송완료 상세</td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/deliv/M_Myp_723.html" target="_blank" class="link">/mypage/deliv/M_Myp_723</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-02</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:정기배송관리 -->
+
+			<!-- 마이페이지:나의적립금 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의적립금</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01">나의적립금</td>
+					<td>전체</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/benefit/M_Myp_801.html" target="_blank" class="link">/mypage/benefit/M_Myp_801</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>기간설정</td>
+					<td>달력 요일선택</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/M_Com_101.html" target="_blank" class="link">/popup/M_Com_101</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>달력 날짜선택</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/M_Com_102.html" target="_blank" class="link">/popup/M_Com_102</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>적립</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/benefit/M_Myp_802.html" target="_blank" class="link">/mypage/benefit/M_Myp_802</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>사용</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/benefit/M_Myp_803.html" target="_blank" class="link">/mypage/benefit/M_Myp_803</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:나의적립금 -->
+
+			<!-- 마이페이지:나의쿠폰 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의쿠폰</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01">나의 쿠폰</td>
+					<td>사용가능 쿠폰</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/coupon/M_Myp_901.html" target="_blank" class="link">/mypage/coupon/M_Myp_901</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>쿠폰 적용 상품</td>
+					<td>상품 전체보기</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/coupon/M_Myp_903.html" target="_blank" class="link">/mypage/coupon/M_Myp_903</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>카테고리별 보기</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/coupon/M_Myp_904.html" target="_blank" class="link">/mypage/coupon/M_Myp_904</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment"><p>2022-11-02_수정</p></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>사용/기간만료</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../mypage/coupon/M_Myp_905.html" target="_blank" class="link">/mypage/coupon/M_Myp_905</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment"><p>2022-11-02_수정</p></td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:나의쿠폰 -->
+
+
+			<!-- 마이페이지:1:1문의 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">1:1문의</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01">1:1문의</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/inquiry/M_Myp_1101.html" target="_blank" class="link">/mypage/inquiry/M_Myp_1101</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-11</td>
+					<td class="comment"><p>2022-11-04_수정</p></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>등록/수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/inquiry/M_Myp_1102.html" target="_blank" class="link">/mypage/inquiry/M_Myp_1102</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-11</td>
+					<td class="comment"><p>2022-11-07_수정</p></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>상품선택</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/inquiry/M_Myp_1103.html" target="_blank" class="link">/mypage/inquiry/M_Myp_1103</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-05-11</td>
+					<td class="comment"><p>2022-11-04_수정</p></td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:1:1문의 -->
+
+			<!-- 마이페이지:나의리뷰 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의리뷰</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">나의리뷰</td>
+					<td>작성가능리뷰</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/review/M_Myp_1202.html" target="_blank" class="link">/mypage/review/M_Myp_1202</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-11</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>작성리뷰목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/review/M_Myp_1203.html" target="_blank" class="link">/mypage/review/M_Myp_1203</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-11</td>
+					<td class="comment"><p>2022-11-07_수정</p></td>
+				</tr>
+				<tr class="menu07 ing">
+					<td class="depth01"></td>
+					<td>등록/수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/review/M_Myp_1204.html" target="_blank" class="link">/mypage/review/M_Myp_1204</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">ing</td>
+					<td class="comment">
+						<p>2022-06-22 컨텐츠 미정</p>
+						<p>2022-07-21_수정</p>
+						<p>2022-11-04_수정</p>
+						<p>2022-11-07_수정</p>
+						<p>2022-11-17_수정</p>
+						<p>2022-11-21_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>리뷰작성</td>
+					<td>상품선택</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/review/M_Myp_1204_02.html" target="_blank" class="link">/mypage/review/M_Myp_1204_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-20</td>
+					<td class="comment"><p>2022-11-07_수정</p></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:나의리뷰 -->
+
+			<!-- 마이페이지:배송지관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">배송지관리</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">배송지관리</td>
+					<td>배송지목록</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1301.html" target="_blank" class="link">/popup/M_Myp_1301</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-06</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+						<p>2022-11-24_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>등록/수정</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1302.html" target="_blank" class="link">/popup/M_Myp_1302</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-09</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-31_수정</p>
+						<p>2022-11-08_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:배송지관리 -->
+			<!-- 마이페이지:앱설정 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">앱설정</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">앱설정</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/app/M_App_100.html" target="_blank" class="link">/mypage/app/M_App_100</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-11</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:앱설정 -->
+
+			<!-- 마이페이지:대량구매 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">대량구매</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">제휴/대량구매 문의</td>
+					<td>제휴/대량구매 문의</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/M_Big_100.html" target="_blank" class="link">/mypage/service/M_Big_100</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-13</td>
+					<td class="comment">
+						<p>2022-07-06_수정</p>
+						<p>2022-11-04_수정</p>
+						<p>2022-11-16_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>문의하기</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../mypage/service/M_Big_100_pop.html" target="_blank" class="link">/mypage/service/M_Big_100_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-06</td>
+					<td class="comment">
+						<p>2022-11-16_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>대량구매 견적신청</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/M_Big_101.html" target="_blank" class="link">/mypage/service/M_Big_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-06</td>
+					<td class="comment">
+						<p>2022-11-04_수정</p>
+						<p>2022-11-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>상품선택</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/service/M_Big_102.html" target="_blank" class="link">/mypage/service/M_Big_102</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-13</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>제휴문의</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/M_Big_103.html" target="_blank" class="link">/mypage/service/M_Big_103</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-06</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-11-04_수정</p>
+						<p>2022-11-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>기타문의</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/M_Big_104.html" target="_blank" class="link">/mypage/service/M_Big_104</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-06</td>
+					<td class="comment">
+						<p>2022-11-04_수정</p>
+						<p>2022-11-07_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:대량구매 -->
+
+			<!-- 마이페이지:나의활동 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의활동</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01">나의활동</td>
+					<td>관심상품</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/wish/M_Myp_605.html" target="_blank" class="link">/mypage/wish/M_Myp_605</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-24</td>
+					<td class="comment">
+						<p>2022-08-10_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>최근구매상품</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/wish/M_Myp_607.html" target="_blank" class="link">/mypage/wish/M_Myp_607</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-24</td>
+					<td class="comment">
+						<p>2022-08-10_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>최근본상품</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/wish/M_Myp_609.html" target="_blank" class="link">/mypage/wish/M_Myp_609</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-24</td>
+					<td class="comment">
+						<p>2022-08-10_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:나의활동 -->
+
+			<!-- 나의정보관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의정보관리</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">나의정보관리</td>
+					<td>비밀번호입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/M_Mem_101.html" target="_blank" class="link">/member/my_info/M_Mem_101</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>정보수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/M_Mem_102.html" target="_blank" class="link">/member/my_info/M_Mem_102</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-21_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>본인인증 수단</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/my_info/M_Mem_102_pop.html" target="_blank" class="link">/member/my_info/M_Mem_102_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>마케팅 수신동의 설정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/M_Mem_103.html" target="_blank" class="link">/member/my_info/M_Mem_103</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>설정완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/M_Mem_018_pop.html" target="_blank" class="link">/member/common/M_Mem_018_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td>추천인 관리 코드</td>
+					<td>입력하기</td>
+					<td></td>
+					<td class="center">TAB</td>
+					<td><a href="../member/my_info/M_Mem_104.html" target="_blank" class="link">/member/my_info/M_Mem_104</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>컨텐츠 미지정</p>
+					</td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td></td>
+					<td>공유하기</td>
+					<td></td>
+					<td class="center">TAB</td>
+					<td><a href="../member/my_info/M_Mem_105.html" target="_blank" class="link">/member/my_info/M_Mem_105</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>컨텐츠 미지정</p>
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 나의정보관리 -->
+
+			<!-- 기업정보관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">기업정보관리</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">기업정보관리</td>
+					<td>수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/enter_info/M_Mem_802.html" target="_blank" class="link">/member/enter_info//M_Mem_802</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-13</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-24_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 기업정보관리 -->
+
+			<!-- 마이페이지:비회원주문조회 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">비회원주문조회</td>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01">메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_101.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_101</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-30</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01">비회원주문/배송조회</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_201.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_201</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-24</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_202.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_202</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-24</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>배송지 관리</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Myp_1302_1.html" target="_blank" class="link">/popup/M_Myp_1302_1</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-25</td>
+					<td class="comment">
+						<p>2022-11-24 회원용, 화면사용</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<!-- <tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>배송지 관리</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_1302.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_1302</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-25</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-31_수정</p>
+						<p>2022-11-08_수정</p>
+					</td>
+				</tr> 기획팀 요청으로 회원화면 공통사용 2022-11-24 -->
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>주문취소/취소신청</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_303.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_303</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>주문취소입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_303_02.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_303_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>취소신청입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_303_03.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_303_03</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<!-- <tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>환불/입금계좌관리</td>
+					<td>등록</td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/non_mem/M_Nmyp_704.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_704</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr> 기획팀 요청으로 회원화면 공통사용 2022-11-23 -->
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>환불/입금계좌관리</td>
+					<td>등록</td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/manage/M_Myp_504.html" target="_blank" class="link">/mypage/manage/M_Myp_504</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>은행선택</td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/manage/M_Myp_504_pop.html" target="_blank" class="link">/mypage/manage/M_Myp_504_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td>주문취소완료</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_304_02.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_304_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2023-01-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>취소신청완료</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_304_03.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_304_03</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2023-01-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>교환</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_403.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_403</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_403_02.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_403_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_404.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_404</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2023-01-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_503.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_503</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_503_02.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_503_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-17_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_504.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_504</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2023-01-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>미수령신고</td>
+					<td>신청</td>
+					<td>상품선택</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_603.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_603</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>입력</td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_603_02.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_603_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_604.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_604</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2023-01-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_5.html" target="_blank" class="link">/popup/alert_msg_5</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 주의문구추가 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01">주문취소/교환/반품</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_301.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_301</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>취소</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_302.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_302</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>교환:교환신청들어간일반상품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_402.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_402</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>교환:교환승인후배송된교환상품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_402_02.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_402_02</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2023-01-17</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/M_Nmyp_502.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_502</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>취소/교환/반품 정보</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../mypage/non_mem/M_Nmyp_302_02.html" target="_blank" class="link">/mypage/non_mem/M_Nmyp_302_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-05-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>문의선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../mypage/non_mem/M_Nmyp_302_pop.html" target="_blank" class="link">/popup/M_Nmyp_302_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-04-25</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>결제오류</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_603.html" target="_blank" class="link">/mypage/order/M_Myp_603</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>접속오류</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/M_Myp_604.html" target="_blank" class="link">/mypage/order/M_Myp_604</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-10</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 마이페이지:비회원주문조회 -->
+		</table>
+	</section>
+	<!--// 마이페이지 -->
+
+
+
+	<!-- 회원 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>회원</h1>
+					</th>
+				</tr>
+			</thead>
+
+			<!-- 로그인 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">로그인</td>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">로그인</td>
+					<td>회원</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/login/M_Mem_201.html" target="_blank" class="link">/member/login/M_Mem_201</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-13</td>
+					<td class="comment">
+						<p>2023-01-03_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>비회원</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/login/M_Mem_201_02.html" target="_blank" class="link">/member/login/M_Mem_201_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-10-21_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>생체 로그인 설정안내</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/login/M_Mem_201_pop.html" target="_blank" class="link">/member/login/M_Mem_201_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 로그인 -->
+
+			<!-- 회원가입 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">회원가입</td>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01">일반회원가입(APP)</td>
+					<td>안내</td>
+					<td>aos</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/app/M_Mem_001.html" target="_blank" class="link">/entry/app/M_Mem_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2023-01-03_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td></td>
+					<td>ios</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/app/M_Mem_002.html" target="_blank" class="link">/entry/app/M_Mem_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2023-01-03_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>본인인증</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/app/M_Mem_003.html" target="_blank" class="link">/entry/app/M_Mem_003</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>통신사선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_004_pop.html" target="_blank" class="link">/member/common/M_Mem_004_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>성별선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_007_pop.html" target="_blank" class="link">/member/common/M_Mem_007_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>내/외국인선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_008_pop.html" target="_blank" class="link">/member/common/M_Mem_008_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>등록(가입정보입력)</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/app/M_Mem_015.html" target="_blank" class="link">/entry/app/M_Mem_015</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-08-09_추가</p>
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>약관동의</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../entry/app/M_Mem_011_pop.html" target="_blank" class="link">/entry/app/M_Mem_011_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>생체인증 로그인 설정</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/bio_certify/M_Mem_1003.html" target="_blank" class="link">/member/bio_certify/M_Mem_1003</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>마케팅수신동의</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_018.html" target="_blank" class="link">/member/common/M_Mem_018</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>설정완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/M_Mem_018_pop.html" target="_blank" class="link">/member/common/M_Mem_018_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td>가입완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/app/M_Mem_019.html" target="_blank" class="link">/entry/app/M_Mem_019</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01">일반회원가입(WEB)</td>
+					<td>안내</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/web/M_Mem_020.html" target="_blank" class="link">/entry/web/M_Mem_020</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2023-01-03_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>본인인증</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/common/M_Mem_324.html" target="_blank" class="link">/member/common/M_Mem_324</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>등록(가입정보입력)</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/web/M_Mem_023.html" target="_blank" class="link">/entry/web/M_Mem_023</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-06_수정</p>
+						<p>2022-07-19_수정</p>
+						<p>2022-08-09_추가</p>
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>약관동의</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../entry/web/M_Mem_023_pop.html" target="_blank" class="link">/entry/web/M_Mem_023_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>마케팅수신동의</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_018.html" target="_blank" class="link">/member/common/M_Mem_018</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>설정완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/M_Mem_018_pop.html" target="_blank" class="link">/member/common/M_Mem_018_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td>가입완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/web/M_Mem_030.html" target="_blank" class="link">/entry/web/M_Mem_030</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">카카오 회원가입</td>
+					<td>결과</td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">APPLE 계정 회원가입(APP)</td>
+					<td>이미 애플계정으로 가입</td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>본인인증</td>
+					<td>ios</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/app/M_Mem_033.html" target="_blank" class="link">/entry/app/M_Mem_033</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>통신사선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_004_pop.html" target="_blank" class="link">/member/common/M_Mem_004_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>성별선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_007_pop.html" target="_blank" class="link">/member/common/M_Mem_007_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>내/외국인선택</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_008_pop.html" target="_blank" class="link">/member/common/M_Mem_008_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td>가입완료</td>
+					<td>ios</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/app/M_Mem_041.html" target="_blank" class="link">/entry/app/M_Mem_041</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">임직원 가입</td>
+					<td>인증</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/staff/M_Mem_601.html" target="_blank" class="link">/entry/staff/M_Mem_601</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-30</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2022-07-19_수정</p>
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td>인증완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/staff/M_Mem_602.html" target="_blank" class="link">/entry/staff/M_Mem_602</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">ing</td>
+					<td class="comment">
+						<p>2022-06-10 컨텐츠 미정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>90일 임직원 재인증</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Mem_603.html" target="_blank" class="link">/popup/M_Mem_603</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">기업회원 가입</td>
+					<td>사업자인증</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/enter_mem/M_Mem_701.html" target="_blank" class="link">/entry/enter_mem/M_Mem_701</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-22</td>
+					<td class="comment">
+						<p>2022-06-13 컨텐츠 미정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>정보입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/enter_mem/M_Mem_702.html" target="_blank" class="link">/entry/enter_mem/M_Mem_702</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-13</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>마케팅수신동의</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_018.html" target="_blank" class="link">/member/common/M_Mem_018</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>설정완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/M_Mem_018_pop.html" target="_blank" class="link">/member/common/M_Mem_018_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td>가입완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/enter_mem/M_Mem_704.html" target="_blank" class="link">/entry/enter_mem/M_Mem_704</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">ing</td>
+					<td class="comment">
+						<p>2022-06-13 컨텐츠 미정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 회원가입 -->
+
+			<!-- 회원관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">회원관리</td>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">나의정보관리</td>
+					<td>비밀번호입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/M_Mem_101.html" target="_blank" class="link">/member/my_info/M_Mem_101</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>정보수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/M_Mem_102.html" target="_blank" class="link">/member/my_info/M_Mem_102</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>본인인증 수단</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/my_info/M_Mem_102_pop.html" target="_blank" class="link">/member/my_info/M_Mem_102_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>마케팅 수신동의 설정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/M_Mem_103.html" target="_blank" class="link">/member/my_info/M_Mem_103</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>설정완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/M_Mem_018_pop.html" target="_blank" class="link">/member/common/M_Mem_018_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td>추천인 관리 코드</td>
+					<td>입력하기</td>
+					<td></td>
+					<td class="center">TAB</td>
+					<td><a href="../member/my_info/M_Mem_104.html" target="_blank" class="link">/member/my_info/M_Mem_104</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>컨텐츠 미지정</p>
+					</td>
+				</tr>
+				<tr class="menu09 ing">
+					<td class="depth01"></td>
+					<td></td>
+					<td>공유하기</td>
+					<td></td>
+					<td class="center">TAB</td>
+					<td><a href="../member/my_info/M_Mem_105.html" target="_blank" class="link">/member/my_info/M_Mem_105</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>컨텐츠 미지정</p>
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">90일 주기 비밀번호 재설정</td>
+					<td>안내</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/pw_reset/M_Mem_501.html" target="_blank" class="link">/member/pw_reset/M_Mem_501</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>재설정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/pw_reset/M_Mem_502.html" target="_blank" class="link">/member/pw_reset/M_Mem_502</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+						<p>2022-10-21_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">생체인증</td>
+					<td>설정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/bio_certify/M_Mem_1001.html" target="_blank" class="link">/member/bio_certify/M_Mem_1001</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>확인</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/bio_certify/M_Mem_1003.html" target="_blank" class="link">/member/bio_certify/M_Mem_1003</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">아이디비밀번호찾기</td>
+					<td>아이디찾기(APP)</td>
+					<td>등록(본인인증)</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_301.html" target="_blank" class="link">/member/find/M_Mem_301</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>통신사선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_004_pop.html" target="_blank" class="link">/member/common/M_Mem_004_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>성별선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_007_pop.html" target="_blank" class="link">/member/common/M_Mem_007_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>내/외국인선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_008_pop.html" target="_blank" class="link">/member/common/M_Mem_008_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>아이디찾기결과</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_309.html" target="_blank" class="link">/member/find/M_Mem_309</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>비밀번호재설정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_310.html" target="_blank" class="link">/member/find/M_Mem_310</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>아이디찾기(WEB)</td>
+					<td>본인인증</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/common/M_Mem_324.html" target="_blank" class="link">/member/common/M_Mem_324</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>아이디찾기결과</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_309.html" target="_blank" class="link">/member/find/M_Mem_309</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>비밀번호재설정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_310.html" target="_blank" class="link">/member/find/M_Mem_310</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>비밀번호찾기(APP)</td>
+					<td>등록(본인인증)</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_315.html" target="_blank" class="link">/member/find/M_Mem_315</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>통신사선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_004_pop.html" target="_blank" class="link">/member/common/M_Mem_004_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>성별선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_007_pop.html" target="_blank" class="link">/member/common/M_Mem_007_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>내/외국인선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_008_pop.html" target="_blank" class="link">/member/common/M_Mem_008_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>비밀번호재설정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_326.html" target="_blank" class="link">/member/find/M_Mem_326</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>비밀번호찾기(WEB)</td>
+					<td>본인인증</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/common/M_Mem_324.html" target="_blank" class="link">/member/common/M_Mem_324</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>비밀번호재설정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/M_Mem_326.html" target="_blank" class="link">/member/find/M_Mem_326</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">휴면회원 해제</td>
+					<td>본인인증</td>
+					<td>app</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/rest/M_Mem_401.html" target="_blank" class="link">/member/rest/M_Mem_401</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-07-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>통신사선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_004_pop.html" target="_blank" class="link">/member/common/M_Mem_004_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>성별선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_007_pop.html" target="_blank" class="link">/member/common/M_Mem_007_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>내/외국인선택</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/common/M_Mem_008_pop.html" target="_blank" class="link">/member/common/M_Mem_008_pop</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-09</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>web</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/rest/M_Mem_410.html" target="_blank" class="link">/member/rest/M_Mem_410</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>완료</td>
+					<td>app/web</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/rest/M_Mem_412.html" target="_blank" class="link">/member/rest/M_Mem_412</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-11</td>
+					<td class="comment">
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01">회원탈퇴</td>
+					<td>비밀번호입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/leave/M_Mem_901.html" target="_blank" class="link">/member/leave/M_Mem_901</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>안내</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/leave/M_Mem_902.html" target="_blank" class="link">/member/leave/M_Mem_902</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-10-25_수정</p>
+						<p>2022-10-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>탈퇴확인</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/leave/M_Mem_903.html" target="_blank" class="link">/member/leave/M_Mem_903</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>탈퇴불가</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../member/leave/M_Mem_904.html" target="_blank" class="link">/member/leave/M_Mem_904</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td>완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/leave/M_Mem_905.html" target="_blank" class="link">/member/leave/M_Mem_905</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-10</td>
+					<td class="comment">
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 회원관리 -->
+		</table>
+	</section>
+	<!--// 회원 -->
+
+	<!-- 쿠폰&혜택 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>쿠폰&혜택</h1>
+					</th>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu10 end">
+					<td class="depth01">쿠폰&혜택</td>
+					<td>쿠폰혜택</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../service/M_Cou_101.html" target="_blank" class="link">/service/M_Cou_101</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment">
+						<P>2022-10-31_수정</P>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>쿠폰 사용안내</td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../service/M_Cou_102.html" target="_blank" class="link">/service/M_Cou_102</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td>등급별 혜택</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../service/M_Cou_201.html" target="_blank" class="link">/service/M_Cou_201</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment">
+						<p>2022-06-15 컨텐츠 미정</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td>임직원 월별 구매금액</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../service/M_Cou_201_1.html" target="_blank" class="link">/service/M_Cou_201_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td>혜택캘린더</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../service/M_Cou_301.html" target="_blank" class="link">/service/M_Cou_301</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>이벤트진행목록 팝업</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../service/M_Cou_302.html" target="_blank" class="link">/service/M_Cou_302</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 쿠폰&혜택 -->
+
+	<!-- 이벤트 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>이벤트</h1>
+					</th>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu10 end">
+					<td class="depth01">출석체크</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_001.html" target="_blank" class="link">/event/M_Eve_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>출석완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../event/M_Eve_001_pop.html" target="_blank" class="link">/event/M_Eve_001_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td>출석체크참여안내</td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../event/M_Eve_002.html" target="_blank" class="link">/event/M_Eve_002</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-27</td>
+					<td class="comment">
+						<p>2022-07-04_수정</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td>앱다운로드정보(WEB)</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_003.html" target="_blank" class="link">/event/M_Eve_003</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-20</td>
+					<td class="comment">
+						<p>2022-07-01_수정</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01">이벤트</td>
+					<td>목록</td>
+					<td>진행중인이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Rew_101.html" target="_blank" class="link">/event/M_Rew_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>종료된이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Rew_701.html" target="_blank" class="link">/event/M_Rew_701</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td>일반이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_201.html" target="_blank" class="link">/event/M_Eve_201</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>응모이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_301.html" target="_blank" class="link">/event/M_Eve_301</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>체험단이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_401.html" target="_blank" class="link">/event/M_Eve_401</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu09 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] App전용이벤트알림</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>구매달성이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_501.html" target="_blank" class="link">/event/M_Eve_501</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-17</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 참여대상아님</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 type01 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 중복참여했을경우</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 type01 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>복권이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_601.html" target="_blank" class="link">/event/M_Eve_601</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-17</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">이벤트상세 공통</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[샘플] 종료된이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/M_Eve_302.html" target="_blank" class="link">/event/M_Eve_302</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-10-18</td>
+					<td class="comment">
+						<p>📢 종료이벤트 샘플 페이지. 종료 class 추가 위치 안내 용도</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>상세공통팝업/알럿</td>
+					<td>[개발공통] 공유하기</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Pro_216.html" target="_blank" class="link">/popup/M_Pro_216</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-04-21</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>이벤트당첨</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../event/M_Eve_201_pop_01.html" target="_blank" class="link">/event/M_Eve_201_pop_01</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>이벤트미당첨</td>
+					<td class="center">알럿</td>
+					<td><a href="../event/M_Eve_201_pop_02.html" target="_blank" class="link">/event/M_Eve_201_pop_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-06-16</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 댓글삭제확인</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 미참여이벤트당첨확인</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼1개 type01 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 회원전용이벤트안내</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu10 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>고객센터문의하기</td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Myp_302_pop.html" target="_blank" class="link">/popup/M_Myp_302_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-04-25</td>
+					<td class="comment">
+						<p>📢 개발 공통팝업</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 이벤트 -->
+
+	<!-- 고객센터 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>고객센터</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu11 end">
+					<td class="depth01">고객센터</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/M_Cus_001.html" target="_blank" class="link">/customer/M_Cus_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu11 end">
+					<td class="depth01">자주묻는질문</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/M_Cus_100.html" target="_blank" class="link">/customer/M_Cus_100</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu11 end">
+					<td class="depth01"></td>
+					<td>검색</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/M_Cus_101.html" target="_blank" class="link">/customer/M_Cus_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-05-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu11 end">
+					<td class="depth01">공지사항</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/M_Cus_200.html" target="_blank" class="link">/customer/M_Cus_200</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-04-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu11 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/M_Cus_201.html" target="_blank" class="link">/customer/M_Cus_201</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-04-29</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 고객센터 -->
+
+	<!-- APP -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>APP</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu12 end">
+					<td class="depth01">접근권한</td>
+					<td>안내</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../app/M_App_101.html" target="_blank" class="link">/app/M_App_101</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu12 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>알람허용</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><p class="link">시스템 알럿</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu12 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>추적허용</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><p class="link">시스템 알럿</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu12 end">
+					<td class="depth01"></td>
+					<td>마케팅정보제공동의</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../app/M_App_102.html" target="_blank" class="link">/app/M_App_102</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-15</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu12 end">
+					<td class="depth01">알림함</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../app/M_Uti_100.html" target="_blank" class="link">/app/M_Uti_100</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-17</td>
+					<td class="comment">
+						<p>2022-07-05_수정</p>
+					</td>
+				</tr>
+				<!-- <tr class="menu12 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 알럿</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_5.html" target="_blank" class="link">/popup/alert_msg_5</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿팝업 버튼2개 주의문구추가 커스텀 해서 사용</p>
+					</td>
+				</tr> 2022-08-22 17:21:18 토스트 팝업과 알럿 합침 -->
+				<tr class="menu12 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>삭제확인</td>
+					<td></td>
+					<td class="center">알럿/토스트팝업</td>
+					<td><a href="../app/M_Uti_100_01.html" target="_blank" class="link">/app/M_Uti_100_01</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-08-22</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// APP -->
+	<!-- 약관 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>약관</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu13 end">
+					<td class="depth01">개인정보 처리방침</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Pri_001.html" target="_blank" class="link">/popup/M_Pri_001</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-20</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">이용약관</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Pri_002.html" target="_blank" class="link">/popup/M_Pri_002</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-06-20</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 약관 -->
+
+
+	<!-- 메일 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>메일링</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu13 end">
+					<td class="depth01">회원가입</td>
+					<td>회원가입완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_001.html" target="_blank" class="link">/mail/Mail_01_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">회원탈퇴</td>
+					<td>회원탈퇴완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_002.html" target="_blank" class="link">/mail/Mail_01_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">휴면회원</td>
+					<td>계정 휴면처리 예정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_003.html" target="_blank" class="link">/mail/Mail_01_003</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>계정 휴면처리 완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_004.html" target="_blank" class="link">/mail/Mail_01_004</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>계정 휴면 해제 예정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_005.html" target="_blank" class="link">/mail/Mail_01_005</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">임직원가입</td>
+					<td>임직원 회원 인증</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_006.html" target="_blank" class="link">/mail/Mail_01_006</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">기업회원</td>
+					<td>기업회원 가입 신청 완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_007.html" target="_blank" class="link">/mail/Mail_01_007</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>기업회원 가입 승인 완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_008.html" target="_blank" class="link">/mail/Mail_01_008</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>기업회원 가입 승인 거절</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_009.html" target="_blank" class="link">/mail/Mail_01_009</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">적립금 소멸</td>
+					<td>적립금 소멸예정 안내</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_01_010.html" target="_blank" class="link">/mail/Mail_01_010</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">약관</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_02_001.html" target="_blank" class="link">/mail/Mail_02_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">주문/결제</td>
+					<td>주문완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_03_001.html" target="_blank" class="link">/mail/Mail_03_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>결제완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_03_002.html" target="_blank" class="link">/mail/Mail_03_002</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>선물하기주문완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_03_003.html" target="_blank" class="link">/mail/Mail_03_003</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>선물하기주문취소</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_03_004.html" target="_blank" class="link">/mail/Mail_03_004</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>정기배송신청완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_03_005.html" target="_blank" class="link">/mail/Mail_03_005</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>정기배송신청취소</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_03_006.html" target="_blank" class="link">/mail/Mail_03_006</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">취소/교환/반품</td>
+					<td>주문취소</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_04_001.html" target="_blank" class="link">/mail/Mail_04_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>교환요청</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_04_002.html" target="_blank" class="link">/mail/Mail_04_002</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>환불요청</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_04_003.html" target="_blank" class="link">/mail/Mail_04_003</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>결제취소</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_04_004.html" target="_blank" class="link">/mail/Mail_04_004</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>교환완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_04_005.html" target="_blank" class="link">/mail/Mail_04_005</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>반품완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_04_006.html" target="_blank" class="link">/mail/Mail_04_006</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">주문/배송 조회</td>
+					<td>배송준비중</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_05_001.html" target="_blank" class="link">/mail/Mail_05_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>배송중</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_05_002.html" target="_blank" class="link">/mail/Mail_05_002</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>구매확정 요청</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_05_003.html" target="_blank" class="link">/mail/Mail_05_003</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>구매확정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_05_004.html" target="_blank" class="link">/mail/Mail_05_004</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">상품문의</td>
+					<td>1:1 문의 접수</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_06_001.html" target="_blank" class="link">/mail/Mail_06_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>1:1 문의 답변등록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_06_002.html" target="_blank" class="link">/mail/Mail_06_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">1:1 문의</td>
+					<td>1:1 문의 접수</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_07_001.html" target="_blank" class="link">/mail/Mail_07_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>1:1 문의 답변등록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_07_002.html" target="_blank" class="link">/mail/Mail_07_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">대량 견적문의</td>
+					<td>대량견전 문의 접수</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_08_001.html" target="_blank" class="link">/mail/Mail_08_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>대량견전 문의 답변등록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_08_002.html" target="_blank" class="link">/mail/Mail_08_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">제휴문의</td>
+					<td>제휴문의 접수</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_09_001.html" target="_blank" class="link">/mail/Mail_09_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>제휴문의 답변등록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_09_002.html" target="_blank" class="link">/mail/Mail_09_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">기타문의</td>
+					<td>기타문의 접수</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_10_001.html" target="_blank" class="link">/mail/Mail_10_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01"></td>
+					<td>기타문의 답변등록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_10_002.html" target="_blank" class="link">/mail/Mail_10_002</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu13 end">
+					<td class="depth01">광고성 메일</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mail/Mail_11_001.html" target="_blank" class="link">/mail/Mail_11_001</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-08</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 메일 -->
+
+	<!-- 개발공통팝업템플릿 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>개발 공통 팝업</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">알럿팝업</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿팝업 버튼1개 type01</p>
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿팝업 버튼1개 type02</p>
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿팝업 버튼2개</p>
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 4</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_4.html" target="_blank" class="link">/popup/alert_msg_4</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿팝업 컨텐츠영역링크+버튼2개</p>
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 5</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_5.html" target="_blank" class="link">/popup/alert_msg_5</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿팝업 주의사항문구+버튼2개</p>
+					</td>
+				</tr>
+			</tbody>
+
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">사이트 공통 팝업</td>
+				</tr>
+				<tr class="menu02 ignore">
+					<td class="depth01">리뷰빅이미지</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../popup/M_Pro_213.html" target="_blank" class="link">/popup/M_Pro_213</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 ignore">
+					<td class="depth01">공유하기</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Pro_216.html" target="_blank" class="link">/popup/M_Pro_216</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 ignore">
+					<td class="depth01">시작일선택</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Ord_502.html" target="_blank" class="link">/popup/M_Ord_502</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 ignore">
+					<td class="depth01">달력요일선택</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/M_Com_101.html" target="_blank" class="link">/popup/M_Com_101</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 ignore">
+					<td class="depth01">달력날짜선택</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/M_Com_102.html" target="_blank" class="link">/popup/M_Com_102</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 ignore">
+					<td class="depth01">문의선택</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../popup/M_Myp_302_pop.html" target="_blank" class="link">/popup/M_Myp_302_pop</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 개발공통팝업템플릿 -->
+
+	<!-- 팝업템플릿 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>팝업템플릿</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu02 ignore">
+					<td class="depth01">전체팝업</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">전체팝업</td>
+					<td><a href="../layout/full_popup.html" target="_blank" class="link">/layout/full_popup</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 ignore">
+					<td class="depth01">바닥팝업</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><a href="../layout/btm_popup.html" target="_blank" class="link">/layout/btm_popup</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 팝업템플릿 -->
+</div>
+
+<script>
+	$(document).ready(function() {
+		// 진척률
+		var ignore = $("tbody .ignore").length,
+			total = $("tbody tr").length - ignore,
+			complt = $("tbody tr.end").length,
+			progress = Math.floor(100*complt)/total;
+
+		$(".note .total").text(total);
+		$(".note .end").text(complt);
+		$(".note .progress").text(progress);
+
+		// 메뉴별목록 보여주기
+		$('.site_nav li').on('click', function() {
+			var tab_id = $(this).index();
+
+			$(this).addClass("on");
+			$(this).siblings().removeClass("on");
+
+			// console.log();
+			$(".menu_wrap").removeClass("all");
+			$(".menu_wrap .menu_list").eq(tab_id - 1).addClass("on").siblings(".menu_list").removeClass("on");
+			if($(this).hasClass("all")){
+				$(".menu_wrap").addClass("all");
+				$(".menu_list").removeClass("on");
+			}
+		});
+	});
+</script>
+
+<!-- status list 템플릿 -->
+<section class="menu_list" style="display:none;">
+	<table>
+		<thead>
+			<tr class="menu_section">
+				<th colspan="9">
+					<h1>메뉴 대분류</h1>
+				</th>
+			</tr>
+			<tr>
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="menu_section_02 ignore">
+				<td colspan="9">상품재고조회</td>
+			</tr>
+			<tr class="menu">
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+			<tr class="menu01">
+				<td class="depth01">메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="center"></td>
+				<td><a href="#none" target="_blank" class="link">/directory/filename</a></td>
+				<td class="center name"></td>
+				<td class="center end"></td>
+				<td class="comment"></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr class="menu_section_02 ignore">
+				<td colspan="9"></td>
+			</tr>
+			<tr class="menu">
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+			<tr class="menu01">
+				<td class="depth01">메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="center"></td>
+				<td><a href="#none" target="_blank" class="link">/directory/filename</a></td>
+				<td class="center name"></td>
+				<td class="center end"></td>
+				<td class="comment"></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<!--// status list 템플릿 -->
+</body>
+</html>

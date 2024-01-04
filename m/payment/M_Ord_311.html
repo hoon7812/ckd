@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>선물하기:카카오톡 결제완료</title>
+</head>
+<link rel="stylesheet" href="../assets/css/ui.order.css"><!-- 장바구니주문결제공통UI -->
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="ord_cmplt bg_gy"><!-- [주문완료 class="ord_cmplt"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 선물하기:결제완료 -->
+			<div class="sub">
+				<div class="pymnt_cmplt gift_cmplt">
+					<!-- 완료메세지 -->
+					<section class="cmplt_msg">
+						<figure class="img">
+							<img src="../assets/images/common/icon_cmplt_03.png" alt="">
+						</figure>
+						<p class="mn_copy tit_20">홍길동 고객님의 선물하기 주문이<br>완료 되었습니다.</p>
+						<div class="btn_wrap">
+							<a href="#none" class="btn_resend kakao">
+								<i class="icon_14"></i>
+								<p>카카오톡 재전송</p>
+							</a>
+						</div>
+						<div class="btn_wrap">
+							<a href="#none" class="btn_resend mms">
+								<i class="icon_14"></i>
+								<p>문자(MMS) 재전송</p>
+							</a>
+						</div>
+						<div class="noti_copy gray_02">
+							<p>선물 받으실 분이 <span class="color_or">2022.04.03(일) 12:00</span> 까지 배송지를 입력하시고 선물을 수락하시면 배송이 시작됩니다.
+								<br>(기한 내 선물받기를 하지 않으시면 주문은 자동 취소됩니다.)</p>
+						</div>
+					</section>
+					<!--// 완료메세지 -->
+
+					<!-- 주문번호 -->
+					<div class="ord_vw_sec pymnt_num">
+						<div class="dl_layout">
+							<div class="dl_div">
+								<p class="tit">
+									<strong class="tit_16">주문번호</strong>
+								</p>
+								<p class="data">20032312345</p>
+							</div>
+						</div>
+					</div>
+					<!--// 주문번호 -->
+
+					<!-- 선물받는분 -->
+					<div class="ord_vw_sec">
+						<!-- 카카오톡 재전송 시 노출 -->
+						<div class="dl_layout">
+							<div class="dl_div">
+								<p class="tit">
+									<strong class="tit_16">선물 받는 분</strong>
+								</p>
+								<p class="name">김하나</p>
+							</div>
+						</div>
+						<!--// 카카오톡 재전송 시 노출 -->
+						<!-- mms 재전송 시 노출 -->
+						<div class="dl_layout">
+							<div class="dl_div">
+								<p class="tit">
+									<strong class="tit_16">선물 받는 분</strong>
+								</p>
+								<p class="name">김하나<span class="num">(010-1234-5678)</span></p>
+							</div>
+						</div>
+						<!--// mms 재전송 시 노출 -->
+					</div>
+					<!--// 선물받는분 -->
+
+					<!-- 결제수단 -->
+					<div class="ord_vw_sec">
+						<div class="tit_area">
+							<div class="dl_layout">
+								<div class="dl_div">
+									<p class="tit">
+										<strong class="tit_16">결제수단</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="cont">
+							<div class="pymnt_sec">
+								<div class="obj_wrap">
+									<div class="obj_div">
+										<p class="tit">결제예정금액</p>
+										<div class="price">
+											<p><strong>145,000</strong><span>원</span></p>
+										</div>
+									</div>
+								</div>
+								<div class="obj_wrap">
+									<div class="obj_div">
+										<p class="tit">
+											결제정보
+										</p>
+										<div class="txt">
+											<p>
+												<strong>신한카드(4009-13**-****) 일시불</strong>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="obj_wrap">
+									<div class="obj_div">
+										<p class="tit">
+											결제예정일
+										</p>
+										<div class="txt">
+											<p><strong>2022-03-09(수) 15:00</strong></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 결제수단 -->
+
+					<!-- 유의사항 -->
+					<div class="noti_copy gray_02">
+						<p>결제완료 이후에 주문 및 배송에 관한 확인은 주문배송 조회에서 확인하실 수 있습니다.</p>
+					</div>
+					<!--// 유의사항 -->
+
+					<!-- 버튼 -->
+					<div class="btn_wrap" btn-type="sub_bt">
+						<a href="#none" class="btn jkd_b_w">쇼핑계속하기</a>
+						<a href="#none" class="btn jkd_b">주문상세내역</a>
+					</div>
+					<!--// 버튼 -->
+				</div>
+			</div>
+			<!--// 주문완료:정기배송신청 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

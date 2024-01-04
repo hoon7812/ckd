@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+
+/* ************************************************************************************************************************************************************
+						《 검색&카테고리:검색결과 》
+************************************************************************************************************************************************************ */
+.search {}
+.search .result_wrap {}
+.result_wrap .rel_keyword .tit_16,
+.result_wrap .srch_filter .tit_16 {flex:none; box-sizing:border-box; line-height:1.5em; padding-left:24px; width:136px;}
+
+/* ============================== [ 연관검색어 ] ========================================================================================== */
+.result_wrap .rel_keyword {display:flex; align-items:center; margin-bottom:16px;}
+.result_wrap .rel_keyword .btn_wrap {flex:none; width:calc(100% - 136px);}
+.result_wrap .rel_keyword .btn_cotn {display:inherit;}
+.result_wrap .rel_keyword .btn {padding:9px 8px; min-width:auto;}
+
+/* ============================== [ 카테고리필터 ] ========================================================================================== */
+.srch_filter {overflow:hidden; margin-bottom:32px;}
+.srch_filter .cotn {border:1px solid #E2E5EB; border-radius:10px;}
+.srch_filter .input_set {display:flex; padding:24px 0;}
+.srch_filter .input_set ~ .input_set {border-top:1px solid #E2E5EB;}
+.srch_filter .form_rdo .group {padding-left:0;}
+.srch_filter .form_rdo .group ~ .group {margin-left:40px;}
+.srch_filter .form_rdo input:checked ~ .txt {color:#3182F6; font-weight:700;}
+.srch_filter .form_chk {overflow:hidden; margin-top:-24px; height:auto; width:100%;}
+.srch_filter .form_chk .group {margin:24px 0 0 0;}
+.srch_filter .form_chk .group {width:17%;}
+.srch_filter .btn_reset {margin-top:12px; width:100%;}
+
+/* ============================== [ 상품목록 ] ========================================================================================== */
+.result_wrap .list_sort {margin-bottom:16px;}
+.result_wrap .paging {margin-top:40px;}
+
+/* ============================== [ 할인상품 ] ========================================================================================== */
+.result_wrap .list_menu.bg_container {margin:56px 0;}
+
+/* ============================== [ 검색결과없음 ] ========================================================================================== */
+.result_none {margin-top:56px;}
+.result_none .data_none p strong {color:#3182F6;}
+
+/* ============================== [ 인기키워드추천상품 ] ========================================================================================== */
+.search .sug_prd_wrap {margin-top:56px;}
+.search .sug_prd_wrap .sub_tab_wrap {margin-bottom:24px;}
+
+/* ************************************************************************************************************************************************************
+						《 검색&카테고리:브랜드 》
+************************************************************************************************************************************************************ */
+/* ============================== [ 브랜드전체보기 ] ========================================================================================== */
+.brand_wrap {}
+.brand_wrap .cat_brand {}
+.brand_wrap .cat_brand ~ .cat_brand {margin-top:56px;}
+.brand_wrap .cat_brand .brand_li ul {display:flex; flex-wrap:wrap;}
+.brand_wrap .cat_brand .brand_li .brand {border-radius:10px; box-shadow:0px 6px 16px rgba(0, 0, 0, 0.12); flex-basis:calc(50% - 16px); position:relative;}
+.brand_wrap .cat_brand .brand_li .brand:nth-child(even) {margin-left:32px;}
+.brand_wrap .cat_brand .brand_li .brand:nth-child(2n+2) ~ .brand {margin-top:32px;}
+.brand_wrap .cat_brand .brand_li .img_wrap {overflow:hidden; border-radius:10px;}
+.brand_wrap .cat_brand .brand_li .img_wrap img {display:block;}
+
+/* ============================== [ 브랜드카테고리 ] ========================================================================================== */
+.brand_ctgry_wrap {}
+
+/* -------------------- 브랜드목록 ---------------------------------------- */
+.brand_ctgry_wrap .brand_list {position:relative; padding:0 46px;}
+/* .brand_ctgry_wrap .brand_list:before,
+.brand_ctgry_wrap .brand_list:after {content:""; position:absolute; top:0; height:100px; width:100px; z-index:1;}
+.brand_ctgry_wrap .brand_list:before {background:linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.3) 100%); left:0;}
+.brand_ctgry_wrap .brand_list:after {background:linear-gradient(90deg, rgba(255,255,255,0.3) 30%, rgba(255,255,255,1) 100%); right:0;} */
+.brand_ctgry_wrap .brand_list .logo_div {background-color:#F9FAFC; display:flex; align-items:center; justify-content:center; border:2px solid #F9FAFC; border-radius:50%; box-sizing:border-box; position:relative; padding:14px; height:100px; width:100px;}
+.brand_ctgry_wrap .brand_list .logo_div {transition:border 0.3s;}
+.brand_ctgry_wrap .brand_list .logo_div .img {height:100%; width:100%;}
+.brand_ctgry_wrap .brand_list .logo_div .img img {object-fit:contain; height:100%; width:100%;}
+.brand_ctgry_wrap .brand_list .logo_div:hover,
+.brand_ctgry_wrap .brand_list .logo_div.on {border-color:#3182F6;}
+
+.brand_ctgry_wrap .brand_list .swiper {position:static;}
+.brand_ctgry_wrap .brand_list .swp_btn {border:1px solid #E2E5EB; box-sizing:border-box; box-shadow:none; top:50%; margin-top:-21px;}
+.brand_ctgry_wrap .brand_list .swp_btn[class*="prev"] {left:0;}
+.brand_ctgry_wrap .brand_list .swp_btn[class*="next"] {right:0;}
+
+/* -------------------- 배너 ---------------------------------------- */
+.brand_ctgry_wrap .brand_bnr {margin:32px 0 56px 0;}
+.brand_ctgry_wrap .brand_bnr .img {overflow:hidden; border-radius:12px; margin-bottom:24px; height:320px;}
+.brand_ctgry_wrap .brand_bnr .img img {display:block;}
+
+/* -------------------- 카테고리목록 ---------------------------------------- */
+.brand_ctgry_li {}
+.brand_ctgry_li .ctgry_set {}
+.brand_ctgry_li .ctgry_set ~ .ctgry_set {margin-top:56px;}
+.brand_ctgry_li .ctgry_set .prd_area {display:flex; flex-wrap:wrap; margin:-32px 0 0 -22px;}
+.brand_ctgry_li .ctgry_set .prd_div {flex:none; position:relative; margin:32px 0 0 22px; width:180px;}
+.brand_ctgry_li .ctgry_set .prd_div .img {overflow:hidden; border-radius:10px; height:180px;}
+.brand_ctgry_li .ctgry_set .prd_div .img img {display:block; object-fit:cover; height:100%; width:100%;}
+.brand_ctgry_li .ctgry_set .prd_div p {font-size:18px; text-align:center; margin-top:24px;}

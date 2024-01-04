@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>임직원인증:정보입력</title>
+
+	<link rel="stylesheet" href="../../assets/css/member.css"><!-- 회원 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="member"><!-- [회원 class="member"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 임직원인증:정보입력 -->
+			<div class="sub">
+				<div class="emply_wrap">
+					<!-- 타이틀 영역 -->
+					<div class="mem_tit_area">
+						<!-- 2022-10-19_수정 -->
+						<p class="tit_20">홍길동님, 반갑습니다.<br>임직원은 계열사 이메일을 통하여<br>인증이 가능합니다. </p>
+						<!--// 2022-10-19_수정 -->
+					</div>
+					<!--// 타이틀 영역 -->
+
+					<!-- 이메일입력 -->
+					<div class="mail_wrap">
+						<div class="form_select">
+							<select>
+								<option>계열사를 선택해 주세요</option>
+								<option>종근당</option>
+								<option>종근당바이오</option>
+								<option>경보제약</option>
+								<option>종근단건강몰</option>
+								<option>종근당홀딩스</option>
+								<option>종근당산업</option>
+								<option>Bell E&C</option>
+								<option>Bell SM</option>
+								<option>Bell Communications</option>
+								<option>Bell I&S</option>
+							</select>
+							<i class="i_select"></i>
+						</div>
+						<div class="form_inpt"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+							<div class="txt">
+								<input type="text" placeholder="">
+							</div>
+							<p class="domain">@ckc.com</p>
+						</div>
+
+						<!-- 인증번호요청 -->
+						<div class="btn_wrap" btn-type="sub_bt">
+							<a href="#none" class="btn jkd_b">인증번호 요청</a>
+						</div>
+						<!--// 인증번호요청 -->
+
+						<p class="txt_cert">입력하신 이메일 주소로 인증번호를 전송합니다.<br>이메일을 확인해 주세요.</p>
+					</div>
+					<!--// 이메일입력 -->
+
+					<!-- 인증번호확인 -->
+					<div class="cert_wrap">
+						<div class="form_inpt wrn"> <!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+							<div class="cert_numbber">
+								<div class="txt">
+									<input type="tel" placeholder="" value="000000" maxlength="6">
+									<p class="time">
+										<span>남은시간</span>
+										<strong>09:58</strong>
+									</p>
+								</div>
+								<div class="btn_wrap" btn-type="sub_bt">
+									<a href="#none" class="btn bc_fff_02 h_52">인증번호 확인</a>
+								</div>
+							</div>
+							<div class="msg_wrap">
+								<p class="err_msg">인증번호를 입력해 주세요.</p><!-- 인증번호 미입력 시 -->
+							</div>
+						</div>
+					</div>
+					<!--// 인증번호확인 -->
+
+					<div class="box_gy bg_f9fafc">
+						<div class="noti_copy gray_02">
+							<p>임직원 인증은 90일 주기로 진행해 주세요.</p>
+							<p>임직원 인증 후 나의정보변경에서 메일 주소를 계열사 이메일이 아닌 일반메일로 변경 시 임직원 인증이 자동으로 해제됩니다.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- 버튼 -->
+				<div class="btn_fixed">
+					<div class="btn_wrap" btn-type="main_bt">
+						<a href="#none" class="btn" bt_role="confirm">다음</a>
+					</div>
+				</div>
+				<!--// 버튼 -->
+			</div>
+			<!--// 임직원인증:정보입력 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

@@ -1,0 +1,3452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" type="text/css" href="status.css" />
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<title>종근당건강몰 PC STATUS</title>
+</head>
+
+<body>
+<h1>종근당건강몰 PC STATUS</h1>
+<div class="note">
+	<ul>
+		<li><strong>업데이트 관리자:</strong> <span>WYLIE 이운주</span></li>
+		<li>
+			<p>용어정리</p>
+			<dl>
+				<dt>알럿</dt>
+				<dd>시스템알럿 대신 띄우는 팝업</dd>
+				<dt>팝업</dt>
+				<dd>화면 중앙으로 뜨는 팝업</dd>
+			</dl>
+		</li>
+		<li>status의 팝업 화면은 팝업을 띄웠을 때의 화면 입니다.</li>
+		<li>팝업은 부모 페이지내에 레이어팝업 형태로 개발에서 추가 합니다. <strong>팝업 가이드 참고</strong></li>
+		<li class="page">
+			<strong>진행현황 : </strong>
+			전체페이지: <em class="total"></em> /
+			완료페이지: <em class="end"></em> /
+			진행률: <em class="progress"></em>%
+		</li>
+	</ul>
+</div>
+<nav class="site_nav">
+	<ul>
+		<li class="all on"><a href="#none">메뉴전체보기</a></li>
+		<li class=""><a href="#none">메인</a></li>
+		<li class=""><a href="#none">검색</a></li>
+		<li class=""><a href="#none">서비스</a></li>
+		<li class=""><a href="#none">상품</a></li>
+		<li class=""><a href="#none">장바구니</a></li>
+		<li class=""><a href="#none">주문결제</a></li>
+		<li class=""><a href="#none">마이페이지</a></li>
+		<li class=""><a href="#none">쿠폰&amp;혜택</a></li>
+		<li class=""><a href="#none">이벤트</a></li>
+		<li class=""><a href="#none">고객센터</a></li>
+		<li class=""><a href="#none">회원</a></li>
+		<li class=""><a href="#none">개발공통팝업템플릿</a></li>
+		<li class=""><a href="../layout/guide.html" target="_blank">레이아웃가이드:새창</a></li>
+	</ul>
+</nav>
+
+<div class="menu_wrap all">
+	<!-- 메인 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>메인</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu01 end">
+					<td class="depth01">메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../main/P_Main_001.html" target="_blank" class="link">/main/P_Main_001</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-08-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01"></td>
+					<td>팝업</td>
+					<td>일반회원</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../main/P_Main_001_pop_01.html" target="_blank" class="link">/main/P_Main_001_pop_01</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-08-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>일반회원/임직원</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../main/P_Main_001_pop_02.html" target="_blank" class="link">/main/P_Main_001_pop_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-08-03</td>
+					<td class="comment"> </td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">약관</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">개인정보처리방침</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../etc/P_Pri_001.html" target="_blank" class="link">/etc/P_Pri_001</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">이용약관</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../etc/P_Pri_002.html" target="_blank" class="link">/etc/P_Pri_002</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 메인 -->
+
+	<!-- 검색 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>검색&amp;카테고리</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu01 end">
+					<td class="depth01">카테고리리스트</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Pro_101.html" target="_blank" class="link">/product/P_Pro_101</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-11</td>
+					<td class="comment">
+						<p>📢 <strong>헤더+퀵메뉴+푸터 확인 가능</strong></p>
+					</td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01">브랜드</td>
+					<td>전체브랜드</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/P_Cat_400.html" target="_blank" class="link">/search/P_Cat_400</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01"></td>
+					<td>카테고리</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/P_Cat_401.html" target="_blank" class="link">/search/P_Cat_401</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01 end">
+					<td class="depth01">검색결과</td>
+					<td>있음/없음</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../search/P_Sea_200.html" target="_blank" class="link">/search/P_Sea_200</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-07-25</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 검색 -->
+
+	<!-- 서비스 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>서비스</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu04 end">
+					<td class="depth01">핫딜</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Hot_001.html" target="_blank" class="link">/product/P_Hot_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-12</td>
+					<td class="comment">
+						<p>📢 <strong>헤더+퀵메뉴+푸터 확인 가능</strong></p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">베스트</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Bes_001.html" target="_blank" class="link">/product/P_Bes_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-12</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">기획전</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Pro_001.html" target="_blank" class="link">/product/P_Pro_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Pro_002.html" target="_blank" class="link">/product/P_Pro_002</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">신제품</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_New_001.html" target="_blank" class="link">/product/P_New_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment">
+						<p>2022-09-30_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">선물하기</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Gif_001.html" target="_blank" class="link">/product/P_Gif_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-12</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">정기배송</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Del_001.html" target="_blank" class="link">/product/P_Del_001</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-12</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 서비스 -->
+
+	<!-- 상품상세 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>상품</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<!-- 상품:목록 -->
+			<!-- <tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">상품목록</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">상품목록</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><p class="link">/product/P_Pro_101</p></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-11</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody> 2022-07-25 13:22:22 상품목록 status 검색&카테고리 영역으로 이동 -->
+			<!--// 상품:목록 -->
+			<!-- 상품:상세 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">상품상세</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01">상품상세</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../product/P_Pro_201.html" target="_blank" class="link">/product/P_Pro_201</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment">
+						<p>2022-10-07_수정</p>
+						<p>2022-10-12_수정</p>
+						<p>2022-10-13_수정</p>
+						<p>2022-10-28_수정</p>
+					</td>
+				</tr>
+				<!-- <tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>비회원 구매</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../product/P_Pro_201_pop.html" target="_blank" class="link">/product/P_Pro_201_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>  2022-10-05_기획요청으로 삭제(장바구니 P_Bag_605페이지 사용) -->
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>쿠폰다운로드</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../product/P_Pro_202.html" target="_blank" class="link">/product/P_Pro_202</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>배송비절약상품</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../product/P_Pro_203.html" target="_blank" class="link">/product/P_Pro_203</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>묶음상품상세보기</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../product/P_Pro_204.html" target="_blank" class="link">/product/P_Pro_204</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-11_수정</p>
+						<p>2022-10-13_수정</p>
+						<p>2022-10-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>포토리뷰모아보기</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Pro_211_1.html" target="_blank" class="link">/popup/P_Pro_211_1</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-11-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>포토리뷰상세</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Pro_211_2.html" target="_blank" class="link">/popup/P_Pro_211_2</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-11-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>리뷰빅이미지</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Pro_213.html" target="_blank" class="link">/popup/P_Pro_213</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 개발 공통 팝업</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>Q&amp;A등록</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../product/P_Pro_215.html" target="_blank" class="link">/product/P_Pro_215</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>재입고알림신청</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../product/P_Pro_210.html" target="_blank" class="link">/product/P_Pro_210</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 상품:상세 -->
+		</table>
+	</section>
+	<!--// 상품상세 -->
+
+	<!-- 장바구니 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>장바구니</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu03 end">
+					<td class="depth01">장바구니</td>
+					<td>일반배송</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../cart/P_Bag_601.html" target="_blank" class="link">/cart/P_Bag_601</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-12</td>
+					<td class="comment">
+						<p>2022-09-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu03 ing">
+					<td class="depth01"></td>
+					<td></td>
+					<td>회원혜택</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../cart/P_Bag_605.html" target="_blank" class="link">/cart/P_Bag_605</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-07-21 컨텐츠 미정</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 품절삭제 버튼을 선택한 경우</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 상품 선택 후 삭제할 경우</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 선택한 상품이 없을 경우</td>
+					<td class="center"></td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개+경고아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>정기배송 담기</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../cart/P_Bag_603_pop.html" target="_blank" class="link">/cart/P_Bag_603_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>정기배송</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../cart/P_Bag_603.html" target="_blank" class="link">/cart/P_Bag_603</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-13</td>
+					<td class="comment">
+						<p>2022-09-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 상품 선택 후 삭제 시</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 상온&실온과 냉동&냉장상품 동시 신청시</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 장바구니 -->
+
+	<!-- 주문결제 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>주문결제</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<!-- 주문결제:회원 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">주문결제:회원</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">주문결제</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_101.html" target="_blank" class="link">/payment/P_Ord_101</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-18</td>
+					<td class="comment">
+						<p>2022-09-23_수정</p>
+						<p>2022-09-26_수정</p>
+						<p>2022-09-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>배송지관리</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Myp_1301_1.html" target="_blank" class="link">/popup/P_Myp_1301_1</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-10-31</td>
+					<td class="comment">
+						<p>2022-11-24_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>주문완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_121.html" target="_blank" class="link">/payment/P_Ord_121</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-18</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>재구매알림신청</td>
+					<td>신청등록</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../payment/P_Ord_111.html" target="_blank" class="link">/payment/P_Ord_111</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-20</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="dep th01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 재구매 알림 신청하기 결과</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-20</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 재구매 알림신청 종료</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-20</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../payment/P_Ord_112.html" target="_blank" class="link">/payment/P_Ord_112</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-20</td>
+					<td class="comment">
+						<p>2022-09-23_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 주문결제:회원 -->
+
+			<!-- 주문결제:비회원 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">주문결제:비회원</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">주문결제</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_201.html" target="_blank" class="link">/payment/P_Ord_201</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-18</td>
+					<td class="comment">
+						<p>2022-09-23_수정</p>
+						<p>2022-09-30_수정</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>비회원구매이용약관동의</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../payment/P_Ord_202.html" target="_blank" class="link">/payment/P_Ord_202</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-18</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>주문완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_221.html" target="_blank" class="link">/payment/P_Ord_221</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-18</td>
+					<td class="comment">
+						<p>2022-09-23_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 주문결제:비회원 -->
+
+			<!-- 주문결제:선물하기 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">선물하기</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">선물하기</td>
+					<td>카카오톡/문자</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_301.html" target="_blank" class="link">/payment/P_Ord_301</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>선물받는분정보확인</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../payment/P_Ord_303.html" target="_blank" class="link">/payment/P_Ord_303</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>결제완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_311.html" target="_blank" class="link">/payment/P_Ord_311</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 주문결제:선물하기 -->
+
+			<!-- 주문결제:정기배송 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">정기배송</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">정기배송신청</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_501.html" target="_blank" class="link">/payment/P_Ord_501</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+						<p>2022-09-28_수정</p>
+						<p>2022-09-30_수정</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>정기배송 시작일 선택 팝업</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Ord_501_pop.html" target="_blank" class="link">/popup/P_Ord_501_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-20</td>
+					<td class="comment">
+						<p>📢 개발 공통 팝업</p>
+					</td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>정기/반복결제이용약관</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../payment/P_Ord_503.html" target="_blank" class="link">/payment/P_Ord_503</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>신청완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../payment/P_Ord_511.html" target="_blank" class="link">/payment/P_Ord_511</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 주문결제:정기배송 -->
+		</table>
+	</section>
+	<!--// 주문결제 -->
+
+	<!-- 마이페이지 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>마이페이지</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+
+			<!-- 메인 -->
+			<tbody>
+				<tr class="menu04 end">
+					<td class="depth01">메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/P_Myp_101.html" target="_blank" class="link">/mypage/P_Myp_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 메인 -->
+
+			<!-- 주문/배송조회 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">주문/배송조회</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">주문/배송조회</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_202.html" target="_blank" class="link">/mypage/order/P_Myp_202</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-20</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>구매확정</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/order/P_Myp_202_pop.html" target="_blank" class="link">/mypage/order/P_Myp_202_pop</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-11-21</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td>일반/정기</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_203.html" target="_blank" class="link">/mypage/order/P_Myp_203</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>선물상품</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_204.html" target="_blank" class="link">/mypage/order/P_Myp_204</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>취소</td>
+					<td>주문취소</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_303.html" target="_blank" class="link">/mypage/order/P_Myp_303</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>취소신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_303_02.html" target="_blank" class="link">/mypage/order/P_Myp_303_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>환불계좌등록</td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/order/P_Myp_303_pop.html" target="_blank" class="link">/mypage/order/P_Myp_303_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>완료</td>
+					<td>주문취소완료</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_304.html" target="_blank" class="link">/mypage/order/P_Myp_304</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>취소신청완료</td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_304_02.html" target="_blank" class="link">/mypage/order/P_Myp_304_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>교환</td>
+					<td>신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_403.html" target="_blank" class="link">/mypage/order/P_Myp_403</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2022-12-01_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_404.html" target="_blank" class="link">/mypage/order/P_Myp_404</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+						<p>2022-11-15_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_503.html" target="_blank" class="link">/mypage/order/P_Myp_503</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2022-12-01_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_504.html" target="_blank" class="link">/mypage/order/P_Myp_504</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+						<p>2022-11-15_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>미수령신고</td>
+					<td>신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_601.html" target="_blank" class="link">/mypage/order/P_Myp_601</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_602.html" target="_blank" class="link">/mypage/order/P_Myp_602</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+						<p>2023-01-18_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!-- 주문/배송조회 -->
+
+			<!-- 취소/교환/반품 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">취소/교환/반품</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">취소/교환/반품</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_301.html" target="_blank" class="link">/mypage/order/P_Myp_301</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-11-15_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/order/P_Myp_302.html" target="_blank" class="link">/mypage/order/P_Myp_302</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>취소/교환/반품 정보</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/order/P_Myp_302_pop.html" target="_blank" class="link">/mypage/order/P_Myp_302_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-25</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!-- 취소/교환/반품 -->
+
+			<!-- 정기배송관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">정기배송관리</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">정기배송관리</td>
+					<td>신청내역</td>
+					<td>목록</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/reglr/P_Myp_701.html" target="_blank" class="link">/mypage/reglr/P_Myp_701</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-09-28_수정</p>
+						<p>2022-09-29_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>시작일선택</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Ord_501_pop.html" target="_blank" class="link">/popup/P_Ord_501_pop</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 개발 공통 팝업</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>정기배송상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/reglr/P_Myp_703.html" target="_blank" class="link">/mypage/reglr/P_Myp_703</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-09-29_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통]상태별 사유안내</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통]해지확인</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>결제정보관리</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/reglr/P_Myp_711.html" target="_blank" class="link">/mypage/reglr/P_Myp_711</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-09-29_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통](유효한 정기배송건 있을경우)카드삭제</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통](유효한 정기배송건 없을경우)카드삭제</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>완료/해지내역</td>
+					<td>목록</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/reglr/P_Myp_721.html" target="_blank" class="link">/mypage/reglr/P_Myp_721</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-09-29_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>해지상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/reglr/P_Myp_722.html" target="_blank" class="link">/mypage/reglr/P_Myp_722</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-09-29_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>완료상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/reglr/P_Myp_723.html" target="_blank" class="link">/mypage/reglr/P_Myp_723</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-09-29_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 정기배송관리 -->
+
+			<!-- 간편결제관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">간편결제관리</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">간편결제관리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/payment/P_Myp_1000.html" target="_blank" class="link">/mypage/payment/P_Myp_1000</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 간편결제관리 -->
+
+			<!-- 나의적립금 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의적립금</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">나의적립금</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/benefit/P_Myp_801.html" target="_blank" class="link">/mypage/benefit/P_Myp_801</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-21</td>
+					<td class="comment">
+						<p>2022-10-31</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 나의적립금 -->
+
+			<!-- 할인쿠폰 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">할인쿠폰</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">할인쿠폰</td>
+					<td>사용가능 쿠폰</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/coupon/P_Myp_901.html" target="_blank" class="link">/mypage/coupon/P_Myp_901</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment"><p>2022-11-02_수정</p></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>쿠폰적용상품</td>
+					<td>상품 전체보기</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/coupon/P_Myp_903.html" target="_blank" class="link">/mypage/coupon/P_Myp_903</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment"><p>2022-11-02_수정</p></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class ="depth01"></td>
+					<td></td>
+					<td>카테고리별 보기</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/coupon/P_Myp_904.html" target="_blank" class="link">/mypage/coupon/P_Myp_904</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment"><p>2022-11-02_수정</p></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>사용/기간만료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/coupon/P_Myp_905.html" target="_blank" class="link">/mypage/coupon/P_Myp_905</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment"><p>2022-11-02_수정</p></td>
+				</tr>
+			</tbody>
+			<!--// 할인쿠폰 -->
+
+			<!-- 1:1문의 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">1:1문의</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">1:1문의</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/inquiry/P_Myp_1101.html" target="_blank" class="link">/mypage/inquiry/P_Myp_1101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment">
+						<p>2022-11-07_수정</p>
+						<p>2022-11-18_수정</p>
+
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>등록/수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/inquiry/P_Myp_1102.html" target="_blank" class="link">/mypage/inquiry/P_Myp_1102</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment">
+						<p>2022-11-04_수정</p>
+						<p>2022-11-07_수정</p>
+						<p>2022-11-29_수정</p>
+						<p>2022-12-01_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class ="depth01"></td>
+					<td></td>
+					<td>상품선택</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/inquiry/P_Myp_1103.html" target="_blank" class="link">/mypage/inquiry/P_Myp_1103</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 1:1문의 -->
+
+			<!-- 나의리뷰 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의리뷰</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">나의리뷰</td>
+					<td>리뷰작성하기</td>
+					<td></td>
+					<td></td>
+					<td class="center">TAB</td>
+					<td><a href="../mypage/review/P_Myp_1202.html" target="_blank" class="link">/mypage/review/P_Myp_1202</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-22</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>나의리뷰</td>
+					<td></td>
+					<td></td>
+					<td class="center">TAB</td>
+					<td><a href="../mypage/review/P_Myp_1202_02.html" target="_blank" class="link">/mypage/review/P_Myp_1202_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-22</td>
+					<td class="comment"><p>2022-11-04_수정</p></td>
+				</tr>
+				<tr class="menu04 ing">
+					<td class="depth01"></td>
+					<td></td>
+					<td>등록/수정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/review/P_Myp_1204.html" target="_blank" class="link">/mypage/review/P_Myp_1204</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>컨텐츠 미정</p>
+						<p>2022-11-04_수정</p>
+						<p>2022-11-07_수정</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>리뷰빅이미지</td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Pro_213.html" target="_blank" class="link">/popup/P_Pro_213</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 개발 공통 팝업</p>
+					</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>일반리뷰 작성완료</td>
+					<td class="center">알럿</td>
+					<td><a href="../mypage/review/P_Myp_1204_01.html" target="_blank" class="link">/mypage/review/P_Myp_1204_01</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-08-03</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>포토리뷰 작성완료</td>
+					<td class="center">알럿</td>
+					<td><a href="../mypage/review/P_Myp_1204_02.html" target="_blank" class="link">/mypage/review/P_Myp_1204_02</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-08-03</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<!--// 나의리뷰 -->
+
+			<!-- 제휴/대량구매문의 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">제휴/대량구매문의</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">제휴/대량구매문의</td>
+					<td>문의내역</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/P_Big_100.html" target="_blank" class="link">/mypage/service/P_Big_100</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment">
+						<p>2022-11-04_수정</p>
+						<p>2022-11-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>대량구매 견적신청</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/P_Big_101.html" target="_blank" class="link">/mypage/service/P_Big_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment">
+						<p>2022-11-04_수정</p>
+						<p>2022-11-07_수정</p>
+						<p>2022-11-16_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class ="depth01"></td>
+					<td></td>
+					<td>상품선택</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/service/P_Big_102.html" target="_blank" class="link">/mypage/service/P_Big_102</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>제휴문의</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/P_Big_103.html" target="_blank" class="link">/mypage/service/P_Big_103</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-11-07_수정</p>
+						<p>2022-11-16_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>기타문의</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/service/P_Big_104.html" target="_blank" class="link">/mypage/service/P_Big_104</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-11-07_수정</p>
+						<p>2022-11-16_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 제휴/대량구매문의 -->
+
+			<!-- 나의활동 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의활동</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">나의활동</td>
+					<td>관심상품</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/wish/P_Myp_605.html" target="_blank" class="link">/mypage/wish/P_Myp_605</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"><p>2022-10-28_수정</p></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>최근 구매 상품</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/wish/P_Myp_607.html" target="_blank" class="link">/mypage/wish/P_Myp_607</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"><p>2022-10-28_수정</p></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>최근 본 상품</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/wish/P_Myp_609.html" target="_blank" class="link">/mypage/wish/P_Myp_609</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"><p>2022-10-28_수정</p></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>[개발공통]삭제확인</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+
+			</tbody>
+			<!--// 나의활동 -->
+
+			<!-- 나의정보관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">나의정보관리</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">회원정보수정</td>
+					<td>비밀번호입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/P_Mem_101.html" target="_blank" class="link">/member/my_info/P_Mem_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+						<p>2022-10-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>정보수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/P_Mem_102.html" target="_blank" class="link">/member/my_info/P_Mem_102</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment">
+						<p>2022-10-21_수정</p>
+						<p>2022-10-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>본인인증수단</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/my_info/P_Mem_102_pop.html" target="_blank" class="link">/member/my_info/P_Mem_102_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 임직원권한삭제</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">마케팅 수신동의 설정</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/P_Mem_103.html" target="_blank" class="link">/member/my_info/P_Mem_103</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment">
+						<p>2022-10-25_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>설정완료</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/P_Mem_103_pop.html" target="_blank" class="link">/member/common/P_Mem_103_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 ing">
+					<td class="depth01">추천인코드</td>
+					<td>입력하기</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/P_Mem_104.html" target="_blank" class="link">/member/my_info/P_Mem_104</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">ing</td>
+					<td class="comment">
+						<p>2022-07-28 컨텐츠 미정</p>
+						<p>2022-10-24_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 ing">
+					<td class="depth01"></td>
+					<td>공유하기</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/my_info/P_Mem_105.html" target="_blank" class="link">/member/my_info/P_Mem_105</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">ing</td>
+					<td class="comment">
+						<p>2022-07-28 컨텐츠 미정</p>
+						<p>2022-10-24_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">배송지관리</td>
+					<td>배송지목록</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Myp_1301.html" target="_blank" class="link">/popup/P_Myp_1301</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment">
+						<p>2022-10-28_수정</p>
+						<p>2022-10-31_수정</p>
+						<p>2022-11-24_수정</p>
+						<p>2022-11-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>등록</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Myp_1302.html" target="_blank" class="link">/popup/P_Myp_1302</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-26</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+						<p>2022-11-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>수정</td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Myp_1302_1.html" target="_blank" class="link">/popup/P_Myp_1302_1</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+						<p>2022-11-08_수정</p>
+						<p>2022-11-24_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">기업정보관리</td>
+					<td>기업 정보 수정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/enter_info/P_Mem_802.html" target="_blank" class="link">/enter_info/P_Mem_802</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-10-19</td>
+					<td class="comment">
+						<p>2022-10-19 페이지추가</p>
+						<p>2022-10-24_수정</p>
+						<p>2022-10-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">회원탈퇴</td>
+					<td>비밀번호입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/leave/P_Mem_901.html" target="_blank" class="link">/member/leave/P_Mem_901</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+						<p>2022-10-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>안내</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/leave/P_Mem_902.html" target="_blank" class="link">/member/leave/P_Mem_902</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+						<p>2022-10-25_수정</p>
+						<p>2022-10-26_수정</p>
+						<p>2022-10-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>탈퇴확인</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/leave/P_Mem_903.html" target="_blank" class="link">/member/leave/P_Mem_903</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 탈퇴불가</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>탈퇴완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/leave/P_Mem_905.html" target="_blank" class="link">/member/leave/P_Mem_905</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 나의정보관리 -->
+
+			<!-- 비회원주문조회 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">비회원주문조회</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_101.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">주문/배송조회</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_201.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_201</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_202.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_202</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>주문취소/취소신청</td>
+					<td>주문취소</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_303_02.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_303_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>주문취소완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_304_02.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_304_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+						<p>2023-01-27_수정</p>
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>취소신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_303_03.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_303_03</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>환불계좌등록</td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/non_mem/P_NMyp_303_pop.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_303_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-29_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>취소신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_304_03.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_304_03</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+						<p>2023-01-27_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>교환</td>
+					<td>신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_403.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_403</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_404.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_404</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2023-01-27_수정</p>
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_503.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_503</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>신청완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_504.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_504</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-09-27_수정</p>
+						<p>2022-11-28_수정</p>
+						<p>2023-01-27_수정</p>
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>미수령신고</td>
+					<td>신청</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_603.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_603</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-25_수정</p>
+						<p>2022-11-29_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>완료</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_604.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_604</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+						<p>2022-11-29_수정</p>
+						<p>2023-01-27_수정</p>
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01">취소/교환/반품</td>
+					<td>목록</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_301.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_301</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-11-28_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>취소/교환/반품 정보</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/non_mem/P_NMyp_301_1.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_301_1</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>취소</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_302.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_302</a></td>
+					<td class="center name">김미르</td>
+					<td class="center end">2022-11-29</td>
+					<td class="comment">
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>교환</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_402.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_402</a></td>
+					<td class="center name">김미르</td>
+					<td class="center end">2022-11-29</td>
+					<td class="comment">
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<tr class="menu04 end">
+					<td class="depth01"></td>
+					<td>반품</td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../mypage/non_mem/P_NMyp_502.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_502</a></td>
+					<td class="center name">김미르</td>
+					<td class="center end">2022-11-29</td>
+					<td class="comment">
+						<p>2023-02-08_수정</p>
+					</td>
+				</tr>
+				<!-- <tr class="menu04 end">
+					<td class="depth01">배송지관리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../mypage/non_mem/P_NMyp_1302.html" target="_blank" class="link">/mypage/non_mem/P_NMyp_1302</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-27</td>
+					<td class="comment">
+						<p>2022-10-31_수정</p>
+						<p>2022-11-08_수정</p>
+					</td>
+				</tr> 기획팀 요청으로 회원화면 공통사용 2022-11-24 -->
+			</tbody>
+			<!--// 비회원주문조회 -->
+		</table>
+	</section>
+	<!--// 마이페이지 -->
+
+	<!-- 쿠폰&혜택 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>쿠폰&amp;혜택</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu05 end">
+					<td class="depth01">쿠폰&amp;혜택</td>
+					<td>쿠폰혜택</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../benefit/P_Cou_101.html" target="_blank" class="link">/benefit/P_Cou_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment">
+						<p>2022-10-04_수정</p>
+						<p>2022-10-05_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>등급별혜택</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../benefit/P_Cou_201.html" target="_blank" class="link">/benefit/P_Cou_201</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment">
+						<p>2022-10-04_추가</p>
+						<p>2022-10-05_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 쿠폰한번에받기결과</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 + 아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>임직원 월별 구매금액</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../benefit/P_Cou_201_01.html" target="_blank" class="link">/benefit/P_Cou_201_01</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment">
+						<p>2022-10-04_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>혜택캘린더</td>
+					<td></td>
+					<td></td>
+					<td class="center">Tab</td>
+					<td><a href="../benefit/P_Cou_300.html" target="_blank" class="link">/benefit/P_Cou_300</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-18</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>이벤트진행목록 팝업</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../benefit/P_Cou_300_pop.html" target="_blank" class="link">/benefit/P_Cou_300_pop</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-19</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 쿠폰&혜택 -->
+
+	<!-- 이벤트 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>이벤트</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu05 end">
+					<td class="depth01">출석체크</td>
+					<td>앱안내</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Eve_002.html" target="_blank" class="link">/event/P_Eve_002</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01">이벤트</td>
+					<td>목록</td>
+					<td>진행중이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Rew_101.html" target="_blank" class="link">/event/P_Rew_101</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment">
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>종료된이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Rew_701.html" target="_blank" class="link">/event/P_Rew_701</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td>상세</td>
+					<td>일반이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Eve_201.html" target="_blank" class="link">/event/P_Eve_201</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>응모이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Eve_301.html" target="_blank" class="link">/event/P_Eve_301</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>체험단이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Eve_401.html" target="_blank" class="link">/event/P_Eve_401</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>구매달성이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Eve_501.html" target="_blank" class="link">/event/P_Eve_501</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment">
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 참여대상아님</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 중복참여했을경우</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>복권이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Eve_601.html" target="_blank" class="link">/event/P_Eve_601</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment">
+						<p>2022-10-17_수정</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 복권당첨/미당첨</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">이벤트상세 공통</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[샘플] 종료된이벤트</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../event/P_Eve_302.html" target="_blank" class="link">/event/P_Eve_302</a></td>
+					<td class="center name">이운주</td>
+					<td class="center end">2022-10-17</td>
+					<td class="comment">
+						<p>📢 종료이벤트 샘플 페이지. 종료 class 추가 위치 안내 용도</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>상세 공통 알럿</td>
+					<td>이벤트당첨</td>
+					<td class="center">알럿</td>
+					<td><a href="../event/P_Eve_201_pop_01.html" target="_blank" class="link">/event/P_Eve_201_pop_01</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>이벤트미당첨</td>
+					<td class="center">알럿</td>
+					<td><a href="../event/P_Eve_201_pop_02.html" target="_blank" class="link">/event/P_Eve_201_pop_02</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 댓글삭제확인</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 미참여이벤트당첨확인</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu05 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 회원전용이벤트안내</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 이벤트 -->
+
+	<!-- 고객센터 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>고객센터</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu06 end">
+					<td class="depth01">고객센터</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/P_Cus_001.html" target="_blank" class="link">/customer/P_Cus_001</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-12</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>자주묻는질문</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/P_Cus_100.html" target="_blank" class="link">/customer/P_Cus_100</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td>공지사항</td>
+					<td>목록</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/P_Cus_200.html" target="_blank" class="link">/customer/P_Cus_200</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu06 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>상세</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../customer/P_Cus_201.html" target="_blank" class="link">/customer/P_Cus_201</a></td>
+					<td class="center name">김슬비</td>
+					<td class="center end">2022-07-14</td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 고객센터 -->
+
+	<!-- 회원 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>회원</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<!-- 회원가입 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">회원가입</td>
+				</tr>
+				<tr class="menu07 ing">
+					<td class="depth01">회원가입</td>
+					<td>유형선택</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_020.html" target="_blank" class="link">/entry/P_Mem_020</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>2022-08-01 콘텐츠 미정</p>
+						<p>2022-10-12_수정</p>
+						<p>2023-01-03_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>인증수단선택</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_021.html" target="_blank" class="link">/entry/P_Mem_021</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>본인 인증 성공</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../entry/P_Mem_022.html" target="_blank" class="link">/entry/P_Mem_022</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 본인 인증 실패</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개+경고아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>정보입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_023.html" target="_blank" class="link">/entry/P_Mem_023</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>2022-10-19_수정</p>
+						<p>2022-10-20_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>마케팅 정보 수신 동의</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/P_Mem_029.html" target="_blank" class="link">/member/common/P_Mem_029</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>2022-10-20_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>설정 완료</td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/P_Mem_103_pop.html" target="_blank" class="link">/member/common/P_Mem_103_pop</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>2022-10-20_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>전자금융거래 이용약관</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../entry/P_Mem_024.html" target="_blank" class="link">/entry/P_Mem_024</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>가입완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_030.html" target="_blank" class="link">/entry/P_Mem_030</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>2022-10-19_수정</p>
+						<p>2022-10-21_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">카카오 3초 회원가입</td>
+					<td>[개발공통] 카카오 간편 회원가입 결과</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개+경고아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">임직원 가입</td>
+					<td>임직원 인증</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_601.html" target="_blank" class="link">/entry/P_Mem_601</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-09-14_수정</p>
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 ing">
+					<td class="depth01"></td>
+					<td>임직원 인증 완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_602.html" target="_blank" class="link">/entry/P_Mem_602</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-08-02 콘텐츠 미정</p>
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>90일 주기 임직원 재인증</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../entry/P_Mem_603.html" target="_blank" class="link">/entry/P_Mem_603</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01">기업회원 가입</td>
+					<td>가입</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_701.html" target="_blank" class="link">/entry/P_Mem_701</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-10-19_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 사업자등록번호 인증결과</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 사업자등록번호 조회 결과</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼2개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>정보입력</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_702.html" target="_blank" class="link">/entry/P_Mem_702</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-10-20_수정</p>
+						<p>2022-10-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>전자금융거래 이용약관</td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../entry/P_Mem_024.html" target="_blank" class="link">/entry/P_Mem_024</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>마케팅 정보 수신 동의</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/P_Mem_029.html" target="_blank" class="link">/member/common/P_Mem_029</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-01</td>
+					<td class="comment">
+						<p>2022-10-20_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+				<tr class="menu07 end">
+					<td class="depth01"></td>
+					<td>신청완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../entry/P_Mem_704.html" target="_blank" class="link">/entry/P_Mem_704</a></td>
+					<td class="center name">김미선</td>
+					<td class="center end">2022-08-02</td>
+					<td class="comment">
+						<p>2022-10-20_수정</p>
+						<p>2022-10-21_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 회원가입 -->
+
+
+			<!-- 로그인 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">로그인</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">로그인</td>
+					<td>회원</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/login/P_Mem_201.html" target="_blank" class="link">/member/login/P_Mem_201</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment">
+						<p>2023-01-03_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>간편로그인결과</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개+경고아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>비회원</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/login/P_Mem_202.html" target="_blank" class="link">/member/login/P_Mem_202</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment">
+						<p>2022-10-21_수정</p>
+						<p>2022-10-26_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 로그인 -->
+
+			<!-- 회원관리 -->
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">회원관리</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">90일 주기 비밀번호 재설정</td>
+					<td>안내</td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/pw_reset/P_Mem_501.html" target="_blank" class="link">/member/pw_reset/P_Mem_501</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>재설정</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/pw_reset/P_Mem_502.html" target="_blank" class="link">/member/pw_reset/P_Mem_502</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-28</td>
+					<td class="comment">
+						<p>2022-10-21_수정</p>
+						<p>2022-10-25_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 변경완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">아이디비밀번호찾기</td>
+					<td>아이디찾기</td>
+					<td>본인인증</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/P_Mem_311.html" target="_blank" class="link">/member/find/P_Mem_311</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 본인인증결과</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개+경고아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>결과</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/P_Mem_313.html" target="_blank" class="link">/member/find/P_Mem_313</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>비밀번호재설정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/P_Mem_314.html" target="_blank" class="link">/member/find/P_Mem_314</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 재설정결과</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개+경고아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>비밀번호찾기</td>
+					<td>본인인증</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/P_Mem_324.html" target="_blank" class="link">/member/find/P_Mem_324</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>[개발공통] 본인인증결과</td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개+경고아이콘 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>비밀번호재설정</td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/find/P_Mem_326.html" target="_blank" class="link">/member/find/P_Mem_326</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01">휴면회원</td>
+					<td>본인인증</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/rest/P_Mem_410.html" target="_blank" class="link">/member/rest/P_Mem_410</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>인증완료</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../member/common/P_Mem_411.html" target="_blank" class="link">/member/common/P_Mem_411</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>[개발공통] 인증실패</td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 팝업가이드의 알럿 버튼1개 커스텀 해서 사용</p>
+					</td>
+				</tr>
+				<tr class="menu08 end">
+					<td class="depth01"></td>
+					<td>해제완료</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><a href="../member/rest/P_Mem_412.html" target="_blank" class="link">/member/rest/P_Mem_412</a></td>
+					<td class="center name">조민혁</td>
+					<td class="center end">2022-07-29</td>
+					<td class="comment">
+						<p>2022-10-24_수정</p>
+					</td>
+				</tr>
+			</tbody>
+			<!--// 회원관리 -->
+		</table>
+	</section>
+	<!--// 회원 -->
+
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>개발공통 팝업템플릿</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">사이트 공통 팝업</td>
+				</tr>
+				<tr class="menu">
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">리뷰빅이미지</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Pro_213.html" target="_blank" class="link">/popup/P_Pro_213</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">정기배송 시작일 선택</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../popup/P_Ord_501_pop.html" target="_blank" class="link">/popup/P_Ord_501_pop</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">전자금융거래 이용약관</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../entry/P_Mem_024.html" target="_blank" class="link">/entry/P_Mem_024</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+			</tbody>
+
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">팝업템플릿</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">팝업</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">팝업</td>
+					<td><a href="../layout/popup_temp.html" target="_blank" class="link">/layout/popup_temp</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="9">알럿팝업템플릿</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_1.html" target="_blank" class="link">/popup/alert_msg_1</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿 버튼1개</p>
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_2.html" target="_blank" class="link">/popup/alert_msg_2</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿 버튼2개</p>
+					</td>
+				</tr>
+				<tr class="menu01 ignore">
+					<td class="depth01">알럿팝업 3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center">알럿</td>
+					<td><a href="../popup/alert_msg_3.html" target="_blank" class="link">/popup/alert_msg_3</a></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+						<p>📢 알럿 버튼1개+경고아이콘</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</div>
+
+<script>
+	$(document).ready(function() {
+		// html파일열기
+		/* $('.link').on('click', function() {
+			//console.log('e');
+			var tg = '/ckdhc/publish/pc' + $(this).text() + '.html';
+			if (tg == '') {} else {
+				// window.location.href = 'http://pub.wyliedev.co.kr/megamart/pc/'+tg
+				window.open(tg, 'view');
+			}
+			//console.log(tg);
+		}); */
+
+		// 진척률
+		var ignore = $(".menu_wrap tbody .ignore").length,
+			total = $(".menu_wrap tbody tr").length - ignore,
+			complt = $(".menu_wrap tbody tr.end").length,
+			progress = Math.floor(100*complt)/total;
+		$(".note .total").text(total);
+		$(".note .end").text(complt);
+		$(".note .progress").text(progress);
+
+		// 메뉴별목록 보여주기
+		$('.site_nav li').on('click', function() {
+			var tab_id = $(this).index();
+
+			$(this).addClass("on");
+			$(this).siblings().removeClass("on");
+
+			// console.log();
+			$(".menu_wrap").removeClass("all");
+			$(".menu_wrap .menu_list").eq(tab_id - 1).addClass("on").siblings(".menu_list").removeClass("on");
+			if($(this).hasClass("all")){
+				$(".menu_wrap").addClass("all");
+				$(".menu_list").removeClass("on");
+			}
+		});
+	});
+</script>
+
+<!-- status list 템플릿 -->
+<section class="menu_list" style="display:none;">
+	<table>
+		<thead>
+			<tr class="menu_section">
+				<th colspan="9">
+					<h1>메뉴 대분류</h1>
+				</th>
+			</tr>
+			<tr>
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="menu_section_02 ignore">
+				<td colspan="9">상품재고조회</td>
+			</tr>
+			<tr class="menu">
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+			<tr class="menu01">
+				<td class="depth01">메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="center"></td>
+				<td><p class="link">/customer/main</p></td>
+				<td class="center name"></td>
+				<td class="center end"></td>
+				<td class="comment"></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr class="menu_section_02 ignore">
+				<td colspan="9"></td>
+			</tr>
+			<tr class="menu">
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+			<tr class="menu01">
+				<td class="depth01">메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="center"></td>
+				<td><p class="link">/mypage/</p></td>
+				<td class="center name"></td>
+				<td class="center end"></td>
+				<td class="comment"></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<!--// status list 템플릿 -->
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>회원가입: 일반회원가입 등록(가입정보입력)</title>
+    <link rel="stylesheet" href="../../assets/css/member.css"><!-- 회원 -->
+</head>
+
+<body>
+    <!-- #WRAP -->
+    <div id="wrap" class="entry"><!-- [회원가입 class="entry"]-->
+        <!-- #HEADER -->
+        <!-- 헤더 영역 : /layout/header.html에서 확인 -->
+        <!--// #HEADER -->
+        <!-- #CONTAINER -->
+        <div id="container">
+            <!-- #CONTENTS -->
+            <div id="contents">
+                <!-- 회원:일반회원가입 등록(가입정보입력) -->
+                <div class="sub">
+                    <div class="join_cotn">
+                         <!-- 타이틀 영역 -->
+                         <div class="mem_tit_area">
+                            <p class="tit_20">이름을 입력해 주세요.</p>
+                            <p class="sub_txt">추천인 코드가 없으시면 다음 버튼을 눌러주세요.<br>추후 마이페이지에서 추가 입력이 가능합니다.</p>
+                        </div>
+                        <!--// 타이틀 영역 -->
+                        <!-- 추천인 코드 -->
+                        <div class="form_inpt wrn f_active"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 --><!-- 입력폼 활성화 class="f_active" / 입력 완료시 class="complt" 추가 -->
+                            <p class="tit_field">
+                                <span>추천인 코드 (선택)</span>
+                            </p>
+                            <div class="txt">
+                                <input type="text" placeholder="">
+                                <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">사용이 불가한 추천인 코드입니다.</p>
+                            </div>
+                        </div>
+                        <!--// 추천인 코드 -->
+
+                        <!-- 약관동의 -->
+                        <div class="policy_wrap join_policy wrn complt"><!-- 에러 메세지 노출 class="wrn" -->
+                            <!-- 2022-08-09_추가 -->
+                            <p class="tit_field necd">
+                                <span>약관에 동의해 주세요</span>
+                            </p>
+                            <!--// 2022-08-09_추가 -->
+                            <div class="accodn_wrap">
+                                <!-- 고정노출영역 -->
+                                <div class="view_fix">
+                                    <div class="input_chk">
+                                        <div class="form_chk">
+                                            <label class="group">
+                                                <input type="checkbox">
+                                                <i class="icon"></i>
+                                                <strong class="txt">전체동의</strong>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+                                </div>
+                                <!--// 고정노출영역 -->
+
+                                <!-- 오픈컨텐츠 -->
+                                <div class="open_cotn">
+                                    <div class="policy_cont">
+                                        <!-- 1세트 -->
+                                        <div class="poli_sec">
+                                            <div class="poli_wrap">
+                                                <div class="form_chk">
+                                                    <label class="group">
+                                                        <input type="checkbox">
+                                                        <i class="icon"></i>
+                                                        <span class="txt">(필수) 만 14세 이상 회원입니다</span>
+                                                        <span class="blind">선택</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--// 1세트 -->
+                                        <div class="poli_sec">
+                                           <div class="poli_wrap">
+                                                <div class="form_chk">
+                                                    <label class="group">
+                                                        <input type="checkbox">
+                                                        <i class="icon"></i>
+                                                        <span class="txt">(필수) 쇼핑몰 이용약관 동의</span>
+                                                        <span class="blind">선택</span>
+                                                    </label>
+                                                </div>
+                                                <a href="#none" class="txt_link">약관보기</a>
+                                           </div>
+                                        </div>
+                                        <div class="poli_sec">
+                                            <div class="poli_wrap">
+                                                <div class="form_chk">
+                                                    <label class="group">
+                                                        <input type="checkbox">
+                                                        <i class="icon"></i>
+                                                        <span class="txt">(필수) 개인정보 수집 및 이용 동의</span>
+                                                        <span class="blind">선택</span>
+                                                    </label>
+                                                </div>
+                                                <a href="#none" class="txt_link">약관보기</a>
+                                            </div>
+                                        </div>
+                                        <div class="poli_sec">
+                                            <div class="poli_wrap">
+                                                <div class="form_chk">
+                                                    <label class="group">
+                                                        <input type="checkbox">
+                                                        <i class="icon"></i>
+                                                        <span class="txt">(필수) 개인정보 처리방침 동의</span>
+                                                        <span class="blind">선택</span>
+                                                    </label>
+                                                </div>
+                                                <a href="#none" class="txt_link">약관보기</a>
+                                            </div>
+                                        </div>
+                                        <div class="poli_sec">
+                                            <div class="poli_wrap">
+                                                <div class="form_chk">
+                                                    <label class="group">
+                                                        <input type="checkbox">
+                                                        <i class="icon"></i>
+                                                        <span class="txt">(필수) 주문 상품 정보에 대한 동의</span>
+                                                        <span class="blind">선택</span>
+                                                    </label>
+                                                </div>
+                                                <a href="#none" class="txt_link">약관보기</a>
+                                            </div>
+                                        </div>
+                                        <div class="poli_sec">
+                                            <div class="poli_wrap">
+                                                <div class="form_chk">
+                                                    <label class="group">
+                                                        <input type="checkbox">
+                                                        <i class="icon"></i>
+                                                        <span class="txt">(필수) 결제대행 서비스 이용약관 동의</span>
+                                                        <span class="blind">선택</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="dl_layout">
+                                                <div class="dl_div">
+                                                    <p class="tit">전자금융거래 이용약관</p>
+                                                    <a href="#none" class="txt_link">약관보기</a>
+                                                </div>
+                                                <div class="dl_div">
+                                                    <p class="tit">개인정보 수집 및 이용동의</p>
+                                                    <a href="#none" class="txt_link">약관보기</a>
+                                                </div>
+                                                <div class="dl_div">
+                                                    <p class="tit">개인정보 취급위탁에 대한 동의</p>
+                                                    <a href="#none" class="txt_link">약관보기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// 오픈컨텐츠 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">약관에 동의해 주세요.</p>
+                            </div>
+                        </div>
+                        <!--// 약관동의 -->
+                        <!-- 이메일 -->
+                        <div class="form_inpt complt wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 입력값 오류 class="error" 추가 -->
+                            <p class="tit_field necd">
+                                <span>이메일</span>
+                            </p>
+                            <div class="txt">
+                                <input type="text" placeholder="예시) example@email.com">
+                                <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">이메일 형식에 맞게 작성해 주세요.</p>
+                            </div>
+                        </div>
+                        <!--// 이메일 -->
+                        <!-- 비밀번호 확인 -->
+                        <div class="form_inpt complt">
+                            <p class="tit_field necd">
+                                <span>비밀번호 확인</span>
+                            </p>
+                            <div class="txt">
+                                <input type="password" placeholder="비밀번호 다시 입력" value=""><!-- 2022-10-19_수정 -->
+                                <button class="btn_pw show"><span class="blind">암호보기</span></button>
+                                <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+                            </div>
+                            <div class="val_check">
+                                <span class="pass">영문</span><!--  조건 충족 시 class="pass" -->
+                                <span class="pass">숫자</span>
+                                <span class="fail">특수문자</span>
+                                <span>조합 8~16자</span>
+                                <span class="pass">일치</span>
+                            </div>
+                        </div>
+                        <!--// 비밀번호 확인 -->
+                        <!-- 비밀번호 -->
+                        <div class="form_inpt complt">
+                            <p class="tit_field necd">
+                                <span>비밀번호</span>
+                            </p>
+                            <div class="txt">
+                                <input type="password" placeholder="영문, 숫자, 특수문자 조합 8~16자" value=""><!-- 2022-10-19_수정 -->
+                                <button class="btn_pw show"><span class="blind">암호보기</span></button>
+                                <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+                            </div>
+                            <div class="val_check">
+                                <span class="pass">영문</span><!--  조건 충족 시 class="pass" -->
+                                <span class="pass">숫자</span>
+                                <span class="fail">특수문자</span>
+                                <span>조합 8~16자</span>
+                            </div>
+                        </div>
+                        <!--// 비밀번호 -->
+                        <!-- 아이디 -->
+                        <div class="form_inpt complt">
+                            <p class="tit_field necd">
+                                <span>아이디</span>
+                            </p>
+                            <div class="txt">
+                                <input type="text" placeholder="영문, 숫자조합 6~20자"><!-- 2022-10-19_수정 -->
+                                <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+                            </div>
+                            <div class="val_check">
+                                <span class="pass">영문소문자</span><!--  조건 충족 시 class="pass" -->
+                                <span>숫자</span>
+                                <span>조합 4~20자</span>
+                                <span>아이디중복확인</span>
+                            </div>
+                        </div>
+                        <!--// 아이디 -->
+
+                        <div class="join_form_sec non_mod"> <!-- 수정불가 class ="non_mod" 추가 -->
+                            <!-- 전화번호 -->
+                            <div class="form_inpt complt">
+                                <p class="tit_field necd">
+                                    <span>전화번호</span>
+                                </p>
+                                <div class="txt">
+                                    <input type="tel" placeholder="000-0000-0000" value="010-1234-5678">
+                                    <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+                                </div>
+                            </div>
+                            <!--// 전화번호 -->
+                            <!-- 이름 -->
+                            <div class="form_inpt complt">
+                                <p class="tit_field necd">
+                                    <span>이름</span>
+                                </p>
+                                <div class="txt">
+                                    <input type="text" placeholder="이름을 입력해 주세요." value="홍길동">
+                                    <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+                                </div>
+                            </div>
+                            <!--// 이름 -->
+                        </div>
+                    </div>
+                    <!-- 하단고정 버튼 -->
+                    <div class="btn_fixed">
+                        <div class="btn_wrap" btn-type="main_bt"><!-- 버튼 비활성화  class="inactv" 추가 -->
+                            <a href="#none" class="btn" bt_role="confirm">다음</a>
+                        </div>
+                    </div>
+                    <!--// 하단고정 버튼 -->
+                </div>
+                <!--// 회원:일반회원가입 등록(가입정보입력) -->
+                <!--// #CONTENTS -->
+            </div>
+            <!--// #CONTAINER -->
+        </div>
+        <!--// #WRAP -->
+    </body>
+</html>

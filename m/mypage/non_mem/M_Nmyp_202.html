@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>마이페이지:비회원 주문/베송조회(주문상세)</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+	<!-- #WRAP -->
+	<div id="wrap" class="mypage my_order_vw non_mem bg_gy"><!-- [마이페이지 class="mypage", 주문/배송조회_상세 class="my_order_vw" 비회원 class="non_mem"] -->
+		<!-- #HEADER -->
+		<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+		<!--// #HEADER -->
+
+		<!-- #CONTAINER -->
+		<div id="container">
+			<!-- #CONTENTS -->
+			<div id="contents">
+				<!-- 비회원 주문/배송조회(상세) -->
+				<div class="sub">
+					<div class="ord_vw_cotn">
+						<!-- 주문상품 -->
+						<div class="ord_top_sec">
+							<div class="top_ord_info">
+								<div class="ord_info_lef">
+									<p class="flag_bor bl">일반배송</p>
+									<p class="txt_date">2022.03.05</p>
+									<p class="txt_prd_num">123456789</p>
+								</div>
+							</div>
+							<!-- 주문상품 목록 -->
+							<div class="prd_acc_area">
+								<div class="accodn_wrap order_acc open">
+									<!-- 고정노출영역 -->
+									<div class="view_fix">
+										<div class="tit_area">
+											<div class="dl_layout">
+												<div class="dl_div">
+													<p class="tit">
+														<strong class="tit_16">주문상품</strong>
+													</p>
+													<div class="rit_con">
+														<p class="txt_ord_prd">
+															<strong>2월 20%추가할인 락토핏 생유산균 골드</strong>
+															<span>외 2건 </span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+									</div>
+									<!--// 고정노출영역 -->
+
+									<!-- 오픈컨텐츠 -->
+									<div class="open_cotn bg_gy" style="display: block;">
+										<div class="ord_list_sec">
+											<!-- 주문 리스트 -->
+											<div class="ord_list_wrap">
+												<!--  상온/실온 -->
+												<div class="ord_list_box">
+													<div class="tit_ord_area">
+														<div class="lef_state tooltip_wrap">
+															<div class="ord_state">
+																<p class="txt_14">배송 준비중</p>
+															</div>
+														</div>
+														<div class="rit_state">
+															<p class="tit_temp warm">상온/실온</p>
+														</div>
+													</div>
+													<div class="ord_prd_cont">
+														<div class="ord_prd_list">
+															<div class="prod_h_wrap">
+																<!-- 1세트 -->
+																<div class="prd_group_h">
+																	<!-- 상태값필요할때 class="on_dim"추가 -->
+																	<div class="cotn">
+																		<div class="prd_artic">
+																			<!-- 이미지 -->
+																			<div class="img_area">
+																				<figure class="img">
+																					<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																				</figure>
+																				<p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+																			</div>
+																			<!--// 이미지 -->
+
+																			<!-- 판매정보 -->
+																			<div class="prd_verti_info">
+																				<!-- 상품명 -->
+																				<div class="txt">
+																					<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+																					<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																				</div>
+																				<!--// 상품명 -->
+																				<div class="object_area">
+																					<div class="sale_info">
+																						<!-- 2022-11-25_수정 -->
+																						<div class="price">
+																							<p>37,500원</p>
+																						</div>
+																						<div class="prd_num">
+																							<p>1개</p>
+																						</div>
+																						<!--// 2022-11-25_수정 -->
+																					</div>
+																				</div>
+																			</div>
+																			<!--// 판매정보 -->
+																		</div>
+																	</div>
+																</div>
+																<!--// 1세트 -->
+																<div class="prd_group_h">
+																	<div class="cotn">
+																		<div class="prd_artic">
+																			<div class="img_area">
+																				<figure class="img">
+																					<img src="../../assets/images/temp/prd_04.jpg" alt="">
+																				</figure>
+																				<p class="status_txt">품절</p>
+																			</div>
+																			<div class="prd_verti_info">
+																				<div class="txt">
+																					<h1 class="name">2월 20%추가할인 락토핏 생유산균 베베 1박스(2개월분) 일주일간 특가 오픈!!</h1>
+																					<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																				</div>
+																				<div class="object_area">
+																					<div class="sale_info">
+																						<!-- 2022-11-25_수정 -->
+																						<div class="price">
+																							<p>37,500원</p>
+																						</div>
+																						<div class="prd_num">
+																							<p>1개</p>
+																						</div>
+																						<!--// 2022-11-25_수정 -->
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="btn_wrap" btn-type="sub_bt">
+															<a href="#none" class="btn bc_fff h_32">취소신청</a>
+														</div>
+													</div>
+												</div>
+												<!--//  상온/실온 -->
+
+												<!--  냉동/냉장 -->
+												<div class="ord_list_box">
+													<div class="tit_ord_area">
+														<div class="lef_state">
+															<div class="ord_state">
+																<p class="txt_14">배송중</p>
+																<div class="btn_tool_wrap btn_deliv_tip">
+																	<div class="btn_wrap" btn-type="sub_bt">
+																		<a href="#none" class="btn bc_fff_03 h_24 btn_tooltip">배송조회</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="rit_state">
+															<p class="tit_temp ice">냉동/냉장</p>
+														</div>
+													</div>
+													<div class="ord_prd_cont">
+														<div class="ord_prd_list">
+															<div class="prod_h_wrap">
+																<!-- 1세트 -->
+																<div class="prd_group_h">
+																	<!-- 상태값필요할때 class="on_dim"추가 -->
+																	<div class="cotn">
+																		<div class="prd_artic">
+																			<!-- 이미지 -->
+																			<div class="img_area">
+																				<figure class="img">
+																					<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																				</figure>
+																				<p class="status_txt">품절</p>
+																				<!-- 상품상태값:텍스트수정 -->
+																			</div>
+																			<!--// 이미지 -->
+
+																			<!-- 판매정보 -->
+																			<div class="prd_verti_info">
+																				<!-- 상품명 -->
+																				<div class="txt">
+																					<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+																					<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																				</div>
+																				<!--// 상품명 -->
+																				<div class="object_area">
+																					<div class="sale_info">
+																						<!-- 2022-11-25_수정 -->
+																						<div class="price">
+																							<p>37,500원</p>
+																						</div>
+																						<div class="prd_num">
+																							<p>1개</p>
+																						</div>
+																						<!--// 2022-11-25_수정 -->
+																					</div>
+																				</div>
+																			</div>
+																			<!--// 판매정보 -->
+																		</div>
+																	</div>
+																</div>
+																<!--// 1세트 -->
+															</div>
+														</div>
+														<div class="btn_wrap" btn-type="sub_bt">
+															<!--  5개 버튼일 때 class="btn_num05" 추가 -->
+															<a href="#none" class="btn bc_fff h_32">미수령신고</a>
+															<a href="#none" class="btn bc_fff h_32">교환신청</a>
+															<a href="#none" class="btn bc_fff h_32">반품신청</a>
+															<a href="#none" class="btn bc_fff_02 h_32">수취확인</a>
+														</div>
+													</div>
+												</div>
+												<!--//  냉동/냉장 -->
+											</div>
+											<!--// 주문 리스트 -->
+											<!-- 2022-11-25_수정 -->
+										</div>
+									</div>
+									<!--// 오픈컨텐츠 -->
+								</div>
+							</div>
+							<!--// 주문상품 목록 -->
+						</div>
+						<!--// 주문상품 -->
+
+						<!-- 주문자명 -->
+						<div class="ord_vw_sec ord_name_sec">
+							<div class="tit_area">
+								<div class="dl_layout">
+									<div class="dl_div">
+										<p class="tit"><strong class="tit_16">주문자명</strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="cont">
+								<div class="box_gy bg_f9fafc">
+									<p>홍길동</p>
+								</div>
+							</div>
+						</div>
+						<!--// 주문자명 -->
+
+						<!-- 배송지 -->
+						<div class="ord_vw_sec deliv_sec pa_tb0"><!-- 2022-11-17_수정 -->
+							<div class="accodn_wrap order_acc open">
+								<div class="view_fix">
+									<div class="tit_area">
+										<div class="dl_layout">
+											<div class="dl_div">
+												<p class="tit"><strong class="tit_16">배송지 정보</strong></p>
+											</div>
+										</div>
+									</div>
+									<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+								</div>
+								<div class="cont open_cotn">
+									<div class="dl_layout">
+										<div class="dl_div">
+											<p class="tit">받는분</p>
+											<div class="txt">
+												<p>홍길동</p>
+												<div class="btn_wrap btn_delv_wrap">
+													<a href="#none" class="btn bc_fff_03 h_24">배송지변경</a>
+												</div>
+											</div>
+										</div>
+										<div class="dl_div">
+											<p class="tit">
+												휴대폰
+											</p>
+											<div class="txt">
+												<p>010-1234-5678</p>
+											</div>
+										</div>
+										<div class="dl_div">
+											<p class="tit">배송지</p>
+											<div class="txt">
+												<p>서울시 강남구 학동로 146 와일리 타워 2층</p>
+											</div>
+										</div>
+										<div class="dl_div">
+											<p class="tit">요청사항</p>
+											<div class="txt">
+												<p>문앞에 놓아주세요. 문 앞 비밀번호는123456 입니다.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 배송지 -->
+
+						<!-- 총 결제금액 -->
+						<div class="ord_vw_sec total_pay_sec pa_tb0"><!-- 2022-11-17_수정 -->
+							<div class="accodn_wrap order_acc open">
+								<div class="view_fix">
+									<div class="tit_area">
+										<div class="dl_layout">
+											<div class="dl_div">
+												<p class="tit">
+													<strong class="tit_16">총 결제금액</strong>
+												</p>
+												<div class="rit_con">
+													<p class="total_price"><strong>180,000</strong><span>원</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+								</div>
+								<div class="cont open_cotn">
+									<div class="pymnt_sec">
+										<div class="obj_wrap">
+											<div class="obj_div">
+												<p class="tit">총 상품금액</p>
+												<div class="price">
+													<p><strong>180,000</strong><span>원</span></p>
+												</div>
+											</div>
+										</div>
+										<div class="obj_wrap">
+											<div class="obj_div">
+												<p class="tit">총 할인금액</p>
+												<div class="price">
+													<p><strong>0</strong><span>원</span></p>
+												</div>
+											</div>
+											<div class="obj_pymnt_det">
+												<div class="box_gy bg_f9fafc">
+													<div class="dl_layout">
+														<div class="dl_div">
+															<p class="tit">상품 할인(비회원)</p>
+															<div class="txt_price">
+																<p><strong>0</strong><span>원</span></p>
+															</div>
+														</div>
+														<div class="dl_div">
+															<p class="tit">배송비 쿠폰 할인</p>
+															<div class="txt_price">
+																<p><strong>0</strong><span>원</span></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="obj_wrap">
+											<div class="obj_div">
+												<p class="tit">적립금 사용</p>
+												<div class="price">
+													<p><strong>0</strong><span>P</span></p>
+												</div>
+											</div>
+										</div>
+										<div class="obj_wrap">
+											<div class="obj_div">
+												<p class="tit">총 배송비</p>
+												<div class="price">
+													<p><strong>0</strong><span>원</span></p>
+												</div>
+											</div>
+											<div class="obj_pymnt_det">
+												<div class="box_gy bg_f9fafc">
+													<div class="dl_layout">
+														<div class="dl_div">
+															<p class="tit">상온/실온 배송비</p>
+															<div class="txt_price">
+																<p><strong>0</strong><span>원</span></p>
+															</div>
+														</div>
+														<!-- 금액상세 -->
+														<div class="dl_2depth_area">
+															<div class="dl_div">
+																<p class="tit">제주/도서산간 추가</p>
+																<div class="txt_price">
+																	<p><strong>0</strong><span>원</span></p>
+																</div>
+															</div>
+														</div>
+														<!--// 금액상세 -->
+														<div class="dl_div">
+															<p class="tit">냉동/냉장 배송비</p>
+															<div class="txt_price">
+																<p><strong>0</strong><span>원</span></p>
+															</div>
+														</div>
+														<div class="dl_2depth_area">
+															<div class="dl_div">
+																<p class="tit">제주/도서산간 추가</p>
+																<div class="txt_price">
+																	<p><strong>0</strong><span>원</span></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 총 결제금액 -->
+
+						<!-- 적립예정 적립금 -->
+						<div class="ord_vw_sec save_sec">
+							<div class="tit_area">
+								<div class="dl_layout tooltip_wrap">
+									<div class="dl_div">
+										<div class="tit">
+											<strong class="tit_16">적립예정 적립금</strong>
+											<div class="btn_tool_wrap">
+												<a href="#none" class="btn_tooltip btn_q_mark"><i class="icon_q_mark"></i></a>
+												<div class="tooltip_box">
+													<div class="tooltip">
+														<p>적립예정 적립금은 <span class="color_bl">구매금액 적립금</span>과 리뷰작성 시<br><span class="color_bl">최대 지급 적립금</span>에 대한 안내입니다.</p>
+														<div class="noti_copy gray_02">
+															<p>리뷰 적립금 = 리뷰 작성 시 지급되는 적립금</p>
+															<p>최대 지급 적립금 = 포토리뷰 작성 시 지급되는 적립금</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="rit_con">
+											<p><strong>0</strong><span>P</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cont">
+								<div class="pymnt_sec">
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit">구매적립</p>
+											<div class="txt">
+												<p><strong>회원전용</strong></p>
+											</div>
+										</div>
+									</div>
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit">
+												추가적립
+											</p>
+											<div class="txt">
+												<p><strong>회원전용</strong></p>
+											</div>
+										</div>
+									</div>
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit">
+												리뷰적립
+											</p>
+											<div class="txt">
+												<p><strong>회원전용</strong></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 적립예정 적립금 -->
+						<!-- 결제수단  -->
+						<div class="ord_vw_sec method_sec">
+							<div class="tit_area">
+								<div class="dl_layout">
+									<div class="dl_div">
+										<p class="tit"><strong class="tit_16">결제수단</strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="cont">
+								<div class="pymnt_sec">
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit">결제정보</p>
+											<div class="txt">
+												<p><strong>삼성카드(4009-13**-****) 일시불</strong></p>
+											</div>
+										</div>
+									</div>
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit"> 결제완료</p>
+											<div class="txt">
+												<p><strong>2022.03.05 (토) 15:00</strong></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 입금대기 -->
+								<div class="pymnt_sec" style="display:none">
+									<!-- [입금대기 데이터목록] 사용시 style="display:none" 제거 -->
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit">
+												입금은행
+											</p>
+											<div class="txt">
+												<p><strong>기업은행</strong></p>
+											</div>
+										</div>
+									</div>
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit">입금계좌</p>
+											<div class="txt">
+												<p><strong>1234464789546</strong> (예금주: 종근당 건강)</p>
+											</div>
+										</div>
+									</div>
+									<div class="obj_wrap">
+										<div class="obj_div">
+											<p class="tit">입금기한</p>
+											<div class="txt_method">
+												<p><strong>2022.03.05 15:00 까지</strong></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// 입금대기 -->
+							</div>
+						</div>
+						<!--// 결제수단  -->
+						<!-- 유의사항 -->
+						<div class="ord_vw_sec">
+							<div class="noti_copy gray_02">
+								<p>주문 취소는 입금대기/ 결제완료 상태의 상품만 가능합니다.</p>
+								<p>일부 주문취소에 제한이 있는 상품의 경우 1:1 문의를 이용해주시기 바랍니다.</p>
+								<p>교환/ 반품신청은 배송 완료한 날로부터 7일 이내에 신청 가능하며, 배송완료 후 8일이 경과한 상품의 경우 1:1 문의를 이용해주시기 바랍니다.</p>
+							</div>
+						</div>
+						<!--// 유의사항 -->
+						<div class="btn_wrap" btn-type="sub_bt">
+							<a href="#none" class="btn jkd_b_w">목록</a>
+							<a href="#none" class="btn jkd_b">고객센터 문의</a>
+						</div>
+					</div>
+				</div>
+				<!--// 비회원 주문/배송조회(상세) -->
+			</div>
+			<!--// #CONTENTS -->
+		</div>
+		<!--// #CONTAINER -->
+	</div>
+	<!--// #WRAP -->
+</body>
+
+</html>

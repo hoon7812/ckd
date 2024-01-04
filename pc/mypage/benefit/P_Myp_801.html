@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>마이페이지:나의적립금</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage my_saved"><!-- [마이페이지 class="mypage", 나의적립금 class="my_saved"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container" class="lnb_ui">
+		<!-- #LNB -->
+		<nav id="lnb">
+			<div class="sub_tit_28">
+				<h1 class="tit_28">마이페이지</h1>
+			</div>
+			<div class="cotn">
+				<!-- 메뉴:1세트 -->
+				<div class="menu_group">
+					<!-- 1뎁스 -->
+					<div class="dep_01">
+						<!-- 1뎁스링크 -->
+						<a href="#none" class="dep01_link">
+							<span>주문/배송조회</span>
+							<i class="i_sp_16 arr_gray_right"></i>
+						</a>
+						<!--// 1뎁스링크 -->
+					</div>
+					<!--// 1뎁스 -->
+				</div>
+				<!--// 메뉴:1세트 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>취소/교환/반품</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>정기배송 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>간편결제 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의활동</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<!-- 2뎁스 -->
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">관심상품</a></li><!-- 1세트 -->
+							<li><a href="#none">최근 본 상품</a></li>
+							<li><a href="#none">최근 구매상품</a></li>
+						</ul>
+					</div>
+					<!--// 2뎁스 -->
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 적립금</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 할인쿠폰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>1:1 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>상품리뷰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>제휴/대량구매 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<!-- 일반회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">회원정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">추천인 코드관리</a></li>
+							<li><a href="#none">회원탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 일반회원 -->
+
+				<!-- 기업회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">기업정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">기업회원 탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 기업회원 -->
+			</div>
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<div class="sub_tit_24">
+				<h2 class="tit_24">나의 적립금</h2>
+			</div>
+			<!-- 마이페이지:나의 적립금 -->
+			<div class="sub">
+				<div class="saved_wrap">
+					<!-- 현재 적립금 상태 -->
+					<div class="my_saved_box">
+						<div class="save_status">
+							<div class="txt_wrap">
+								<p class="tit">사용가능 적립금</p>
+								<p class="tit_24"><!-- 2022-10-31_수정 -->
+									<span class="point">0</span>P
+								</p>
+							</div>
+							<!-- 툴팁 -->
+							<div class="tooltip_wrap tip_top">
+								<div class="btn_tool_wrap">
+									<a href="#none" class="btn_tooltip">
+										<i class="info"></i>
+									</a>
+									<div class="tooltip_box use" style="width:640px;">
+										<div class="tooltip">
+											<p>지급 된 적립금 별 유효기간이 다르므로 반드시 유효기간을 확인 후 소멸되지 않도록 이용바랍니다.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// 툴팁 -->
+						</div>
+						<div class="save_status">
+							<div class="txt_wrap">
+								<p class="tit">소멸예정 적립금</p>
+								<p class="tit_24"><!-- 2022-10-31_수정 -->
+									<span class="point">500</span>P
+								</p>
+							</div>
+							<div class="tooltip_wrap tip_top">
+								<div class="btn_tool_wrap">
+									<a href="#none" class="btn_tooltip">
+										<i class="info"></i>
+									</a>
+									<div class="tooltip_box extinct" style="width:550px;">
+										<div class="tooltip">
+											<p>유효기간이 7일 이내인 적립금 입니다. 적립금 소멸은 해당일 24:00에 소멸됩니다.</p><!-- 2022-10-31_수정 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 현재 적립금 상태 -->
+					<div class="saved_cotn">
+						<!-- 기간조회 -->
+						<section class="term_look_wrap">
+							<div class="bg_box cotn">
+								<!-- 기간별선택 -->
+								<div class="state">
+									<div class="btn_wrap multi" bt-type="sub_bt">
+										<div class="btn_cotn">
+											<button type="button" class="btn bc_fff h_40 on">1개월</button><!-- 선택:class="on"추가 --><!-- 2022-10-31_수정 -->
+											<button type="button" class="btn bc_fff h_40">3개월</button><!-- 2022-10-31_수정 -->
+											<button type="button" class="btn bc_fff h_40">6개월</button><!-- 2022-10-31_수정 -->
+											<button type="button" class="btn bc_fff h_40">기간조회</button>
+										</div>
+									</div>
+								</div>
+								<!--// 기간별선택 -->
+								<!-- 직접선택 -->
+								<div class="slect_date">
+									<!-- 날짜선택 -->
+									<div class="input_set">
+										<div class="form_inpt h_40">
+											<div class="txt">
+												<input type="date">
+											</div>
+										</div>
+										<div class="form_inpt h_40">
+											<div class="txt">
+												<input type="date">
+											</div>
+										</div>
+									</div>
+									<!--// 날짜선택 -->
+
+									<!-- 조회버튼 -->
+									<div class="btn_wrap" btn-type="sub_bt">
+										<div class="btn_cotn">
+											<button type="button" class="btn jkd_b_w h_40">조회</button>
+										</div>
+									</div>
+									<!--// 조회버튼 -->
+								</div>
+								<!--// 직접선택 -->
+							</div>
+						</section>
+						<!--// 기간조회 -->
+						<!-- 적립금 조회 목록 -->
+						<div class="saved_li_wrap">
+							<!-- 조건 탭메뉴 -->
+							<section class="per_tab_wrap">
+								<div class="tab_cotn">
+									<!-- 1세트 -->
+									<div class="div_set on"><!-- 활성화:class="on"추가 -->
+										<a href="#none" class="bt_tab">
+											<span>전체</span>
+										</a>
+									</div>
+									<!--// 1세트 -->
+									<div class="div_set">
+										<a href="#none" class="bt_tab">
+											<span>적립</span>
+										</a>
+									</div>
+									<div class="div_set">
+										<a href="#none" class="bt_tab">
+											<span>사용</span><!-- 2022-10-31_수정 -->
+										</a>
+									</div>
+								</div>
+							</section>
+							<!--// 조건 탭메뉴 -->
+							<div class="saved_li_cotn">
+								<!-- 2022-10-31_수정 -->
+								<!-- 적립목록 테이블 -->
+								<div class="tb_type02">
+									<!-- 테이블 -->
+									<div class="cotn">
+										<table>
+											<caption>나의 적립금 목록</caption><!-- 2022-10-31_수정 -->
+											<colgroup>
+												<col style="width:8%;">
+												<col style="width:17%;">
+												<col style="width:43%;">
+												<col style="width:9%;">
+												<col style="width:23%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th><!-- 2022-10-31_수정 -->
+													<th scope="col">발생일</th><!-- 2022-10-31_수정 -->
+													<th scope="col">상세내역</th>
+													<th scope="col">적립금</th>
+													<th scope="col">사용기간</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<p class="color_or"><strong>사용</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>15,000</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="fc_b6"><strong>만료</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">이벤트참여</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>100</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="color_bl"><strong>적립</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>15,000</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="fc_b6"><strong>만료</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">이벤트참여</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>100</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="color_or"><strong>사용</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>15,000</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="fc_b6"><strong>만료</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">이벤트참여</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>100</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="color_or"><strong>사용</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>15,000</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="fc_b6"><strong>만료</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">이벤트참여</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>100</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="color_or"><strong>사용</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>15,000</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="fc_b6"><strong>만료</strong></p>
+													</td>
+													<td>
+														<p class="date">2022.07.19 17:56</p>
+													</td>
+													<td class="t_l">
+														<p class="t_hd_01">이벤트참여</p>
+													</td>
+													<td>
+														<div class="point">
+															<p>
+																<span>100</span>
+																<span>P</span>
+															</p>
+														</div>
+													</td>
+													<td>~20022.04.03 24:00 까지</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!--// 테이블 -->
+
+									<!-- paging -->
+									<div class="paging">
+										<a href="#none" class="i_sp_24 arr_left prev"></a>
+										<a href="#none" class="on">1</a><!-- 현재페이지class="on"추가 -->
+										<a href="#none">2</a>
+										<a href="#none">3</a>
+										<a href="#none">4</a>
+										<a href="#none">5</a>
+										<a href="#none">6</a>
+										<a href="#none">7</a>
+										<a href="#none">8</a>
+										<a href="#none" class="i_sp_24 arr_right next"></a>
+									</div>
+									<!--// paging -->
+								</div>
+								<!--// 적립목록 테이블 -->
+							</div>
+							<!-- 데이터 없음 -->
+							<div class="data_none">
+								<div class="cotn">
+									<p>이용내역이 없습니다.</p><!-- 2022-10-31_수정 -->
+									<div class="btn_wrap" btn-type="sub_bt">
+										<div class="btn_cotn">
+											<a href="../../main/P_Main_001.html" class="btn bc_fff_02 w_320">쇼핑하러 가기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// 데이터 없음 -->
+						</div>
+						<!-- 적립금 조회 목록 -->
+					</div>
+				</div>
+			</div>
+			<!-- 마이페이지:나의 적립금 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

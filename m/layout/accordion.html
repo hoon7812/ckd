@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>아코디언</title>
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap">
+	<p class="tit">👉 아코디언 컨텐츠</p>
+	<!-- 아코디언컨텐츠 -->
+	<div class="accodn_wrap open">
+		<!-- 고정노출영역 -->
+		<div class="view_fix">
+			<p>아코디언 컨텐츠에서 항상 보이는 영역</p>
+			<p>내부 내용은 각 메뉴의 디자인에 맞춰 class="accodn_wrap"영역을 section이나 div로 감싼 후 퍼블리싱 하기</p>
+			<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+		</div>
+		<!--// 고정노출영역 -->
+
+		<!-- 오픈컨텐츠 -->
+		<div class="open_cotn">
+			<p>아코디언 열리면 보이는 컨텐츠 영역</p>
+			<p>모든 국민은 인간으로서의 존엄과 가치를 가지며, 행복을 추구할 권리를 가진다. 국가는 개인이 가지는 불가침의 기본적 인권을 확인하고 이를 보장할 의무를 진다.</p>
+		</div>
+		<!--// 오픈컨텐츠 -->
+	</div>
+	<!--// 아코디언컨텐츠 -->
+
+	<!-- 아코디언컨텐츠 -->
+	<div class="accodn_wrap bg_colr">
+		<!-- 고정노출영역 -->
+		<div class="view_fix">
+			<p>아코디언 컨텐츠에서 항상 보이는 영역</p>
+			<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+		</div>
+		<!--// 고정노출영역 -->
+
+		<!-- 오픈컨텐츠 -->
+		<div class="open_cotn">
+			<p>아코디언 열리면 보이는 컨텐츠 영역</p>
+		</div>
+		<!--// 오픈컨텐츠 -->
+	</div>
+	<!--// 아코디언컨텐츠 -->
+
+	<hr class="div_gap">
+	<p class="tit">👉 아코디언내부에 아코디언 기능이 필요할 때</p>
+	<div class="g_ex">
+		<p>고정영역이 되어야 할 곳에 class="acc_layout" 추가</p>
+		<p>고정영역에 트리거 추가</p>
+		<p>class="acc_layout" 형제 구조로 div class="acc_open_cotn" 생성, 이 안에서 마크업할 것</p>
+	</div>
+	<div class="obj_wrap acc_layout active"><!-- 아코디언열림 class="active"추가 -->
+		<div class="obj_div">
+			<p class="tit">쿠폰 할인금액</p>
+			<div class="price">
+				<p>
+					<strong class="color_or">-32,000</strong>
+					<span>원</span>
+				</p>
+			</div>
+		</div>
+		<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i><!-- 아코디언트리거 -->
+	</div>
+	<div class="acc_open_cotn"><!-- 오픈컨텐츠 -->
+		<div class="noti_copy gray_02">
+			<p>최대할인 혜택이 적용되었습니다.</p>
+			<p>보유하신 쿠폰 중 <span>3</span>장의 쿠폰이 적용되었습니다.</p>
+		</div>
+		<!-- 상품쿠폰 -->
+		<div class="copn_item">
+			<!-- 쿠폰없음 -->
+			<div class="data_none">
+				<div class="cotn">
+					<i class="icon_none"></i>
+					<p class="mn_copy">보유중인 쿠폰이 없습니다.</p>
+				</div>
+				<div class="noti_copy gray_02">
+					<p>다운로드 가능한 쿠폰을 확인하시고 다양한 혜택이 담긴 쿠폰을<br>다운로드 하실 수 있습니다.</p>
+				</div>
+			</div>
+			<!--// 쿠폰없음 -->
+		</div>
+		<!--// 상품쿠폰 -->
+	</div>
+</div>
+<!--// #WRAP -->
+</body>
+</html>

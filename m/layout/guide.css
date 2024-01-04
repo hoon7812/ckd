@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.wrap{
+	margin:0 auto;
+	max-width:1600px;
+	width:100%;
+}
+/* h3{
+	font-size:25px;
+	color:#000;
+	margin-bottom:10px;
+} */
+h4{
+	color:#000;
+	font-size:18px;
+	font-weight:500;
+}
+.guide-wrap{}
+.guide-wrap .tit_32 {font-size:30px;}
+.guide-sec{
+	display:flex;
+	flex-wrap:wrap;
+	margin:0 0 30px -30px;
+	width:100%;
+}
+.guide-box {flex:none; margin-left:30px;}
+.guide-box + .guide-box{
+	margin-left:30px;
+}
+.guide-box h1,
+.guide-box p {font-size:16px; display:inline-block;}
+iframe{
+	height:100%;
+	width:100%;
+}
+.iframe-box{
+	width:360px;
+	height:760px;
+	border:1px solid #999;
+}
+.guide-wrap .guide-box p {color:#0042BF;
+	font-family:consolas;
+	font-size:14px;
+	font-weight:bold;}
+
+.tit {font-size:15px; font-weight:bold; margin:10px 0 5px;}
+#wrap {overflow:hidden; box-sizing:border-box; padding:10px;}
+.g_ex {margin:15px 0;}
+.g_ex p {position:relative; padding-left:22px; font-size:13px; font-weight:500;}
+.g_ex p:before {content:'📌'; position:absolute; left:0; top:0; width:5px; height:5px;}
+.g_ex p + p {padding-top:4px;}
+
+.gap {margin-top:16px;}
+
+/* ------------------------------ 헤더영역 CSS 제어 예시 ------------------------------ */
+#header .temp_main .head_wrap .sub_head {display:none;}
+
+#header .temp_main .head_wrap {padding:2.778vw 4.444vw 3.056vw;}
+#header .temp_main .head_wrap .idx_head {display:flex;}
+#header .temp_main .head_wrap .menu_wrap .btn_menu.alarm,
+#header .temp_main .head_wrap .menu_wrap .btn_menu.cart {display:block;}
+
+#header .temp_home {}
+#header .temp_home .head_wrap .menu_wrap .btn_menu.home {display:block;}
+#header .temp_home .head_wrap .menu_wrap .btn_menu.alarm,
+#header .temp_home .head_wrap .menu_wrap .btn_menu.cart {display:none;}
+
+#header .temp_prd {}
+#header .temp_prd .sub_tit {overflow:hidden; font-size:3.889vw; text-align:left; text-overflow:ellipsis; word-wrap:normal; white-space:nowrap; margin-left:7.778vw; width:calc(100% - 26.389vw);}
+#header .temp_prd .head_wrap .menu_wrap .alarm {display:none;}
+#header .temp_prd .head_wrap .menu_wrap .search {display:block;}
+
+#header .temp_service .head_wrap .go_back,
+#header .temp_service .head_wrap .btn_menu.share{display:block;}
+#header .temp_service .head_wrap .menu_wrap .btn_menu.alarm,
+#header .temp_service .head_wrap .menu_wrap .btn_menu.cart{display:none;}
+
+#header .temp_search .head_wrap {padding:2.778vw 4.444vw 3.056vw;}
+#header .temp_search .head_wrap .sub_tit {display:none;}
+#header .temp_search .head_wrap .srch_form {display:block;}
+#header .temp_search .head_wrap .menu_wrap {display:none;}

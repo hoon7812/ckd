@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>배송지관리:마이페이지배송지목록</title>
+</head>
+
+<body class="up"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- 팝업:배송지관리 -->
+<section class="full_popup full_01 adr_pop on"><!-- 배송지목록 class="adr_pop" 추가, 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">배송지 관리</h1>
+		<a href="#none" class="closed">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents bg_gy">
+		<!-- 2022-10-31_수정 -->
+
+		<!-- 배송지 목록 -->
+		<div class="deliv_wrap">
+			<!-- 기본배송지 -->
+			<div class="form_rdo box">
+				<div class="group">
+					<!-- 2022-10-31_수정 -->
+					<div class="cotn">
+						<div class="adr_wrap">
+							<div class="adr_name">
+								<h3 class="tit_16">홍길동</h3>
+								<span class="flag_adr">기본배송지</span>
+							</div>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="dl_layout">
+								<div class="dl_div">
+									<p class="sub_txt">문앞에 노란색 플라스틱 바구니가 있습니다. 거기 넣어주시면 감사</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap adr_btn">
+							<a href="#none" class="txt_link">수정</a>
+						</div>
+						<span class="blind">선택</span>
+					</div>
+				</div>
+			</div>
+			<!--// 기본배송지 -->
+			<!-- 2022-11-25_수정 -->
+			<div class="btn_wrap" btn-type="sub_bt">
+				<a href="#none" class="btn bc_fff_02">
+					<i class="icon plus"></i>
+					<span class="txt">배송지 등록</span>
+				</a>
+			</div>
+			<!--// 2022-11-25_수정 -->
+			<!-- 배송지 목록 1세트 -->
+			<div class="form_rdo box">
+				<div class="group">
+					<!-- 2022-10-31_수정 -->
+					<div class="cotn">
+						<div class="adr_wrap">
+							<div class="adr_name">
+								<h3 class="tit_16">홍길동</h3>
+								<div class="btn_wrap enroll">
+									<a href="#none" class="btn bc_fff h_24">기본배송지로 변경</a>
+								</div>
+							</div>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="dl_layout">
+								<div class="dl_div">
+									<p class="sub_txt">직접 수령하겠습니다.</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap adr_btn">
+							<a href="#none" class="txt_link">수정</a>
+							<a href="#none" class="txt_link del">삭제</a>
+						</div>
+						<span class="blind">선택</span>
+					</div>
+				</div>
+			</div>
+			<!--// 배송지 목록 1세트 -->
+			<div class="form_rdo box">
+				<div class="group">
+					<div class="cotn">
+						<div class="adr_wrap">
+							<div class="adr_name">
+								<h3 class="tit_16">홍길동</h3>
+								<div class="btn_wrap enroll">
+									<a href="#none" class="btn bc_fff h_24">기본배송지로 변경</a>
+								</div>
+							</div>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="dl_layout">
+								<div class="dl_div">
+									<p class="sub_txt">부재 시 경비실에 맡겨주세요. 제발</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap adr_btn">
+							<a href="#none" class="txt_link">수정</a>
+							<a href="#none" class="txt_link del">삭제</a>
+						</div>
+						<span class="blind">선택</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 배송지 목록 -->
+
+		<!-- 배송지 없음 -->
+		<div class="data_none">
+			<div class="cotn">
+				<i class="icon_none"></i>
+				<p class="mn_copy">등록 된 배송지 정보가 없습니다.<br>배송지를 등록해 주세요.</p>
+			</div>
+			<!-- 2022-10-31_수정 -->
+			<!-- 버튼 -->
+			<!-- 2022-11-25_수정 -->
+			<div class="btn_wrap" btn-type="sub_bt">
+				<a href="#none" class="btn bc_fff_02">
+					<i class="icon plus"></i>
+					<span class="txt">배송지 등록</span>
+				</a>
+			</div>
+			<!--// 2022-11-25_수정 -->
+			<!--// 버튼  -->
+		</div>
+		<!--// 배송지 없음 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_fixed">
+		<div class="btn_wrap" btn-type="main_bt">
+			<a href="#none" class="btn" bt_role="confirm">닫기</a><!-- 2022-11-24_수정 --><!-- 2022-10-31_수정 -->
+			<!-- 2022-11-24_수정 -->
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+
+</section>
+<!--// 팝업:배송지관리 -->
+</body>
+</html>

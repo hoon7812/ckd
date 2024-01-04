@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>마이페이지 정기배송관리(정기배송완료 상세)</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage my_deliv bg_gy"><!-- [마이페이지 class="mypage", 정기배송 class="my_deliv"] --><!-- 목록화면(BG) class="bg_gy" 추가 -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 정기배송완료_상세 -->
+			<div class="sub">
+                <div class="delv_vw_cotn">
+                    <div class="top_ord_info">
+                        <div class="ord_info_lef">
+                            <p class="txt_date">2022.03.05</p>
+                            <p class="txt_prd_num">123456789</p>
+                            <p class="tit_14 color_bl">정기배송완료</p>
+                        </div>
+                    </div>
+                    <div class="top_ord_info">
+                        <div class="ord_info_area">
+                            <div class="txt_status">
+                                <p class="tit">기간</p>
+                                <p>2022.03.15~2022.04.11</p>
+                            </div>
+                            <div class="txt_status">
+                                <p class="tit">상품</p>
+                                <p>4개</p>
+                            </div>
+                            <div class="txt_status">
+                                <p class="tit">주기</p>
+                                <p>12주 4회</p>
+                            </div>
+                            <div class="txt_status">
+                                <p class="tit">횟수</p>
+                                <p> 1/12회</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 주문상품 -->
+                    <div class="prd_acc_area">
+                        <div class="accodn_wrap order_acc">
+                            <!-- 고정노출영역 -->
+                            <div class="view_fix">
+                                <div class="tit_area">
+                                    <div class="dl_layout">
+                                        <div class="dl_div">
+                                            <p class="tit">
+                                                <strong class="tit_16">주문상품</strong>
+                                            </p>
+                                            <div class="rit_con">
+                                                <p class="txt_ord_prd">
+                                                    <strong>2월 20% 추가할인 2월 20% 추가할인</strong>
+                                                    <span>외 99건 </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+                            </div>
+                            <!--// 고정노출영역 -->
+
+                            <!-- 오픈컨텐츠 -->
+                            <div class="open_cotn bg_gy">
+                                <div class="ord_list_sec">
+                                    <!-- 주문 리스트 -->
+                                    <div class="ord_list_wrap">
+                                        <!-- 상온&실온/냉동$냉장 -->
+                                        <div class="ord_list_box">
+                                            <div class="tit_ord_area">
+                                                <div class="rit_state">
+                                                    <p class="tit_temp warm">상온/실온</p> <!-- 상온/실온 class="warm" 추가 ,  냉동/냉장 class="ice" 추가 -->
+                                                </div>
+                                            </div>
+                                            <div class="ord_prd_cont">
+                                                <div class="ord_prd_list">
+                                                    <div class="prod_h_wrap">
+                                                        <!-- 1세트 -->
+                                                        <div class="prd_group_h"><!-- 상태값필요할때 class="on_dim"추가 -->
+                                                            <div class="cotn">
+
+                                                                <div class="prd_artic">
+                                                                    <!-- 이미지 -->
+                                                                    <div class="img_area">
+                                                                        <figure class="img">
+                                                                            <img src="../../assets/images/temp/prd_01.jpg" alt="">
+                                                                        </figure>
+                                                                        <p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+                                                                    </div>
+                                                                    <!--// 이미지 -->
+
+                                                                    <!-- 판매정보 -->
+                                                                    <div class="prd_verti_info">
+                                                                        <!-- 상품명 -->
+                                                                        <div class="txt">
+                                                                            <h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+                                                                            <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                                                        </div>
+                                                                        <!--// 상품명 -->
+                                                                        <div class="object_area">
+                                                                            <div class="sale_info">
+                                                                                <div class="price">
+                                                                                    <p>37,500원</p>
+                                                                                </div>
+                                                                                <!-- <del>50,000원</del> -->
+                                                                                <div class="prd_num">
+                                                                                    <p>1개</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--// 판매정보 -->
+                                                                </div>
+                                                            </div>
+                                                            <!-- 적립금&사은품 -->
+                                                            <div class="ord_gift_wrap">
+                                                                <div class="box_gy gift_box">
+                                                                    <div class="gift_line">
+                                                                        <figure class="img">
+                                                                            <img src="../../assets/images/common/icon_point.svg" alt="">
+                                                                        </figure>
+                                                                        <div class="txt_area">
+                                                                            <h4>추가 적립금</h4>
+                                                                            <div class="gift_txt">
+                                                                                <p>10% 추가적립</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="amount">
+                                                                            <strong>14,500</strong><span>P</span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="gift_line">
+                                                                        <figure class="img">
+                                                                            <img src="../../assets/images/temp/prd_01.jpg" alt="">
+                                                                        </figure>
+                                                                        <div class="txt_area">
+                                                                            <h4>사은품</h4>
+                                                                            <div class="gift_txt">
+                                                                                <p>2월 20%추가할인 락토핏 생유산균 골드골드골드골드골드</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="amount">
+                                                                            <strong>99</strong><span>개</span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--// 적립금&사은품 -->
+                                                        </div>
+                                                        <!--// 1세트 -->
+                                                        <div class="prd_group_h">
+                                                            <div class="cotn">
+                                                                <div class="prd_artic">
+                                                                    <!-- 이미지 -->
+                                                                    <div class="img_area">
+                                                                        <figure class="img">
+                                                                            <img src="../../assets/images/temp/prd_01.jpg" alt="">
+                                                                        </figure>
+                                                                        <p class="status_txt">품절</p>
+                                                                    </div>
+                                                                    <div class="prd_verti_info">
+                                                                        <div class="txt">
+                                                                            <h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+                                                                            <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                                                        </div>
+                                                                        <div class="object_area">
+                                                                            <div class="sale_info">
+                                                                                <div class="prd_num_12">
+                                                                                    <p>
+                                                                                        <span>1개</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd_group_h">
+                                                            <div class="cotn">
+                                                                <div class="prd_artic">
+                                                                    <!-- 이미지 -->
+                                                                    <div class="img_area">
+                                                                        <figure class="img">
+                                                                            <img src="../../assets/images/temp/prd_01.jpg" alt="">
+                                                                        </figure>
+                                                                        <p class="status_txt">품절</p>
+                                                                    </div>
+                                                                    <div class="prd_verti_info">
+                                                                        <div class="txt">
+                                                                            <h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+                                                                            <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                                                        </div>
+                                                                        <div class="object_area">
+                                                                            <div class="sale_info">
+                                                                                <div class="prd_num_12">
+                                                                                    <p>
+                                                                                        <span>1개</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--// 상온&실온/냉동$냉장 -->
+                                    </div>
+                                    <!--// 주문 리스트 -->
+                                </div>
+                            </div>
+                            <!--// 오픈컨텐츠 -->
+                        </div>
+                    </div>
+                    <!--// 주문상품 -->
+
+                    <!-- 주문자 정보 -->
+                    <div class="ord_vw_sec ord_name_sec">
+                        <div class="tit_area">
+                            <div class="dl_layout">
+                                <div class="dl_div">
+                                    <p class="tit">
+                                        <strong class="tit_16">주문자 정보</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <div class="box_gy bg_f9fafc">
+                                <p>홍길동</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 주문자 정보 -->
+
+                    <!-- 배송지정보 -->
+                    <div class="ord_vw_sec deliv_sec">
+                        <div class="accodn_wrap order_acc open">
+                            <!-- 고정영역 -->
+                            <div class="view_fix">
+                                <div class="tit_area">
+                                    <div class="dl_layout">
+                                        <div class="dl_div">
+                                            <p class="tit">
+                                                <strong class="tit_16">배송지 정보</strong>
+                                                <span class="flag_adr">기본배송지</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+                            </div>
+                            <!--// 고정영역 -->
+
+                            <!-- 오픈컨텐츠:배송지정보/등록 -->
+                            <div class="cont open_cotn" style="display:block;">
+                                <!-- 배송지정보 -->
+                                <div class="dl_layout">
+                                    <div class="dl_div">
+                                        <p class="tit">
+                                            받는분
+                                        </p>
+                                        <div class="txt">
+                                            <p>홍길동</p>
+                                        </div>
+                                    </div>
+                                    <div class="dl_div">
+                                        <p class="tit">
+                                            휴대폰
+                                        </p>
+                                        <div class="txt">
+                                            <p>010-1234-5678</p>
+                                        </div>
+                                    </div>
+                                    <div class="dl_div">
+                                        <p class="tit">
+                                            배송지
+                                        </p>
+                                        <div class="txt">
+                                            <p>서울시 강남구 학동로 146 와일리 타워 2층</p>
+                                        </div>
+                                    </div>
+                                    <div class="dl_div">
+                                        <p class="tit">
+                                            요청사항
+                                        </p>
+                                        <div class="txt">
+                                            <p>문앞에 놓아주세요. 문 앞 비밀번호는123456 입니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// 배송지정보 -->
+                            </div>
+                            <!--// 오픈컨텐츠:배송지정보/등록 -->
+                        </div>
+                    </div>
+                    <!--// 배송지정보 -->
+
+                    <!-- 정기배송 정보 -->
+                    <div class="ord_vw_sec reg_deliv_sec">
+                        <div class="accodn_wrap order_acc open">
+                            <!-- 고정영역 -->
+                            <div class="view_fix">
+                                <div class="tit_area">
+                                    <div class="dl_layout">
+                                        <div class="dl_div">
+                                            <p class="tit">
+                                                <strong class="tit_16">정기배송 정보</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+                            </div>
+                            <!--// 고정영역 -->
+
+                            <!-- 오픈컨텐츠 -->
+                            <div class="cont open_cotn">
+                                <div class="reg_d_area">
+                                    <h3 class="tit_14">배송횟수</h3>
+                                    <div class="box_gy bg_f9fafc box_dv_info">
+                                        <div class="dl_layout">
+                                            <div class="dl_div">
+                                                <p class="tit">
+                                                    3회
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reg_d_area">
+                                    <h3 class="tit_14">배송주기</h3>
+                                    <div class="box_gy bg_f9fafc box_dv_info">
+                                        <div class="dl_layout">
+                                            <div class="dl_div">
+                                                <p class="tit">
+                                                    4주1회
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reg_d_area">
+                                    <h3 class="tit_14">정기배송 시작일</h3>
+                                    <div class="st_date_wrap">
+                                        <!-- 세트 -->
+                                        <div class="box_bor_wh ord_list_sec">
+                                            <div class="deliv_date_wrap cmplt"><!-- 결제완료 class="cmplt", 결제실패 or 주문실패 class="fail", 신청해지 class="cancel" -->
+                                                <div class="tit_count tooltip_wrap">
+                                                    <p>1회차</p>
+                                                    <p class="pymnt_state">결제완료</p>
+                                                     <!-- 툴팁 -->
+                                                     <div class="btn_tool_wrap">
+                                                        <a href="#none" class="btn_tooltip btn_q_mark">
+                                                            <i class="icon_info"></i>
+                                                        </a>
+                                                        <!-- 툴팁내용 -->
+                                                        <div class="tooltip_box">
+                                                            <div class="tooltip">
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 툴팁내용 -->
+                                                    </div>
+                                                    <!--// 툴팁 -->
+                                                </div>
+                                                <div class="obj_pymnt_det">
+                                                    <div class="dl_layout">
+                                                        <!-- 1세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">배송시작일</p>
+                                                            <div class="txt">
+                                                                <span>2022.04.15 (월)</span>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 1세트 -->
+                                                        <div class="dl_div"><!-- 결제실패 or 주문실패 class="fail_date" -->
+                                                            <p class="tit">결제예정일</p>
+                                                            <div class="txt">
+                                                                <span>2022.04.12 (토)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 결제금액 -->
+                                            <div class="pymnt_sec">
+                                                <div class="obj_wrap acc_layout">
+                                                    <div class="obj_div">
+                                                        <p class="tit">결제금액 <i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i></p>
+                                                        <div class="price">
+                                                            <p>
+                                                                <strong class="color_bl">32,000</strong>
+                                                                <span>원</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="acc_open_cotn">
+                                                    <div class="pymnt_sec">
+                                                        <!-- 상세항목1뎁스:1세트 -->
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 상품금액</p>
+                                                                <div class="price">
+                                                                    <p><strong>145,000</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 상세항목1뎁스:1세트 -->
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 할인금액</p>
+                                                                <div class="price">
+                                                                    <p><strong class="color_or">-35,000</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="obj_pymnt_det">
+                                                                <div class="box_gy bg_f9fafc">
+                                                                    <div class="dl_layout">
+                                                                        <!-- 상세항목2뎁스:1세트 -->
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">상품 할인(회원)</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-30,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--// 상세항목2뎁스:1세트 -->
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">정기배송할인(3회차 7%할인)</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div"> <!-- 할인값 없을 시 class="no_val" 추가 -->
+                                                                            <p class="tit">상품쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>0</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">중복쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">장바구니쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">배송비할인쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 배송비</p>
+                                                                <div class="price">
+                                                                    <p><strong>0</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="obj_pymnt_det">
+                                                                <div class="box_gy bg_f9fafc">
+                                                                    <div class="dl_layout">
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">도서산간 배송비</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-3,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 결제금액  -->
+                                            <!-- 버튼 -->
+                                            <div class="btn_wrap inactv" btn-type="sub_bt"> <!-- 비활성 class="inactv" 추가 -->
+                                                <a href="#none" class="btn bc_fff h_32">시작일변경</a>
+                                                <a href="#none" class="btn bc_fff h_32">배송지변경</a>
+                                                <a href="#none" class="btn bc_fff h_32">건너뛰기</a>
+                                            </div>
+                                            <!--// 버튼 -->
+                                        </div>
+                                        <!--// 세트 -->
+                                        <div class="box_bor_wh ord_list_sec">
+                                            <div class="deliv_date_wrap cmplt"><!-- 결제완료 class="cmplt", 결제실패 or 주문실패 class="fail", 신청해지 class="cancel" -->
+                                                <div class="tit_count tooltip_wrap">
+                                                    <p>2회차</p>
+                                                    <p class="pymnt_state">결제완료</p>
+                                                    <!-- 툴팁 -->
+                                                    <div class="btn_tool_wrap">
+                                                        <a href="#none" class="btn_tooltip btn_q_mark">
+                                                            <i class="icon_info"></i>
+                                                        </a>
+                                                        <!-- 툴팁내용 -->
+                                                        <div class="tooltip_box">
+                                                            <div class="tooltip">
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 툴팁내용 -->
+                                                    </div>
+                                                    <!--// 툴팁 -->
+                                                </div>
+                                                <div class="obj_pymnt_det">
+                                                    <div class="dl_layout">
+                                                        <!-- 1세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">배송시작일</p>
+                                                            <div class="txt">
+                                                                <span>2022.04.15 (월)</span>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 1세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">결제예정일</p>
+                                                            <div class="txt">
+                                                                <span>2022.04.12 (토)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 결제금액 -->
+                                            <div class="pymnt_sec">
+                                                <div class="obj_wrap acc_layout">
+                                                    <div class="obj_div">
+                                                        <p class="tit">결제금액 <i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i></p>
+                                                        <div class="price">
+                                                            <p>
+                                                                <strong class="color_bl">32,000</strong>
+                                                                <span>원</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="acc_open_cotn">
+                                                    <div class="pymnt_sec">
+                                                        <!-- 상세항목1뎁스:1세트 -->
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 상품금액</p>
+                                                                <div class="price">
+                                                                    <p><strong>145,000</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 상세항목1뎁스:1세트 -->
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 할인금액</p>
+                                                                <div class="price">
+                                                                    <p><strong class="color_or">-35,000</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="obj_pymnt_det">
+                                                                <div class="box_gy bg_f9fafc">
+                                                                    <div class="dl_layout">
+                                                                        <!-- 상세항목2뎁스:1세트 -->
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">상품 할인(회원)</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-30,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--// 상세항목2뎁스:1세트 -->
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">정기배송할인(3회차 7%할인)</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div"> <!-- 할인값 없을 시 class="no_val" 추가 -->
+                                                                            <p class="tit">상품쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>0</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">중복쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">장바구니쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">배송비할인쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 배송비</p>
+                                                                <div class="price">
+                                                                    <p><strong>0</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="obj_pymnt_det">
+                                                                <div class="box_gy bg_f9fafc">
+                                                                    <div class="dl_layout">
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">도서산간 배송비</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-3,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 결제금액  -->
+                                            <!-- 버튼 -->
+                                            <div class="btn_wrap inactv" btn-type="sub_bt"> <!-- 비활성 class="inactv" 추가 -->
+                                                <a href="#none" class="btn bc_fff h_32">시작일변경</a>
+                                                <a href="#none" class="btn bc_fff h_32">배송지변경</a>
+                                                <a href="#none" class="btn bc_fff h_32">건너뛰기</a>
+                                            </div>
+                                            <!--// 버튼 -->
+                                        </div>
+                                        <div class="box_bor_wh ord_list_sec">
+                                            <div class="deliv_date_wrap cmplt"><!-- 결제완료 class="cmplt", 결제실패 or 주문실패 class="fail", 신청해지 class="cancel" -->
+                                                <div class="tit_count tooltip_wrap">
+                                                    <p>3회차</p>
+                                                    <p class="pymnt_state">결제완료</p>
+                                                    <!-- 툴팁 -->
+                                                    <div class="btn_tool_wrap">
+                                                        <a href="#none" class="btn_tooltip btn_q_mark">
+                                                            <i class="icon_info"></i>
+                                                        </a>
+                                                        <!-- 툴팁내용 -->
+                                                        <div class="tooltip_box">
+                                                            <div class="tooltip">
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 툴팁내용 -->
+                                                    </div>
+                                                    <!--// 툴팁 -->
+                                                </div>
+                                                <div class="obj_pymnt_det">
+                                                    <div class="dl_layout">
+                                                        <!-- 1세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">배송시작일</p>
+                                                            <div class="txt">
+                                                                <span>2022.04.15 (월)</span>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 1세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">결제예정일</p>
+                                                            <div class="txt">
+                                                                <span>2022.04.12 (토)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 결제금액 -->
+                                            <div class="pymnt_sec">
+                                                <div class="obj_wrap acc_layout">
+                                                    <div class="obj_div">
+                                                        <p class="tit">결제금액 <i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i></p>
+                                                        <div class="price">
+                                                            <p>
+                                                                <strong class="color_bl">32,000</strong>
+                                                                <span>원</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="acc_open_cotn">
+                                                    <div class="pymnt_sec">
+                                                        <!-- 상세항목1뎁스:1세트 -->
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 상품금액</p>
+                                                                <div class="price">
+                                                                    <p><strong>145,000</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 상세항목1뎁스:1세트 -->
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 할인금액</p>
+                                                                <div class="price">
+                                                                    <p><strong class="color_or">-35,000</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="obj_pymnt_det">
+                                                                <div class="box_gy bg_f9fafc">
+                                                                    <div class="dl_layout">
+                                                                        <!-- 상세항목2뎁스:1세트 -->
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">상품 할인(회원)</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-30,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--// 상세항목2뎁스:1세트 -->
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">정기배송할인(3회차 7%할인)</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div"> <!-- 할인값 없을 시 class="no_val" 추가 -->
+                                                                            <p class="tit">상품쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>0</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">중복쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">장바구니쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">배송비할인쿠폰 할인</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-10,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="obj_wrap">
+                                                            <div class="obj_div">
+                                                                <p class="tit">총 배송비</p>
+                                                                <div class="price">
+                                                                    <p><strong>0</strong><span>원</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="obj_pymnt_det">
+                                                                <div class="box_gy bg_f9fafc">
+                                                                    <div class="dl_layout">
+                                                                        <div class="dl_div">
+                                                                            <p class="tit">상온&실온 배송비</p>
+                                                                            <div class="txt_price">
+                                                                                <p><strong>-3,000</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 결제금액  -->
+                                            <!-- 버튼 -->
+                                            <div class="btn_wrap inactv" btn-type="sub_bt"> <!-- 비활성 class="inactv" 추가 -->
+                                                <a href="#none" class="btn bc_fff h_32">시작일변경</a>
+                                                <a href="#none" class="btn bc_fff h_32">배송지변경</a>
+                                                <a href="#none" class="btn bc_fff h_32">건너뛰기</a>
+                                            </div>
+                                            <!--// 버튼 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 오픈컨텐츠 -->
+                        </div>
+                    </div>
+                    <!--// 정기배송 정보 -->
+                </div>
+                <!-- 고정버튼 -->
+                <div class="btn_fixed">
+                    <div class="btn_wrap" btn-type="main_bt">
+                        <a href="#none" class="btn" bt_role="confirm">목록</a>
+                    </div>
+                </div>
+                <!--// 고정버튼 -->
+            </div>
+            <!-- 정기배송완료_상세 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

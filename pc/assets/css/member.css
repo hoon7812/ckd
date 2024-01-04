@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 회원 스타일 》
+************************************************************************************************************************************************************ */
+
+/* setting */
+.wd_mem {width:440px; margin:0 auto;}
+
+/* -------------------- 회원공통 ---------------------------------------- */
+
+/* 상단영역 */
+.mem_tit_area {margin-bottom:24px;}
+.mem_tit_area .tit_18 {line-height:1.444em;}
+.mem_tit_area .sb_txt {color:#666; font-size:18px; font-weight:600; line-height:1.444em; margin-top:32px;}
+
+/* 버튼 */
+.mem_btn_wrap {margin-top:32px;}
+.mem_btn_wrap .btn_cotn ~ .btn_cotn {margin-top:12px;}
+.btn_copy {position:absolute; right:16px; top:calc(50% - 16px);}
+.btn_copy .btn_wrap .btn {color:#111; font-weight:700; min-width:64px;}
+.bc_ffea0f{background-color:#FFEA0F; color:#3C1E1E;}
+
+/* 입력폼 */
+.form_sec .form_inpt .tit_field {display:flex; align-items:center;}
+.form_sec .form_inpt .tit_field .txt_link {font-size:16px; font-weight:600; margin-left:auto;}
+.form_sec .form_inpt .tit_field .txt_link a {padding-right:24px;}
+.form_sec .form_inpt .tit_field .txt_link a:before {background-image:url(../images/common/icon_16x16.png); background-position:-256px 0; height:16px; width:16px; margin-top:-8px;}
+.form_sec .form_inpt .err_msg {font-size:14px; line-height:1.214em;}
+
+/* 유의사항 */
+.noti_wrap {margin-top:32px;}
+.noti_wrap .bg_box {padding:16px;}
+
+/* 본인인증수단선택 */
+.auth_wrap {margin-top:32px;}
+.auth_wrap .mem_tit_area {display:inline-block; margin-bottom:16px; position:relative;}
+.auth_wrap .mem_tit_area.necd p:after {background:url(../images/common/icon_req.png) no-repeat 0 0; background-size:7px auto; content:""; position:absolute; right:-7px; top:0; height:8px; width:7px;}
+.auth_list .auth_box {background-repeat:no-repeat; background-size:39px 38px; background-position:right 16px center; box-sizing:border-box; border-radius:5px; border:1px solid #E2E5EB; display:flex; align-items:center; height:76px; width:100%; padding-left:16px; position:relative;}
+.auth_list .auth_box.phone {background-image:url(../images/common/icon_auth_01.png);}
+.auth_list .auth_box.kakao {background-image:url(../images/common/icon_auth_02.png);}
+.auth_list .auth_box.pin {background-image:url(../images/common/icon_auth_03.png);}
+.auth_list .auth_box ~ .auth_box {margin-top:16px;}
+.auth_list .auth_box .tit_auth {font-weight:600; margin-right:6px;}
+
+/* ============================== [ 로그인 ] ========================================================================================== */
+#wrap.member.login{padding-top:68px;}
+/* 로그인폼 */
+.login_cotn .form_inpt.h_62 ~ .form_inpt.h_62 {margin-top:16px;}
+.form_login .form_inpt .txt input {padding-left:44px; background-repeat:no-repeat; background-position:left 16px center; background-size:24px;}
+.form_id.form_inpt .txt input {background-image:url(../images/common/icon_id.png);}
+.form_pw.form_inpt .txt input {background-image:url(../images/common/icon_pw.png);}
+.form_login .form_chk {margin-top:24px;}
+
+/* 카카오/Apple버튼:아이콘 */
+.mem_btn_wrap .btn i,
+.mem_btn_wrap .btn span {display:inline-block; vertical-align:middle;}
+.mem_btn_wrap .btn i {background-repeat:no-repeat; background-position:0 0; height:24px; width:24px;}
+.mem_btn_wrap .btn i.i_ktalk {background-image:url(../images/common/icon_kakao_bk.png);}
+.mem_btn_wrap .btn i.i_ios {background-image:url(../images/common/icon_apple_wh.png);}
+
+
+/* 가입정보찾기 */
+.login_srch {margin-top:24px; text-align:center;}
+.login_srch a {display:inline-block; vertical-align:middle; font-size:14px; line-height:1.214em;}
+.login_srch .icon_stick {display:inline-block; vertical-align:middle; height:10px; width:1px; background-color:#bbb; margin:0 6px;}
+
+/* 베너 */
+.login_bnr_wrap {box-sizing:border-box; border:1px solid #E2E5EB; border-radius:10px; margin-top:24px; height:110px; overflow:hidden;}
+.login_bnr_wrap .img {display:block; height:100%; width:100%;}
+.login_bnr_wrap .img img {height:100%; width:100%;}
+
+
+/* ============================== [ 나의정보관리 ] ========================================================================================== */
+/* -------------------- 비밀번호입력 ---------------------------------------- */
+.info_edit_wrap.pw_cotn .mem_btn_wrap{margin-top:386px;}
+.info_edit_wrap.pw_cotn .txt_18_sm{line-height:1.222em;}
+
+/* -------------------- 회원정보 수정 ---------------------------------------- */
+.info_edit_wrap input{max-width:571px;}
+.info_edit_wrap .txt_link.more_bk a{font-weight:600;}
+.info_edit_wrap .cert_email{display:flex;}
+.info_edit_wrap .cert_email .txt{flex:1}
+.info_edit_wrap .cert_email .btn_wrap{width:96px;margin-left:8px;}
+
+/* -------------------- 마케팅수신동의 ---------------------------------------- */
+.mkt_wrap .mem_tit_area {border-top:1px solid #111; padding-top:24px; margin-bottom:32px;}
+.mkt_cotn .chk_wrap {margin-top:24px;}
+.mkt_cotn .chk_wrap .chk_li {margin-top:16px;}
+.mkt_cotn .chk_wrap .chk_li .group .txt {font-size:14px; line-height:1.714em;}
+.emp_msg {line-height:1.375em; position:relative; padding-left:12px;}
+.emp_msg:before {display:block; content:'*'; position:absolute; left:0; top:0;}
+.mkt_wrap .mem_btn_wrap {margin-top:406px;}
+
+/* -------------------- 추천인코드 ---------------------------------------- */
+.rec_code_cotn .per_tab_wrap{margin-bottom:24px;}
+.re_code_wrap {padding-top:24px;border-top:1px solid #111}
+.re_code_wrap .txt_code_p p{font-size:18px;font-weight:600;line-height:1.222em;}
+.re_code_wrap .form_sec {margin-top:32px;}
+.re_code_wrap .form_sec .form_inpt .txt{width:571px;}
+.re_code_wrap .re_code {display:flex;width:709px;}
+.re_code_wrap .re_code .txt {flex:1; width:calc(100% - 138px); position:relative;}
+.re_code_wrap .re_code .btn_wrap {margin-left:8px; width:130px;}
+.re_code_wrap .form_inpt input:disabled {color:#111; font-size:18px;}
+
+/* ============================== [ 90일 주기 비밀번호 변경 ] ========================================================================================== */
+.pw_reset_wrap .mem_tit_area {margin-bottom:32px;}
+.pw_reset_wrap .sb_txt {margin-top:24px;}
+.pw_reset_wrap .sb_txt span {color:#111;}
+.pw_reset_wrap .pw_txt {color:#666; font-size:14px; line-height:1.429em; margin-top:16px;}
+
+/* ============================== [ 아이디비밀번호찾기 ] ========================================================================================== */
+
+/* 아이디복사 */
+.find_wrap .form_sec {margin-top:32px;}
+.find_wrap .form_inpt input:disabled {color:#111; font-weight:700;}
+.find_wrap .form_sec .entry_date {color:#666; margin-top:8px; font-size:14px; line-height:1.214em;}
+
+/* 아이디정보 */
+.id_box {margin-bottom:32px;}
+.id_box p {text-align:center;}
+.id_box .txt {font-size:14px; color:#666; line-height:1.214em;}
+.id_box .user_id {margin-top:8px; line-height:1.188em; font-weight:700;}
+
+/* ============================== [ 회원탈퇴 ] ========================================================================================== */
+/* -------------------- 탈퇴안내 ---------------------------------------- */
+.leave_wrap {border-top:1px solid #111;}
+.leave_wrap .mem_tit_area {margin:24px 0 32px;}
+.leave_info .info_box {box-sizing:border-box; border:1px solid #E2E5EB; border-radius:10px; padding:24px;}
+.leave_info .info_sec {margin-top:32px;}
+.info_sec .tit_16 {margin-bottom:12px; line-height:1.188em;}
+.info_sec .info_txt {color:#666; line-height:1.375em;}
+.info_sec .info_table_wrap {margin-top:12px;}
+.info_sec .table_list {margin-top:32px;}
+.info_sec .table_list .info_table_wrap ~ .info_table_wrap {margin-top:32px;}
+.info_sec .table_list .info_table_wrap table {margin-top:12px;}
+.info_sec .table_list .tit_16 {position:relative; padding-left:12px;}
+.info_sec .table_list .tit_16:before {content:""; background-color:#111; border-radius:50%; position:absolute; left:2px; top:6px; height:4px; width:4px;}
+.info_table_wrap table {border-radius:10px; border-collapse:separate; border:1px solid #111; overflow:hidden; text-align:center;}
+.info_table_wrap table th,
+.info_table_wrap table td {height:56px; padding:0 5px;}
+.info_table_wrap table th {color:#666;}
+.info_table_wrap table td strong {color:#3182F6; font-family:lato,'Pretendard';}
+.info_table_wrap table th,
+.info_table_wrap table td {border-right:1px solid #111;}
+.info_table_wrap table tr ~ tr th,
+.info_table_wrap table tr ~ tr td {border-top:1px solid #111;}
+.info_table_wrap table th:last-child,
+.info_table_wrap table td:last-child {border-right:none;}
+.info_table_wrap table thead ~ tbody tr:first-child td {border-top:1px solid #111;}
+.info_table_wrap .btn_wrap {border-radius:10px; display:flex; margin-top:12px; overflow:hidden;}
+.info_table_wrap .btn_wrap .btn_info {background-color:#f9fafc; font-weight:400; height:56px; width:50%; line-height:3.417em; text-align:center; display:flex; align-items:center; justify-content:center;}
+.info_table_wrap .btn_wrap .btn_info span {padding-right:4px;}
+
+/* 탈퇴안내폼 */
+.leave_form {margin-top:32px;}
+.leave_form .input_set ~ .input_set {margin-top:32px;}
+.leave_form .input_set .tit_field p {font-size:16px; line-height:1.188em;}
+.leave_form .input_set .form_chk {height:48px;}
+
+/* 탈퇴완료 */
+.leave_wrap.cmplt .mem_tit_area .sb_txt {font-weight:400;}
+.leave_wrap.cmplt .mem_btn_wrap {margin-top:443px;}
+
+/* -------------------- 회원가입: 본인인증---------------------------------------- */
+.join_wrap .join_sec{margin-top:32px;}
+.join_wrap .btn_wrap .btn_cotn ~ .btn_cotn{margin-top:12px;}
+.join_wrap .txt_link a{font-weight:700;color:#111}
+.join_wrap .bg_box{margin-top:24px;}
+
+/* -------------------- 본인 인증 성공 팝업 ------------------------------- */
+.alert_pop.mem_compt_pop > .cotn .mem_compt_sec p{text-align:left;}
+.alert_pop.mem_compt_pop > .cotn .mem_compt_sec p ~ p{margin-top:0;text-align:left;}
+.mem_compt_sec{margin-top:24px}
+.mem_compt_sec .dl_div .tit{width:120px;margin-right:0;line-height:1.375em;}
+.mem_compt_sec .dl_div .txt{margin-left:0;font-family:lato,'Pretendard';line-height:1.375em;}
+.mem_compt_sec > p{color:#666;margin-top:16px;}
+
+/* -------------------- 회원가입: 정보입력 ---------------------------------------- */
+.join_wr_wrap .form_inpt ~ .form_inpt{margin-top:32px;}
+
+/* 추천인 코드 */
+.form_policy{margin-top:32px;}
+.form_policy .tit_chk_area{padding-bottom:12px;border-bottom:1px solid #E2E5EB;}
+.form_policy .tit_field{margin-bottom:24px;}
+.form_policy .tit_chk_area{display:flex;justify-content:space-between;}
+.form_policy .ui_ctrl{width:20px;height:20px;display:inline-block; cursor:pointer;}
+.form_policy .ui_drop_layout.active .ui_ctrl{transform:rotate(-180deg);}
+.form_policy .btn_acc_cotn{padding-top:12px;}
+.form_policy .btn_acc_cotn .txt_link{font-size:12px;}
+.form_policy .btn_acc_cotn .form_chk .group .txt{font-size:14px;margin-top:2px;}
+.form_policy .btn_acc_cotn .dl_layout .dl_div ~ .dl_div{margin-top:12px;}
+.form_policy .depth_poli{padding-left:32px;margin-top:12px;}
+.form_policy .depth_poli .tit{font-size:14px;}
+
+/* 추천인 코드 */
+.code_sec{margin-top:32px;}
+.code_sec .form_inpt{margin-top:32px;}
+.code_sec .tit_20{margin-bottom:12px;}
+.code_sec .txt_gy{font-size:14px;color:#666;line-height:1.428em;}
+
+/* -------------------- 회원가입: 완료 ---------------------------------------- */
+.compt_sec{margin-top:32px;}
+
+/* -------------------- 전자금융거래 이용약관 팝업 ---------------------------------- */
+.mem_policy_pop .policy_wrap{padding:0 24px;}
+.mem_policy_pop .policy_wrap *{line-height:1.375em;}
+
+/* -------------------- 임직원 가입: 임직원 인증 ------------------------------------ */
+.join_stf_wrap .mem_tit_area .tit_22{letter-spacing:-0.4px;}
+.join_stf_wrap .form_sec > .btn_wrap{margin-top:16px;}
+.join_stf_wrap .bg_box{margin-top:32px;}
+.join_stf_wrap .form_select + div{margin-top:8px;}
+.join_stf_wrap .info_msg {color:#666; font-size:14px; margin-top:8px;line-height:1.714em;}
+
+/* 이메일입력 */
+.email_area{display:flex;align-items:center;}
+.email_area .txt{width:245px;}
+.email_area .txt_em{margin-left:8px;}
+
+/* 인증번호 */
+.join_stf_wrap .form_inpt.h_62 .cert_number .txt input{font-size:18px;}
+.join_stf_wrap .cert_number .btn_wrap .btn.h_62{font-size:18px;}
+.join_stf_wrap .cert_number .time{top:calc(50% - 8px);}
+
+/* 임직원 인증 완료 */
+.join_stf_wrap02 .staff_sec{margin-top:32px;}
+.join_stf_wrap02 .bg_box{margin-top:32px;}
+
+/* -------------------- 90일 주기 임직원 재인증 팝업 ---------------------------------- */
+.re_certi_pop .txt_area{text-align:left;margin-top:24px;}
+.alert_pop.re_certi_pop > .cotn p ~ p{text-align:left;}
+.alert_pop.re_certi_pop > .cotn .txt_area p{line-height:1.571em;margin-top:12px;text-align:left;}
+.re_certi_pop .color_gy{color:#666;}
+.re_certi_pop.alert_pop > .cotn p ~ p.txt_link{margin-top:12px;}
+.re_certi_pop .txt_link a{text-decoration:underline;text-align:left;}
+
+/* -------------------- 기업회원 가입: 인증 ---------------------------------- */
+.join_comp_wrap .mem_tit_area {margin-bottom:32px;}
+.join_comp_wrap .form_sec .form_inpt .tit_field{display:block;margin-bottom:24px;}
+.join_comp_wrap .tit_field p.txt_14_gy{color:#666;font-size:14px;margin-top:9px;font-weight:400;}
+.join_comp_wrap .mem_btn_wrap ~ .bg_box {margin-top:32px;}
+
+/* -------------------- 기업회원 가입: 정보입력 ---------------------------------- */
+.div_gap_bor{height:1px;background-color:#E2E5EB;margin:32px 0;}
+.comp_wr_wrap .tit_22 + .form_inpt.h_62{margin-top:24px;}
+.comp_wr_wrap .form_sec .form_inpt.h_62.add_file .tit_field {display:block;}
+.comp_wr_wrap .form_sec .form_inpt.h_62.add_file .tit_field .info_copy {font-size:14px;}
+
+/* -------------------- 기업회원 가입: 완료 ---------------------------------- */
+.comp_compt_wrap .sb_txt{margin-top:24px;}
+.comp_compt_wrap .compt_sec{margin-top:24px;}
+
+/* -------------------- 기업정보 수정 ---------------------------------------- */
+.info_edit_wrap.compy_cotn .tb_type03 ~ .tb_type03{border-top:0;}
+.info_edit_wrap.compy_cotn .form_addrs .addrs_inp_area{width:571px;}
+
+/* ************************************************************************************************************************************************************
+						《 팝업 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 마케팅수신동의완료 ] ========================================================================================== */
+.mkt_pop .mkt_wrap {margin-top:24px;}
+.mkt_pop .mkt_wrap p {text-align:left; line-height:1.375em;}
+.mkt_pop .mkt_wrap .mkt_sub {margin-top:16px;}
+.mkt_pop .mkt_wrap .mkt_sub p {margin-top:0; font-weight:600;}
+.mkt_pop .mkt_wrap .emp_msg {margin-top:16px;}
+
+/* ============================== [ 마케팅 정보수신동의(체크박스) ] ========================================================================================== */
+.rcv_ad_pop .mkt_wrap {margin-top:24px;}
+.rcv_ad_pop .mkt_wrap p {text-align:left; line-height:1.375em;}
+.rcv_ad_pop .mkt_wrap .emp_msg {font-weight:600; margin-top:16px;}
+.rcv_ad_pop .chk_wrap {margin-top:24px;}
+.rcv_ad_pop .chk_wrap .chk_li {margin-top:16px;}
+.rcv_ad_pop .chk_wrap .chk_li .txt {font-size:14px; line-height:1.714em;}
+
+/* ============================== [ 본인인증수단 ] ========================================================================================== */
+.auth_pop p.sb_txt {text-align:left;}
+.auth_pop .auth_list .auth_box {background-position:right 24px center;}
+
+/* ============================== [ 본인인증완료 ] ========================================================================================== */
+.auth_cmplt .dl_layout {margin-top:24px;}
+.auth_cmplt .dl_layout .dl_div ~ .dl_div {margin-top:8px;}
+.auth_cmplt .dl_layout p {line-height:1.375em;}
+.auth_cmplt .dl_layout .tit {width:110px; text-align:left;}
+.auth_cmplt .emp_msg_wrap {margin-top:16px;}
+.auth_cmplt .emp_msg_wrap .emp_msg {color:#666; text-align:left;}
+
+/* ============================== [ 비밀번호재설정안내 ] ========================================================================================== */
+.pw_rst_pop p.rst_txt {text-align:left; line-height:1.375em;}
+.pw_rst_pop p.rst_txt.txt_02 {font-weight:600;}
+.pw_rst_pop .btn_wrap .btn_cotn {flex-direction:column;}
+.pw_rst_pop .btn_wrap .btn_cotn .btn {flex:none;}
+.pw_rst_pop .btn_wrap .btn_cotn .btn ~ .btn {margin:8px 0 0 0;}
+
+/* ============================== [ 회원탈퇴확인 ] ========================================================================================== */
+.leave_pop p.sb_txt {text-align:left;}

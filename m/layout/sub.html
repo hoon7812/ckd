@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>서브페이지샘플</title>
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class=""><!-- [메뉴별class추가] -->
+	<!-- #HEADER -->
+	<!-- 헤더 레이아웃 메뉴별 CSS에서 세팅 후 헤더영역 삭제:세팅 끝나고 이 주석/영역 삭제 -->
+	<header id="header">
+		<div class="head_wrap">
+			<!-- 서브헤드 -->
+			<div class="sub_head">
+				<h1 class="sub_tit">페이지타이틀</h1>
+				<a href="#none" class="go_back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<!-- 검색&카테고리헤드 -->
+				<div class="srch_form">
+					<!-- 검색필드 -->
+					<div class="form_cotn">
+						<div class="input_set">
+							<input type="text" placeholder="검색어를 입력하세요">
+							<div class="bt_area">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+								<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+							</div>
+						</div>
+						<button type="button" class="cancel">취소</button>
+					</div>
+					<!--// 검색필드 -->
+
+					<!-- 추천검색어 -->
+					<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+						<ul>
+							<!-- 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span></a>
+								</p>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</li>
+							<!--// 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none">락토핏 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">생<span class="inc">유산균</span>코어</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">어린이 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!--// 추천검색어 -->
+				</div>
+				<!--// 검색&카테고리헤드 -->
+			</div>
+			<!--// 서브헤드 -->
+
+			<!-- 메인헤드 -->
+			<div class="idx_head">
+				<h1 class="logo">
+					<a href="#none">
+						<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+					</a>
+				</h1>
+				<div class="search">
+					<p>유산균 건강</p>
+					<i class="search"></i>
+					<a href="#none" class="go_view"><span class="blind">검색</span></a>
+				</div>
+			</div>
+			<!--// 메인헤드 -->
+
+			<!-- 버튼메뉴 -->
+			<div class="menu_wrap">
+				<div class="btn_menu home">
+					<a href="#none">
+						<span class="blind">메인으로이동</span>
+					</a>
+				</div>
+				<div class="btn_menu alarm on"><!-- 알람있을경우 class="on" 추가 -->
+					<a href="#none">
+						<span class="blind">알람</span>
+						<span class="amount">99</span>
+					</a>
+					<div class="new_arrive">
+						<p><i class="icon_new"></i>새로운 알림 도착</p>
+					</div>
+				</div>
+				<div class="btn_menu search">
+					<a href="#none">
+						<span class="blind">검색</span>
+					</a>
+				</div>
+				<div class="btn_menu cart on"><!-- 장바구니상품추가 class="on" 추가 -->
+					<a href="#none">
+						<span class="blind">장바구니</span>
+						<span class="amount">8</span>
+					</a>
+				</div>
+				<div class="btn_menu share">
+					<a href="#none">
+						<span class="blind">공유하기</span>
+					</a>
+				</div>
+			</div>
+			<!--// 버튼메뉴 -->
+		</div>
+	</header>
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 서브페이지:주석필수수정 -->
+			<div class="sub">
+				<div style="height:50vh;">
+					<p style="text-align:center; margin:100px 0;">종근당건강몰 sub 페이지 샘플</p>
+				</div>
+			</div>
+			<!--// 서브페이지:주석필수수정 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+
+	<!-- 하단고정버튼 -->
+	<div class="bottom_btn">
+		<a href="#none" class="btn back"><span class="blind">뒤로가기</span></a>
+		<a href="#none" class="btn chat_bot"><span class="blind">챗봇</span></a>
+		<a href="#none" class="btn go_top"><span class="blind">페이지 맨 위로 이동</span></a>
+	</div>
+	<!--// 하단고정버튼 -->
+
+	<!-- 탭바 -->
+	<aside class="tab_bar">
+		<div class="cotn">
+			<div class="btn home on"><!-- 활성화 class="on" 추가 -->
+				<a href="#none">
+					<i class="icon"></i><span class="blind">홈</span>
+				</a>
+			</div>
+			<div class="btn srch">
+				<a href="#none">
+					<i class="icon"></i><span class="blind">검색</span>
+				</a>
+			</div>
+			<div class="btn coupn">
+				<a href="#none">
+					<i class="icon"></i><span class="blind">쿠폰</span>
+				</a>
+			</div>
+			<div class="btn my">
+				<a href="#none">
+					<i class="icon"></i><span class="blind">마이페이지</span>
+				</a>
+			</div>
+			<div class="btn prd_img">
+				<div class="img_area">
+					<figure class="img">
+						<img src="../assets/images/temp/temp_07.jpg" alt="">
+					</figure>
+				</div>
+				<a href="#none" class="go_view">
+					<span class="blind">최근본상품</span>
+				</a>
+			</div>
+		</div>
+	</aside>
+	<!--// 탭바 -->
+
+	<!-- #FOOTER -->
+	<footer id="footer">
+		<!-- 공지사항 -->
+		<div class="foo_noti_sec">
+			<h3 class="tit_14">공지사항</h3>
+			<div class="foo_noti_bnr">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<!-- 1세트 -->
+						<div class="swiper-slide">
+							<a href="#none">[당첨자 발표] 락토핏 신제품 체험단 선정완료 당첨자 발표] 락토핏 신제품 체험단 선정완료</a>
+						</div>
+						<!--// 1세트 -->
+						<div class="swiper-slide">
+							<a href="#none">[당첨자 발표] 락토핏 신제품</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#none">[당첨자 발표] 락토핏 신제품</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#none">[당첨자 발표] 락토핏 신제품 체험단 선정완료 당첨자 발표] 락토핏 신제품 체험단 선정완료</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 공지사항 -->
+
+		<!-- 컨텐츠 -->
+		<div class="footer_area">
+			<!-- sns버튼 -->
+			<div class="sns_wrap">
+				<div class="btn_sns_wrap">
+					<a href="#none" class="icon insta"><span class="blind">인스타그램</span></a>
+					<a href="#none" class="icon fb"><span class="blind">페이스북</span></a>
+					<a href="#none" class="icon blog"><span class="blind">블로그</span></a>
+					<a href="#none" class="icon naver"><span class="blind">네이버</span></a>
+					<a href="#none" class="icon yt"><span class="blind">유튜브</span></a>
+				</div>
+				<div class="btn_foo_wrap">
+					<a href="#none" class="btn btn_logout">로그아웃</a>
+				</div>
+			</div>
+			<!--// sns버튼 -->
+
+			<!-- 약관링크 -->
+			<div class="corp_wrap">
+				<div class="link_wrap">
+					<a href="#none" class="foo_link">회사소개</a>
+				</div>
+				<div class="link_wrap">
+					<a href="#none" class="foo_link">이용약관</a>
+				</div>
+				<div class="link_wrap">
+					<a href="#none" class="foo_link">개인정보처리방침</a>
+				</div>
+			</div>
+			<!--// 약관링크 -->
+
+			<!-- 고객센터 -->
+			<div class="foo_cs_wrap">
+				<div class="cs_info">
+					<div class="contact">
+						<p class="tit_16">
+							고객센터 <a href="tel:1668-4265" class="cs_tel">1668-4265</a>
+						</p>
+						<a href="#none" class="btn_cs">
+							<span class="blind">FAQ이동</span>
+						</a>
+					</div>
+					<p class="cs_time">
+						<span>평일</span> 오전 9시~오후 8시
+					</p>
+				</div>
+				<div class="btn_foo_wrap">
+					<a href="#none" class="btn btn_qna">1:1문의하기</a>
+				</div>
+			</div>
+			<!--// 고객센터 -->
+
+			<!-- 하단메뉴 -->
+			<div class="foo_link_box">
+				<div class="link_wrap">
+					<a href="#none" class="foo_link">제휴/대량구매 문의</a>
+				</div>
+				<div class="link_wrap">
+					<a href="#none" class="foo_link">기업회원 신청</a>
+				</div>
+				<div class="link_wrap">
+					<a href="#none" class="foo_link">임직원등록</a>
+				</div>
+			</div>
+			<!--// 하단메뉴 -->
+			<!-- 패밀리 사이트 -->
+			<div class="form_select">
+				<select>
+					<option name="" id="">Family site</option>
+					<optgroup label="홀딩스">
+						<option name="" id="">Family site</option>
+						<option name="" id="">홀딩스</option>
+					</optgroup>
+					<optgroup label="헬스케어">
+						<option name="" id="">종근당</option>
+						<option name="" id="">종근당바이오</option>
+						<option name="" id="">경보제약</option>
+						<option name="" id="">종근당건강</option>
+					</optgroup>
+					<optgroup label="부동산임대">
+						<option name="" id="">종근당산업</option>
+					</optgroup>
+					<optgroup label="건설/환경">
+						<option name="" id="">벨이앤씨</option>
+					</optgroup>
+					<optgroup label="용역/운송">
+						<option name="" id="">벨에스엠</option>
+					</optgroup>
+					<optgroup label="마켓팅솔루션">
+						<option name="" id="">벨컴</option>
+						<option name="" id="">벨아이앤에스</option>
+					</optgroup>
+				</select>
+				<i class="i_select"></i>
+			</div>
+			<!--// 패밀리 사이드 -->
+			<!-- 사업자정보 -->
+			<div class="comp_info_wrap">
+				<div class="accodn_wrap">
+					<!-- 고정노출영역 -->
+					<div class="view_fix">
+						<h1 class="logo">
+							<figure class="img">
+								<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+							</figure>
+						</h1>
+						<p class="comp_tit">
+							사업자 정보
+							<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+						</p>
+					</div>
+					<!--// 고정노출영역 -->
+
+					<!-- 오픈컨텐츠 -->
+					<div class="open_cotn">
+						<div class="comp_info">
+							<ul>
+								<li>
+									<p>종근당건강몰(주)</p>
+								</li>
+								<li>
+									<p>대표자: 김호곤</p>
+								</li>
+								<li>
+									<p>주소: 충남 당진시 합덕읍 인더스파크로 170 종근당건강몰</p>
+								</li>
+								<li>
+									<p>사업자등록번호 134-81-29992</p>
+									<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=134-81-29992" target="_blank">[사업자정보확인]</a>
+								</li>
+								<li>
+									<p>건강기능식품판매업: 제2005-74호</p>
+								</li>
+								<li>
+									<p>통신사업자번호: 제2010-충남당진-0063호</p>
+								</li>
+								<li>
+									<p>의료기기판매업 : 제1988호</p>
+								</li>
+								<li>
+									<p>개인정보관리책임자: 김무관</p>
+								</li>
+								<li>
+									<p>고객센터: 1668-4265 FAX: 02-312-4377</p>
+								</li>
+								<li>
+									<p>이메일: <a href="mailto:CS_CKDCARE@ckdhc.com">CS_CKDCARE@ckdhc.com</a></p>
+								</li>
+								<li>
+									<p class="txt_copy">Copyright 2021. CHONGKUNDANG HEALTHCARE Corp.<br>All rights reserved.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--// 오픈컨텐츠 -->
+				</div>
+			</div>
+			<!--// 사업자정보 -->
+		</div>
+		<!--// 컨텐츠 -->
+	</footer>
+	<!--// #FOOTER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

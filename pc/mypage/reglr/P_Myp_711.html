@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>정기배송관리:결제정보관리</title>
+	<link rel="stylesheet" href="../../assets/css/ui.order.css"><!-- 장바구니/주문결제 공통UI -->
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage reg_deliv"><!-- [마이페이지class="mypage"추가, 정기배송관리 class="reg_deliv"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container" class="lnb_ui">
+		<!-- #LNB -->
+		<nav id="lnb">
+			<div class="sub_tit_28">
+				<h1 class="tit_28">마이페이지</h1>
+			</div>
+			<div class="cotn">
+				<!-- 메뉴:1세트 -->
+				<div class="menu_group">
+					<!-- 1뎁스 -->
+					<div class="dep_01">
+						<!-- 1뎁스링크 -->
+						<a href="#none" class="dep01_link">
+							<span>주문/배송조회</span>
+							<i class="i_sp_16 arr_gray_right"></i>
+						</a>
+						<!--// 1뎁스링크 -->
+					</div>
+					<!--// 1뎁스 -->
+				</div>
+				<!--// 메뉴:1세트 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>취소/교환/반품</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>정기배송 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>간편결제 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의활동</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<!-- 2뎁스 -->
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">관심상품</a></li><!-- 1세트 -->
+							<li><a href="#none">최근 본 상품</a></li>
+							<li><a href="#none">최근 구매상품</a></li>
+						</ul>
+					</div>
+					<!--// 2뎁스 -->
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 적립금</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 할인쿠폰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>1:1 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>상품리뷰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>제휴/대량구매 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<!-- 일반회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">회원정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">추천인 코드관리</a></li>
+							<li><a href="#none">회원탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 일반회원 -->
+
+				<!-- 기업회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">기업정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">기업회원 탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 기업회원 -->
+			</div>
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<div class="sub_tit_24">
+				<h2 class="tit_24">정기배송관리</h2>
+			</div>
+			<!-- 정기배송관리:신청내역 -->
+			<div class="sub">
+				<!-- 균등분할탭 -->
+				<section class="per_tab_wrap">
+					<div class="tab_cotn">
+						<!-- 1세트 -->
+						<div class="div_set"><!-- 활성화:class="on"추가 -->
+							<a href="#none" class="bt_tab">
+								<span>신청내역(<em>3</em>)</span>
+							</a>
+						</div>
+						<!--// 1세트 -->
+						<div class="div_set on">
+							<a href="#none" class="bt_tab">
+								<span>결제정보 관리</span>
+							</a>
+						</div>
+						<div class="div_set">
+							<a href="#none" class="bt_tab">
+								<span>완료/해지내역</span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!--// 균등분할탭 -->
+				<section class="pymnt_way_wrap">
+					<div class="sec_tit">
+						<h3 class="tit_20">정기 결제수단</h3>
+					</div>
+					<!-- 등록된 카드 -->
+					<div class="card_info_wrap">
+						<figure class="img">
+							<img src="../../assets/images/temp/card_01.png" alt="">
+						</figure>
+						<div class="card_info">
+							 <div class="card_div">
+								<div class="tit">
+									<h5>신한카드</h5>
+								</div>
+								<i class="icon_stick"></i>
+								<p class="txt">5536- 15**-****-7243</p>
+							 </div>
+							 <div class="btn_wrap" btn-type="sub_bt">
+								<div class="btn_cotn">
+									<a href="#none" class="btn bc_fff_02 h_32">카드변경</a>
+									<a href="#none" class="btn bc_fff_02 h_32 btn_alert" open-layer-class="alert_01">카드삭제</a>
+								</div>
+							 </div>
+						</div>
+					</div>
+					<!--// 등록된 카드 -->
+					<!-- 데이터 없음 -->
+					<div class="data_none">
+						<div class="cotn">
+							<p>등록된 정보가 없습니다.</p>
+							<span class="sub_txt">결제정보는 정기배송 신청 시 입력/결제된 정보가 제공됩니다.<br>신용카드는 1개만 등록/관리 가능하며 등록된 정보는 정기배송 상품결제시에만 사용됩니다.</span>
+							<div class="btn_wrap" btn-type="sub_bt">
+								<div class="btn_cotn">
+									<a href="#none" class="btn bc_fff_02 w_320">정기배송 신청하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 데이터 없음 -->
+				</section>
+				<section class="pymnt_way_def">
+					<div class="bg_box">
+						<div class="info_txt fs_14">
+							<p>결제정보 설정 시 시작일 하루 전 오전 11시에 등록하신 카드로 결제됩니다.</p>
+							<p>결제정보는 정기배송 종료(마지막 회차 배송완료 +1일) 후 자동 삭제됩니다. (신청하신 정기배송을 모두 취소하신 경우에는 취소일+1일에 자동 삭제됩니다)</p>
+							<p>정기배송은 신용카드로만 결제 가능합니다.</p>
+							<p>결제 실패 시, 정기배송이 주문취소 되므로 원활한 결제를 위해 카드결제한도를 꼭 유의해 주시기 바랍니다. </p>
+							<!-- 2022-09-29_수정 -->
+							<p>결제 실패 시 문자 또는 APP알림으로 안내드립니다.</p>
+							<p>결제 실패시, 결제정보와 시작일을 수정해야 배송됩니다. (다음 회차 3일 전까지, 마지막 회차의 경우는 실패 문자 수신 후 2일 이내)</p>
+							<p>카드정보를 삭제하려면 신청된 정기배송을 먼저 해지한 후 삭제 가능합니다.</p>
+							<!--// 2022-09-29_수정 -->
+						</div>
+					</div>
+					<div class="automate">
+						<div class="sec_tit">
+							<h2 class="tit_20">정기배송 쿠폰 자동적용</h2>
+							<div class="btn_switch">
+								<label class="form_chk">
+									<input type="checkbox" checked="">
+									<i class="icon"></i>
+									<i class="bg"></i>
+								</label>
+							</div>
+						</div>
+						<div class="bg_box">
+							<div class="info_txt fs_14">
+								<!-- 2022-09-29_수정 -->
+								<p>쿠폰 자동적용에 동의할 경우, 다운로드한 쿠폰을 자동 적용합니다.</p>
+								<p>다음 회차부터 사용조건에 부합할 경우에 결제 시 쿠폰이 자동 적용됩니다.</p>
+								<p>정기배송에 적용된 쿠폰은 다른 주문건에 재사용이 불가합니다.</p>
+								<p>쿠폰적용 상품 운영이 중단될 경우 혜택은 자동 종료됩니다.</p>
+								<!--// 2022-09-29_수정 -->
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!--// 정기배송관리:신청내역 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+
+<!-- 알럿팝업 -->
+<section class="alert_pop alert_01"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 컨텐츠 -->
+	<div class="cotn">
+		<p class="tit_22">단기카드대출 이용 동의</p>
+		<p class="sb_txt">이용 동의 후 신청이 가능합니다.<br>이용 동의하시겠습니까?</p>
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 버튼 -->
+	<div class="btn_wrap" btn-type="main_bt_02">
+		<div class="btn_cotn">
+			<button type="button" class="btn" bt_role="confirm">확인</button>
+		</div>
+	</div>
+	<!--// 버튼 -->
+
+	<!-- 닫기 -->
+	<a href="#none" class="closed">
+		<i class="i_sp_24 cross"></i>
+		<span class="blind">팝업 닫기</span>
+	</a>
+	<!--// 닫기 -->
+</section>
+<!--// 알럿팝업 -->
+
+<!-- 알럿팝업 -->
+<section class="alert_pop alert_02"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 컨텐츠 -->
+	<div class="cotn">
+		<p class="tit_22">단기카드대출 이용 동의</p>
+		<p class="sb_txt">이용 동의 후 신청이 가능합니다.<br>이용 동의하시겠습니까?</p>
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 버튼 -->
+	<div class="btn_wrap" btn-type="main_bt_02">
+		<div class="btn_cotn">
+			<button type="button" class="btn" bt_role="cancel">취소</button>
+			<button type="button" class="btn" bt_role="confirm">확인</button>
+		</div>
+	</div>
+	<!--// 버튼 -->
+
+	<!-- 닫기 -->
+	<a href="#none" class="closed">
+		<i class="i_sp_24 cross"></i>
+		<span class="blind">팝업 닫기</span>
+	</a>
+	<!--// 닫기 -->
+</section>
+<!--// 알럿팝업 -->
+</body>
+</html>

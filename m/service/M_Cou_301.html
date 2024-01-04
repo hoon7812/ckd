@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>쿠폰&혜택: 헤택 캘린더</title>
+
+	<link rel="stylesheet" href="../assets/css/service.css"><!-- 쿠폰&혜택 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="service"><!-- [쿠폰&혜택 class="service" -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+            <!-- 쿠폰&혜택: 헤택 캘린더 -->
+			<div class="sub">
+				<div class="service_cotn">
+					<!-- 탭메뉴 -->
+					<div class="tab_menu line">
+						<!-- 1세트 -->
+						<div class="btn_tab"><!-- 활성화 : class="on" 추가 -->
+							<a href="#none">
+								<span>쿠폰혜택</span>
+							</a>
+						</div>
+						<!--// 1세트 -->
+						<div class="btn_tab">
+							<a href="#none">
+								<span>등급별 혜택</span>
+							</a>
+						</div>
+						<div class="btn_tab on">
+							<a href="#none">
+								<span>헤택 캘린더</span>
+							</a>
+						</div>
+					</div>
+					<!--// 탭메뉴 -->
+					<div class="svc_wrap">
+                        <div class="bent_calen_wrap">
+                            <!-- 달선택 -->
+                            <div class="month_area">
+                                <a href="#none" class="btn_mon">
+                                    <i class="icon_20 prev"></i>
+                                    <span class="blind">지난달</span>
+                                </a>
+                                <p class="tit_18">2022.04</p>
+                                <a href="#none" class="btn_mon">
+                                    <i class="icon_20 next"></i>
+                                    <span class="blind">다음달</span>
+                                </a>
+                           </div>
+                           <!--// 달선택 -->
+                           <!-- 달력 -->
+                           <div class="calen_table">
+                                <div class="thead">
+                                   <div class="tr">
+                                    <div class="th">일</div>
+                                    <div class="th">월</div>
+                                    <div class="th">화</div>
+                                    <div class="th">수</div>
+                                    <div class="th">목</div>
+                                    <div class="th">금</div>
+                                    <div class="th">토</div>
+                                   </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr">
+                                       <!-- 날짜 -->
+                                       <div class="day_line">
+                                            <!--
+                                                [달력 표기]
+                                                지난날 class="disabled" ,
+                                                오늘 class="today",
+                                                날짜 클릭시 class="selected"
+                                            -->
+                                            <div class="td disabled">
+                                                <span>30</span>
+                                            </div>
+                                            <div class="td disabled">
+                                                <span>31</span>
+                                            </div>
+                                            <div class="td">
+                                                <span>1</span>
+                                            </div>
+                                            <div class="td selected">
+                                                <span>2</span>
+                                            </div>
+                                            <div class="td">
+                                                <span>3</span>
+                                            </div>
+                                            <div class="td">
+                                                <span>4</span>
+                                            </div>
+                                            <div class="td">
+                                                <span>5</span>
+                                            </div>
+                                       </div>
+                                       <!--// 날짜 -->
+                                       <!-- 이벤트 일정표기 -->
+                                       <div class="data_graph">
+                                             <!--
+                                                [이벤트 일정표기]
+                                                시작일 class="start",
+                                                종료일 class="end"
+
+                                                [일정표기 색상]
+                                                파랑 class="bg_bl",
+                                                주황 class="bg_or",
+                                                초록 class="bg_gr",
+                                                노랑 class="bg_ye"
+
+                                                [이벤트 일정라인 위치]
+                                                등록된 이벤트 기간에 따라 class="evt_bar"에 style 적용
+                                                (left,top,width)
+                                                -->
+                                            <!-- 세트 -->
+                                            <div class="evt_bar bg_bl start end" style="left:28.56%;top:0;width:71.44%;">
+                                                <div class="txt">락토핏 유산균 기획전</div>
+                                            </div>
+                                            <!--// 세트 -->
+                                            <div class="evt_bar bg_or start" style="left:42.84%;top:18px;width:57.16%;">
+                                                <div class="txt">프로메가 신제품 체험단 모집</div>
+                                            </div>
+                                            <div class="evt_bar bg_gr start" style="left:57.12%;top:36px;width:42.88%;">
+                                                <div class="txt">락토핏 유산균 기획전</div>
+                                            </div>
+                                            <div class="evt_bar bg_ye start end" style="left:71.4%;top:54px;width:28.6%;">
+                                                <div class="txt">락토핏 유산균 기획전 기획전 기획전</div>
+                                            </div>
+                                       </div>
+                                       <!--// 이벤트 일정표기 -->
+                                    </div>
+                                    <div class="tr">
+                                        <!-- 날짜 -->
+                                        <div class="day_line">
+                                             <div class="td">
+                                                 <span>7</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>8</span>
+                                             </div>
+                                             <div class="td today">
+                                                 <span>9</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>10</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>11</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>12</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>13</span>
+                                             </div>
+                                        </div>
+                                        <!--// 날짜 -->
+                                        <!-- 이벤트 일정표기 -->
+                                        <div class="data_graph">
+                                             <div class="evt_bar bg_or end" style="left:0;top:0;width:57.16%;">
+                                                 <div class="txt">프로메가 신제품 체험단 모집</div>
+                                             </div>
+                                             <div class="evt_bar bg_gr end" style="left:0;top:18px;width:14.28%;">
+                                                 <div class="txt">락토핏 유산균 기획전</div>
+                                             </div>
+                                        </div>
+                                        <!--// 이벤트 일정표기 -->
+                                    </div>
+                                    <div class="tr">
+                                        <!-- 날짜 -->
+                                        <div class="day_line">
+                                             <div class="td">
+                                                 <span>14</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>15</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>16</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>17</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>18</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>19</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>20</span>
+                                             </div>
+                                        </div>
+                                        <!--// 날짜 -->
+                                        <!-- 이벤트 일정표기 -->
+                                        <div class="data_graph">
+                                             <div class="evt_bar bg_ye start end" style="left:0;top:0;width:100%;">
+                                                 <div class="txt">프로메가 신제품 체험단 모집</div>
+                                             </div>
+                                        </div>
+                                        <!--// 이벤트 일정표기 -->
+                                    </div>
+                                    <div class="tr">
+                                        <!-- 날짜 -->
+                                        <div class="day_line">
+                                             <div class="td">
+                                                 <span>20</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>21</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>22</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>23</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>24</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>25</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>26</span>
+                                             </div>
+                                        </div>
+                                        <!--// 날짜 -->
+                                    </div>
+                                    <div class="tr">
+                                        <!-- 날짜 -->
+                                        <div class="day_line">
+                                             <div class="td">
+                                                 <span>27</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>28</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>29</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>30</span>
+                                             </div>
+                                             <div class="td">
+                                                 <span>31</span>
+                                             </div>
+                                             <div class="td disabled">
+                                                 <span>1</span>
+                                             </div>
+                                             <div class="td disabled">
+                                                 <span>2</span>
+                                             </div>
+                                        </div>
+                                        <!--// 날짜 -->
+                                    </div>
+                                </div>
+                           </div>
+                           <!--// 달력 -->
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!--// 쿠폰&혜택: 헤택 캘린더 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

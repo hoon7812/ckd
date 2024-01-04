@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>로그인:회원</title>
+
+	<link rel="stylesheet" href="../../assets/css/member.css"><!-- 회원 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="member"><!-- [회원 class="member"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 로그인:회원 -->
+			<div class="sub">
+				<section class="login_wrap">
+					<!-- 탭메뉴 -->
+					<div class="tab_menu line">
+						<div class="btn_tab on"><!-- 선택 : class="on"추가 -->
+							<a href="#none"><span>회원</span></a>
+						</div>
+						<div class="btn_tab">
+							<a href="#none"><span>비회원 주문조회</span></a>
+						</div>
+					</div>
+					<!--// 탭메뉴  -->
+
+					<!-- 로그인컨텐츠 -->
+					<div class="login_cotn">
+						<!-- 로그인폼 -->
+						<div class="login_form">
+							<!-- 아이디입력 -->
+							<div class="form_id form_inpt wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+								<div class="txt">
+									<input type="text" placeholder="아이디 입력">
+									<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+								</div>
+								<div class="msg_wrap">
+									<p class="err_msg">아이디를 입력해 주세요.</p>
+								</div>
+							</div>
+							<!--// 아이디입력 -->
+
+							<!-- 비밀번호입력 -->
+							<div class="form_pw form_inpt wrn"> <!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+								<div class="txt">
+									<input type="password" placeholder="비밀번호 입력">
+									<button class="btn_pw show"><span class="blind">암호보기</span></button>
+									<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+								</div>
+								<div class="msg_wrap">
+									<p class="err_msg">비밀번호를 입력해 주세요.</p>
+								</div>
+							</div>
+							<!--// 비밀번호입력 -->
+
+							<!-- 자동로그인 -->
+							<div class="form_chk">
+								<label class="group">
+									<input type="checkbox" checked="">
+									<i class="icon"></i>
+									<span class="txt">자동로그인</span>
+									<span class="blind">선택</span>
+								</label>
+								<label class="group">
+									<input type="checkbox">
+									<i class="icon"></i>
+									<span class="txt">아이디 저장</span>
+									<span class="blind">선택</span>
+								</label>
+							</div>
+							<!--// 자동로그인 -->
+						</div>
+						<!--// 로그인폼 -->
+
+						<!-- 로그인버튼 -->
+						<!-- 2023-01-03_수정:1223현업수정요청사항 -->
+						<div class="btn_login">
+							<div class="btn_wrap" btn-type="sub_bt">
+								<a href="#none" class="btn jkd_b">로그인</a>
+							</div>
+							<div class="btn_wrap" btn-type="sub_bt">
+								<a href="#none" class="btn bc_fff_02">회원가입</a>
+							</div>
+
+							<!-- 가입정보찾기 -->
+							<div class="login_srch">
+								<a href="#none">아이디 찾기</a>
+								<a href="#none">비밀번호 찾기</a>
+							</div>
+							<!--// 가입정보찾기 -->
+
+							<div class="btn_wrap k_talk_btn" btn-type="sub_bt">
+								<a href="#none" class="btn bc_ffea0f">
+									<i class="icon k_talk"></i>
+									<span>카카오로 시작하기</span>
+								</a>
+							</div>
+
+							<!-- IOS로그인 -->
+							<div class="btn_wrap ios_btn" btn-type="sub_bt">
+								<a href="#none" class="btn bc_bk">
+									<i class="icon ios"></i>
+									<span>Apple로 시작하기</span>
+								</a>
+							</div>
+							<!--// IOS로그인 -->
+						</div>
+						<!--// 2023-01-03_수정:1223현업수정요청사항 -->
+						<!--// 로그인버튼 -->
+
+						<!-- 앱설치관련메세지 -->
+						<div class="login_bnr_wrap">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../../assets/images/temp/login_bnr.jpg" alt="">
+								</figure>
+								<a href="#none" class="go_view">
+									<span class="blind">앱설치쿠폰베너</span>
+								</a>
+							</div>
+						</div>
+						<!--// 앱설치관련메세지 -->
+					</div>
+					<!--// 로그인컨텐츠 -->
+				</section>
+			</div>
+			<!--// 로그인:회원 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

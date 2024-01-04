@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>게시판목록</title>
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" style="box-sizing:border-box; margin:0 auto; padding:2.5em 0 4em; width:1192px;">
+	<p class="g_tit">아코디언게시판</p>
+	<!-- 아코디언게시판 -->
+	<section class="board_accdn">
+		<!-- 1세트 -->
+		<div class="acc_group">
+			<!-- 게시판구분 -->
+			<div class="div_board">
+				<p>상품</p>
+			</div>
+			<!--// 게시판구분 -->
+
+			<!-- 제목/내용 -->
+			<div class="board_area">
+				<!-- 고정영역:제목 -->
+				<div class="fix">
+					<div class="tit">
+						<p class="t_hd_01">내가 작성한 후기를 어떻게 확인하나요?</p>
+					</div>
+					<div class="ctrl_acc"><i class="i_sp_32 arr_down"></i></div><!-- 아코디언트리거 -->
+				</div>
+				<!--// 고정영역:제목 -->
+
+				<!-- 열림영역:내용 -->
+				<div class="cotn">
+					<p class="master">종근당 고객센터 담당자</p>
+					<p class="txt_cotn">영업일 기준 오후 2시 이전 결제 완료된 주문 건에 한하여 당일 출고를 진행하고 있으나, 출고 후 배송 완료 까지는 평균 1~2일 정도 소요되고 있습니다.<br>(기상이변, 시즌특수, 택배사 대리점의 상황에 따라 추가 시일이 소요될 수 있는 점 양해 부탁드립니다.)</p>
+				</div>
+				<!--// 열림영역:내용 -->
+			</div>
+			<!--// 제목/내용 -->
+		</div>
+		<!--// 1세트 -->
+		<div class="acc_group">
+			<div class="div_board">
+				<p>취소/교환/반품</p>
+			</div>
+			<div class="board_area">
+				<div class="fix">
+					<div class="tit">
+						<p class="t_hd_01">주문취소는 어떻게 신청하나요?</p>
+					</div>
+					<div class="ctrl_acc"><i class="i_sp_32 arr_down"></i></div>
+				</div>
+				<div class="cotn">
+					<p class="master">종근당 고객센터 담당자</p>
+					<p class="txt_cotn">영업일 기준 오후 2시 이전 결제 완료된 주문 건에 한하여 당일 출고를 진행하고 있으나, 출고 후 배송 완료 까지는 평균 1~2일 정도 소요되고 있습니다.<br>(기상이변, 시즌특수, 택배사 대리점의 상황에 따라 추가 시일이 소요될 수 있는 점 양해 부탁드립니다.)</p>
+				</div>
+			</div>
+		</div>
+		<div class="acc_group">
+			<div class="div_board">
+				<p>주문결제</p>
+			</div>
+			<div class="board_area">
+				<div class="fix">
+					<div class="tit">
+						<p class="t_hd_01">무통장 입금과 실시간 계좌이체의 차이점은 무엇인가요?</p>
+					</div>
+					<div class="ctrl_acc"><i class="i_sp_32 arr_down"></i></div>
+				</div>
+				<div class="cotn">
+					<p class="master">종근당 고객센터 담당자</p>
+					<p class="txt_cotn">무통장 입금과 실시간 계좌이체의 차이점은 무엇인가요?</p>
+				</div>
+			</div>
+		</div>
+		<div class="acc_group">
+			<div class="div_board">
+				<p>취소/교환/반품</p>
+			</div>
+			<div class="board_area">
+				<div class="fix">
+					<div class="tit">
+						<p class="t_hd_01">교환하고 싶은데, 새상품과 기존 상품 맞교환이 가능한가요?</p>
+					</div>
+					<div class="ctrl_acc"><i class="i_sp_32 arr_down"></i></div>
+				</div>
+				<div class="cotn">
+					<p class="master">종근당 고객센터 담당자</p>
+					<p class="txt_cotn">영업일 기준 오후 2시 이전 결제 완료된 주문 건에 한하여 당일 출고를 진행하고 있으나, 출고 후 배송 완료 까지는 평균 1~2일 정도 소요되고 있습니다.<br>(기상이변, 시즌특수, 택배사 대리점의 상황에 따라 추가 시일이 소요될 수 있는 점 양해 부탁드립니다.)</p>
+				</div>
+			</div>
+		</div>
+		<div class="acc_group">
+			<div class="div_board">
+				<p>상품</p>
+			</div>
+			<div class="board_area">
+				<div class="fix">
+					<div class="tit">
+						<p class="t_hd_01">내가 작성한 후기를 어떻게 확인하나요?</p>
+					</div>
+					<div class="ctrl_acc"><i class="i_sp_32 arr_down"></i></div>
+				</div>
+				<div class="cotn">
+					<p class="master">종근당 고객센터 담당자</p>
+					<p class="txt_cotn">영업일 기준 오후 2시 이전 결제 완료된 주문 건에 한하여 당일 출고를 진행하고 있으나, 출고 후 배송 완료 까지는 평균 1~2일 정도 소요되고 있습니다.<br>(기상이변, 시즌특수, 택배사 대리점의 상황에 따라 추가 시일이 소요될 수 있는 점 양해 부탁드립니다.)</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--// 아코디언게시판 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">테이블 게시판</p>
+	<!-- 테이블게시판 -->
+	<section class="board_list">
+		<!-- 목록 -->
+		<div class="cotn">
+			<table>
+				<caption>공지사항사항 게시판 목록</caption>
+				<colgroup>
+					<col style="width:13%;">
+					<col style="width:77%;">
+					<col style="width:10%;">
+				</colgroup>
+				<tbody>
+					<tr class="list_fix"><!-- 상단고정class="list_fix" -->
+						<th scope="row">공지사항</th>
+						<td>
+							<a href="#none">회원약관 변경 고지의 건</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+					<tr class="list_fix">
+						<th scope="row">당첨자발표</th>
+						<td>
+							<a href="#none">4월 출석체크 이벤트 당첨자 안내</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+					<!-- 1세트 -->
+					<tr>
+						<th scope="row">공지사항</th>
+						<td>
+							<a href="#none">회원약관 변경 고지의 건</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+					<!--// 1세트 -->
+					<tr>
+						<th scope="row">공지사항</th>
+						<td>
+							<a href="#none">회원약관 변경 고지의 건</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+					<tr>
+						<th scope="row">공지사항</th>
+						<td>
+							<a href="#none">회원약관 변경 고지의 건</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+					<tr>
+						<th scope="row">공지사항</th>
+						<td>
+							<a href="#none">회원약관 변경 고지의 건</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+					<tr>
+						<th scope="row">공지사항</th>
+						<td>
+							<a href="#none">회원약관 변경 고지의 건</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+					<tr>
+						<th scope="row">공지사항</th>
+						<td>
+							<a href="#none">회원약관 변경 고지의 건</a>
+						</td>
+						<td class="date">2022.07.04</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--// 목록 -->
+
+		<!-- paging -->
+		<div class="paging">
+			<a href="#none" class="i_sp_24 arr_left prev"></a>
+			<a href="#none" class="on">1</a><!-- 현재페이지class="on"추가 -->
+			<a href="#none">2</a>
+			<a href="#none">3</a>
+			<a href="#none">4</a>
+			<a href="#none">5</a>
+			<a href="#none">6</a>
+			<a href="#none">7</a>
+			<a href="#none">8</a>
+			<a href="#none"class="i_sp_24 arr_right next"></a>
+		</div>
+		<!--// paging -->
+	</section>
+	<!--// 테이블게시판 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">리뷰 목록 타입1</p>
+	<!-- 리뷰목록 타입1 -->
+	<section class="rv_tb_wrap">
+		<!-- 작성가능 목록 -->
+		<table>
+			<caption>작성가능 리뷰목록</caption>
+			<colgroup>
+				<col style="width:15%;">
+				<col style="width:9%;">
+				<col style="width:42%;">
+				<col style="width:18%;">
+				<col style="width:16%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">주문일/주문번호</th>
+					<th scope="col">상태</th>
+					<th scope="col">상품정보</th>
+					<th scope="col">작성기간</th>
+					<th scope="col">관리</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<!-- 주문일/주문번호 -->
+					<th scope="row">
+						<p class="date">2022.04.12</p>
+						<p class="ord_num">1234567897 </p>
+					</th>
+					<!--// 주문일/주문번호 -->
+					<!-- 상태 -->
+					<td>
+						<p class="status">리뷰<br>미작성</p>
+					</td>
+					<!--// 상태 -->
+					<!-- 상품정보 -->
+					<td>
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<!-- 이미지 -->
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_01.jpg" alt="">
+										</figure>
+									</div>
+									<!--// 이미지 -->
+									<div class="txt_area">
+										<!-- 상품명 -->
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+										<!--// 상품명 -->
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</td>
+					<!--// 상품정보 -->
+					<!-- 작성기간 -->
+					<td>
+						<p class="until">~2022.04.03 까지</p>
+					</td>
+					<!--// 작성기간 -->
+					<!-- 관리 -->
+					<td>
+						<div class="btn_wrap vtl_st" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<a href="#none" class="btn bc_fff h_32 btn_rv">
+									<i class="i_sp_16 write"></i>
+									<span class="txt">일반리뷰 (<em>50</em>P)</span>
+								</a>
+								<a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰 (<em>150</em>P)</span>
+								</a>
+							</div>
+						</div>
+					</td>
+					<!--// 관리 -->
+				</tr>
+				<tr>
+					<th scope="row">
+						<p class="date">2022.04.12</p>
+						<p class="ord_num">1234567897 </p>
+					</th>
+					<td><p class="status">리뷰<br>미작성</p></td>
+					<td>
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_01.jpg" alt="">
+										</figure>
+									</div>
+									<div class="txt_area">
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<p class="until">~2022.04.03 까지</p>
+					</td>
+					<td>
+						<div class="btn_wrap vtl_st" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<a href="#none" class="btn bc_fff h_32 btn_rv">
+									<i class="i_sp_16 write"></i>
+									<span class="txt">일반리뷰 (<em>50</em>P)</span>
+								</a>
+								<a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰 (<em>150</em>P)</span>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<p class="date">2022.04.12</p>
+						<p class="ord_num">1234567897 </p>
+					</th>
+					<td><p class="status">리뷰<br>미작성</p></td>
+					<td>
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_01.jpg" alt="">
+										</figure>
+									</div>
+									<div class="txt_area">
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<p class="until">~2022.04.03 까지</p>
+					</td>
+					<td>
+						<div class="btn_wrap vtl_st" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<a href="#none" class="btn bc_fff h_32 btn_rv">
+									<i class="i_sp_16 write"></i>
+									<span class="txt">일반리뷰 (<em>50</em>P)</span>
+								</a>
+								<a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰 (<em>150</em>P)</span>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<p class="date">2022.04.12</p>
+						<p class="ord_num">1234567897 </p>
+					</th>
+					<td><p class="status">리뷰<br>미작성</p></td>
+					<td>
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_01.jpg" alt="">
+										</figure>
+									</div>
+									<div class="txt_area">
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<p class="until">~2022.04.03 까지</p>
+					</td>
+					<td>
+						<div class="btn_wrap vtl_st" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<a href="#none" class="btn bc_fff h_32 btn_rv">
+									<i class="i_sp_16 write"></i>
+									<span class="txt">일반리뷰 (<em>50</em>P)</span>
+								</a>
+								<a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰 (<em>150</em>P)</span>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<p class="date">2022.04.12</p>
+						<p class="ord_num">1234567897 </p>
+					</th>
+					<td><p class="status">일반리뷰<br>작성</p></td>
+					<td>
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_01.jpg" alt="">
+										</figure>
+									</div>
+									<div class="txt_area">
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<p class="until">~2022.04.03 까지</p>
+					</td>
+					<td class="general_rv"><!-- 일반리뷰 작성:class="general_rv"추가 -->
+						<div class="btn_wrap vtl_st" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<a href="#none" class="btn bc_fff h_32 btn_rv">
+									<i class="i_sp_16 write"></i>
+									<span class="txt">일반리뷰 (<em>50</em>P)</span>
+								</a>
+								<a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰 (<em>150</em>P)</span>
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+		<!--// 작성가능 목록 -->
+	</section>
+	<!--// 리뷰목록 타입1 -->
+
+	<!-- 리뷰목록 타입2 -->
+	<hr class="div_gap">
+	<p class="g_tit">리뷰 목록 타입2</p>
+	<!-- 작성한 리뷰 목록 -->
+	<section class="rv_li_wrap">
+		<!-- 1세트 -->
+		<div class="rv_li_box">
+			<div class="rv_li_cotn">
+				<!-- 리뷰상품정보 -->
+				<div class="rv_prd_info">
+					<!-- 상품 -->
+					<div class="rv_prd_area">
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<!-- 이미지 -->
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_01.jpg" alt="">
+										</figure>
+									</div>
+									<!--// 이미지 -->
+									<div class="txt_area">
+										<!-- 상품명 -->
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+										<!--// 상품명 -->
+
+										<!-- 수량 -->
+										<div class="qty">
+											<p>1개</p>
+										</div>
+										<!--// 수량 -->
+
+										<p class="date">2022.11.24</p><!-- 작성일 -->
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 상품 -->
+
+					<!-- 상품평점/편집버튼 -->
+					<div class="etc_area">
+						<!-- 평점 -->
+						<div class="rating">
+							<p class="grade">5.0</p>
+						</div>
+						<!--// 평점 -->
+
+						<!-- 리뷰버튼 -->
+						<div class="btn_wrap" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<button type="button" class="btn bc_fff_02 h_32 btn_rv">수정</button>
+								<!-- <a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰</span>
+								</a> -->
+								<button type="button" class="btn bc_fff h_32 btn_rv">삭제</button>
+							</div>
+						</div>
+						<!--// 리뷰버튼 -->
+					</div>
+					<!--// 상품평점/편집버튼 -->
+				</div>
+				<!--// 리뷰상품정보 -->
+
+				<!-- 작성한리뷰 -->
+				<div class="rv_dtl_view">
+					<!-- 리뷰 상세정보 -->
+					<div class="rv_opn_area">
+						<!-- 텍스트 -->
+						<div class="rv_txt">
+							<p>저는 여러 유산균 먹어보고 종근당 락토핏에 정착했어요. 아이가 이제 6살이 되어서 가루로 된 유산균을 먹여보려고 키즈 구입했어요. 입이 예민한 아이인데 잘 먹어서 만족스러워요.</p>
+						</div>
+						<!--// 텍스트 -->
+
+						<!-- 리뷰사진 -->
+						<div class="rv_photo">
+							<!-- 1세트 -->
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_01.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<!--// 1세트 -->
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_01.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_03.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_04.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_05.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_06.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_07.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_08.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+						</div>
+						<!--// 리뷰사진 -->
+					</div>
+					<!--// 리뷰 상세정보 -->
+				</div>
+				<!--// 작성한리뷰 -->
+			</div>
+		</div>
+		<!--// 1세트 -->
+		<div class="rv_li_box">
+			<div class="rv_li_cotn">
+				<div class="rv_prd_info">
+					<div class="rv_prd_area">
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_02.jpg" alt="">
+										</figure>
+									</div>
+									<div class="txt_area">
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+										<div class="qty">
+											<p>1개</p>
+										</div>
+										<p class="date">2022.11.24</p>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="etc_area">
+						<div class="rating">
+							<p class="grade">5.0</p>
+						</div>
+						<div class="btn_wrap" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰</span>
+								</a>
+								<button type="button" class="btn bc_fff h_32 btn_rv">삭제</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rv_dtl_view">
+					<div class="rv_opn_area">
+						<div class="rv_txt">
+							<p>저는 여러 유산균 먹어보고 종근당 락토핏에 정착했어요. 아이가 이제 6살이 되어서 가루로 된 유산균을 먹여보려고 키즈 구입했어요. 입이 예민한 아이인데 잘 먹어서 만족스러워요.</p>
+						</div>
+						<div class="rv_photo">
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_01.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_01.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_03.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_04.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_05.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_06.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_07.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_08.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rv_li_box">
+			<div class="rv_li_cotn">
+				<div class="rv_prd_info">
+					<div class="rv_prd_area">
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_02.jpg" alt="">
+										</figure>
+									</div>
+									<div class="txt_area">
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+										<div class="qty">
+											<p>1개</p>
+										</div>
+										<p class="date">2022.11.24</p>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="etc_area">
+						<div class="rating">
+							<p class="grade">5.0</p>
+						</div>
+						<div class="btn_wrap" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<a href="#none" class="btn bc_fff_02 h_32 btn_rv">
+									<i class="i_sp_16 camera"></i>
+									<span class="txt">포토리뷰</span>
+								</a>
+								<button type="button" class="btn bc_fff h_32 btn_rv">삭제</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rv_dtl_view">
+					<div class="rv_opn_area">
+						<div class="rv_txt">
+							<p>저는 여러 유산균 먹어보고 종근당 락토핏에 정착했어요. 아이가 이제 6살이 되어서 가루로 된 유산균을 먹여보려고 키즈 구입했어요. 입이 예민한 아이인데 잘 먹어서 만족스러워요.</p>
+						</div>
+						<div class="rv_photo">
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_01.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_01.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_03.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_04.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_05.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_06.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_07.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_08.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rv_li_box">
+			<div class="rv_li_cotn">
+				<div class="rv_prd_info">
+					<div class="rv_prd_area">
+						<div class="prd_h_wrap">
+							<div class="prd_group">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_02.jpg" alt="">
+										</figure>
+									</div>
+									<div class="txt_area">
+										<div class="txt">
+											<p class="brand">락토핏</p>
+											<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+										</div>
+										<div class="qty">
+											<p>1개</p>
+										</div>
+										<p class="date">2022.11.24</p>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="etc_area">
+						<div class="rating">
+							<p class="grade">5.0</p>
+						</div>
+						<div class="btn_wrap" btn-type="sub_bt">
+							<div class="btn_cotn">
+								<button type="button" class="btn bc_fff_02 h_32 btn_rv">수정</button>
+								<button type="button" class="btn bc_fff h_32 btn_rv">삭제</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rv_dtl_view">
+					<div class="rv_opn_area">
+						<div class="rv_txt">
+							<p>저는 여러 유산균 먹어보고 종근당 락토핏에 정착했어요. 아이가 이제 6살이 되어서 가루로 된 유산균을 먹여보려고 키즈 구입했어요. 입이 예민한 아이인데 잘 먹어서 만족스러워요.</p>
+						</div>
+						<div class="rv_photo">
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_06.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_07.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+							<div class="img_wrap">
+								<img src="../assets/images/temp/prd_08.jpg" alt="">
+								<a href="#none" class="go_view"><span class="blind">이미지 크게보기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--// 작성한 리뷰 목록 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

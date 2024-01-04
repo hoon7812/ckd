@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>탭메뉴/탭버튼</title>
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap">
+	<p class="g_tit">좌우이동탭메뉴 : 7개 이상</p>
+	<!-- 좌우이동탭 -->
+	<nav class="mov_tab_wrap">
+		<div class="tab_cotn">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<!-- 1세트 -->
+					<div class="swiper-slide div_set on"><!-- 활성화:class="on"추가 -->
+						<a href="#none" class="bt_tab">
+							<span>전체보기</span>
+						</a>
+					</div>
+					<!--// 1세트 -->
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>유산균</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>오메가3</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>루테인</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>콜라겐&middot;히알루론산</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>건강기능식품</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>칼슘&middot;마그네슘</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>관절</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>홍삼전통소재</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>기타건강기능</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev ctrl_btn"><i class="i_arrow prev"></i></div><!-- 이전버튼 -->
+			<div class="swiper-button-next ctrl_btn"><i class="i_arrow next"></i></div><!-- 다음버튼 -->
+		</div>
+	</nav>
+	<!--// 좌우이동탭 -->
+
+	<p class="g_tit">좌우이동탭메뉴 : 7개 미만</p>
+	<!-- 좌우이동탭 -->
+	<nav class="mov_tab_wrap">
+		<div class="tab_cotn">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<!-- 1세트 -->
+					<div class="swiper-slide div_set on"><!-- 활성화:class="on"추가 -->
+						<a href="#none" class="bt_tab">
+							<span>전체보기</span>
+						</a>
+					</div>
+					<!--// 1세트 -->
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>유산균</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>오메가3</span>
+						</a>
+					</div>
+					<div class="swiper-slide div_set">
+						<a href="#none" class="bt_tab">
+							<span>루테인</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev ctrl_btn"><i class="i_arrow prev"></i></div><!-- 이전버튼 -->
+			<div class="swiper-button-next ctrl_btn"><i class="i_arrow next"></i></div><!-- 다음버튼 -->
+		</div>
+	</nav>
+	<!--// 좌우이동탭 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">균등분할탭메뉴</p>
+	<!-- 균등분할탭 -->
+	<section class="per_tab_wrap">
+		<div class="tab_cotn">
+			<!-- 1세트 -->
+			<div class="div_set on"><!-- 활성화:class="on"추가 -->
+				<a href="#none" class="bt_tab">
+					<span>사용가능</span>
+				</a>
+			</div>
+			<!--// 1세트 -->
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>기간만료/사용쿠폰</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!--// 균등분할탭 -->
+
+	<!-- 균등분할탭 -->
+	<section class="per_tab_wrap">
+		<div class="tab_cotn">
+			<!-- 1세트 -->
+			<div class="div_set on"><!-- 활성화:class="on"추가 -->
+				<a href="#none" class="bt_tab">
+					<span>전체</span>
+				</a>
+			</div>
+			<!--// 1세트 -->
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>사용/소멸</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>적립</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!--// 균등분할탭 -->
+
+	<!-- 균등분할탭 -->
+	<section class="per_tab_wrap multi">
+		<!-- 탭1줄:1세트 -->
+		<div class="tab_cotn">
+			<!-- 1세트 -->
+			<div class="div_set on"><!-- 활성화:class="on"추가 -->
+				<a href="#none" class="bt_tab">
+					<span>전체</span>
+				</a>
+			</div>
+			<!--// 1세트 -->
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>사용/소멸</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>적립</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>적립</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>적립</span>
+				</a>
+			</div>
+		</div>
+		<!--// 탭1줄:1세트 -->
+		<div class="tab_cotn">
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>전체</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>사용/소멸</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>적립</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>적립</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!--// 균등분할탭 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">하위탭버튼</p>
+	<!-- 하위탭버튼 -->
+	<section class="sub_tab_wrap">
+		<div class="tab_cotn">
+			<div class="div_set on"><!-- 선택:class="on"추가 -->
+				<a href="#none" class="bt_tab">Best추천</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">혈행건강</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">다이어트</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">유산균</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">단백질</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">기능성 콜라겐</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">근육건강</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">비타민</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">눈건강</a>
+			</div>
+		</div>
+	</section>
+	<!--// 하위탭버튼 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">라인탭</p>
+	<!-- 라인탭 -->
+	<section class="line_tab_wrap">
+		<div class="tab_cotn">
+			<div class="div_set on">
+				<a href="#none" class="bt_tab">
+					<span>20대이하</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>30대</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>40대</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>50대</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>60대이상</span>
+				</a>
+			</div>
+			<div class="on_bdr" style="width:101.63px;"></div>
+		</div>
+	</section>
+	<!--// 라인탭 -->
+
+	<p class="g_tit">라인탭:중앙정렬</p>
+	<!-- 라인탭 -->
+	<section class="line_tab_wrap algn_ctr">
+		<div class="tab_cotn">
+			<div class="div_set on">
+				<a href="#none" class="bt_tab">
+					<span>20대이하</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>30대</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>40대</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>50대</span>
+				</a>
+			</div>
+			<div class="div_set">
+				<a href="#none" class="bt_tab">
+					<span>60대이상</span>
+				</a>
+			</div>
+			<div class="on_bdr" style="width:101.63px;"></div>
+		</div>
+	</section>
+	<!--// 라인탭 -->
+</div>
+<!--// #WRAP -->
+
+<script>
+	$(document).ready(function() {
+
+
+
+	});
+</script>
+</body>
+</html>

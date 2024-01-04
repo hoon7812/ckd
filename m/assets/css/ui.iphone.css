@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 모바일 아이폰UI 스타일 》
+************************************************************************************************************************************************************ */
+/* ============================== [ 기본 iPhone 10 : 375*812  ] ========================================================================================== */
+
+/* -------------------- 서브페이지 ---------------------------------------- */
+/* 컨텐츠영역(공통) */
+div.sub{padding-bottom:calc(18.889vw + env(safe-area-inset-bottom));}
+
+/* -------------------- 전체팝업 ---------------------------------------- */
+/* 컨텐츠영역 */
+.full_popup .contents{padding-bottom:calc(11.111vw + env(safe-area-inset-bottom));}
+
+/* -------------------- 바닥팝업 ---------------------------------------- */
+/* 시작일선택 */
+.deliv_start_pop div.contents{max-height:calc(100% - 35.278vw - env(safe-area-inset-bottom));height:calc(100% - 35.278vw - env(safe-area-inset-bottom));}
+
+/* 쿠폰&혜택: 이벤트진행목록 팝업*/
+.btm_evt_pop.btm_popup.bdr > div.contents{padding-bottom:env(safe-area-inset-bottom);}
+
+/* -------------------- 하단 고정버튼 ---------------------------------------- */
+/* 전체팝업, 바닥팝업, 서브페이지 */
+div.btn_wrap[btn-type="main_bt"]{padding-bottom:calc(3.333vw + env(safe-area-inset-bottom));}
+/* 탭바 */
+.tab_bar div.cotn{padding-bottom:env(safe-area-inset-bottom)}
+/* 이벤트: 상세 */
+div.evt_btn_fix{padding-bottom:calc(3.333vw + env(safe-area-inset-bottom));}
+/* 공지사항: 상세 */
+.board_detail div.btn_fixed{padding-bottom:calc(3.333vw + env(safe-area-inset-bottom));}
+
+

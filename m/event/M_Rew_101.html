@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>이벤트:진행중이벤트</title>
+	<link rel="stylesheet" href="../assets/css/event.css"><!-- 이벤트 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="event"><!-- [이벤트 class="event"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 이벤트:진행중이벤트 -->
+			<div class="sub">
+				<div class="event_list">
+					<!-- 탭메뉴 -->
+					<div class="tab_menu line">
+						<!-- 1세트 -->
+						<div class="btn_tab on"><!-- 활성화 : class="on" 추가 -->
+							<a href="#none">
+								<span>진행중인 이벤트</span>
+							</a>
+						</div>
+						<!--// 1세트 -->
+						<div class="btn_tab">
+							<a href="#none">
+								<span>종료된 이벤트</span>
+							</a>
+						</div>
+					</div>
+					<!--// 탭메뉴 -->
+
+					<!-- 이벤트목록 -->
+					<div class="evt_list_wrap">
+						<!-- 탭메뉴 -->
+						<div class="tab_menu btn">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<!-- 1세트 -->
+									<div class="btn_tab swiper-slide on">
+										<a href="#none">
+											<span>전체</span>
+										</a>
+									</div>
+									<!--// 1세트 -->
+									<div class="btn_tab swiper-slide">
+										<a href="#none">
+											<span>신청한 이벤트</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 탭메뉴 -->
+
+						<!-- 목록 -->
+						<div class="evt_bnr_list">
+							<!-- 1세트 -->
+							<div class="evt_bnr">
+								<figure class="img">
+									<img src="../assets/images/temp/bnr_svc_01.jpg" alt="">
+								</figure>
+								<div class="txt_badge">
+									<span>APP 전용</span><span>체험단 신청</span>
+								</div>
+								<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+							</div>
+							<!--// 1세트 -->
+							<div class="evt_bnr">
+								<figure class="img">
+									<img src="../assets/images/temp/bnr_svc_02.jpg" alt="">
+								</figure>
+								<div class="txt_badge">
+									<span>APP 전용</span>
+								</div>
+								<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+							</div>
+							<div class="evt_bnr">
+								<figure class="img">
+									<img src="../assets/images/temp/bnr_svc_03.jpg" alt="">
+								</figure>
+								<div class="txt_badge">
+									<span>응모 이벤트</span>
+								</div>
+								<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+							</div>
+							<div class="evt_bnr">
+								<figure class="img">
+									<img src="../assets/images/temp/bnr_svc_04.jpg" alt="">
+								</figure>
+								<div class="txt_badge">
+									<span>응모 이벤트</span>
+								</div>
+								<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+							</div>
+						</div>
+						<!--// 목록 -->
+
+						<!-- 전체:데이터없음 -->
+						<div class="data_none">
+							<div class="cotn">
+								<i class="icon_none"></i>
+								<p class="mn_copy">진행중인 이벤트가 없어요.</p>
+							</div>
+						</div>
+						<!--// 전체:데이터없음 -->
+
+						<!-- 신청한 이벤트:데이터없음 -->
+						<div class="data_none">
+							<div class="cotn">
+								<i class="icon_none"></i>
+								<p class="mn_copy">신청하신 이벤트가 없어요.</p>
+							</div>
+						</div>
+						<!--// 신청한 이벤트:데이터없음 -->
+					</div>
+					<!--// 이벤트목록 -->
+				</div>
+			</div>
+			<!--// 이벤트:진행중이벤트 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

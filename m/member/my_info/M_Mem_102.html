@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>나의정보관리:정보수정</title>
+	<link rel="stylesheet" href="../../assets/css/member.css"><!-- 회원 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="member my_info "><!-- [나의정보관리 class="my_info" 추가, 회원 class="member"]] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 나의정보관리:정보수정 -->
+			<div class="sub">
+				<div class="my_info_wrap">
+					<!-- 2022-10-21_수정 -->
+					<!-- 기본정보 영역 -->
+					<div class="basic_info_wrap">
+						<!-- 아이디 -->
+						<div class="form_inpt">
+							<p class="tit_field necd">
+								<span>아이디</span>
+							</p>
+							<div class="txt">
+								<input type="text" placeholder="disable" value="bellbell1234" disabled="">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+						</div>
+						<!--// 아이디 -->
+						<!-- 이름 -->
+						<div class="form_inpt">
+							<p class="tit_field necd">
+								<span>이름</span>
+							</p>
+							<div class="txt">
+								<input type="text" placeholder="disable" value="홍길동" disabled="">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+						</div>
+						<!--// 이름 -->
+						<!-- 휴대전화 -->
+						<div class="form_inpt">
+							<div class="tit_sec_wrap flex_betw">
+								<p class="tit_field necd">
+									<span>휴대전화</span>
+								</p>
+								<p>
+									<a href="#none" class="txt_link more">변경<br></a>
+								</p>
+							</div>
+							<div class="txt">
+								<input type="num" placeholder="disable" value="010-1234-5678" disabled="">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+						</div>
+						<!--// 휴대전화 -->
+						<!-- 2022-10-26_수정 -->
+						<!-- 비밀번호 -->
+						<div class="form_inpt">
+							<div class="tit_sec_wrap flex_betw">
+								<p class="tit_field">
+									<span>비밀번호</span>
+								</p>
+								<p>
+									<a href="#none" class="txt_link more">변경<br></a>
+								</p>
+							</div>
+							<!-- 비밀번호 변경 시 폼 영역 노출  -->
+							<div class="txt">
+								<input type="password" placeholder="영문, 숫자, 특수문자 조합 8~16자" value=""><!-- 2022-10-21_수정 -->
+								<button class="btn_pw show"><span class="blind">암호보기</span></button>
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+							<div class="val_check">
+								<span class="pass">영문</span><!--  조건 충족 시 class="pass" -->
+								<span class="pass">숫자</span>
+								<span class="fail">특수문자</span>
+								<span>조합 8~16자</span>
+							</div>
+							<!--// 비밀번호 변경 시 영역 노출  -->
+						</div>
+						<!--// 비밀번호 -->
+						<!--// 비밀번호 변경 시 영역 노출  -->
+						<!-- 비밀번호 확인 -->
+						<div class="form_inpt"> <!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+							<div class="tit_sec_wrap flex_betw">
+								<p class="tit_field">
+									<span>비밀번호 확인</span>
+								</p>
+							</div>
+							<div class="txt">
+								<input type="password" placeholder="비밀번호 다시 입력" value="">
+								<button class="btn_pw show"><span class="blind">암호보기</span></button>
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+							<div class="val_check">
+								<span class="pass">영문</span><!--  조건 충족 시 class="pass" -->
+								<span class="pass">숫자</span>
+								<span class="fail">특수문자</span>
+								<span>조합 8~16자</span>
+								<span class="pass">일치</span>
+							</div>
+							<div class="msg_wrap">
+								<p class="err_msg">비밀번호가 확인 되었습니다.</p><!-- 비밀번호 일치 시 -->
+							</div>
+						</div>
+						<!--// 비밀번호 확인 -->
+						<!--// 비밀번호 변경 시 영역 노출  -->
+						<!--// 2022-10-26_수정 -->
+						<!-- 이메일 -->
+						<div class="form_inpt wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+							<p class="tit_field necd">
+								<span>이메일</span>
+							</p>
+							<div class="txt">
+								<input type="num" placeholder="예시) example@email.com" value="bellbell1234@naver.com">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+							<div class="msg_wrap">
+								<p class="err_msg">이메일 주소를 입력해 주세요.</p><!-- 미입력 -->
+								<p class="err_msg">이메일 주소를 확인해 주세요. </p><!-- 형식오류 -->
+								<p class="err_msg">이미 사용 중인 이메일 주소입니다.</p><!-- 이미 사용중인 이메일 -->
+								<p class="err_msg">사용 가능한 이메일입니다.</p><!-- 이메일 사용가능 -->
+							</div>
+						</div>
+						<!-- 해당 회원이 임직원일 경우 영역 노출 -->
+						<div class="form_inpt">
+							<div class="tit_sec_wrap flex_betw">
+								<p class="tit_field necd">
+									<span>임직원 이메일</span>
+								</p>
+								<p>
+									<a href="#none" class="txt_link more">임직원 권한 해지하기<br></a><!-- 2022-10-21_수정 -->
+								</p>
+							</div>
+							<!-- 2022-10-21_수정 -->
+							<div class="cert_email">
+								<div class="txt">
+									<input type="num" placeholder="예시) example@email.com" value="bellbell1234@naver.com" disabled>
+									<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+								</div>
+								<div class="btn_wrap" btn-type="sub_bt">
+									<a href="#none" class="btn bc_fff_02 h_52">재인증하기</a>
+								</div>
+							</div>
+							<!--// 2022-10-21_수정 -->
+						</div>
+						<!--// 해당 회원이 임직원일 경우 이메일 영역 노출 -->
+						<!--// 이메일 -->
+						<!-- 2022-10-21_수정 -->
+					</div>
+					<!--// 기본정보 영역 -->
+
+					<!-- 버튼 -->
+					<div class="btn_fixed">
+						<div class="btn_wrap" btn-type="main_bt">
+							<a href="#none" class="btn" bt_role="confirm">변경하기</a><!-- 2022-10-21_수정 -->
+						</div>
+					</div>
+					<!--// 버튼 -->
+				</div>
+			</div>
+			<!--// 나의정보관리:비밀번호입력 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

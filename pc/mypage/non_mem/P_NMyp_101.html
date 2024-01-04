@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>비회원 주문조회:비회원 메인</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage main non_mem"><!-- [마이페이지 class="mypage", 메인 class="main", 비회원 class="non_mem"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container" class="lnb_ui">
+		<!-- #LNB -->
+		<nav id="lnb">
+			<div class="sub_tit_28">
+				<h1 class="tit_28">비회원 주문조회</h1><!-- 2022-11-28_수정 -->
+			</div>
+			<div class="cotn">
+				<!-- 메뉴:1세트 -->
+				<div class="menu_group">
+					<!-- 1뎁스 -->
+					<div class="dep_01">
+						<!-- 1뎁스링크 -->
+						<a href="#none" class="dep01_link">
+							<span>주문/배송조회</span>
+							<i class="i_sp_16 arr_gray_right"></i>
+						</a>
+						<!--// 1뎁스링크 -->
+					</div>
+					<!--// 1뎁스 -->
+				</div>
+				<!--// 메뉴:1세트 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>취소/교환/반품</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>고객센터</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 마이페이지 메인 -->
+			<div class="sub">
+				<div class="my_main_wrap">
+					<!-- 회원정보/적립금 -->
+					<div class="mem_info_wrap">
+						<!-- 회원정보 -->
+						<div class="mem_area">
+							<div class="my_badge img">
+								<span class="tit_16">비회원</span>
+							</div>
+							<div class="mem_info">
+								<div class="mem_name">
+									<p>안녕하세요. 고객님</p>
+								</div>
+							</div>
+						</div>
+						<!--// 회원정보 -->
+					</div>
+					<!--// 회원정보/적립금 -->
+
+					<!-- 주문배송조회 -->
+					<div class="my_info_data">
+						<!-- 타이틀영역 -->
+						<div class="sub_tit_24">
+							<div class="tit_area">
+								<h1 class="tit_24">주문/배송 조회</h1>
+								<!-- 2022-11-28_수정 -->
+							</div>
+							<p class="txt_link more_gray">
+								<a href="./P_NMyp_201.html">자세히</a>
+							</p>
+						</div>
+						<!--// 타이틀영역 -->
+
+						<!-- 조회 -->
+						<div class="ord_info_area">
+							<div class="ord_step ord_box">
+								<div class="step_wrap">
+									<ul>
+										<li>
+											<div class="ord_num">
+												<span class="tit_18">0</span>
+											</div>
+											<p>입금대기</p>
+											<a href="./P_NMyp_201.html" class="go_view">
+												<span class="blind">페이지 이동</span>
+											</a>
+										</li>
+										<li>
+											<div class="ord_num">
+												<span class="tit_18">0</span>
+											</div>
+											<p>결제완료</p>
+											<a href="./P_NMyp_201.html" class="go_view">
+												<span class="blind">페이지 이동</span>
+											</a>
+										</li>
+										<li>
+											<div class="ord_num">
+												<span class="tit_18">0</span>
+											</div>
+											<p>배송준비중</p>
+											<a href="./P_NMyp_201.html" class="go_view">
+												<span class="blind">페이지 이동</span>
+											</a>
+										</li>
+										<li>
+											<div class="ord_num">
+												<span class="tit_18">6</span>
+											</div>
+											<p>배송중</p>
+											<a href="./P_NMyp_201.html" class="go_view">
+												<span class="blind">페이지 이동</span>
+											</a>
+										</li>
+										<li>
+											<div class="ord_num">
+												<span class="tit_18">999</span>
+											</div>
+											<p>배송완료</p>
+											<a href="./P_NMyp_201.html" class="go_view">
+												<span class="blind">페이지 이동</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="ord_sta_area ord_box">
+								<div class="txt_status cancel">
+									<span>취소</span>
+									<strong>1</strong>
+									<a href="./P_NMyp_301.html" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								</div>
+								<div class="txt_status excg">
+									<span>교환</span>
+									<strong>2</strong>
+									<a href="./P_NMyp_301.html" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								</div>
+								<div class="txt_status rtr">
+									<span>반품</span>
+									<strong>3</strong>
+									<a href="./P_NMyp_301.html" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--// 조회 -->
+					</div>
+					<!--// 주문배송조회 -->
+
+					<!-- 주문상품목록 -->
+					<div class="ord_prd">
+						<!-- 1세트(일반배송) -->
+						<div class="ord_prd_area">
+							<!-- 주문정보 -->
+							<div class="ord_top_area">
+								<!-- 왼쪽영역 -->
+								<div class="lef_area">
+									<span class="flag_bor bl">일반배송</span><!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" 추가 -->
+									<div class="ord_info">
+										<p class="ff_lato txt_date">2022.03.05</p>
+										<i class="icon_stick"></i>
+										<p class="ff_lato prd_num">123456789</p>
+										<i class="icon_stick"></i>
+										<p class="txt_link more_bk">
+											<a href="./P_NMyp_202.html">주문상세</a>
+										</p>
+									</div>
+								</div>
+								<!--// 왼쪽영역 -->
+							</div>
+							<!--// 주문정보 -->
+
+							<!-- 주문내역박스 -->
+							<div class="ord_list_sec stick">
+								<!-- 상온/실온 -->
+								<div class="ord_list_wrap">
+									<div class="ord_list_box">
+										<!-- 타이틀 -->
+										<div class="tit_ord_area">
+											<!-- 왼쪽영역 -->
+											<div class="lef_state">
+												<div class="tit_temp">
+													<i class="i_sp_16 temp"></i>
+													<span>상온/실온</span>
+												</div>
+											</div>
+											<!--// 왼쪽영역 -->
+
+											<!-- 오른쪽영역 -->
+											<div class="rigt_area">
+												<p class="tit_14">결제완료</p>
+												<div class="btn_wrap" btn-type="sub_bt">
+													<div class="btn_cotn">
+														<a href="#none" class="btn bc_fg h_32">배송조회_1</a>
+														<a href="#none" class="btn bc_fg h_32">배송조회_2</a>
+													</div>
+												</div>
+											</div>
+											<!--// 오른쪽영역 -->
+										</div>
+										<!--// 타이틀 -->
+
+										<!-- 주문상품 -->
+										<div class="ord_prd_cotn row_mrg">
+											<div class="ord_tb_wrap">
+												<!-- 1세트 -->
+												<div class="tr_line">
+													<!-- 상품 -->
+													<div class="td_div">
+														<div class="td_cotn">
+															<div class="prd_h_wrap">
+																<div class="prd_group">
+																	<div class="cotn">
+																		<!-- 이미지 -->
+																		<div class="img_area">
+																			<figure class="img">
+																				<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																			</figure>
+																		</div>
+																		<!--// 이미지 -->
+
+																		<div class="txt_area">
+																			<!-- 상품명 -->
+																			<div class="txt">
+																				<p class="brand">락토핏</p>
+																				<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐</h1>
+																			</div>
+																			<!--// 상품명 -->
+																			<!-- 금액 -->
+																			<!-- 2022-11-28_수정 -->
+																			<div class="sale_info">
+																				<div class="price">
+																					<p>
+																						<strong>29,900</strong>원
+																					</p>
+																				</div>
+																			</div>
+																			<!--// 2022-11-28_수정 -->
+																			<!--// 금액 -->
+																		</div>
+
+																		<a href="../../product/P_Pro_201.html" class="go_view"><span class="blind">상품상세 이동</span></a>
+																	</div>
+
+																	<!-- 추가적립금/사은품 -->
+																	<div class="ord_gift_wrap">
+																		<!-- 2022-11-28_수정 -->
+																		<!-- 사은품 -->
+																		<div class="gift_set">
+																			<figure class="img">
+																				<img src="../../assets/images/temp/prd_02.jpg" alt="">
+																			</figure>
+																			<div class="txt_area">
+																				<p class="tit_14">사은품</p>
+																				<p class="gift_txt">2월 20%추가할인 락토핏 생유산균 베베 1박스</p>
+																			</div>
+																			<div class="amount">
+																				<p>
+																					<strong>100</strong>개
+																				</p>
+																			</div>
+																		</div>
+																		<!--// 사은품 -->
+																	</div>
+																	<!--// 추가적립금/사은품 -->
+																</div>
+															</div>
+														</div>
+													</div>
+													<!--// 상품 -->
+
+													<!-- 수량 -->
+													<div class="td_div">
+														<div class="amount">
+															<p>
+																<strong>2</strong>개
+															</p>
+														</div>
+													</div>
+													<!--// 수량 -->
+												</div>
+												<!--// 1세트 -->
+												<div class="tr_line">
+													<div class="td_div">
+														<div class="td_cotn">
+															<div class="prd_h_wrap">
+																<div class="prd_group">
+																	<div class="cotn">
+																		<div class="img_area">
+																			<figure class="img">
+																				<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																			</figure>
+																		</div>
+																		<div class="txt_area">
+																			<div class="txt">
+																				<p class="brand">락토핏</p>
+																				<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																			</div>
+																			<!-- 금액 -->
+																			<!-- 2022-11-28_수정 -->
+																			<div class="sale_info">
+																				<div class="price">
+																					<p>
+																						<strong>29,900</strong>원
+																					</p>
+																				</div>
+																			</div>
+																			<!--// 2022-11-28_수정 -->
+																			<!--// 금액 -->
+																		</div>
+																		<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="td_div">
+														<div class="amount">
+															<p>
+																<strong>2</strong>개
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- 주문관련버튼 -->
+											<div class="ord_btn_wrap">
+												<div class="btn_wrap" btn-type="sub_bt">
+													<div class="btn_cotn">
+														<a href="#none" class="btn jkd_b_w h_32 btn_alert" open-layer-class="alert1">수취확인</a>
+														<!-- 2022-11-28_수정 -->
+														<a href="./P_NMyp_403.html" class="btn bc_fff h_32">교환신청</a>
+														<a href="./P_NMyp_503.html" class="btn bc_fff h_32">반품신청</a>
+														<a href="./P_NMyp_603.html" class="btn bc_fff h_32">미수령신고</a>
+													</div>
+												</div>
+											</div>
+											<!--// 주문관련버튼 -->
+										</div>
+										<!--// 주문상품 -->
+									</div>
+								</div>
+								<!--// 상온/실온 -->
+
+								<!-- 냉동/냉장 -->
+								<div class="ord_list_wrap">
+									<div class="ord_list_box">
+										<!-- 타이틀 -->
+										<div class="tit_ord_area">
+											<!-- 왼쪽영역 -->
+											<div class="lef_state">
+												<div class="tit_temp">
+													<i class="i_sp_16 cold"></i>
+													<span>냉동/냉장</span>
+												</div>
+											</div>
+											<!--// 왼쪽영역 -->
+
+											<!-- 오른쪽영역 -->
+											<div class="rigt_area">
+												<p class="tit_14">배송중</p>
+												<div class="btn_wrap" btn-type="sub_bt">
+													<div class="btn_cotn">
+														<a href="#none" class="btn bc_fg h_32">배송조회_1</a>
+														<a href="#none" class="btn bc_fg h_32">배송조회_2</a>
+													</div>
+												</div>
+											</div>
+											<!--// 오른쪽영역 -->
+										</div>
+										<!--// 타이틀 -->
+
+										<!-- 주문상품 -->
+										<div class="ord_prd_cotn row_mrg">
+											<div class="ord_tb_wrap">
+												<!-- 1세트 -->
+												<div class="tr_line">
+													<!-- 상품 -->
+													<div class="td_div">
+														<div class="td_cotn">
+															<div class="prd_h_wrap">
+																<div class="prd_group">
+																	<div class="cotn">
+																		<!-- 이미지 -->
+																		<div class="img_area">
+																			<figure class="img">
+																				<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																			</figure>
+																		</div>
+																		<!--// 이미지 -->
+
+																		<div class="txt_area">
+																			<!-- 상품명 -->
+																			<div class="txt">
+																				<p class="brand">락토핏</p>
+																				<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																			</div>
+																			<!--// 상품명 -->
+																			<!-- 금액 -->
+																			<!-- 2022-11-28_수정 -->
+																			<div class="sale_info">
+																				<div class="price">
+																					<p>
+																						<strong>29,900</strong>원
+																					</p>
+																				</div>
+																			</div>
+																			<!--// 2022-11-28_수정 -->
+																			<!--// 금액 -->
+																		</div>
+																		<a href="../../product/P_Pro_201.html" class="go_view"><span class="blind">상품상세 이동</span></a>
+																	</div>
+
+																	<!-- 추가적립금/사은품 -->
+																	<div class="ord_gift_wrap">
+																		<!-- 2022-11-28_수정 -->
+
+																		<!-- 사은품 -->
+																		<div class="gift_set">
+																			<figure class="img">
+																				<img src="../../assets/images/temp/prd_02.jpg" alt="">
+																			</figure>
+																			<div class="txt_area">
+																				<p class="tit_14">사은품</p>
+																				<p class="gift_txt">2월 20%추가할인 락토핏 생유산균 베베 1박스</p>
+																			</div>
+																			<div class="amount">
+																				<p>
+																					<strong>100</strong>개
+																				</p>
+																			</div>
+																		</div>
+																		<!--// 사은품 -->
+																	</div>
+																	<!--// 추가적립금/사은품 -->
+																</div>
+															</div>
+														</div>
+													</div>
+													<!--// 상품 -->
+
+													<!-- 수량 -->
+													<div class="td_div">
+														<div class="amount">
+															<p>
+																<strong>2</strong>개
+															</p>
+														</div>
+													</div>
+													<!--// 수량 -->
+												</div>
+												<!--// 1세트 -->
+											</div>
+
+											<!-- 주문관련버튼 -->
+											<div class="ord_btn_wrap">
+												<div class="btn_wrap" btn-type="sub_bt">
+													<div class="btn_cotn">
+														<a href="./P_NMyp_303_03.html" class="btn bc_fff h_32 btn_alert"  open-layer-class="alert2">취소신청</a>
+													</div>
+												</div>
+											</div>
+											<!--// 주문관련버튼 -->
+										</div>
+										<!--// 주문상품 -->
+									</div>
+								</div>
+								<!--// 냉동/냉장 -->
+							</div>
+							<!--// 주문내역박스 -->
+						</div>
+						<!--// 1세트(일반배송) -->
+
+						<!-- 2022-11-28_수정 -->
+					</div>
+					<!--// 주문상품목록 -->
+
+					<!-- 데이터없음 -->
+					<div class="data_none">
+						<div class="cotn">
+							<p>최근 주문하신 상품이 없습니다.</p>
+						</div>
+					</div>
+					<!--// 데이터없음 -->
+				</div>
+			</div>
+			<!--// 마이페이지 메인 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+
+<!-- 수취확인 알럿팝업 -->
+<section class="alert_pop alert_02 btn_alert alert1">
+	<!-- 컨텐츠 -->
+	<div class="cotn">
+		<p class="sb_txt">배송상품을 수령하셨습니까?</p>
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 버튼 -->
+	<div class="btn_wrap" btn-type="main_bt_02">
+		<div class="btn_cotn">
+			<button type="button" class="btn" bt_role="cancel">예</button>
+			<button type="button" class="btn" bt_role="confirm">아니오</button>
+		</div>
+	</div>
+	<!--// 버튼 -->
+
+	<!-- 닫기 -->
+	<a href="#none" class="closed">
+		<i class="i_sp_24 cross"></i>
+		<span class="blind">팝업 닫기</span>
+	</a>
+	<!--// 닫기 -->
+</section>
+<!--// 수취확인 알럿팝업 -->
+
+<!-- 취소신청 알럿팝업 -->
+<section class="alert_pop alert_02 btn_alert alert2">
+	<!-- 컨텐츠 -->
+	<div class="cotn">
+		<p class="sb_txt">상품 $ 주문취소 $ 을 진행하시겠습니까?</p>
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 버튼 -->
+	<div class="btn_wrap" btn-type="main_bt_02">
+		<div class="btn_cotn">
+			<button type="button" class="btn" bt_role="cancel">예</button>
+			<button type="button" class="btn" bt_role="confirm">아니오</button>
+		</div>
+	</div>
+	<!--// 버튼 -->
+
+	<!-- 닫기 -->
+	<a href="#none" class="closed">
+		<i class="i_sp_24 cross"></i>
+		<span class="blind">팝업 닫기</span>
+	</a>
+	<!--// 닫기 -->
+</section>
+<!--// 취소신청 알럿팝업 -->
+
+</body>
+</html>

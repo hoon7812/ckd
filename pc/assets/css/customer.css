@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 고객센터 스타일 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 메인 ] ========================================================================================== */
+/* -------------------- 자주묻는질문 ---------------------------------------- */
+.customer .faq_area {background-color:#F4F6FB; width:100%; padding:56px 0; margin-bottom:56px;}
+/* -------------------- 서비스 바로가기 ---------------------------------------- */
+/* 바로가기 */
+.customer_wrap .svc_direct {margin-bottom:56px;}
+.customer_wrap .svc_direct .svc_group {display:flex; margin:24px 0;}
+.customer_wrap .svc_group .group {border:1px solid #E2E5EB; border-radius:10px; box-sizing:border-box; width:25%; height:156px; padding:32px 0; position:relative; text-align:center; overflow:hidden;}
+.customer_wrap .svc_group .group ~ .group {margin-left:16px;}
+.customer_wrap .go_svc i {background-position:0 0; background-repeat:no-repeat; background-size:contain; display:block; height:54px; width:54px; margin:0 auto 16px;}
+.customer_wrap .go_svc .inquiry {background-image:url(../images/customer/icon_svc_01.png);}
+.customer_wrap .go_svc .ord {background-image:url(../images/customer/icon_svc_02.png);}
+.customer_wrap .go_svc .my_info {background-image:url(../images/customer/icon_svc_03.png);}
+.customer_wrap .go_svc .faq {background-image:url(../images/customer/icon_svc_04.png);}
+/* 바로가기:hover */
+.customer_wrap .svc_direct .group:hover {background-color:#3182F6; border:1px solid #E2E5EB;}
+.customer_wrap .group:hover .go_svc .inquiry {background-image:url(../images/customer/icon_svc_01_on.png);}
+.customer_wrap .group:hover .go_svc .ord {background-image:url(../images/customer/icon_svc_02_on.png);}
+.customer_wrap .group:hover .go_svc .my_info {background-image:url(../images/customer/icon_svc_03_on.png);}
+.customer_wrap .group:hover .go_svc .faq {background-image:url(../images/customer/icon_svc_04_on.png);}
+.customer_wrap .group:hover .go_svc .tit_18 {color:#fff;}
+/* 고객센터 */
+.center_info_wrap {border:1px solid #E2E5EB; border-radius:10px; box-sizing:border-box; height:103px; width:100%; text-align:center;  padding:24px 0;}
+.center_info_wrap .info_wrap {display:inline-block;}
+.center_info_wrap .info_wrap .info {float:left; text-align:left;}
+.center_info_wrap .info_wrap .info.num .txt_area {position:relative;}
+.center_info_wrap .info_wrap .info.num .txt_area:before {content:''; background:url(../images/customer/icon_counsel.png)0 0 no-repeat; background-size:contain; display:block; height:54px; width:54px; position:absolute; top:0; left:-66px; margin-right:12px;}
+.center_info_wrap .info_wrap .info.num .txt_area .txt {font-size:14px; line-height:1.193em;}
+.center_info_wrap .info_wrap .info.num .txt_area .num {font-family:'lato'; font-weight:bold; font-size:30px; color:#3182F6; line-height:1.2; letter-spacing:-0.2px;}
+.center_info_wrap .info_wrap .info.time {margin-left:57px; position:relative;}
+.center_info_wrap .info_wrap .info.time:before {content:''; background-color:#EEEEEE; display:block; height:55px; width:1px; position:absolute; top:0; left:-29px;}
+.center_info_wrap .info_wrap .info.time p {line-height:1.625em;}
+
+/* -------------------- 공지사항 ---------------------------------------- */
+.board_notice .sub_tit_24 {margin-bottom:0;}
+.board_notice tr {border-bottom:1px solid #EEEEEE;}
+.board_notice tr th,
+.board_notice tr td {font-size:18px; padding:24px 0 25px;}
+.board_notice tr th {font-weight:700; text-align:left;}
+.board_notice tr .date {color:#999999; text-align:right;}
+
+/* ============================== [ 자주묻는질문 ] ========================================================================================== */
+/* 검색입력 */
+.faq_wrap .search_box {background-color:#F4F6FB; border-radius:10px; box-sizing:border-box; text-align:center; padding:32px 0; margin-bottom:24px;}
+.faq_wrap .search_box .input_bar {background-color:#fff; border-radius:50px; box-sizing:border-box; display:inline-block; position:relative; width:480px;}
+.faq_wrap .search_box .input_set {padding:15px 72px 16px 16px;}
+.faq_wrap .search_box .input_set input {width:100%;}
+.faq_wrap .search_box .bt_area {display:flex; align-items:center; position:absolute; right:16px; top:13px;}
+.faq_wrap .search_box .bt_area .del {display:none; margin-right:12px;}
+.faq_wrap .search_box .bt_area .bt_search {background:url(../images/common/icon_search_24.png) no-repeat 0 0; display:inline-block; height:24px; width:24px;position:relative;margin-top:0;right:auto;top:auto;}
+/* 검색결과 */
+.result_wrap .list_num {margin-bottom:24px;}
+.result_wrap .list_num p strong {color:#3182F6; font-weight:700;}
+.result_wrap .list_num p strong:before {content:"'"; color:#000000;}
+.result_wrap .list_num p strong:after {content:"'"; color:#000000;}
+.result_wrap .board_accdn {margin-bottom:40px;}

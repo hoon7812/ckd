@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>종근당건강몰 PC: 선물 받는 분 정보 확인 팝업</title>
+    <link rel="stylesheet" href="../assets/css/ui.order.css"><!-- 장바구니/주문결제 공통UI -->
+</head>
+
+<body class="dim"><!-- 팝업open : class="dim" 추가 -->
+<!-- #WRAP -->
+<div id="wrap">
+	<!-- 알럿팝업 -->
+	<section class="alert_pop alert_02 gift_info_pop on" style="display:block;"><!-- 팝업open : class="on"추가, style="display:block;" --><!-- 이용약관 팝업(공통) class="policy_pop" -->
+		<!-- 컨텐츠 -->
+		<div class="cotn">
+			<p class="tit_22">선물 받는 분 정보 확인</p>
+			<p class="sb_txt">입력하신 정보로 선물 알림을 전송합니다.<br>다시 한번 확인해 주세요.</p>
+            <div class="bg_box border">
+                <p>김하나 010-1234-5678 </p>
+            </div>
+            <div class="msg_wrap">
+                <p class="err_msg">주문 완료 후에는 선물 받는 분의 정보 (이름과 연락처)를<br>
+                    변경 하실 수 없습니다.</p>
+            </div>
+		</div>
+		<!--// 컨텐츠 -->
+
+		<!-- 버튼 -->
+		<div class="btn_wrap" btn-type="main_bt_02">
+			<div class="btn_cotn">
+				<button type="button" class="btn" bt_role="cancel">취소</button>
+				<button type="button" class="btn" bt_role="confirm">확인</button>
+			</div>
+		</div>
+		<!--// 버튼 -->
+
+		<!-- 닫기 -->
+		<a href="#none" class="closed">
+			<i class="i_sp_24 cross"></i>
+			<span class="blind">팝업 닫기</span>
+		</a>
+		<!--// 닫기 -->
+	</section>
+	<!--// 알럿팝업 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

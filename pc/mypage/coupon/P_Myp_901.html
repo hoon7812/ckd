@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>마이페이지 할인쿠폰(사용가능)</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage my_coupn"><!-- [마이페이지 class="mypage", 할인쿠폰 class="my_coupn"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container" class="lnb_ui">
+		<!-- #LNB -->
+		<nav id="lnb">
+			<div class="sub_tit_28">
+				<h1 class="tit_28">마이페이지</h1>
+			</div>
+			<div class="cotn">
+				<!-- 메뉴:1세트 -->
+				<div class="menu_group">
+					<!-- 1뎁스 -->
+					<div class="dep_01">
+						<!-- 1뎁스링크 -->
+						<a href="#none" class="dep01_link">
+							<span>주문/배송조회</span>
+							<i class="i_sp_16 arr_gray_right"></i>
+						</a>
+						<!--// 1뎁스링크 -->
+					</div>
+					<!--// 1뎁스 -->
+				</div>
+				<!--// 메뉴:1세트 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>취소/교환/반품</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>정기배송 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>간편결제 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의활동</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<!-- 2뎁스 -->
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">관심상품</a></li><!-- 1세트 -->
+							<li><a href="#none">최근 본 상품</a></li>
+							<li><a href="#none">최근 구매상품</a></li>
+						</ul>
+					</div>
+					<!--// 2뎁스 -->
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 적립금</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 할인쿠폰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>1:1 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>상품리뷰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>제휴/대량구매 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<!-- 일반회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">회원정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">추천인 코드관리</a></li>
+							<li><a href="#none">회원탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 일반회원 -->
+
+				<!-- 기업회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">기업정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">기업회원 탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 기업회원 -->
+			</div>
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<div class="sub_tit_24">
+				<h2 class="tit_24">할인쿠폰</h2>
+			</div>
+			<!-- 마이페이지:할인쿠폰(사용가능) -->
+			<div class="sub">
+				<div class="coupn_cotn">
+					<!-- 균등분할탭 -->
+					<section class="per_tab_wrap">
+						<div class="tab_cotn">
+							<!-- 1세트 -->
+							<div class="div_set on"><!-- 활성화:class="on"추가 -->
+								<a href="#none" class="bt_tab">
+									<span>사용가능</span>
+								</a>
+							</div>
+							<!--// 1세트 -->
+							<div class="div_set">
+								<a href="#none" class="bt_tab">
+									<span>기간만료/사용쿠폰</span>
+								</a>
+							</div>
+						</div>
+					</section>
+					<!--// 균등분할탭 -->
+
+					<!-- 코드등록 -->
+					<div class="code_inpt">
+						<div class="bg_box">
+							<div class="form_inpt h_40">
+								<div class="cp_code">
+									<div class="txt">
+										<input type="text" placeholder="코드를 입력해 주세요.">
+										<button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+									</div>
+									<div class="btn_wrap" btn-type="sub_bt">
+										<div class="btn_cotn">
+											<button type="button" class="btn jkd_b_w h_40">등록</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 코드등록 -->
+
+					<!-- 쿠폰 -->
+					<div class="coupn_list">
+						<!-- 쿠폰목록 -->
+						<div class="coupon_wrap">
+							<!-- 1세트 -->
+							<div class="coupn_set done"><!-- 쿠폰다운로드 class="done"추가, 딤드상태추가 class="dim_on"추가 -->
+								<!-- 쿠폰정보 -->
+								<div class="info_cotn">
+									<div class="label">
+										<p>APP</p>
+										<p>알림신청</p>
+									</div>
+									<h1 class="name">신규 회원가입 8월 할인쿠폰</h1>
+									<div class="price">
+										<p class="upto">10%</p>
+									</div>
+									<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+									<p class="date">2022년 4월 19일 까지</p>
+								</div>
+								<!--// 쿠폰정보 -->
+
+								<!-- 쿠폰다운로드/상태 -->
+								<div class="down_status">
+									<div class="cotn">
+										<!-- 다운받기 -->
+										<div class="down">
+											<button class="save_coupn" type="button">
+												<span>쿠폰다운</span>
+												<i class="icon"></i>
+											</button>
+										</div>
+										<!--// 다운받기 -->
+
+										<!-- 다운완료 -->
+										<div class="complt">
+											<p>다운완료</p>
+											<i class="i_sp_32 chk_gray"></i>
+										</div>
+										<!--// 다운완료 -->
+										<p class="txt_link">
+											<a href="./P_Myp_903.html">적용상품</a>
+										</p>
+									</div>
+								</div>
+								<!--// 쿠폰다운로드/상태 -->
+								<p class="dim_txt">기간만료</p><!-- 딤드상태텍스트:상황에따라텍스트변경 -->
+							</div>
+							<!--// 1세트 -->
+							<div class="coupn_set">
+								<div class="info_cotn">
+									<div class="label">
+										<p>APP</p>
+										<p>알림신청</p>
+									</div>
+									<h1 class="name">신규 회원가입 8월 할인쿠폰</h1>
+									<div class="price">
+										<p class="upto">10%</p>
+									</div>
+									<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+									<p class="date">2022년 4월 19일 까지</p>
+								</div>
+								<div class="down_status">
+									<div class="cotn">
+										<div class="down">
+											<button class="save_coupn" type="button">
+												<span>쿠폰다운</span>
+												<i class="icon"></i>
+											</button>
+										</div>
+										<div class="complt">
+											<p>다운완료</p>
+											<i class="i_sp_32 chk_gray"></i>
+										</div>
+										<p class="txt_link">
+											<a href="#none">적용상품</a>
+										</p>
+									</div>
+								</div>
+								<p class="dim_txt">기간만료</p>
+							</div>
+							<div class="coupn_set done">
+								<div class="info_cotn">
+									<div class="label">
+										<p>APP</p>
+										<p>알림신청</p>
+									</div>
+									<h1 class="name">신규 회원가입 8월 할인쿠폰</h1>
+									<div class="price">
+										<p class="upto">10%</p>
+									</div>
+									<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+									<p class="date">2022년 4월 19일 까지</p>
+								</div>
+								<div class="down_status">
+									<div class="cotn">
+										<div class="down">
+											<button class="save_coupn" type="button">
+												<span>쿠폰다운</span>
+												<i class="icon"></i>
+											</button>
+										</div>
+										<div class="complt">
+											<p>다운완료</p>
+											<i class="i_sp_32 chk_gray"></i>
+										</div>
+										<p class="txt_link">
+											<a href="#none">적용상품</a>
+										</p>
+									</div>
+								</div>
+								<p class="dim_txt">기간만료</p>
+							</div>
+							<div class="coupn_set">
+								<div class="info_cotn">
+									<div class="label">
+										<p>APP</p>
+										<p>알림신청</p>
+									</div>
+									<h1 class="name">신규 회원가입 8월 할인쿠폰</h1>
+									<div class="price">
+										<p class="upto">10%</p>
+									</div>
+									<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+									<p class="date">2022년 4월 19일 까지</p>
+								</div>
+								<div class="down_status">
+									<div class="cotn">
+										<div class="down">
+											<button class="save_coupn" type="button">
+												<span>쿠폰다운</span>
+												<i class="icon"></i>
+											</button>
+										</div>
+										<div class="complt">
+											<p>다운완료</p>
+											<i class="i_sp_32 chk_gray"></i>
+										</div>
+										<p class="txt_link">
+											<a href="#none">적용상품</a>
+										</p>
+									</div>
+								</div>
+								<p class="dim_txt">기간만료</p>
+							</div>
+							<div class="coupn_set done">
+								<div class="info_cotn">
+									<div class="label">
+										<p>APP</p>
+										<p>알림신청</p>
+									</div>
+									<h1 class="name">신규 회원가입 8월 할인쿠폰</h1>
+									<div class="price">
+										<p class="upto">10%</p>
+									</div>
+									<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+									<p class="date">2022년 4월 19일 까지</p>
+								</div>
+								<div class="down_status">
+									<div class="cotn">
+										<div class="down">
+											<button class="save_coupn" type="button">
+												<span>쿠폰다운</span>
+												<i class="icon"></i>
+											</button>
+										</div>
+										<div class="complt">
+											<p>다운완료</p>
+											<i class="i_sp_32 chk_gray"></i>
+										</div>
+										<p class="txt_link">
+											<a href="#none">적용상품</a>
+										</p>
+									</div>
+								</div>
+								<p class="dim_txt">기간만료</p>
+							</div>
+							<div class="coupn_set">
+								<div class="info_cotn">
+									<div class="label">
+										<p>APP</p>
+										<p>알림신청</p>
+									</div>
+									<h1 class="name">신규 회원가입 8월 할인쿠폰</h1>
+									<div class="price">
+										<p class="upto">10%</p>
+									</div>
+									<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+									<p class="date">2022년 4월 19일 까지</p>
+								</div>
+								<div class="down_status">
+									<div class="cotn">
+										<div class="down">
+											<button class="save_coupn" type="button">
+												<span>쿠폰다운</span>
+												<i class="icon"></i>
+											</button>
+										</div>
+										<div class="complt">
+											<p>다운완료</p>
+											<i class="i_sp_32 chk_gray"></i>
+										</div>
+										<p class="txt_link">
+											<a href="#none">적용상품</a>
+										</p>
+									</div>
+								</div>
+								<p class="dim_txt">기간만료</p>
+							</div>
+							<div class="coupn_set done">
+								<div class="info_cotn">
+									<div class="label">
+										<p>APP</p>
+										<p>알림신청</p>
+									</div>
+									<h1 class="name">신규 회원가입 8월 할인쿠폰</h1>
+									<div class="price">
+										<p class="upto">10%</p>
+									</div>
+									<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+									<p class="date">2022년 4월 19일 까지</p>
+								</div>
+								<div class="down_status">
+									<div class="cotn">
+										<div class="down">
+											<button class="save_coupn" type="button">
+												<span>쿠폰다운</span>
+												<i class="icon"></i>
+											</button>
+										</div>
+										<div class="complt">
+											<p>다운완료</p>
+											<i class="i_sp_32 chk_gray"></i>
+										</div>
+										<p class="txt_link">
+											<a href="#none">적용상품</a>
+										</p>
+									</div>
+								</div>
+								<p class="dim_txt">기간만료</p>
+							</div>
+						</div>
+						<!--// 쿠폰목록 -->
+
+						<!-- paging -->
+						<div class="paging">
+							<a href="#none" class="i_sp_24 arr_left prev"></a>
+							<a href="#none" class="on">1</a><!-- 현재페이지class="on"추가 -->
+							<a href="#none">2</a>
+							<a href="#none">3</a>
+							<a href="#none">4</a>
+							<a href="#none">5</a>
+							<a href="#none">6</a>
+							<a href="#none">7</a>
+							<a href="#none">8</a>
+							<a href="#none" class="i_sp_24 arr_right next"></a>
+						</div>
+						<!--// paging -->
+					</div>
+					<!--// 쿠폰 -->
+
+					<!-- 데이터없음 -->
+					<!-- 2022-11-02_수정 -->
+					<div class="data_none">
+						<div class="cotn">
+							<p>사용 가능한 쿠폰이 없습니다.</p>
+							<div class="btn_wrap" btn-type="sub_bt">
+								<div class="btn_cotn">
+									<a href="../../benefit/P_Cou_101.html" class="btn bc_fff_02 w_320">쿠폰&혜택 확인</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 2022-11-02_수정 -->
+					<!--// 데이터없음 -->
+
+					<!-- 유의사항 -->
+					<div class="noti_wrap">
+						<div class="bg_box">
+							<div class="info_txt fs_14">
+								<p>쿠폰은 상품 단위로 적용되며 할인금액은 원단위로 적용됩니다. (단, 쿠폰적용제외 상품은 쿠폰 사용 불가)</p>
+								<p>배송비 쿠폰은 유료배송일 때, 배송비 할인을 받으실 수 있습니다.</p>
+								<p>할인쿠폰을 이용한 주문을 취소/반품 하실 때 일부 쿠폰의 경우 재발급되지 않습니다.</p>
+								<p>쿠폰 적용 상품은 당사 사정에 따라 변경될 수 있습니다.</p>
+								<p>사용 기간이 만료되거나 사용한 쿠폰은 최근 1개월까지만 확인 가능합니다.</p>
+							</div>
+						</div>
+					</div>
+					<!--// 유의사항 -->
+				</div>
+			</div>
+			<!--// 마이페이지:할인쿠폰(사용가능) -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

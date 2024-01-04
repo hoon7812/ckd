@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 쿠폰&혜택 스타일 》
+************************************************************************************************************************************************************ */
+/* -------------------- 쿠폰혜택 ---------------------------------------- */
+/* 비로그인시 배너 */
+.benefit_bann{position:relative;}
+.benefit_bann img{width:100%;display:block;}
+/* 등급별 혜택 */
+.benefit_area{padding:6.667vw 5.556vw 11.111vw;background-color:#3182F6;}
+.benefit_area .txt{font-size:5.556vw;line-height:1.4em;color:rgba(255,255,255,0.8);}
+.benefit_area .txt strong{font-weight:800;color:#fff}
+.benefit_area .box_grade{margin-top:6.667vw;}
+/* 등급박스 */
+.box_grade{background-color:#fff;border-radius:2.778vw;padding:5.556vw;display:flex;}
+.box_grade img{width:13.333vw;margin-left:auto;flex-shrink:0;height:13.333vw;}
+.box_grade div h5{font-weight:600;}
+.box_grade div p{font-size:3.889vw;color:#666;margin-top:2.222vw;}
+
+.btn_benf_area{margin-top:11.111vw;text-align:center;}
+.btn_benf_area .txt_link_wh{margin-top:4.444vw;}
+.btn_benf_area .bc_fff{border:0;font-weight:600;}
+.btn_benf_area .btn_wrap .btn.bc_bor_fff{border:0.278vw solid #fff;color:#fff;font-weight:600;}
+.txt_link_wh{font-size:3.333vw;font-weight:600;text-decoration:underline;color:#fff;display:inline-block;}
+
+/* 쿠폰리스트 */
+.coupon_sec{padding:6.667vw 5.556vw;}
+.coupon_sec .btn_wrap[btn-type="sub_bt"] .btn .icon.arrow_down{transform:rotate(270deg);width:3.333vw;height:3.333vw;background-size:100%;margin:0;vertical-align:-0.278vw;}
+
+/* -------------------- 등급별 혜택 ---------------------------------------- */
+.grade_wrap{padding:6.667vw 5.556vw;}
+.grade_wrap .box_grade{border:0.278vw solid #E2E5EB}
+.grade_wrap .box_grade ~ .box_grade{margin-top:3.333vw;}
+
+/* -------------------- 임직원 월별 구매금액 ---------------------------------------- */
+.service_cotn .tab_menu.line .tab_line_02 a {padding:1.111vw 0; line-height:1.429em;}
+.txt_space{letter-spacing:-0.222vw;}
+.grade_wrap.staff .tit_20{line-height:1.4em;}
+.tb_st01{border-top:0.278vw solid #111;margin-top:6.667vw;}
+.tb_st01 th{font-size:3.333vw;font-weight:600;text-align:right;padding:3.611vw 0;border-bottom:0.278vw solid #E2E5EB;}
+.tb_st01 td{font-size:3.333vw;text-align:right;padding:3.611vw 0;color:#666;border-bottom:0.278vw solid #E2E5EB;}
+.tb_st01 td.color_bl{color:#3182F6;}
+.tb_st01 td.color_or{color:#FF5F01}
+.tb_st01 td.al_ct, .tb_st01 th.al_ct{text-align:center;}
+.tb_st01 ~ p{margin-top:2.222vw;}
+.color_gy{color:#666}
+.sf_noti{margin-top:8.889vw;}
+.sf_noti .tit_12{margin-bottom:2.222vw;}
+
+/* -------------------- 이벤트 진행목록 팝업 ---------------------------------------- */
+.btm_evt_pop.btm_popup.bdr .head{margin-bottom:0;}
+.btm_evt_pop.btm_popup.bdr > .contents{max-height:75vh;padding-bottom:0;}
+.evt_ing_wrap .board_list{border-top:0;}
+.evt_ing_wrap .board_list li{padding:6.667vw 0;}
+.evt_ing_wrap .board_list .board_tit{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis;}
+.evt_ing_wrap .board_list .date_info .date{color:#666;font-family:'Pretendard';}
+.evt_ing_wrap .board_list .board_sort{width:14.444vw;position:absolute;left:0;top:calc(50% - 3.333vw);color:#000}
+.evt_ing_wrap .board_list .date_info{width:100%;margin-left:0;padding-left:14.444vw;box-sizing:border-box;}
+.evt_ing_wrap .board_list .arrow_right_bk{right:0;}
+.flag_evt{font-size:3.056vw;text-align:center;border-radius:1.389vw;width:12.222vw;height:6.667vw;padding-top:1.667vw;display:inline-block;box-sizing:border-box;line-height:1.181em;}
+.flag_evt.bl{background-color:#D6E6FD;}
+.flag_evt.or{background-color:#FFDFCC}
+.flag_evt.gr{background-color:#CCF3CC;}
+.flag_evt.ye{background-color:#FFF1CC;}
+
+/* -------------------- 혜택캘린더 ---------------------------------------- */
+ /* 달력 테이블 */
+ .bent_calen_wrap{padding-top:6.667vw;}
+ .bent_calen_wrap .month_area{justify-content:center;padding:0;margin-bottom:6.667vw;align-items:center;}
+ .bent_calen_wrap .month_area .tit_18{margin:0 4.444vw;font-family:lato,'Pretendard';line-height:1.222em;}
+ .bent_calen_wrap .month_area .btn_mon{height:5.556vw;}
+ .calen_table .thead .tr,
+ .calen_table .day_line{display:flex;}
+ .calen_table .th,
+ .calen_table .td{width:14.28%;text-align:center;}
+ .calen_table .thead{background-color:#F8F8F8;padding:3.056vw 0;}
+ .calen_table .th{color:#666;font-size:3.889vw;}
+ .calen_table .td{height:29.444vw;box-sizing:border-box;padding-top:2.222vw;position:relative;}
+ .calen_table .td span{font-family:lato,'Pretendard';line-height:1.187em;}
+
+ .calen_table .th:first-child,
+ .calen_table .tr .td:first-child{color:#FF5F01}
+ .calen_table .tbody .tr{border-top:0.278vw solid #E2E5EB;position:relative;}
+ .today{color:#3182F6}
+ .selected:before{width:7.222vw;height:7.222vw;border-radius:7.222vw;background-color:#111;display:block;content:'';position:absolute;top:1.389vw;left:calc(50% - 3.611vw);}
+ .selected span{color:#fff;position:relative;z-index:2;font-weight:700;}
+ /* 지난날/다음날 */
+ .disabled,
+ .calen_table .th.disabled:first-child,
+ .calen_table .tr .td.disabled:first-child{color:#999;}
+ /* 이벤트 표기 */
+ .data_graph{position:absolute;top:8.889vw;width:100%;left:0;}
+ .evt_bar{height:4.444vw;padding:0 1.667vw;position:absolute;box-sizing:border-box;}
+ .evt_bar .txt{font-size:3.056vw;line-height:1.454em;text-overflow:ellipsis;word-wrap:normal;white-space:nowrap; overflow:hidden;width:100%;}
+ .evt_bar.bg_bl{background-color:#D6E6FD;}
+ .evt_bar.bg_or{background-color:#FFDFCC;}
+ .evt_bar.bg_gr{background-color:#CCF3CC;}
+ .evt_bar.bg_ye{background-color:#FFF1CC;}
+ .evt_bar.start{border-radius:0.556vw 0.000vw 0.000vw 0.556vw;}
+ .evt_bar.end{border-radius:0 0.556vw 0.556vw 0;}
+ .evt_bar.start.end{border-radius:0.556vw;}
+ .evt_bar.bg_bl.start{border-left:0.556vw solid #3182F6;}
+ .evt_bar.bg_bl.end{border-right:0.556vw solid #3182F6;}
+ .evt_bar.bg_or.start{border-left:0.556vw solid #FF5F01;}
+ .evt_bar.bg_or.end{border-right:0.556vw solid #FF5F01;}
+ .evt_bar.bg_gr.start{border-left:0.556vw solid #00C300;}
+ .evt_bar.bg_gr.end{border-right:0.556vw solid #00C300;}
+ .evt_bar.bg_ye.start{border-left:0.556vw solid #FEBA02;}
+ .evt_bar.bg_ye.end{border-right:0.556vw solid #FEBA02;}

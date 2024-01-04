@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>상품목록</title>
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="product list"><!-- [상품공통 class="product", 상품목록 class="list" -->
+	<!-- #HEADER -->
+	<header id="header">
+		<div class="head_wrap">
+			<!-- 서브헤드 -->
+			<div class="sub_head">
+				<h1 class="sub_tit">페이지타이틀</h1>
+				<a href="#none" class="go_back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<!-- 검색&카테고리헤드 -->
+				<div class="srch_form">
+					<!-- 검색필드 -->
+					<div class="form_cotn">
+						<div class="input_set">
+							<input type="text" placeholder="검색어를 입력하세요">
+							<div class="bt_area">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+								<button teyp="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+							</div>
+						</div>
+						<button type="button" class="cancel">취소</button>
+					</div>
+					<!--// 검색필드 -->
+
+					<!-- 추천검색어 -->
+					<div class="sug_layer_wrap"><!-- 최대 10개까지 노출 -->
+						<ul>
+							<!-- 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span></a>
+								</p>
+								<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+							</li>
+							<!--// 검색어1세트 -->
+							<li>
+								<p>
+									<a href="#none">락토핏 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">생<span class="inc">유산균</span>코어</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">어린이 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">프로바이오틱스<span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none">종근당 <span class="inc">유산균</span></a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a href="#none"><span class="inc">유산균</span>다이어트</a>
+									<button type="button" class="bt_search"><span class="blind">검색하기</span></button>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!--// 추천검색어 -->
+				</div>
+				<!--// 검색&카테고리헤드 -->
+			</div>
+			<!--// 서브헤드 -->
+
+			<!-- 메인헤드 -->
+			<div class="idx_head">
+				<h1 class="logo">
+					<a href="#none">
+						<img src="../assets/images/common/logo_01.svg" alt="종근당건강몰">
+					</a>
+				</h1>
+				<div class="search">
+					<p>유산균 건강</p>
+					<i class="search"></i>
+					<a href="#none" class="go_view"><span class="blind">검색</span></a>
+				</div>
+			</div>
+			<!--// 메인헤드 -->
+
+			<!-- 버튼메뉴 -->
+			<div class="menu_wrap">
+				<div class="btn_menu home">
+					<a href="#none">
+						<span class="blind">메인으로이동</span>
+					</a>
+				</div>
+				<div class="btn_menu alarm on"><!-- 알람있을경우 class="on" 추가 -->
+					<a href="#none">
+						<span class="blind">알람</span>
+						<span class="amount">99</span>
+					</a>
+					<div class="new_arrive">
+						<p><i class="icon_new"></i>새로운 알림 도착</p>
+					</div>
+				</div>
+				<div class="btn_menu search">
+					<a href="#none">
+						<span class="blind">검색</span>
+					</a>
+				</div>
+				<div class="btn_menu cart on"><!-- 장바구니상품추가 class="on" 추가 -->
+					<a href="#none">
+						<span class="blind">장바구니</span>
+						<span class="amount">8</span>
+					</a>
+				</div>
+				<div class="btn_menu share">
+					<a href="#none">
+						<span class="blind">공유하기</span>
+					</a>
+				</div>
+			</div>
+			<!--// 버튼메뉴 -->
+		</div>
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 상품목록 -->
+			<div class="sub">
+				<!-- 상품카테고리탭 -->
+				<nav class="category_wrap">
+					<!-- 뎁스별탭1세트 -->
+					<div class="div_ctgry">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="btn_tab swiper-slide on">
+									<a href="#none">건강기능식품</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">가공식품</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">화장품</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 뎁스별탭1세트 -->
+					<div class="div_ctgry">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="btn_tab swiper-slide on">
+									<a href="#none">전체</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">유산균</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">오메가3</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">루테인</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">콜라겐 · 히알루론산</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">단백질</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">비타민</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">칼슘 · 마그네슘</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">밀크씨슬 · 철분 · 아연</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 3뎁스 -->
+					<div class="tab_menu btn">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<!-- 1세트 -->
+								<div class="btn_tab swiper-slide on">
+									<a href="#none">
+										<span>전체</span>
+									</a>
+								</div>
+								<!--// 1세트 -->
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>입금대기</span>
+									</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>면역건강/향산화</span>
+									</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>배송준비중</span>
+									</a>
+								</div>
+								<div class="btn_tab swiper-slide">
+									<a href="#none">
+										<span>배송완료</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 3뎁스 -->
+				</nav>
+				<!--// 상품카테고리탭 -->
+
+				<!-- 목록정렬 -->
+				<div class="sort_area">
+					<!-- 2022-11-02_수정 -->
+					<div class="amount_sort">
+						<p class="amount">
+							총 <span>43</span>개
+						</p>
+						<div class="form_chk">
+							<label class="group">
+								<input type="checkbox">
+								<i class="icon"></i>
+								<span class="txt">정기배송</span>
+							</label>
+						</div>
+					</div>
+					<div class="select_sort">
+						<select>
+							<option>판매순</option>
+							<option>신상품순</option>
+							<option>낮은 가격순</option>
+							<option>높은 가격순</option>
+							<option>할인률순</option>
+							<option>상품후기순</option>
+						</select>
+					</div>
+					<!--// 2022-11-02_수정 -->
+				</div>
+				<!--// 목록정렬 -->
+
+				<!-- 목록 -->
+				<div class="product_wrap">
+					<!-- 1세트 -->
+					<div class="prd_group on_dim"><!-- 상태값필요할때 class="on_dim"추가 -->
+						<div class="cotn">
+							<!-- 이미지 -->
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_01.jpg" alt="">
+								</figure>
+								<i class="i_badge new"><span class="blind">신상품</span></i><!-- 상품뱃지:NEW -->
+								<i class="i_badge hot"><span class="blind">핫딜상품</span></i><!-- 상품뱃지:핫딜 -->
+								<p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+							</div>
+							<!--// 이미지 -->
+
+							<!-- 상품명 -->
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+							</div>
+							<!--// 상품명 -->
+
+							<!-- 구매평 -->
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<!--// 구매평 -->
+
+							<!-- 판매가 -->
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<!--// 판매가 -->
+
+							<!-- 상품라벨 -->
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="gift">사은품</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<!--// 상품라벨 -->
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<!--// 1세트 -->
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_02.jpg" alt="">
+								</figure>
+								<i class="i_badge hot"><span class="blind">핫딜상품</span></i>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">★한정할인★락토핏 생유산</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_03.jpg" alt="">
+								</figure>
+								<i class="i_badge new"><span class="blind">신상품</span></i>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">★한정할인★락토핏 생유산</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_04.jpg" alt="">
+								</figure>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_02.jpg" alt="">
+								</figure>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">★한정할인★락토핏 생유산</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_03.jpg" alt="">
+								</figure>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">★한정할인★락토핏 생유산</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_04.jpg" alt="">
+								</figure>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_02.jpg" alt="">
+								</figure>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">★한정할인★락토핏 생유산</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_03.jpg" alt="">
+								</figure>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">★한정할인★락토핏 생유산</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+								<p class="deliv">무료배송</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+					<div class="prd_group">
+						<div class="cotn">
+							<div class="img_area">
+								<figure class="img">
+									<img src="../assets/images/temp/prd_04.jpg" alt="">
+								</figure>
+								<p class="status_txt">품절</p>
+							</div>
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+							</div>
+							<div class="buy_info">
+								<p class="grade">5.0</p>
+								<p class="quaty">
+									<span>5,000</span>개 리뷰
+								</p>
+							</div>
+							<div class="sale_info">
+								<div class="price">
+									<p class="upto">25%</p>
+									<p>37,500 원</p>
+								</div>
+								<del>50,000원</del>
+							</div>
+							<div class="prd_label">
+								<p class="icon_label cp">
+									<i class="icon cp"></i>
+									20%
+								</p>
+								<p class="add">추가적립</p>
+							</div>
+							<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+						</div>
+					</div>
+				</div>
+				<!--// 목록 -->
+				<hr class="div_gap">
+
+				<!-- 이벤트컨텐츠 -->
+				<section class="event_cotn">
+					<div class="tit">
+						<h1 class="tit_22">할인상품을 둘러보세요</h1>
+					</div>
+					<!-- 상품목록_슬라이드 -->
+					<div class="product_wrap swiper">
+						<div class="swiper-wrapper">
+							<div class="prd_group swiper-slide">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_02.jpg" alt="">
+										</figure>
+										<p class="status_txt">품절</p>
+									</div>
+									<div class="txt">
+										<p class="brand">락토핏</p>
+										<h1 class="name">★한정할인★락토핏 생유산</h1>
+									</div>
+									<div class="buy_info">
+										<p class="grade">5.0</p>
+										<p class="quaty">
+											<span>5,000</span>개 리뷰
+										</p>
+									</div>
+									<div class="sale_info">
+										<div class="price">
+											<p class="upto">25%</p>
+											<p>37,500 원</p>
+										</div>
+										<del>50,000원</del>
+									</div>
+									<div class="prd_label">
+										<p class="icon_label cp">
+											<i class="icon cp"></i>
+											20%
+										</p>
+										<p class="add">추가적립</p>
+										<p class="gift">사은품</p>
+										<p class="deliv">무료배송</p>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+							<div class="prd_group swiper-slide">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_02.jpg" alt="">
+										</figure>
+										<p class="status_txt">품절</p>
+									</div>
+									<div class="txt">
+										<p class="brand">락토핏</p>
+										<h1 class="name">★한정할인★락토핏 생유산</h1>
+									</div>
+									<div class="buy_info">
+										<p class="grade">5.0</p>
+										<p class="quaty">
+											<span>5,000</span>개 리뷰
+										</p>
+									</div>
+									<div class="sale_info">
+										<div class="price">
+											<p class="upto">25%</p>
+											<p>37,500 원</p>
+										</div>
+										<del>50,000원</del>
+									</div>
+									<div class="prd_label">
+										<p class="icon_label cp">
+											<i class="icon cp"></i>
+											20%
+										</p>
+										<p class="add">추가적립</p>
+										<p class="gift">사은품</p>
+										<p class="deliv">무료배송</p>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+							<div class="prd_group swiper-slide">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_02.jpg" alt="">
+										</figure>
+										<p class="status_txt">품절</p>
+									</div>
+									<div class="txt">
+										<p class="brand">락토핏</p>
+										<h1 class="name">★한정할인★락토핏 생유산</h1>
+									</div>
+									<div class="buy_info">
+										<p class="grade">5.0</p>
+										<p class="quaty">
+											<span>5,000</span>개 리뷰
+										</p>
+									</div>
+									<div class="sale_info">
+										<div class="price">
+											<p class="upto">25%</p>
+											<p>37,500 원</p>
+										</div>
+										<del>50,000원</del>
+									</div>
+									<div class="prd_label">
+										<p class="icon_label cp">
+											<i class="icon cp"></i>
+											20%
+										</p>
+										<p class="add">추가적립</p>
+										<p class="gift">사은품</p>
+										<p class="deliv">무료배송</p>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+							<div class="prd_group swiper-slide">
+								<div class="cotn">
+									<div class="img_area">
+										<figure class="img">
+											<img src="../assets/images/temp/prd_04.jpg" alt="">
+										</figure>
+										<p class="status_txt">품절</p>
+									</div>
+									<div class="txt">
+										<p class="brand">락토핏</p>
+										<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+									</div>
+									<div class="buy_info">
+										<p class="grade">5.0</p>
+										<p class="quaty">
+											<span>5,000</span>개 리뷰
+										</p>
+									</div>
+									<div class="sale_info">
+										<div class="price">
+											<p class="upto">25%</p>
+											<p>37,500 원</p>
+										</div>
+										<del>50,000원</del>
+									</div>
+									<div class="prd_label">
+										<p class="icon_label cp">
+											<i class="icon cp"></i>
+											20%
+										</p>
+										<p class="add">추가적립</p>
+										<p class="gift">사은품</p>
+										<p class="deliv">무료배송</p>
+									</div>
+									<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 상품목록_슬라이드 -->
+				</section>
+				<!--// 이벤트컨텐츠 -->
+			</div>
+			<!--// 상품목록 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

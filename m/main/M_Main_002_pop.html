@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>메인: 임직원 팝업</title>
+    <link rel="stylesheet" href="../assets/css/main.css"><!-- 메인 -->
+</head>
+<body class="dim"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- 알럿팝업 -->
+<section class="alert_popup alert_main_pop alert_03" style="display: block;"><!-- 팝업open : style="display:block;" 추가 --><!-- [메인 임직원 팝업 class="alert_main_pop"] -->
+	<!-- 컨텐츠 -->
+	<div class="contents">
+		 <!-- 슬라이드 영역 -->
+         <div class="slide_main_pop">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="img"><img src="../assets/images/brand/brand_info_bnr.jpg" alt=""></figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="img"><img src="../assets/images/brand/brand_info_bnr.jpg" alt=""></figure>
+                    </div>
+                </div>
+                <div class="swiper-pagination num_paging"></div><!-- paging -->
+            </div>
+        </div>
+        <!--// 슬라이드 영역 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 버튼 -->
+	<div class="alert_btn_wrap">
+		<button type="button" class="btn" bt_role="cancel"><span>오늘 그만보기</span></button>
+		<button type="button" class="btn" bt_role="confirm"><span>닫기</span></button>
+	</div>
+	<!--// 버튼 -->
+</section>
+<!--// 알럿팝업 -->
+</body>
+</html>

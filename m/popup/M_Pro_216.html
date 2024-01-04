@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>공유하기</title>
+</head>
+
+<body class="dim"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- 공유하기 팝업 -->
+<section class="btm_popup btm_share on" style="display:block;"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<div class="head_wrap">
+			<h1 class="tit_16">공유하기</h1>
+
+			<!-- 버튼 -->
+			<div class="btn_area">
+				<a href="#none" class="btn_head closed">
+					<span class="blind">팝업 닫기</span>
+				</a>
+			</div>
+			<!--// 버튼 -->
+		</div>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents">
+		<!-- 공유하기버튼 -->
+		<div class="shr_method">
+			<div class="shr_wrap">
+				<a href="#none" class="btn_shr">
+					<i class="icon_shr kakao"></i>
+					<span class="tit_shr">카카오톡</span>
+				</a>
+			</div>
+			<div class="shr_wrap">
+				<a href="#none" class="btn_shr">
+					<i class="icon_shr band"></i>
+					<span class="tit_shr">네이버 밴드</span>
+				</a>
+			</div>
+			<div class="shr_wrap">
+				<a href="#none" class="btn_shr">
+					<i class="icon_shr fb"></i>
+					<span class="tit_shr">페이스북</span>
+				</a>
+			</div>
+			<div class="shr_wrap">
+				<a href="#none" class="btn_shr">
+					<i class="icon_shr insta"></i>
+					<span class="tit_shr">인스타그램</span>
+				</a>
+			</div>
+			<div class="shr_wrap">
+				<button type="button" class="btn_shr btn_toast" open-toast-pop="toast_url">
+					<i class="icon_shr url"></i>
+					<span class="tit_shr">URL 복사</span>
+				</button>
+			</div>
+		</div>
+		<!--// 공유하기버튼 -->
+	</div>
+	<!--// 컨텐츠 -->
+</section>
+<!--// 공유하기 팝업 -->
+
+<!-- 공유하기 토스트팝업 -->
+<div class="toast_pop toast_url">
+	<p>URL 복사가 완료되었습니다.</p>
+</div>
+<!--// 공유하기 토스트팝업 -->
+</body>
+</html>

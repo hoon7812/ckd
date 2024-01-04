@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>미수령신고신청</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+	<style>
+		.alert_03.on{
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+
+<!-- 알럿팝업 -->
+<section class="alert_popup alert_03"><!-- 팝업open : style="display:block;" 추가 -->
+	<!-- 컨텐츠 -->
+	<div class="contents">
+		<p class="tit_16">단기카드대출 이용 동의</p>
+		<p class="sub_txt">이용 동의 후 신청이 가능합니다.<br>이용 동의하시겠습니까?</p>
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 버튼 -->
+	<div class="alert_btn_wrap">
+		<button type="button" class="btn" bt_role="cancel" onclick="closeModal(event,'alert_03')"><span>취소</span></button>
+		<a href="#" style="text-align: center;" class="btn" bt_role="confirm" ><span>확인</span></a>
+	</div>
+	<!--// 버튼 -->
+</section>
+<!--// 알럿팝업 -->
+
+
+
+<!-- #WRAP -->
+<div id="wrap" class="mypage my_req bg_gy"><!-- [마이페이지 class="mypage", 취소/교환/반품/미수령신고 신청 class="my_req"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 반품신청 -->
+			<div class="sub">
+				<div class="req_wrap">
+					<!-- 상품정보 -->
+					<div class="ord_top_sec">
+						<div class="top_ord_info">
+							<div class="ord_info_lef">
+								<p class="flag_bor bl">일반배송</p><!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" 클래쓰 추가 -->
+								<p class="txt_date">2022.03.05</p>
+								<p class="txt_prd_num">123456789</p>
+							</div>
+						</div>
+					</div>
+					<!--// 상품정보 -->
+
+					<!-- 상품목록 -->
+					<div class="ord_deli_cont">
+						<!-- 1세트 -->
+						<div class="ord_list_sec">
+							<!-- 주문 리스트 -->
+							<div class="ord_list_wrap">
+								<!-- 상온/실온 -->
+								<div class="ord_list_box">
+									<div class="tit_ord_area">
+										<div class="lef_state">
+											<div class="ord_state">
+												<p class="txt_14">신청상품</p>
+											</div>
+										</div>
+										<div class="btn_wrap" btn-type="sub_bt">
+											<a href="#none" class="btn bc_fff_03 h_24">수정</a>
+										</div>
+									</div>
+									<div class="ord_prd_cont">
+										<div class="ord_prd_list">
+											<div class="prod_h_wrap">
+												<!-- 1세트 -->
+												<div class="prd_group_h">
+													<div class="cotn">
+														<div class="prd_artic">
+															<!-- 이미지 -->
+															<div class="img_area">
+																<figure class="img">
+																	<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																</figure>
+															</div>
+															<!--// 이미지 -->
+
+															<!-- 판매정보 -->
+															<div class="prd_verti_info">
+																<!-- 상품명 -->
+																<div class="txt">
+																	<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+																<!--// 상품명 -->
+																<div class="object_area">
+																	<div class="sale_info">
+																		<!-- 2022-11-17_수정 -->
+																		<div class="price">
+																			<p>37,500원</p>
+																		</div>
+																		<div class="prd_num">
+																			<p>1개</p>
+																		</div>
+																		<!--// 2022-11-17_수정 -->
+																	</div>
+																</div>
+															</div>
+															<!--// 판매정보 -->
+														</div>
+													</div>
+												</div>
+												<!--// 1세트 -->
+												<div class="prd_group_h">
+													<div class="cotn">
+														<div class="prd_artic">
+															<div class="img_area">
+																<figure class="img">
+																	<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																</figure>
+															</div>
+															<div class="prd_verti_info">
+																<div class="txt">
+																	<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+																<div class="object_area">
+																	<div class="sale_info">
+																		<!-- 2022-11-17_수정 -->
+																		<div class="price">
+																			<p>37,500원</p>
+																		</div>
+																		<div class="prd_num">
+																			<p>1개</p>
+																		</div>
+																		<!--// 2022-11-17_수정 -->
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// 상온/실온 -->
+							</div>
+							<!--// 주문 리스트 -->
+						</div>
+						<!--// 1세트 -->
+					</div>
+					<!--// 상품목록 -->
+
+					<!-- 주문정보 -->
+					<div class="ord_vw_sec ord_info_sec">
+						<div class="dl_layout">
+							<div class="dl_div">
+								<p class="tit">주문일</p>
+								<p class="txt_info">2022.03.05 15:00</p>
+							</div>
+							<div class="dl_div">
+								<p class="tit">자동 배송완료 처리일</p>
+								<p class="txt_info">2022.03.10 15:00</p>
+							</div>
+							<div class="dl_div">
+								<p class="tit">자동 배송완료 처리일</p>
+								<p class="txt_info">배송완료 처리 전 (배송중)</p>
+							</div>
+						</div>
+					</div>
+					<!--// 주문정보 -->
+
+					<!-- 신고사유입력 -->
+					<div class="ord_vw_sec ord_form_sec">
+						<!-- 사유선택 -->
+						<div class="form_rdo box">
+							<div class="group">
+								<input type="radio" id="bx1" name="box" checked="">
+								<i class="icon"></i>
+								<div class="cotn">
+									<p class="mn_txt tit_14">상품을 받지 못했어요. 택배사 연락 안됨.</p>
+									<span class="blind">선택</span>
+								</div>
+							</div>
+							<div class="group">
+								<input type="radio" id="bx2" name="box">
+								<i class="icon"></i>
+								<div class="cotn">
+									<p class="mn_txt tit_14">이 상품이 빠져서 배송되었어요.</p>
+									<span class="blind">선택</span>
+								</div>
+							</div>
+						</div>
+						<!-- 사유선택 -->
+
+						<!-- textarea -->
+						<div class="form_text_area">
+							<div class="text_area">
+								<textarea cols="30" rows="10" placeholder="상세 사유를 입력해 주세요.(선택)"></textarea><!-- 2022-11-28_수정 -->
+								<div class="ltr_len">
+									<p>
+										<span>0</span>
+										<em>500</em>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- textarea -->
+					</div>
+					<!--// 신고사유입력 -->
+
+					<!-- 유의사항 -->
+					<div class="ord_vw_sec">
+						<div class="noti_copy gray_02">
+							<p>종근당 건강에서는 배송추적 시스템을 통해 상품의 배송상황을 확인해 드리고 있습니다.</p>
+							<p>미수령 신고는 판매자의 송장번호 입력실수 등으로 인해 배송상태가 잘못 표시되는 경우를 위한 것입니다.</p>
+							<p>신고접수 전 아파트 경비실이나 사무실 등 다른장소에 배송되었는지 확인 후 신청해 주세요.</p>
+						</div>
+					</div>
+					<!--// 유의사항 -->
+
+					<div class="btn_wrap" btn-type="sub_bt">
+						<a href="#none" onclick="back(event)" class="btn jkd_b_w">취소</a>
+						<a href="./M_Myp_602.html" class="btn jkd_b" onclick="openModal(event,'alert_03','received')">미수령 신고</a>
+					</div>
+				</div>
+			</div>
+			<!--// 반품신청 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

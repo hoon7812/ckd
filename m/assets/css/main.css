@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 메인 스타일 》
+************************************************************************************************************************************************************ */
+/* setting */
+.main #header .head_wrap {padding:2.778vw 4.444vw 3.056vw;}
+.main #header .head_wrap .sub_head {display:none;}
+.main #header .head_wrap .idx_head {display:flex;}
+.main .new_arrive,
+.main #header .head_wrap .menu_wrap .btn_menu.alarm,
+.main #header .head_wrap .menu_wrap .btn_menu.cart {display:block;}
+.main #header .head_wrap .menu_wrap .btn_menu.alarm {position:relative;}
+.main_cotn {padding-bottom:13.333vw;}
+
+/* 메인상단 비주얼영역 */
+.main_top_sec {margin-top:3.333vw;overflow:hidden;padding-bottom:10vw;}
+.slide_main .img {border-radius:2.778vw;overflow:hidden;height:88.889vw;}
+.slide_main .img img {display:block;height:100%;}
+.slide_main .swiper {overflow:visible;}
+.slide_main .swiper-wrapper .swiper-slide {width:88.89%;box-shadow: 0vw 1.111vw 1.111vw rgba(0, 0, 0, 0.25);border-radius:2.778vw;}
+.slide_main .swiper-button-next {right:1.667vw;}
+.slide_main .swiper-button-prev {left:1.667vw;}
+.slide_main .swiper-button-next,
+.slide_main .swiper-button-prev {width:8.333vw;height:8.333vw;box-shadow: 0vw 1.556vw 2.333vw rgba(0, 0, 0, 0.25);border-radius:8.333vw;}
+.slide_main .swiper-button-next {background:url("../images/common/icon_slide_next.svg") no-repeat;background-size:8.333vw;}
+.slide_main .swiper-button-prev {background:url("../images/common/icon_slide_prev.svg") no-repeat;background-size:8.333vw;}
+.slide_main .swiper-button-next:after,
+.slide_main .swiper-button-prev:after {display:none;}
+.slide_main .num_paging {bottom:3.333vw;right:14.722vw;left:auto;transform:translateX(0);height:5vw;}
+.btn_evt_more {width:5vw;height:5vw;border:5vw;background:rgba(255,255,0255,.5) url("../images/common/icon_plus_wh.svg") center no-repeat;background-size:2.778vw;position:absolute;bottom:3.333vw;right:8.611vw;display:block;border-radius:5vw;}
+
+.main_menu {padding:0 5.556vw;margin-top:6.667vw;}
+.main_menu ul {display:flex;}
+.main_menu li {flex:1;text-align:center;}
+.main_menu li p {display:block;font-size:3.333vw;margin-top:2.222vw;line-height:1.1666em;}
+.atte_ck {position:relative;width:14.444vw;height:14.444vw;display:inline-block;}
+.atte_ck .amount {background-color:#FF5F01; display:block; border-radius:7.222vw;font-size:2.778vw;font-weight:bold;color:#ffffff; position:absolute;right:2.222vw; top:2.222vw; height:3.611vw; min-width:3.611vw;font-family:lato;line-height:1em;padding:0.417vw 0.833vw 0;box-sizing:border-box;text-align:center;}
+.main_menu .icon_52 {width:14.444vw;height:14.444vw;display:inline-block;border-radius:2.778vw;}
+.main_menu .icon_52.calendar {background:#F8F8F8 url("../images/common/icon_main_menu01.svg") no-repeat;background-size:14.444vw;}
+.main_menu .icon_52.sale {background:#F8F8F8 url("../images/common/icon_main_menu02.svg") no-repeat;background-size:14.444vw;}
+.main_menu .icon_52.delivery {background:#F8F8F8 url("../images/common/icon_main_menu03.svg") no-repeat;background-size:14.444vw;}
+.main_menu .icon_52.service {background:#F8F8F8 url("../images/common/icon_main_menu04.svg") no-repeat;background-size:14.444vw;}
+.main_menu .icon_52.gift {background:#F8F8F8 url("../images/common/icon_main_menu05.svg") no-repeat;background-size:14.444vw;}
+
+/* 이벤트 배너 */
+.main_bnr_area {padding:0 5.556vw;margin-top:6.667vw;}
+.main_bnr_area .main_evt_bnr {box-shadow: 0vw 1.667vw 4.444vw rgba(0, 0, 0, 0.12);border-radius:2.222vw;}
+.main_bnr_area img {width:100%;display:block;}
+.main_bnr_area .bnr_set {border-radius:2.222vw;overflow:hidden;}
+
+/* 메인핫딜 */
+.main_hot_sec {padding:8.889vw 5.556vw;background-color:#F4F6FB;}
+.main_hot_sec .tit_sec_wrap .btn_wrap {margin-top:0;}
+.main_hot_sec .tit_sec_wrap .btn_wrap .btn.h_24 {padding-left:2.500vw;padding-right:5.278vw;position:relative;padding-top:1.667vw;}
+.main_hot_sec .tit_sec_wrap .btn_wrap .btn.h_24:after {background:url("../images/common/arrow_right_gy.svg") no-repeat;background-size:3.333vw;content:'';position:absolute;top:1.389vw;right:1.667vw;width:3.333vw;height:3.333vw;display:block;}
+.main_hot_sec .prd_img_set .prd_group ~ .prd_group {margin-top:8.889vw;}
+.main_hot_sec .prd_img_set .prd_group .cotn {background-color:#ffffff; overflow:hidden; border-radius:2.778vw; padding-bottom:4.444vw;}
+.main_hot_sec .prd_img_set .prd_group .img_area {border-radius:0;}
+.main_hot_sec .prd_img_set .prd_group .txt {padding:0 4.444vw;}
+.main_hot_sec .prd_img_set .prd_group .buy_info {padding:0 4.444vw;}
+.main_hot_sec .prd_img_set .prd_group .sale_info {padding:0 4.444vw;}
+.main_hot_sec .prd_img_set .prd_group .prd_label {padding:0 4.444vw;}
+
+/* AI 맞춤 추천 상품 */
+.main_ai_sec {margin-top:18.889vw;padding:0 5.556vw;}
+.main_ai_sec .prd_rec .tit_sec_wrap {overflow:hidden; box-sizing:border-box;}
+.main_ai_sec .prd_rec .tit_sec_wrap .tit_22 span {color:#3182F6;}
+
+/* 추천상품 */
+.main_recom_sec {margin-top:18.889vw;padding:0 5.556vw;overflow:hidden;}
+.main_recom_bnr {padding-bottom:8.333vw;}
+.main_recom_bnr .swiper {overflow:visible;border-radius:2.778vw;}
+.main_recom_bnr .swiper-slide {box-shadow: 0vw 2.242vw 5.606vw rgba(0, 0, 0, 0.08);border-radius:2.778vw;}
+.main_recom_bnr .dot_paging.wh.swiper-pagination .swiper-pagination-bullet[class*="active"] {background-color:#3182F6}
+.main_recom_bnr .dot_paging.swiper-pagination {bottom:-7.778vw;}
+.main_recom_sec .top_bann {border-radius:2.778vw 2.778vw 0 0;overflow:hidden;}
+.main_recom_sec .top_bann .img {height:33.333vw;}
+.main_recom_sec .top_bann img {height:100%;width:100%;display:block;object-fit:cover;}
+.recom_prd_wrap {padding:4.444vw;border-radius:0 0 2.778vw 2.778vw;overflow:hidden;box-sizing:border-box;}
+.recom_prd_wrap .prod_h_wrap {overflow-y:auto; height:95.811vw;}
+.recom_prd_wrap .prd_chk_cart .img_area {width:27.778vw;height:27.778vw;}
+.recom_prd_wrap .prd_chk_cart .prd_verti_info {margin-left:2.222vw;}
+.recom_prd_wrap .prd_group_h .txt .name { -webkit-line-clamp: 1;}
+.recom_prd_wrap .prod_h_wrap .prd_group_h ~ .prd_group_h {margin-top:5.556vw;}
+
+/* 체험단 신청 */
+.main_plan_sec {padding:0 5.556vw;margin-top:18.889vw;}
+.main_plan_shop .tit_22 {margin-bottom:4.444vw;}
+.main_plan_shop .main_plan_wrap {overflow:hidden; border-radius:3.333vw; box-shadow:0 3.333vw 6.111vw rgba(0, 0, 0, 0.14); position:relative; height:88.889vw; width:100%;}
+
+/* 배너이미지 */
+.main_plan_wrap .bnr_img_wrap {overflow:hidden; height:100%; width:100%;}
+.main_plan_wrap .bnr_img_wrap .img {overflow:hidden; border-radius:3.333vw;}
+.main_plan_wrap .bnr_img_wrap .img img {display:block; object-fit:cover; height:100%; width:100%;}
+
+/* 상품 */
+.main_plan_wrap .prod_h_wrap { position:absolute; left:0; right:0; bottom:3.333vw; padding:0 3.333vw;z-index:1;}
+.main_plan_wrap .prd_group_h .img_area {width:23.889vw;height:23.889vw;}
+.main_plan_wrap .prd_group_h {background-color:#ffffff; border-radius:2.222vw; box-sizing:border-box;padding:4.444vw; width:100%;}
+.main_plan_wrap .prd_group_h {transition:opacity 0.3s;}
+.main_plan_wrap .prd_group_h[class*="active"] {opacity:1;}
+.main_plan_wrap .prd_group_h .txt {max-width:100%;}
+.main_plan_wrap .prd_group_h .price p {letter-spacing:-0.02em;}
+.main_plan_wrap .prd_group_h .sale_info .price {display:flex;}
+.main_plan_wrap .prd_group_h .sale_info .price .upto {margin-right:0.556vw;}
+.main_plan_wrap .prd_group_h .sale_info .price .upto ~ p,
+.main_plan_wrap .prd_group_h .sale_info del {flex-shrink:0;}
+
+/* 신제품 */
+.main_new_sec {margin-top:18.889vw;padding:0 5.556vw;}
+.main_new_sec .hot_ban_wrap {padding:0;}
+.main_new_sec .hot_banner {background:url("../images/temp/bg_main_bann.jpg") no-repeat;background-size:cover;}
+.main_new_sec .hot_b_cotn .swiper-wrapper {align-items:stretch; height:auto;}
+.main_new_sec .hot_banner .prd_group {min-height:108.889vw;box-sizing:border-box;}
+.main_new_sec .hot_banner .prd_group .img_area {height:60vw;}
+
+/* 기능별 인기상품 */
+.main_hit_sec {margin-top:18.889vw;}
+.main_hit_sec .tit_sec_wrap {padding:0 5.556vw;}
+.main_hit_sec .tab_menu {padding:0 5.556vw;overflow:hidden;margin-bottom:4.722vw;}
+.main_hit_sec .tab_menu .swiper {overflow:visible;}
+.main_hit_sec .main_hit_cotn {padding:0 5.556vw;}
+.main_hit_sec .top_hit_bnr {position:relative;}
+.main_hit_sec .top_hit_bnr .img {overflow:hidden;border-radius:2.778vw;}
+.main_hit_sec .top_hit_bnr .img img {width:100%;display:block;}
+.main_hit_sec .main_hit_cotn .prd_rec {margin-top:4.444vw;}
+
+/* -------------------- 오늘의 이벤트 팝업 ---------------------------------------- */
+.main_evt_list .box_evt {position:relative;}
+.main_evt_list .box_evt .img {height:33.333vw;border-radius:2.778vw;overflow:hidden;}
+.main_evt_list .box_evt .img img {height:100%;width:100%;object-fit:cover;display:block;}
+.main_evt_list .box_evt ~  .box_evt {margin-top:3.333vw;}
+
+/* --------------------  메인 상단 띠배너 ---------------------------------------- */
+.main.active #header {position:relative;}
+.main.active #container {padding-top:0;}
+.main_top_banner {position:relative;overflow:hidden;height:0;}
+.main_top_banner img {width:100%;display:block;}
+.btn_ban_close {display:block;width:4.444vw;height:4.444vw;position:absolute;top:calc(50% - 2.222vw);right:10vw;}
+.icon_16 {display:block;width:100%;height:100%;background:url("../images/common/icon_close_wh_20x20.png") no-repeat;background-size:100%;}
+
+/* --------------------  일반회원: 바텀팝업 ---------------------------------------- */
+.btm_popup.btm_memb_pop {padding-top:0;overflow:hidden;}
+.btm_popup.btm_memb_pop > .contents {padding:0;}
+.btm_popup.btm_memb_pop .img {height:76.111vw;}
+.btm_popup.btm_memb_pop .img img {object-fit:cover;width:100%;height:100%;}
+.slide_main_pop .num_paging {bottom:4.444vw;}
+
+/* --------------------  임직원: 알럿팝업 ---------------------------------------- */
+.alert_popup.alert_main_pop .contents {padding:0;}
+.alert_main_pop .img {height:50vw;}
+.alert_main_pop .img img {object-fit:cover;height:100%;width:100%;}
+.alert_popup.alert_main_pop .alert_btn_wrap .btn[bt_role="confirm"],
+.alert_popup.alert_main_pop .alert_btn_wrap .btn[bt_role="cancel"] {padding:0 4vw;}

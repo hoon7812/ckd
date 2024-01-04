@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@import url("brand.css"); /* 브랜드 */
+
+/* ************************************************************************************************************************************************************
+						《 검색&카테고리 CSS Style 》
+************************************************************************************************************************************************************ */
+.srch_ctgry {}
+
+/* setting */
+.srch_ctgry #header .head_wrap {padding: 2.778vw 4.444vw 3.056vw;}
+.srch_ctgry .head_wrap .sub_tit {display:none;}
+.srch_ctgry .head_wrap .srch_form {display:block;}
+.srch_ctgry .head_wrap .menu_wrap {display:none;}
+
+/* 타이틀영역 */
+.srch_ctgry .tit_sec_wrap {margin-bottom:3.333vw; padding:0 5.556vw;}
+
+/* 데이터없음 */
+.srch_ctgry .data_none {padding:6.667vw 0;}
+.srch_ctgry .data_none p {margin-top:0;}
+
+/* ************************************************************************************************************************************************************
+						《 카테고리 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 인기검색어 ] ========================================================================================== */
+.poplr_word {margin-top:6.667vw; padding:0 5.556vw;}
+.poplr_word .keyword_wrap {background-color:#ffffff; border:0.278vw solid #111111; border-radius:1.389vw; box-sizing:border-box; align-items:center; position:relative; padding:3.333vw; min-height:14.167vw;}
+.poplr_word .cotn {display:flex; align-items:center;}
+.poplr_word .tit {background-color:#3182F6; border-radius:1.389vw; box-sizing:border-box; flex:none; padding:1.667vw 0; height:7.222vw; width:18.889vw;}
+.poplr_word .tit p {color:#ffffff; font-size:3.333vw; line-height:1.167em; text-align:center;}
+.poplr_word .btn_open {background:url(../images/common/arrow_down_bk.svg) no-repeat center 0; background-size:5.556vw; /* background-color:rgba(0,0,0,0.4); */ position:absolute; right:3.333vw; top:3.889vw; height:6.667vw; width:6.667vw;}
+
+/* -------------------- 검색어목록 -------------------- */
+/* 검색어스타일 */
+.poplr_word .div_word {display:flex; align-items:center;}
+.poplr_word .div_word .rank_num {font:400 italic 5.556vw/1.2em lato;color:#999}
+.poplr_word .div_word .word {color:#333333; font-size:3.889vw; margin-left:2.222vw;font-weight:700;}
+.poplr_word .div_word .rank_info {position:relative; margin-left:2.222vw; padding-left:3.889vw;}
+.poplr_word .div_word .rank_info:before {background-repeat:no-repeat; background-size:100% auto; content:""; position:absolute; left:0; top:50%; margin-top:-1.389vw; height:2.778vw; width:2.778vw;}
+.poplr_word .div_word .rank_info.up:before {background-image:url(../images/search/icon_rank_up.svg);}
+.poplr_word .div_word .rank_info.down:before {background-image:url(../images/search/icon_rank_down.svg);}
+.poplr_word .div_word .rank_info.same:before {background-color:#999999; margin-top:-0.278vw; height:0.556vw;}
+.poplr_word .div_word .rank_info.same p {display:none;}
+.poplr_word .div_word .rank_info p {color:#999999; font:700 3.333vw/1.167em lato;}
+
+/* 검색어:슬라이드 */
+.poplr_word .slide_keyword {overflow:hidden; flex:none; margin-left:3.333vw;}
+.poplr_word .slide_keyword .swiper {height:7.222vw;}
+
+/* 검색어:전체 */
+.poplr_word .open_tit {display:none; overflow:hidden; margin-left:3.333vw;}
+.poplr_word .open_tit p {color:#999999; font-size:3.333vw;}
+.poplr_word .open_keyword {display:none; overflow:hidden;}
+.poplr_word .open_keyword .div_word {height:9.167vw;}
+.poplr_word .open_keyword .div_word:first-child {padding-top:5.000vw;}
+.poplr_word .open_keyword .div_word ~ .div_word {border-top:0.278vw solid #E2E5EB; margin-top:2.222vw; padding-top:3.333vw;}
+.poplr_word .open_keyword .rank_info {margin-left:auto;}
+
+/* -------------------- 인기검색어열림 -------------------- */
+.poplr_word .keyword_wrap.open {}
+.poplr_word .keyword_wrap.open .btn_open {transform:rotate(180deg);}
+.poplr_word .keyword_wrap.open .slide_keyword {display:none;}
+.poplr_word .keyword_wrap.open .open_tit {display:block;}
+/* .poplr_word .keyword_wrap.open .open_keyword {display:block;} */
+
+/* ============================== [ 최근검색어 ] ========================================================================================== */
+.last_word {margin-top:6.667vw;}
+.last_word .btn_slide_wrap {margin-bottom:4.444vw;}
+.last_word .btn_slide_wrap .swiper {padding-left:5.556vw;}
+.last_word .btn_slide_wrap .bt_slide .btn {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:40.278vw;}
+
+/* ============================== [ 분류별탭컨텐츠 ] ========================================================================================== */
+.ctgry_tab_wrap {}
+.ctgry_tab_wrap .tab_menu {position:sticky; left:0; top:15.556vw; margin-bottom:6.667vw;}
+
+/* 공통 */
+.ctgry_list_wrap ~ .ctgry_list_wrap {margin-top:8.889vw;}
+.ctgry_list_wrap .list_area {display:flex; flex-wrap:wrap; box-sizing:border-box; margin:0 auto; width:calc(100% - 11.111vw);}
+.ctgry_list_wrap .list_area ~ .list_area {border-top:0.278vw solid #E2E5EB; margin-top:3.333vw;}
+.ctgry_list_wrap .list_area .ctgry_div {overflow:hidden; box-sizing:border-box; flex:none; position:relative; margin:4.444vw 0 0 4.444vw;}
+.ctgry_list_wrap .list_area .ctgry_div p {overflow:hidden; color:#666666; font-size:3.333vw; text-align:center; text-overflow:ellipsis; white-space:nowrap; margin:0 auto; width:90%;}
+
+/* -------------------- 박스 스타일 -------------------- */
+.ctgry_list_wrap .sq_box_li {margin-top:-4.444vw;}
+.ctgry_list_wrap .sq_box_li .ctgry_div {border:0.278vw solid #E2E5EB; border-radius:2.778vw; padding:2.222vw 0; width:calc(35% - 4.444vw);}
+.ctgry_list_wrap .sq_box_li .ctgry_div:nth-child(3n+1) {margin-left:0;}
+.ctgry_list_wrap .sq_box_li .ctgry_div .img {display:flex; overflow:hidden; flex-direction:column; align-items:center; justify-content:center; margin:0 auto; height:17.222vw; width:17.222vw;}
+.ctgry_list_wrap .sq_box_li .ctgry_div .img img {max-height:100%; width:auto;}
+.ctgry_list_wrap .sq_box_li .ctgry_div p {margin-top:1.111vw;}
+
+/* -------------------- 원형BG 스타일 -------------------- */
+.ctgry_list_wrap .bg_cle_li {margin-top:-4.444vw;}
+.ctgry_list_wrap .bg_cle_li .ctgry_div {background-color:#F9FAFC; display:flex; flex-direction:column; align-items:center; justify-content:center; border-radius:50%; padding:1.389vw; height:18.889vw; width:calc(26.25% - 4.444vw);}
+.ctgry_list_wrap .bg_cle_li .ctgry_div:nth-child(4n+1) {margin-left:0;}
+.ctgry_list_wrap .bg_cle_li .ctgry_div .img {max-width:90%;}
+.ctgry_list_wrap .bg_cle_li .ctgry_div .img img {height:auto; width:100%;}
+
+/* -------------------- 텍스트 스타일 -------------------- */
+.ctgry_list_wrap .sq_box_li.text_type {}
+.ctgry_list_wrap .sq_box_li.text_type .ctgry_div {padding:3.333vw 0; height:10.556vw; width:calc(50% - 2.222vw);}
+.ctgry_list_wrap .sq_box_li.text_type .ctgry_div p {margin-top:0;}
+.ctgry_list_wrap .sq_box_li.text_type .ctgry_div:nth-child(2n+1) {margin-left:0;}
+.ctgry_list_wrap .sq_box_li.text_type .ctgry_div:nth-child(3n+1) {margin-left:inherit;}
+
+/* ************************************************************************************************************************************************************
+						《 검색결과 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 유사검색어 ] ========================================================================================== */
+.srch_ctgry .same_terms {border-bottom:0.278vw solid #E2E5EB;}
+.srch_ctgry .same_terms .swiper {padding:0 5.556vw;}
+.srch_ctgry .same_terms ul {}
+.srch_ctgry .same_terms li {width:auto;}
+.srch_ctgry .same_terms li a {display:block; box-sizing:border-box; color:#666666; font-size:3.889vw; line-height:1.214em; padding:4.167vw 0; height:13.056vw;}
+
+/* ============================== [ 검색필터탭 ] ========================================================================================== */
+.sort_tab_wrap {background-color:#ffffff; position:sticky; left:0; top:15.556vw; z-index:10;}
+
+/* -------------------- 탭버튼 -------------------- */
+.sort_tab_wrap .tab_menu {padding:3.333vw 0;}
+.sort_tab_wrap .tab_menu .btn_tab {margin-right:2.222vw;}
+.sort_tab_wrap .tab_menu .btn_tab ~ .btn_tab {margin-left:0;}
+
+/* 필터탭:기본스타일 */
+.sort_tab_wrap .tab_menu .btn_tab a {overflow:hidden; text-align:left; position:relative; padding:2.778vw 8.889vw 2.778vw 2.222vw;}
+.sort_tab_wrap .tab_menu .btn_tab a:before {background:url(../images/common/arrow_down_bk.svg) no-repeat 0 0; background-size:cover; content:""; position:absolute; right:2.222vw; top:50%; margin-top:-2.222vw; height:4.444vw; width:4.444vw;}
+.sort_tab_wrap .tab_menu .btn_tab a span {display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:43.056vw;}
+
+.sort_tab_wrap .tab_menu .btn_tab.done a {background-color:#3182F6; border-color:#3182F6; color:#ffffff;}
+.sort_tab_wrap .tab_menu .btn_tab.on a:before,
+.sort_tab_wrap .tab_menu .btn_tab.done a:before {background-image:url(../images/common/arrow_down_wh.svg);}
+.sort_tab_wrap .tab_menu .btn_tab.on a:before {transform:rotate(180deg);}
+
+/* 필터탭:초기화 */
+.sort_tab_wrap .tab_menu .swiper {padding:0 5.556vw;}
+.sort_tab_wrap .tab_menu .btn_tab.reset {display:none;}
+.sort_tab_wrap .tab_menu .btn_tab.reset a {border-color:#3182F6; color:#3182F6; padding:2.778vw 2.222vw 2.778vw 7.778vw;}
+.sort_tab_wrap .tab_menu .btn_tab.reset a:before {background-image:url(../images/common/icon_reload_bl.svg); right:auto; left:2.222vw;}
+.sort_tab_wrap .tab_menu .btn_tab.reset.on a {background-color:#ffffff; border-color:#3182F6; color:#3182F6; font-weight:400;}
+.sort_tab_wrap .tab_menu .btn_tab.reset.on a:before {transform:inherit;}
+
+/* -------------------- 검색필터 -------------------- */
+.sort_item_wrap {overflow:hidden;}
+.sort_item_wrap .item_div {background-color:#F9FAFC; display:none; overflow:hidden; box-sizing:border-box; padding:5.556vw;}
+.sort_item_wrap .item_div .form_rdo,
+.sort_item_wrap .item_div .chk_area {display:flex; flex-wrap:wrap; margin-top:-3.333vw;}
+.sort_item_wrap .item_div .form_rdo .group,
+.sort_item_wrap .item_div .chk_area .form_chk {margin:3.333vw 0 0 3.333vw; width:calc(50% - 1.667vw);}
+.sort_item_wrap .item_div .form_rdo .group:nth-child(2n+1),
+.sort_item_wrap .item_div .chk_area .form_chk:nth-child(2n+1) {margin-left:0;}
+
+/* ============================== [ 검색결과_상품영역 ] ========================================================================================== */
+.srch_ctgry .srch_result {margin-top:4.444vw;}
+.srch_ctgry .srch_result .list_num {margin-bottom:0;}
+
+/* 할인상품 */
+.srch_ctgry .event_cotn {padding-bottom:0;}
+/* 인기키워드 상품 */
+.recomd_prd {overflow:hidden; margin-top:8.889vw;}
+.recomd_prd .tit {margin-bottom:4.444vw; padding:0 5.556vw;}
+.recomd_prd .tab_menu {margin-bottom:4.444vw;}
+.recomd_prd .tab_menu .swiper {padding:0 5.556vw;}
+
+/* ============================== [ 검색결과_없음 ] ========================================================================================== */
+.srch_ctgry.srch_result .data_none {padding:8.611vw 0;}
+.srch_ctgry.srch_result .data_none .mn_copy {margin-top:4.444vw;}
+

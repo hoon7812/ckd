@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>Q&amp;A등록</title>
+</head>
+
+<body class="up"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- QnA등록 팝업 -->
+<section class="full_popup full_01 q_reg_pop on"><!-- 상품Q&A class="qna_pop" 추가, 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">상품Q&amp;A</h1>
+		<a href="#none" class="closed">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents">
+		<div class="q_reg_wrap">
+			<!-- 상품 -->
+			<div class="prd_group_h">
+				<div class="cotn">
+					<div class="prd_artic">
+						<!-- 이미지 -->
+						<div class="img_area">
+							<figure class="img">
+								<img src="../assets/images/temp/prd_01.jpg" alt="">
+							</figure>
+						</div>
+						<!--// 이미지 -->
+
+						<!-- 판매정보 -->
+						<div class="prd_verti_info">
+							<!-- 상품명 -->
+							<div class="txt">
+								<p class="brand">락토핏</p>
+								<h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+								<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+							</div>
+							<!--// 상품명 -->
+
+							<div class="prd_label">
+								<p class="add">추가적립</p>
+								<span class="txt">10% 추가적립</span>
+							</div>
+							<div class="prd_label">
+								<p class="gift">사은품</p>
+								<span class="txt">락토핏 생유산균 베베 1박스 락토핏 생유산균 베베 1박스 락토핏 생유산균 베베 1박스</span>
+							</div>
+						</div>
+						<!--// 판매정보 -->
+					</div>
+				</div>
+			</div>
+			<!--// 상품 -->
+			<!-- 내용 입력 필드 -->
+			<div class="form_inpt wrn"><!-- 에러 메세지 노출 class="wrn" 추가 -->
+				<div class="form_text_area">
+					<div class="text_area">
+						<textarea cols="30" rows="10" placeholder="내용을 10자 이상 입력해 주세요.&#13;&#10;&#13;&#10;*이메일, 휴대폰번호, 주민등록번호와 같은 개인정보 입력은 금지되어 있습니다."></textarea>
+						<div class="ltr_len">
+							<p>
+								<span>0</span>
+								<em>1,000</em>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="msg_wrap">
+					<p class="err_msg">내용을 10자 이상 입력해 주세요.</p>
+				</div>
+			</div>
+			<!--// 내용 입력 필드 -->
+			<!-- 체크 영역 -->
+			<div class="chk_wrap">
+				<!-- 1세트 -->
+				<div class="whether_set">
+					<h3 class="tit_14">비밀글 여부</h3>
+					<div class="form_chk">
+						<label class="group">
+							<input type="checkbox">
+							<i class="icon"></i>
+							<span class="txt">비밀글로 문의하기</span>
+							<span class="blind">선택</span>
+						</label>
+					</div>
+				</div>
+				<!--// 1세트 -->
+				<div class="whether_set">
+					<h3 class="tit_14">답변 알림 수신 여부</h3>
+					<div class="form_chk">
+						<label class="group">
+							<input type="checkbox">
+							<i class="icon"></i>
+							<span class="txt">문자 및 카카오톡으로 알림받기</span>
+							<span class="blind">선택</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!--// 체크 영역 -->
+		</div>
+		<!-- 유의사항 -->
+		<div class="ord_vw_sec">
+			<div class="noti_copy gray_02">
+				<p>상품과 관련 없는 글은 사전 통보 없이 관리자에 의해 삭제 될 수 있습니다.</p>
+				<p>상품 Q&A 등록 시 앱이 설치되어 있는 경우 답변이 등록되면 APP Push로 알려 드립니다.<br>(APP Push  알림 설정은 “설정>알림 받기”에서 변경가능 합니다.)</p>
+				<p>질문에 대한 답변내역은 마이페이지에서도 확인하실 수 있습니다</p>
+			</div>
+		</div>
+		<!--// 유의사항 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_fixed">
+		<div class="btn_wrap" btn-type="main_bt">
+			<a href="#none" class="btn" bt_role="cancel">취소</a>
+			<a href="#none" class="btn" bt_role="confirm">확인</a>
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+</section>
+<!--// QnA등록 팝업 -->
+</body>
+</html>

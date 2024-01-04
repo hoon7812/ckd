@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>정기배송관리:신청내역</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage reg_deliv"><!-- [마이페이지class="mypage"추가, 정기배송관리 class="reg_deliv"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container" class="lnb_ui">
+		<!-- #LNB -->
+		<nav id="lnb">
+			<div class="sub_tit_28">
+				<h1 class="tit_28">마이페이지</h1>
+			</div>
+			<div class="cotn">
+				<!-- 메뉴:1세트 -->
+				<div class="menu_group">
+					<!-- 1뎁스 -->
+					<div class="dep_01">
+						<!-- 1뎁스링크 -->
+						<a href="#none" class="dep01_link">
+							<span>주문/배송조회</span>
+							<i class="i_sp_16 arr_gray_right"></i>
+						</a>
+						<!--// 1뎁스링크 -->
+					</div>
+					<!--// 1뎁스 -->
+				</div>
+				<!--// 메뉴:1세트 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>취소/교환/반품</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>정기배송 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>간편결제 관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의활동</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<!-- 2뎁스 -->
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">관심상품</a></li><!-- 1세트 -->
+							<li><a href="#none">최근 본 상품</a></li>
+							<li><a href="#none">최근 구매상품</a></li>
+						</ul>
+					</div>
+					<!--// 2뎁스 -->
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 적립금</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 할인쿠폰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>1:1 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>상품리뷰</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>제휴/대량구매 문의</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<!-- 일반회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">회원정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">추천인 코드관리</a></li>
+							<li><a href="#none">회원탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 일반회원 -->
+
+				<!-- 기업회원 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>나의 정보관리</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+					<div class="dep_02">
+						<ul>
+							<li><a href="#none">기업정보 수정</a></li>
+							<li><a href="#none">배송지 관리</a></li>
+							<li><a href="#none">마케팅 정보 수신 동의</a></li>
+							<li><a href="#none">기업회원 탈퇴</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// 기업회원 -->
+			</div>
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<div class="sub_tit_24">
+				<h2 class="tit_24">정기배송관리</h2>
+			</div>
+			<!-- 정기배송관리:신청내역 -->
+			<div class="sub">
+				<!-- 균등분할탭 -->
+				<section class="per_tab_wrap">
+					<div class="tab_cotn">
+						<!-- 1세트 -->
+						<div class="div_set on"><!-- 활성화:class="on"추가 -->
+							<a href="#none" class="bt_tab">
+								<span>신청내역(<em>3</em>)</span>
+							</a>
+						</div>
+						<!--// 1세트 -->
+						<div class="div_set">
+							<a href="#none" class="bt_tab">
+								<span>결제정보 관리</span>
+							</a>
+						</div>
+						<div class="div_set">
+							<a href="#none" class="bt_tab">
+								<span>완료/해지내역</span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<!--// 균등분할탭 -->
+				<!-- 신청내역 목록 -->
+				<section class="deliv_reg_wrap">
+					<!-- 결제안내 -->
+					<div class="bg_box">
+						<div class="sp_icon">
+							<i class="i_sp_20 info"></i>
+						</div>
+						<p class="info_txt">자동결제는 시작일 <strong>1~2일전</strong> 등록하신 카드로 결제됩니다.</p>
+					</div>
+					<!--// 결제안내 -->
+					<!-- 정기결제목록 1세트-->
+					<div class="ord_reg_list">
+						<div class="ord_top_area">
+							<!-- 왼쪽영역 -->
+							<div class="lef_area">
+								<div class="ord_info">
+									<p class="txt_date">신청일 2022.03.05</p><!-- 2022-09-28_수정 -->
+									<i class="icon_stick"></i>
+									<p class="prd_num">주문번호 123456789</p><!-- 2022-09-28_수정 -->
+									<i class="icon_stick"></i>
+									<p class="txt_link more_bk">
+										<a href="./P_Myp_703.html">상세보기</a>
+									</p>
+								</div>
+
+							</div>
+							<!--// 왼쪽영역 -->
+
+							<!-- 오른쪽영역 -->
+							<div class="rigt_area">
+								<div class="btn_wrap" btn-type="sub_bt">
+									<div class="btn_cotn">
+										<a href="#none" class="btn bc_fff_02 h_32 btn_alert" open-layer-class="alert_02">정기배송 해지하기<span class="blind">정기배송 해지 이동</span></a>
+									</div>
+								</div>
+							</div>
+							<!--// 오른쪽영역 -->
+						</div>
+						<!--  상품목록 -->
+						<div class="ord_list_sec">
+							<div class="ord_list_wrap">
+								<div class="ord_list_box">
+									<!-- 타이틀 -->
+									<div class="tit_ord_area">
+										<!-- 주문상세정보 -->
+										<div class="ord_reg_info">
+											<p class="term">기간 2022.04.11 ~ 2022.06.11</p><!-- 2022-09-29_수정 -->
+											<i class="icon_stick"></i>
+											<p class="ord_num">상품<span class="quaty">10</span>개</p>
+											<i class="icon_stick"></i>
+											<p class="cycle">주기 4주 1회</p>
+											<i class="icon_stick"></i>
+											<p class="cyc_num">횟수 1/3회</p>
+										</div>
+										<!-- 주문상세정보 -->
+										<!-- 결제금액 -->
+										<div class="pay_info">
+											<p class="tit_20">결제금액</p>
+											<div class="price">
+												<p class="tit_20">
+													<strong>198,760</strong>
+													<span>원</span>
+												</P>
+											</div>
+										</div>
+										<!--// 결제금액 -->
+									</div>
+									<!--// 타이틀 -->
+
+									<div class="ord_prd_cotn">
+										<!-- 주문상품 -->
+										<div class="ord_tb_wrap">
+											<!-- 상품 1세트 -->
+											<div class="tr_line">
+												<!-- 상품 -->
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<!-- 이미지 -->
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<!--// 이미지 -->
+
+																	<div class="txt_area">
+																		<!-- 상품명 -->
+																		<div class="txt">
+																			<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																		<!--// 상품명 -->
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--// 상품 -->
+												<!-- 수량 -->
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<!--// 수량 -->
+												<!-- 금액 -->
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+												<!--// 금액 -->
+											</div>
+											<!--// 상품 1세트 -->
+											<div class="tr_line">
+											<div class="td_div">
+												<div class="td_cotn">
+													<div class="prd_h_wrap">
+														<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_04.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_02.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--// 주문상품 -->
+										<!-- 회차 결제 정보 -->
+										<div class="deliv_date_wrap planed"><!-- 결제예정 class="planed", 신청해지 class="quit", 결제실패 or 주문실패 class="fail" -->
+											<div class="tit_count">
+												<div class="turn_info">
+													<p class="turn">1회차</p>
+													<p class="pymnt_state">결제예정</p>
+													<div class="sp_icon">
+														<i class="i_sp_20 info"></i>
+														<a href="#none" class="go_view"><span class="blind">사유안내</span></a>
+													</div>
+												</div>
+												<div class="turn_date">
+													<p class="start">배송시작일 2021.03.11(월)</p>
+													<p class="expect">결제예정일 2021.04.11(토)</p>
+													<p class="extra_txt">결제실패일 2021.04.11(토)</p>
+												</div>
+											</div>
+											<div class="btn_wrap" btn-type="sub_bt"><!-- 결제예정 제외 class="inactv"추가 -->
+												<div class="btn_cotn">
+													<a href="#none" class="btn bc_fg h_40 full_open" open-full-pop="deliv_start_pop">시작일변경</a>
+													<a href="#none" class="btn bc_fg h_40 full_open" open-full-pop="adr_pop">배송지변경</a>
+													<a href="#none" class="btn bc_fg h_40">건너뛰기</a>
+												</div>
+											</div>
+										</div>
+										<!--// 회차 결제 정보 -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 상품목록 -->
+					</div>
+					<!--// 정기결제목록 1세트 -->
+					<div class="ord_reg_list">
+						<div class="ord_top_area">
+							<div class="lef_area">
+								<div class="ord_info">
+									<p class="txt_date">신청일 2022.03.05</p>
+									<i class="icon_stick"></i>
+									<p class="prd_num">주문번호 123456789</p>
+									<i class="icon_stick"></i>
+									<p class="txt_link more_bk">
+										<a href="#none">상세보기</a>
+									</p>
+								</div>
+
+							</div>
+							<div class="rigt_area">
+								<div class="btn_wrap" btn-type="sub_bt">
+									<div class="btn_cotn">
+										<a href="#none" class="btn bc_fff_02 h_32 btn_alert" open-layer-class="alert_02">정기배송 해지하기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ord_list_sec">
+							<div class="ord_list_wrap">
+								<div class="ord_list_box">
+									<div class="tit_ord_area">
+										<div class="ord_reg_info">
+											<p class="term">기간 2022.04.11 ~ 2022.06.11</p>
+											<i class="icon_stick"></i>
+											<p class="ord_num">상품<span class="quaty">10</span>개</p>
+											<i class="icon_stick"></i>
+											<p class="cycle">주기 4주 1회</p>
+											<i class="icon_stick"></i>
+											<p class="cyc_num">횟수 1/3회</p>
+										</div>
+										<div class="pay_info">
+											<p class="tit_20">결제금액</p>
+											<div class="price">
+												<p class="tit_20">
+													<strong>198,760</strong>
+													<span>원</span>
+												</P>
+											</div>
+										</div>
+									</div>
+									<div class="ord_prd_cotn">
+										<div class="ord_tb_wrap">
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																			<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+											<div class="td_div">
+												<div class="td_cotn">
+													<div class="prd_h_wrap">
+														<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_04.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_02.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="deliv_date_wrap fail">
+												<div class="tit_count">
+													<div class="turn_info">
+														<p class="turn">2회차</p>
+														<p class="pymnt_state">결제실패</p>
+														<div class="sp_icon">
+															<i class="i_sp_20 info"></i>
+															<a href="#none" class="go_view"><span class="blind">사유안내</span></a>
+														</div>
+													</div>
+													<div class="turn_date">
+														<p class="start">배송시작일 2021.03.11(월)</p>
+														<p class="expect">결제예정일 2021.04.11(토)</p>
+														<p class="extra_txt">결제실패일 2021.04.11(토)</p>
+													</div>
+												</div>
+												<div class="btn_wrap inactv" btn-type="sub_bt">
+													<div class="btn_cotn">
+														<a href="#none" class="btn bc_fg h_40">시작일변경</a>
+														<a href="#none" class="btn bc_fg h_40">배송지변경</a>
+														<a href="#none" class="btn bc_fg h_40">건너뛰기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ord_reg_list">
+						<div class="ord_top_area">
+							<div class="lef_area">
+								<div class="ord_info">
+									<p class="ff_lato txt_date">신청일 2022.03.05</p>
+									<i class="icon_stick"></i>
+									<p class="ff_lato prd_num">주문번호 123456789</p>
+									<i class="icon_stick"></i>
+									<p class="txt_link more_bk">
+										<a href="#none">상세보기</a>
+									</p>
+								</div>
+
+							</div>
+							<div class="rigt_area">
+								<div class="btn_wrap" btn-type="sub_bt">
+									<div class="btn_cotn">
+										<a href="#none" class="btn bc_fff_02 h_32 btn_alert" open-layer-class="alert_02">정기배송 해지하기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ord_list_sec">
+							<div class="ord_list_wrap">
+								<div class="ord_list_box">
+									<div class="tit_ord_area">
+										<div class="ord_reg_info">
+											<p class="term">기간 2022.04.11 ~ 2022.06.11</p>
+											<i class="icon_stick"></i>
+											<p class="ord_num">상품<span class="quaty">10</span>개</p>
+											<i class="icon_stick"></i>
+											<p class="cycle">주기 4주 1회</p>
+											<i class="icon_stick"></i>
+											<p class="cyc_num">횟수 1/3회</p>
+										</div>
+										<div class="pay_info">
+											<p class="tit_20">결제금액</p>
+											<div class="price">
+												<p class="tit_20">
+													<strong>198,760</strong>
+													<span>원</span>
+												</P>
+											</div>
+										</div>
+									</div>
+									<div class="ord_prd_cotn">
+										<div class="ord_tb_wrap">
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																			<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+											<div class="td_div">
+												<div class="td_cotn">
+													<div class="prd_h_wrap">
+														<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_04.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_02.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																		<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="price">
+														<p>
+															<strong>21,800</strong><span>원</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="deliv_date_wrap">
+												<div class="tit_count">
+													<div class="turn_info">
+														<p class="turn">3회차</p>
+														<p class="pymnt_state">결제완료</p>
+														<div class="sp_icon">
+															<i class="i_sp_20 info"></i>
+															<a href="#none" class="go_view"><span class="blind">사유안내</span></a>
+														</div>
+													</div>
+													<div class="turn_date">
+														<p class="start">배송시작일 2021.03.11(월)</p>
+														<p class="expect">결제예정일 2021.04.11(토)</p>
+														<p class="extra_txt">결제실패일 2021.04.11(토)</p>
+													</div>
+												</div>
+												<div class="btn_wrap inactv" btn-type="sub_bt">
+													<div class="btn_cotn">
+														<a href="#none" class="btn bc_fg h_40">시작일변경</a>
+														<a href="#none" class="btn bc_fg h_40">배송지변경</a>
+														<a href="#none" class="btn bc_fg h_40">건너뛰기</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- paging -->
+					<div class="paging">
+						<a href="#none" class="i_sp_24 arr_left prev"></a>
+						<a href="#none" class="on">1</a><!-- 현재페이지class="on"추가 -->
+						<a href="#none">2</a>
+						<a href="#none">3</a>
+						<a href="#none">4</a>
+						<a href="#none">5</a>
+						<a href="#none">6</a>
+						<a href="#none">7</a>
+						<a href="#none">8</a>
+						<a href="#none" class="i_sp_24 arr_right next"></a>
+					</div>
+					<!--// paging -->
+				</section>
+				<!--// 신청내역 목록 -->
+
+				<!-- 데이터 없음 -->
+				<div class="data_none">
+					<div class="cotn">
+						<p>정기배송 신청 내역이 없습니다.</p>
+					</div>
+				</div>
+				<!--// 데이터 없음 -->
+			</div>
+			<!--// 정기배송관리:신청내역 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+
+<!-- 정기배송 시작일 선택 팝업 -->
+<section class="deliv_start_pop full_pop full_01"><!-- 팝업open : class="on"추가, style="display:block;" --><!-- 정기배송 시작일 선택 팝업 class="deliv_start_pop" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<!-- 타이틀 -->
+		<h1 class="tit_22">정기배송 시작일 선택</h1>
+		<!--// 타이틀 -->
+
+		<!-- 닫기 -->
+		<a href="#none" class="closed">
+			<i class="i_sp_24 cross"></i>
+			<span class="blind">팝업 닫기</span>
+		</a>
+		<!--// 닫기 -->
+	</header>
+	<!--// 헤더 -->
+	<!-- 컨텐츠 -->
+	<div class="cotn">
+		<!--  -->
+		<div class="date_area">
+			<div class="date_sel">
+				<div class="btn_mon prev">
+					<div class="sp_icon">
+						<i class="i_sp_20 arr_down"></i>
+					</div>
+					<a href="#none" class="go_view">
+						<span class="blind">지난달</span>
+					</a>
+				</div>
+				<p class="tit_20">2021.04</p>
+				<div class="btn_mon next">
+					<div class="sp_icon">
+						<i class="i_sp_20 arr_down"></i>
+					</div>
+					<a href="#none" class="go_view">
+						<span class="blind">다음달</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="tb_calendar">
+			<table>
+				<colgroup></colgroup>
+				<thead>
+					<tr>
+						<th scope="col" class="sun">일</th>
+						<th scope="col">월</th>
+						<th scope="col">화</th>
+						<th scope="col">수</th>
+						<th scope="col">목</th>
+						<th scope="col">금</th>
+						<th scope="col" class="sat">토</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--
+						[달력 표기]
+						지난날 class="disabled" ,
+						오늘 class="today" ,
+						사용자가 선택한 날짜 class="select_date" ,
+						여신기간 표시 class="selected" 시작일 class="start" 종료일 class="end" ,
+					-->
+					<tr>
+						<td class="sun">
+							<button class="disabled">
+								<span class="date">1</span>
+							</button>
+						</td>
+						<td>
+							<button class="disabled">
+								<span class="date">2</span>
+							</button>
+						</td>
+						<td>
+							<button class="disabled">
+								<span class="date">3</span>
+							</button>
+						</td>
+						<td>
+							<button class="today">
+								<span class="date">4</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">5</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">6</span>
+							</button>
+						</td>
+						<td class="sat">
+							<button class="select_date selected start">
+								<span class="date">7</span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="sun">
+							<button class="selected">
+								<span class="date">8</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">9</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">10</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">11</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">12</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">13</span>
+							</button>
+						</td>
+						<td class="sat">
+							<button class="selected">
+								<span class="date">14</span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="sun">
+							<button class="selected">
+								<span class="date">15</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">16</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">17</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">18</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">19</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected">
+								<span class="date">20</span>
+							</button>
+						</td>
+						<td class="sat">
+							<button class="selected">
+								<span class="date">21</span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="sun">
+							<button class="selected">
+								<span class="date">22</span>
+							</button>
+						</td>
+						<td>
+							<button class="selected end">
+								<span class="date">23</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">24</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">25</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">26</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">27</span>
+							</button>
+						</td>
+						<td class="sat">
+							<button>
+								<span class="date">28</span>
+							</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="sun">
+							<button>
+								<span class="date">29</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">30</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">31</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">1</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">2</span>
+							</button>
+						</td>
+						<td>
+							<button>
+								<span class="date">3</span>
+							</button>
+						</td>
+						<td class="sat">
+							<button>
+								<span class="date">4</span>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="bg_box">
+			<div class="info_txt fs_14">
+				<p>시작일을 수정할 경우 현재 회차 이후의 모든 시작일이 변경됩니다. </p>
+				<p>오늘 기준으로 4주까지 선택 가능합니다.</p>
+				<p>결제예정일 최소 3일전에 신청해야 가능합니다.</p>
+				<p>정기배송일이 휴일 및 공휴일인 경우 익일 배송됩니다.</p>
+			</div>
+		</div>
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_wrap" btn-type="main_bt_02">
+		<div class="btn_cotn">
+			<button type="button" class="btn" bt_role="cancel">취소</button>
+			<button type="button" class="btn" bt_role="confirm">확인</button>
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+</section>
+<!--// 정기배송 시작일 선택 팝업 -->
+
+<!-- 배송지관리 : 목록 -->
+<section class="full_pop adr_pop"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<!-- 타이틀 -->
+		<h1 class="tit_22">배송지 관리</h1>
+		<!--// 타이틀 -->
+
+		<!-- 닫기 -->
+		<a href="#none" class="closed">
+			<i class="i_sp_24 cross"></i>
+			<span class="blind">팝업 닫기</span>
+		</a>
+		<!--// 닫기 -->
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="cotn">
+		<!-- 2022-10-28_수정 -->
+		<!-- 배송지 목록 -->
+		<section class="adr_li_wrap">
+			<div class="form_rdo box">
+				<!-- 1세트 -->
+				<div class="group normal"><!-- 기본배송지class="normal"추가 -->
+					<div class="cotn">
+						<div class="adr_wrap">
+							<h3 class="tit_18">홍길동</h3>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="adr_txt">
+								<p>부재시 문앞에 놓아주세요.</p>
+							</div>
+							<div class="adr_btn">
+								<p class="txt_link">
+									<a href="#none" class="rectify">수정</a>
+									<a href="#none" class="del">삭제</a>
+								</p>
+							</div>
+						</div>
+						<div class="adr_status">
+							<span class="flag_adr">기본배송지</span>
+							<div class="btn_wrap">
+								<div class="btn_cotn">
+									<button type="button" class="btn bc_fg h_32">기본배송지로 변경</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 2022-11-25_수정 -->
+				<div class="btn_wrap" btn-type="sub_bt">
+					<div class="btn_cotn">
+						<a href="#none" class="btn bc_fff_02 w_100">
+							<i class="i_sp_24 plus"></i>
+							<span class="txt">배송지 등록</span>
+						</a>
+					</div>
+				</div>
+				<!--// 2022-11-25_수정 -->
+				<!--// 1세트 -->
+				<div class="group">
+					<div class="cotn">
+						<div class="adr_wrap">
+							<h3 class="tit_18">홍길동</h3>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="adr_txt">
+								<p class="t_hd_02">부재시 문앞에 놓아주세요.</p>
+								<p>공동 현관 비밀번호 486</p>
+							</div>
+							<div class="adr_btn">
+								<p class="txt_link">
+									<a href="#none" class="rectify">수정</a>
+									<a href="#none" class="del">삭제</a>
+								</p>
+							</div>
+						</div>
+						<div class="adr_status">
+							<span class="flag_adr">기본배송지</span>
+							<div class="btn_wrap">
+								<div class="btn_cotn">
+									<button type="button" class="btn bc_fg h_32">기본배송지로 변경</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="group">
+					<div class="cotn">
+						<div class="adr_wrap">
+							<h3 class="tit_18">홍길동</h3>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="adr_txt">
+								<p>문앞에 노란색 플라스틱 바구니가 있습니다. 거기 넣어주시면 감사</p><!-- 2022-10-31_수정 -->
+							</div>
+							<div class="adr_btn">
+								<p class="txt_link">
+									<a href="#none" class="rectify">수정</a>
+									<a href="#none" class="del">삭제</a>
+								</p>
+							</div>
+						</div>
+						<div class="adr_status">
+							<span class="flag_adr">기본배송지</span>
+							<div class="btn_wrap">
+								<div class="btn_cotn">
+									<button type="button" class="btn bc_fg h_32">기본배송지로 변경</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--// 배송지 목록 -->
+
+		<!-- 데이터 없음 -->
+		<div class="data_none">
+			<div class="cotn">
+				<p>등록 된 배송지 정보가 없어요.<br>배송지를 등록해 주세요.</p><!-- 2022-10-28_수정 -->
+				<!-- 2022-11-24_수정 -->
+				<div class="btn_wrap" btn-type="sub_bt">
+					<div class="btn_cotn">
+						<a href="#none" class="btn bc_fff_02 w_100">
+							<i class="i_sp_24 plus"></i>
+							<span class="txt">배송지 등록</span>
+						</a>
+					</div>
+				</div>
+				<!--// 2022-11-24_수정 -->
+			</div>
+		</div>
+		<!--// 데이터 없음 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_wrap" btn-type="main_bt_02">
+		<div class="btn_cotn">
+			<button type="button" class="btn" bt_role="confirm">닫기</button>
+			<!-- 2022-11-24_수정 -->
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+</section>
+<!--// 배송지관리 : 목록 -->
+
+<!-- 알럿팝업 -->
+<section class="alert_pop alert_02"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 컨텐츠 -->
+	<div class="cotn">
+		<p class="tit_22">단기카드대출 이용 동의</p>
+		<p class="sb_txt">이용 동의 후 신청이 가능합니다.<br>이용 동의하시겠습니까?</p>
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 버튼 -->
+	<div class="btn_wrap" btn-type="main_bt_02">
+		<div class="btn_cotn">
+			<button type="button" class="btn" bt_role="cancel">취소</button>
+			<button type="button" class="btn" bt_role="confirm">확인</button>
+		</div>
+	</div>
+	<!--// 버튼 -->
+
+	<!-- 닫기 -->
+	<a href="#none" class="closed">
+		<i class="i_sp_24 cross"></i>
+		<span class="blind">팝업 닫기</span>
+	</a>
+	<!--// 닫기 -->
+</section>
+<!--// 알럿팝업 -->
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>쿠폰 다운받기</title>
+</head>
+
+<body class="up"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- 쿠폰다운받기 팝업 -->
+<section class="full_popup full_02 cpon_dl_pop on" style="display:block;"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">쿠폰 다운받기</h1>
+		<a href="#none" class="closed">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents">
+		<div class="coupon_wrap">
+			<!-- 1세트 -->
+			<div class="coupn_set"><!-- 쿠폰다운로드 class="done"추가, 딤드상태추가 class="dim_on"추가 -->
+				<!-- 쿠폰정보 -->
+				<div class="info_cotn">
+					<div class="label">
+						<p>앱전용</p>
+					</div>
+					<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+					<div class="price">
+						<p>5,000원</p>
+					</div>
+					<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+					<p class="date">2022년 4월 19일 까지</p>
+				</div>
+				<!--// 쿠폰정보 -->
+
+				<!-- 쿠폰다운로드/상태 -->
+				<div class="down_status">
+					<div class="cotn">
+						<!-- 다운받기 -->
+						<div class="down">
+							<button class="save_coupn" type="button">
+								<span>쿠폰다운</span>
+								<i class="icon"></i>
+							</button>
+						</div>
+						<!--// 다운받기 -->
+
+						<!-- 다운완료 -->
+						<div class="complt">
+							<p>다운완료</p>
+							<i class="icon"></i>
+						</div>
+						<!--// 다운완료 -->
+						<a href="#none" class="txt_link">적용상품</a>
+					</div>
+				</div>
+				<!--// 쿠폰다운로드/상태 -->
+			</div>
+			<!--// 1세트 -->
+			<div class="coupn_set">
+				<div class="info_cotn">
+					<div class="label">
+						<p>앱전용</p>
+					</div>
+					<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+					<div class="price">
+						<p>5,000원</p>
+					</div>
+					<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+					<p class="date">2022년 4월 19일 까지</p>
+				</div>
+				<div class="down_status">
+					<div class="cotn">
+						<div class="down">
+							<button class="save_coupn" type="button">
+								<span>쿠폰다운</span>
+								<i class="icon"></i>
+							</button>
+						</div>
+						<div class="complt">
+							<p>다운완료</p>
+							<i class="icon"></i>
+						</div>
+						<a href="#none" class="txt_link">적용상품</a>
+					</div>
+				</div>
+			</div>
+			<div class="coupn_set done">
+				<div class="info_cotn">
+					<div class="label">
+						<p>장바구니쿠폰</p>
+					</div>
+					<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+					<div class="price">
+						<p>5,000원</p>
+					</div>
+					<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+					<p class="date">2022년 4월 19일 까지</p>
+				</div>
+				<div class="down_status">
+					<div class="cotn">
+						<div class="down">
+							<button class="save_coupn" type="button">
+								<span>쿠폰다운</span>
+								<i class="icon"></i>
+							</button>
+						</div>
+						<div class="complt">
+							<p>지급완료</p>
+							<i class="icon"></i>
+						</div>
+						<a href="#none" class="txt_link">적용상품</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 하단버튼 -->
+		<div class="btn_fixed">
+			<div class="btn_wrap" btn-type="main_bt"><!-- 비활성화 class="inactive" 추가 -->
+				<a href="#none" class="btn" bt_role="confirm">쿠폰 전체 다운받기</a>
+			</div>
+		</div>
+		<!--// 하단버튼 -->
+	</div>
+	<!--// 컨텐츠 -->
+</section>
+<!--// 쿠폰다운받기 팝업 -->
+</body>
+</html>

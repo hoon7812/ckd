@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 쿠폰&혜택 스타일 》
+************************************************************************************************************************************************************ */
+/* -------------------- 혜택 ---------------------------------------- */
+.bnft_wrap .bnft_sec {margin-top:56px;}
+.bnft_wrap .bnft_sec .sub_tit_24 {align-items:flex-end;}
+.bnft_wrap .bnft_sec .sub_tit_24 .tit_24 {margin-right:16px;}
+.bnft_wrap .bnft_sec .sub_tit_24 .err_msg {font-size:14px; line-height:2.286em;}
+.bnft_wrap .noti_wrap {margin-top:40px;}
+.bnft_wrap .noti_wrap h3 {margin-bottom:16px;}
+
+/* 상단영역 */
+.bnft_wrap .top_area {background-color:#3182F6; display:flex; align-items:center; box-sizing:border-box; box-shadow:0px 12px 22px rgba(0, 0, 0, 0.14); border-radius:15px; height:196px; padding:22px 0;}
+.bnft_wrap .top_area .bnft_info {margin-left:40px;}
+.bnft_wrap .top_area .bnft_txt {}
+.bnft_wrap .top_area .bnft_txt p {color:#fff; font-size:32px; line-height:1.25em;}
+.bnft_wrap .top_area .bnft_info .btn_wrap {margin-top:24px;}
+.bnft_wrap .top_area .bnft_info .btn_wrap .btn_cotn {justify-content:inherit;}
+.bnft_wrap .top_area .bnft_info .btn_wrap .btn_cotn .btn {width:240px;}
+.bnft_wrap .top_area .bnft_info .btn_wrap .jkd_b {border:1px solid #ffffff;}
+.bnft_wrap .top_area .bnft_info .btn_wrap .jkd_b:hover {background-color:#3182F6; color:#ffffff;}
+.bnft_wrap .top_area .bnft_info .btn_wrap .btn span {display:inline-block; vertical-align:top;}
+.bnft_wrap .top_area .bnft_info .btn_wrap .btn .i_sp_16 {vertical-align:-2px; margin-left:4px;}
+.bnft_wrap .top_area .bnft_info .btn_wrap .bt_down .icon {background:url(../images/common/icon_copn_down.png) no-repeat 0 0; background-size:100%; display:inline-block; margin:-4px 0 0 4px; height:24px; width:24px;}
+
+/* 로그인전 */
+.bnft_wrap .top_area.non_login {display:block; background-image:url(../images/temp/bg_coup.png); background-repeat:no-repeat; background-size:358px 158px; background-position:right 79px bottom; padding:40px 0;}
+.bnft_wrap .top_area.non_login .bnft_info {margin-left:0; padding-left:52px;}
+.bnft_wrap .top_area.non_login .bnft_txt {display:flex; align-items:center;}
+.bnft_wrap .top_area .bnft_txt p em {position:relative;}
+.bnft_wrap .top_area .bnft_txt p em:before {content:''; display:block; height:4px; width:4px; background-color:#fff; border-radius:50%; position:absolute; left:50%; top:-8px; margin-left:-2px;}
+
+/* 로그인후 */
+.bnft_wrap .top_area .bnft_info .bnft_txt .guide_txt {font-size:18px; font-weight:700; line-height:1.222em; margin-top:12px;}
+.bnft_wrap .top_area .grade_area {padding-left:40px;}
+.bnft_wrap .top_area .grade_area .img {display:block; height:100px; width:100px;}
+.bnft_wrap .top_area .grade_area .img img {height:100%; width:100%;}
+
+/* 등급별혜택 */
+.grade_wrap {display:flex;}
+.grade_wrap .box_grade {box-sizing:border-box; border:1px solid #E2E5EB; border-radius:10px; overflow:hidden;}
+.grade_wrap .box_grade.on {border-width:3px; border-color:#3182F6}
+.grade_wrap .box_grade ~ .box_grade {margin-left:24px;}
+.grade_wrap .box_grade .grade {box-sizing:border-box; border-bottom:1px solid #E2E5EB; background-color:#F9FAFC; padding:32px 0;}
+.grade_wrap .box_grade .grade .img {display:block; height:72px; width:72px; margin:0 auto;}
+.grade_wrap .box_grade .grade .img img {height:100%; width:100%;}
+.grade_wrap .box_grade .grade p {text-align:center;}
+.grade_wrap .box_grade .grade .tit_20 {margin-top:24px;}
+.grade_wrap .box_grade .grade .sub_txt {margin-top:16px;}
+.grade_wrap .box_grade .grade_bnft {padding:24px;}
+.grade_wrap .box_grade.on .grade_bnft {padding:24px 20px;}
+.grade_wrap .box_grade .grade_bnft p {color:#666; line-height:1.5em;}
+.grade_wrap .box_grade .grade_bnft p ~ p {margin-top:24px;}
+
+/* 월별구매금액 */
+.staf_tb_wrap table {border-top:1px solid #111111;}
+.staf_tb_wrap thead th {border-bottom:1px solid #E2E5EB; font-weight:700; font-size:16px; line-height:1.250em; padding:20px 0;}
+.staf_tb_wrap td {border-bottom:1px solid #E2E5EB; padding:24px 0; text-align:center; font-size:18px; line-height:1.222em;}
+.staf_tb_wrap .err_msg {font-size:14px; margin-top:8px;}
+.staf_tb_wrap .color_gy {color:#666;}
+.staf_tb_wrap .al_right {text-align:right; padding-right:105px;}
+
+/* -------------------- 혜택캘린더 ---------------------------------------- */
+/* 달력 테이블 */
+.bent_calen_wrap {}
+.bent_calen_wrap .month_area {display:flex; align-items:center; justify-content:center; margin-bottom:24px; padding:0;}
+.bent_calen_wrap .month_area .tit_24 {margin:0 24px; line-height:1.208em;}
+.bent_calen_wrap .month_area .btn_mon {height:24px;}
+.calen_table {border-top:1px solid #111;}
+.calen_table .thead .tr,
+.calen_table .day_line {display:flex;}
+.calen_table .th,
+.calen_table .td {width:14.28%; text-align:center;}
+.calen_table .thead {border-bottom:1px solid #E2E5EB; padding:8px 0;}
+.calen_table .th {color:#666; line-height:1.188em;}
+.calen_table .td {box-sizing:border-box; padding-top:8px; height:141px; position:relative; cursor:pointer;}
+.calen_table .td:before {display:none; content:''; width:100%; height:100%; background-color:#F9FAFC; position:absolute; left:0; top:0; z-index:-2;}
+.calen_table .td:hover:before {display:block;}
+.calen_table .td span {font-family:lato; line-height:1.250em;}
+.calen_table .th:first-child,
+.calen_table .tr .td:first-child {color:#FF5F01}
+.calen_table .tbody .tr {border-bottom:1px solid #E2E5EB; position:relative;}
+.today {color:#3182F6; font-weight:bold;}
+.selected {}
+.selected:after {display:block; content:''; height:calc(100% - 4px); width:calc(100% - 4px); border:2px solid #111; position:absolute; left:0; top:0; z-index:1;}
+.selected span {color:#111; font-weight:bold;}
+
+/* 지난날/다음날 */
+.calen_table .tr .td.disabled {color:#C7C7C7;}
+
+/* 이벤트 표기 */
+.data_graph {position:absolute; top:35px; width:100%; left:0;}
+.evt_bar {box-sizing:border-box; height:24px; padding:3px 16px 4px; position:absolute; z-index:-1;}
+.evt_bar .txt {font-size:14px; line-height:1.214em; text-overflow:ellipsis; word-wrap:normal; white-space:nowrap; overflow:hidden; width:100%;}
+.evt_bar.bg_bl {background-color:rgba(49, 130, 246, 0.2);}
+.evt_bar.bg_or {background-color:rgba(255, 95, 1, 0.2);}
+.evt_bar.bg_gr {background-color:rgba(0, 195, 0, 0.2);}
+.evt_bar.bg_ye {background-color:rgba(254, 186, 2, 0.2);}
+.evt_bar {border-radius:5px;}
+.evt_bar.bg_bl.start {border-left:2px solid #3182F6;}
+.evt_bar.bg_bl.end {border-right:2px solid #3182F6;}
+.evt_bar.bg_or.start {border-left:2px solid #FF5F01;}
+.evt_bar.bg_or.end {border-right:2px solid #FF5F01;}
+.evt_bar.bg_gr.start {border-left:2px solid #00C300;}
+.evt_bar.bg_gr.end {border-right:2px solid #00C300;}
+.evt_bar.bg_ye.start {border-left:2px solid #FEBA02;}
+.evt_bar.bg_ye.end {border-right:2px solid #FEBA02;}
+
+/* ************************************************************************************************************************************************************
+						《 팝업 》
+************************************************************************************************************************************************************ */
+
+/* -------------------- 캘린더 상세 ---------------------------------------- */
+.evnt_ing_wrap {}
+.evnt_ing_wrap li {padding:0 24px; position:relative;}
+.evnt_ing_wrap li:hover {background-color:#F9FAFC;}
+.evnt_ing_wrap .evnt_info {box-sizing:border-box; border-bottom:1px solid #E2E5EB; padding:24px 34px 24px 0; position:relative;}
+.evnt_ing_wrap .evnt_info .evnt_sort {width:64px; position:absolute; left:0; top:calc(50% - 16px);}
+.evnt_ing_wrap .evnt_info .evnt_sort .flag_evnt {border-radius:5px; display:inline-block; box-sizing:border-box; font-weight:600; padding:6px 11px; line-height:1.250em;}
+.flag_evnt.bl{background-color:rgba(49, 130, 246, 0.2);;}
+.flag_evnt.or{background-color:rgba(255, 95, 1, 0.2);}
+.flag_evnt.gr{background-color:rgba(0, 195, 0, 0.2);;}
+.flag_evnt.ye{background-color:rgba(254, 186, 2, 0.2);;}
+.evnt_ing_wrap .evnt_info .date_info {box-sizing:border-box; width:100%; padding-left:80px;}
+.evnt_ing_wrap .evnt_info .date_info .t_hd_02 {line-height:1.5em; max-height:3em;}
+.evnt_ing_wrap .evnt_info .date_info .date {color:#666; line-height:1.214em; margin-top:8px;}
+.evnt_ing_wrap .arr_right {position:absolute; right:0; top:calc(50% - 9px);}

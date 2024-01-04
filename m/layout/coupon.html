@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>쿠폰레이아웃</title>
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap">
+	<!-- 쿠폰목록 -->
+	<section class="coupon_wrap">
+		<!-- 1세트 -->
+		<div class="coupn_set "><!-- 쿠폰다운로드 class="done"추가, 딤드상태추가 class="dim_on"추가 -->
+			<!-- 쿠폰정보 -->
+			<div class="info_cotn">
+				<div class="label">
+					<p>장바구니쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<!--// 쿠폰정보 -->
+
+			<!-- 쿠폰다운로드/상태 -->
+			<div class="down_status">
+				<div class="cotn">
+					<!-- 다운받기 -->
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<!--// 다운받기 -->
+
+					<!-- 다운완료 -->
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<!--// 다운완료 -->
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<!--// 쿠폰다운로드/상태 -->
+			<p class="dim_txt">사용완료</p><!-- 딤드상태텍스트:상황에따라텍스트변경 -->
+		</div>
+		<!--// 1세트 -->
+		<div class="coupn_set done">
+			<div class="info_cotn">
+				<div class="label">
+					<p>장바구니쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<div class="down_status">
+				<div class="cotn">
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<p class="dim_txt">사용완료</p>
+		</div>
+		<div class="coupn_set dim_on">
+			<div class="info_cotn">
+				<div class="label">
+					<p>장바구니쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<div class="down_status">
+				<div class="cotn">
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<p class="dim_txt">사용완료</p>
+		</div>
+		<div class="coupn_set dim_on">
+			<div class="info_cotn">
+				<div class="label">
+					<p>장바구니쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<div class="down_status">
+				<div class="cotn">
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<p class="dim_txt">기간만료</p>
+		</div>
+	</section>
+	<!--// 쿠폰목록 -->
+	<hr class="div_gap">
+	<!-- 쿠폰목록 -->
+	<section class="coupon_wrap">
+		<!-- 1세트 -->
+		<div class="coupn_set "><!-- 쿠폰다운로드 class="done"추가, 딤드상태추가 class="dim_on"추가 -->
+			<!-- 쿠폰정보 -->
+			<div class="info_cotn">
+				<div class="label">
+					<p>상품쿠폰</p>
+					<p>중복쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<!--// 쿠폰정보 -->
+
+			<!-- 쿠폰다운로드/상태 -->
+			<div class="down_status">
+				<div class="cotn">
+					<!-- 다운받기 -->
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<!--// 다운받기 -->
+
+					<!-- 다운완료 -->
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<!--// 다운완료 -->
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<!--// 쿠폰다운로드/상태 -->
+			<p class="dim_txt">사용완료</p><!-- 딤드상태텍스트:상황에따라텍스트변경 -->
+		</div>
+		<!--// 1세트 -->
+		<div class="coupn_set done">
+			<div class="info_cotn">
+				<div class="label">
+					<p>상품쿠폰</p>
+					<p>중복쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<div class="down_status">
+				<div class="cotn">
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<p class="dim_txt">사용완료</p>
+		</div>
+		<div class="coupn_set dim_on">
+			<div class="info_cotn">
+				<div class="label">
+					<p>상품쿠폰</p>
+					<p>중복쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<div class="down_status">
+				<div class="cotn">
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<p class="dim_txt">사용완료</p>
+		</div>
+		<div class="coupn_set dim_on">
+			<div class="info_cotn">
+				<div class="label">
+					<p>상품쿠폰</p>
+					<p>중복쿠폰</p>
+				</div>
+				<h1 class="name">신규 회원가입 4월 할인쿠폰</h1>
+				<div class="price">
+					<p>5,000원</p>
+				</div>
+				<p class="disc_info">70,000원 이상 구매 시, 최대 15,000원 할인</p>
+				<p class="date">2022년 4월 19일 까지</p>
+			</div>
+			<div class="down_status">
+				<div class="cotn">
+					<div class="down">
+						<button class="save_coupn" type="button">
+							<span>쿠폰다운</span>
+							<i class="icon"></i>
+						</button>
+					</div>
+					<div class="complt">
+						<p>다운완료</p>
+						<i class="icon"></i>
+					</div>
+					<a href="#none" class="txt_link">적용상품</a>
+				</div>
+			</div>
+			<p class="dim_txt">기간만료</p>
+		</div>
+	</section>
+	<!--// 쿠폰목록 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>종근당건강몰 PC: 재구매 알림 신청 팝업</title>
+    <link rel="stylesheet" href="../assets/css/ui.order.css"><!-- 장바구니/주문결제 공통UI -->
+    <link rel="stylesheet" href="../assets/css/popup.css">
+
+</head>
+
+<body class="dim"><!-- 팝업open : class="dim" 추가 -->
+<!-- #WRAP -->
+<div id="wrap">
+    <!-- 재구매 알림 신청 팝업 -->
+	<section class="repur_pop full_pop full_01 on" style="display:block"><!-- 팝업open : class="on"추가, style="display:block;" --><!-- 재구매 알림 신청 팝업 class="repur_pop" -->
+		<!-- 헤더 -->
+		<header class="head">
+			<!-- 타이틀 -->
+			<h1 class="tit_22">재구매 알림 신청</h1>
+			<!--// 타이틀 -->
+
+			<!-- 닫기 -->
+			<a href="#none" class="closed">
+				<i class="i_sp_24 cross"></i>
+				<span class="blind">팝업 닫기</span>
+			</a>
+			<!--// 닫기 -->
+		</header>
+		<!--// 헤더 -->
+
+		<!-- 컨텐츠 -->
+		<div class="cotn">
+            <div class="repur_gui_sec">
+                <div class="repur_bann">
+                    <figure class="img">
+                        <img src="../assets/images/temp/banner_repur_img.jpg" alt="">
+                    </figure>
+                    <a href="#none" class="go_view">
+                        <span class="blind">페이지 이동</span>
+                    </a>
+                </div>
+                <p class="txt">사용 및 섭취하실 <span class="color_bl">인원수 및 재구매 알림 날짜를 등록</span>하시면 APP 알림 및 문자로
+                    다음 구매 시점을 알려드립니다.
+                </p>
+                <div class="info_txt fs_14">
+                    <p>다음 구매 2주전 문자를 받으실 수 있습니다. </p>
+                    <p>사용 및 섭취 기간을 등록하신 인원수로 계산합니다. </p>
+                    <p>사용 및 섭취 기간이 2주 이내인 상품은 알림 및 문자가 발송되지 않습 니다. </p>
+                </div>
+            </div>
+            <div class="repur_gy_wrap">
+                <div class="repur_prd_sec">
+                    <div class="repur_aric">
+                        <div class="sub_tit_20">
+                            <h1 class="tit_20">인원수 등록</h1>
+                        </div>
+                        <div class="box_wh_bor">
+                            <!-- 상품 -->
+                            <div class="prd_h_wrap">
+                                <div class="prd_group"><!-- 상태값필요할때 class="on_dim"추가 -->
+                                    <div class="cotn">
+                                        <!-- 이미지 -->
+                                        <div class="img_area">
+                                            <figure class="img">
+                                                <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                            </figure>
+                                            <p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+                                        </div>
+                                        <!--// 이미지 -->
+
+                                        <div class="txt_area">
+                                            <!-- 상품명 -->
+                                            <div class="txt">
+                                                <h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+                                            </div>
+                                            <!--// 상품명 -->
+                                            <!-- 판매가 -->
+                                            <div class="sale_info">
+                                                <div class="price">
+                                                    <p><strong>22,900</strong>원</p>
+                                                </div>
+                                                <div class="qty">
+                                                    <p>1개</p>
+                                                </div>
+                                            </div>
+                                            <!--// 판매가 -->
+                                        </div>
+                                        <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 상품 -->
+                            <div class="rdo_list_area">
+                                <ul class="wid_auto">
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">1명</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">2명</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">3명</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">4명</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="wid_163">
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">직접입력</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                        <div class="form_inpt h_40 wid_inp_62">
+                                            <div class="txt">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">신청안함</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="msg_wrap">
+                                    <p class="err_msg">권장 소비기간 : 1박스 기준 1인, 30일 사용 및 섭취</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="repur_aric">
+                        <div class="sub_tit_20">
+                            <h1 class="tit_20">사용 기간 등록</h1>
+                        </div>
+                        <div class="box_wh_bor">
+                            <!-- 상품 -->
+                            <div class="prd_h_wrap">
+                                <div class="prd_group"><!-- 상태값필요할때 class="on_dim"추가 -->
+                                    <div class="cotn">
+                                        <!-- 이미지 -->
+                                        <div class="img_area">
+                                            <figure class="img">
+                                                <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                            </figure>
+                                            <p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+                                        </div>
+                                        <!--// 이미지 -->
+
+                                        <div class="txt_area">
+                                            <!-- 상품명 -->
+                                            <div class="txt">
+                                                <h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+                                            </div>
+                                            <!--// 상품명 -->
+                                            <!-- 판매가 -->
+                                            <div class="sale_info">
+                                                <div class="price">
+                                                    <p><strong>22,900</strong>원</p>
+                                                </div>
+                                                <div class="qty">
+                                                    <p>1개</p>
+                                                </div>
+                                            </div>
+                                            <!--// 판매가 -->
+                                        </div>
+                                        <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 상품 -->
+                            <div class="rdo_list_area">
+                                <ul class="wid_25">
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">1달(30일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">2달(60일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">3달(90일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">4달(120일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="wid_25">
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">5달(150일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="wid_50">
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">직접입력</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                        <div class="form_inpt h_40 wid_inp_128">
+                                            <div class="txt">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">신청안함</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="msg_wrap">
+                                    <p class="err_msg">권장 소비기간 : 1박스 기준 1인, 30일 사용 및 섭취</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_wh_bor">
+                            <!-- 상품 -->
+                            <div class="prd_h_wrap">
+                                <div class="prd_group"><!-- 상태값필요할때 class="on_dim"추가 -->
+                                    <div class="cotn">
+                                        <!-- 이미지 -->
+                                        <div class="img_area">
+                                            <figure class="img">
+                                                <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                            </figure>
+                                            <p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+                                        </div>
+                                        <!--// 이미지 -->
+
+                                        <div class="txt_area">
+                                            <!-- 상품명 -->
+                                            <div class="txt">
+                                                <h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+                                            </div>
+                                            <!--// 상품명 -->
+                                            <!-- 판매가 -->
+                                            <div class="sale_info">
+                                                <div class="price">
+                                                    <p><strong>22,900</strong>원</p>
+                                                </div>
+                                                <div class="qty">
+                                                    <p>1개</p>
+                                                </div>
+                                            </div>
+                                            <!--// 판매가 -->
+                                        </div>
+                                        <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 상품 -->
+                            <div class="rdo_list_area">
+                                <ul class="wid_25">
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd1" class="group">
+                                                <input type="radio" id="rd1" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">1주(7일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd2" class="group">
+                                                <input type="radio" id="rd2" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">2주(14일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd3" class="group">
+                                                <input type="radio" id="rd3" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">3주(28일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd4" class="group">
+                                                <input type="radio" id="rd4" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">4주(28일)</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="wid_50">
+                                    </li>
+                                    <li class="wid_50">
+                                        <div class="form_rdo">
+                                            <label for="rd5" class="group">
+                                                <input type="radio" id="rd5" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">직접입력</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                        <div class="form_inpt h_40 wid_inp_112">
+                                            <div class="txt">
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_rdo">
+                                            <label for="rd6" class="group">
+                                                <input type="radio" id="rd6" name="temp1">
+                                                <i class="icon"></i>
+                                                <span class="txt">신청안함</span>
+                                                <span class="blind">선택</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="msg_wrap">
+                                    <p class="err_msg">권장 소비기간 : 1박스 기준 1인, 30일 사용 및 섭취</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 수신동의 -->
+                <div class="policy_wrap">
+                    <div class="group_div">
+                        <!-- 타이틀 -->
+                        <div class="sub_tit_24">
+                            <!-- 체크박스 -->
+                            <div class="form_chk">
+                                <label class="group">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="blind">선택</span>
+                                </label>
+                            </div>
+                            <!--// 체크박스 -->
+                            <h1 class="tit_24">마케팅 정보 수신동의(필수)</h1>
+                        </div>
+                        <!--// 타이틀 -->
+                        <div class="cotn">
+                            <div class="info_txt">
+                                <p>마케팅 정보 수신동의를 하시면 종근당 건강의 상품 및 이벤트 정보를 받으실 수 있습니다. </p>
+                                <p>회원정보의 마케팅 수신동의 여부도 동일하게 변경됩니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// 수신동의 -->
+            </div>
+		</div>
+		<!--// 컨텐츠 -->
+
+		<!-- 하단버튼 -->
+		<div class="btn_wrap" btn-type="main_bt_02">
+			<div class="btn_cotn">
+                <button type="button" class="btn" bt_role="cancel">닫기</button>
+				<button type="button" class="btn" bt_role="confirm">신청하기</button>
+			</div>
+		</div>
+		<!--// 하단버튼 -->
+	</section>
+	<!--// 재구매 알림 신청 팝업 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

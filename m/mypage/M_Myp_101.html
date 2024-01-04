@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>마이페이지 메인</title>
+	<link rel="stylesheet" href="../assets/css/ui.product.css"><!-- 상품공통스타일 -->
+	<link rel="stylesheet" href="../assets/css/mypage.css"><!-- 마이페이지 -->
+
+	<style>
+		.full_popup.pop_deliv{
+			z-index: 1000;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<!-- 팝업:배송지등록 -->
+<section class="full_popup pop_deliv"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">배송지 등록</h1><!-- 2022-10-31_수정 -->
+		<a href="#none" onclick="deepCloseModal(event,'pop_deliv')" class="closed">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents">
+		<!-- 2022-10-31_수정 -->
+
+		<!-- 배송지 등록 -->
+		<div class="deliv_cont">
+			<!-- 받는분 -->
+			<div class="deliv_sec">
+				<div class="form_inpt trio wrn"><!-- 에러 메세지 노출 class="wrn" 추가 -->
+					<p class="tit_field necd">
+						<span>받는분</span>
+					</p>
+					<div class="txt">
+						<span>
+							<input type="text" maxlength="15" placeholder="받으시는 분 성함을 입력해 주세요. (15자)"><!-- 2022-10-31_수정 -->
+							<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+							<i class="bdr"></i>
+						</span>
+						<span>
+							<input type="number" placeholder="연락처1 ( - 없이 입력해 주세요.)"><!-- 2022-10-31_수정 -->
+							<i class="bdr"></i>
+							<i class="bdr"></i>
+							<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+						</span>
+						<span>
+							<input type="number" placeholder="연락처2 (선택)">
+							<i class="bdr"></i>
+							<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+						</span>
+					</div>
+					<div class="msg_wrap">
+						<p class="err_msg">받으시는 분 성함을 입력해 주세요.</p>
+						<p class="err_msg">연락처를 입력해 주세요.</p>
+					</div>
+				</div>
+			</div>
+			<!--// 받는분 -->
+
+			<hr class="div_gap">
+
+			<!-- 배송지주소 -->
+			<div class="deliv_sec">
+				<div class="form_inpt duo">
+					<div class="tit_sec_wrap flex_betw deliv_tit"><!-- class="flex_betw" 추가시 flex between -->
+						<p class="tit_field necd">
+							<span>배송지 주소</span>
+						</p>
+						<!-- 2022-11-25_수정 -->
+					</div>
+					<div class="txt">
+						<span>
+							<input type="text" readonly value="" placeholder="주소를 입력해 주세요."><!-- 2022-10-31_수정 -->
+							<i class="bdr"></i>
+						</span>
+						<span>
+							<input type="text" placeholder="상세주소를 입력해 주세요."><!-- 2022-10-31_수정 -->
+							<i class="bdr"></i>
+							<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+						</span>
+					</div>
+					<div class="msg_wrap">
+						<p class="err_msg">상세주소를 입력해 주세요.</p>
+					</div>
+				</div>
+
+				<div class="btn_wrap" btn-type="sub_bt">
+					<a href="#none" class="btn bc_bk">주소찾기</a>
+				</div>
+			</div>
+			<!--// 배송지주소 -->
+
+			<hr class="div_gap">
+
+			<!-- 배송요청사항 -->
+			<div class="deliv_sec">
+				<div class="form_inpt">
+					<p class="tit_field">
+						<span>배송 요청사항 (선택)</span><!-- 2022-11-08_수정 -->
+					</p>
+					<div class="form_select form_req">
+						<select>
+							<option>요청사항을 선택해 주세요.</option><!-- 2022-11-08_수정 -->
+							<option>직접 수령하겠습니다.</option>
+							<option>배송 전 연락바랍니다.</option>
+							<option>부재 시 경비실에 맡겨주세요.</option>
+							<option>부재 시 문 앞에 놓아주세요.</option>
+							<option>부재 시 택배함에 넣어주세요.</option>
+							<option>직접입력</option>
+						</select>
+						<i class="i_select"></i>
+					</div>
+					<div class="form_inpt form_req"><!-- 요청사항 class="form_req" -->
+						<!-- 직접입력 -->
+						<div class="txt">
+							<input maxlength="30" type="text" placeholder="내용을 입력해 주세요. (최대 30자까지 가능합니다.)"><!-- 2022-11-08_수정 --><!-- 2022-10-31_수정 -->
+							<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+						</div>
+						<!-- 2022-07-19_수정 -->
+						<div class="msg_wrap">
+							<p class="err_msg">오류메세지 영역</p>
+						</div>
+						<!--// 2022-07-19_수정 -->
+						<!--// 직접입력 -->
+						<div class="txt">
+							<input type="number" placeholder="공동현관 출입번호를 입력해 주세요. (예: #1234)"><!-- 2022-11-08_수정 -->
+							<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+						</div>
+						<!-- 2022-07-19_수정 -->
+						<div class="msg_wrap">
+							<p class="err_msg">오류메세지 영역</p>
+						</div>
+						<!--// 2022-07-19_수정 -->
+					</div>
+				</div>
+			</div>
+			<!--// 배송요청사항 -->
+
+			<hr class="div_gap">
+
+			<!-- 배송지설정 -->
+			<div class="deliv_sec">
+				<!-- 2022-10-31_수정 -->
+				<div class="form_chk">
+					<label class="group">
+						<input type="checkbox">
+						<i class="icon"></i>
+						<span class="txt">기본배송지 설정</span>
+						<span class="blind">선택</span>
+					</label>
+				</div>
+			</div>
+			<!--// 배송지설정 -->
+		</div>
+		<!--// 배송지 등록 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_fixed">
+		<div class="btn_wrap" btn-type="main_bt">
+			<a href="#none" onclick="deepCloseModal(event,'pop_deliv')" class="btn" bt_role="cancel">취소</a>
+			<a href="#none" onclick="deepCloseModal(event,'pop_deliv')" class="btn" bt_role="confirm">등록</a>
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+
+</section>
+<!--// 팝업:배송지등록 -->
+
+<!-- 팝업:배송지관리 -->
+<section class="full_popup full_01 adr_pop"><!-- 배송지목록 class="adr_pop" 추가, 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">배송지 관리</h1>
+		<a href="#none" class="closed" onclick="closeModal(event,'full_01')">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents bg_gy">
+		<!-- 2022-10-31_수정 -->
+
+		<!-- 배송지 목록 -->
+		<div class="deliv_wrap">
+			<!-- 기본배송지 -->
+			<div class="form_rdo box">
+				<div class="group">
+					<!-- 2022-10-31_수정 -->
+					<div class="cotn">
+						<div class="adr_wrap">
+							<div class="adr_name">
+								<h3 class="tit_16">홍길동</h3>
+								<span class="flag_adr">기본배송지</span>
+							</div>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="dl_layout">
+								<div class="dl_div">
+									<p class="sub_txt">문앞에 노란색 플라스틱 바구니가 있습니다. 거기 넣어주시면 감사</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap adr_btn">
+							<a href="#none" onclick="deepOpenModal(event,'pop_deliv')" class="txt_link">수정</a>
+						</div>
+						<span class="blind">선택</span>
+					</div>
+				</div>
+			</div>
+			<!--// 기본배송지 -->
+			<!-- 2022-11-25_수정 -->
+			<div class="btn_wrap" btn-type="sub_bt">
+				<a href="#none" onclick="deepOpenModal(event,'pop_deliv')" class="btn bc_fff_02">
+					<i class="icon plus"></i>
+					<span class="txt">배송지 등록</span>
+				</a>
+			</div>
+			<!--// 2022-11-25_수정 -->
+			<!-- 배송지 목록 1세트 -->
+			<div class="form_rdo box">
+				<div class="group">
+					<!-- 2022-10-31_수정 -->
+					<div class="cotn">
+						<div class="adr_wrap">
+							<div class="adr_name">
+								<h3 class="tit_16">홍길동</h3>
+								<div class="btn_wrap enroll">
+									<a href="#none" class="btn bc_fff h_24">기본배송지로 변경</a>
+								</div>
+							</div>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="dl_layout">
+								<div class="dl_div">
+									<p class="sub_txt">직접 수령하겠습니다.</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap adr_btn">
+							<a href="#none" onclick="deepOpenModal(event,'pop_deliv')" class="txt_link">수정</a>
+							<a href="#none" class="txt_link del">삭제</a>
+						</div>
+						<span class="blind">선택</span>
+					</div>
+				</div>
+			</div>
+			<!--// 배송지 목록 1세트 -->
+			<div class="form_rdo box">
+				<div class="group">
+					<div class="cotn">
+						<div class="adr_wrap">
+							<div class="adr_name">
+								<h3 class="tit_16">홍길동</h3>
+								<div class="btn_wrap enroll">
+									<a href="#none" class="btn bc_fff h_24">기본배송지로 변경</a>
+								</div>
+							</div>
+							<div class="adr_info">
+								<p class="tel">010-1234-5678</p>
+								<p class="adr">서울시 강남구 학동로 146(논현동) 와일리타워 1층</p>
+							</div>
+							<div class="dl_layout">
+								<div class="dl_div">
+									<p class="sub_txt">부재 시 경비실에 맡겨주세요. 제발</p>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap adr_btn">
+							<a href="#none" onclick="deepOpenModal(event,'pop_deliv')" class="txt_link">수정</a>
+							<a href="#none" class="txt_link del">삭제</a>
+						</div>
+						<span class="blind">선택</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// 배송지 목록 -->
+
+		<!-- 배송지 없음 -->
+		<div class="data_none">
+			<div class="cotn">
+				<i class="icon_none"></i>
+				<p class="mn_copy">등록 된 배송지 정보가 없습니다.<br>배송지를 등록해 주세요.</p>
+			</div>
+			<!-- 2022-10-31_수정 -->
+			<!-- 버튼 -->
+			<!-- 2022-11-25_수정 -->
+			<div class="btn_wrap" btn-type="sub_bt">
+				<a href="#none" onclick="deepOpenModal(event,'pop_deliv')" class="btn bc_fff_02">
+					<i class="icon plus"></i>
+					<span class="txt">배송지 등록</span>
+				</a>
+			</div>
+			<!--// 2022-11-25_수정 -->
+			<!--// 버튼  -->
+		</div>
+		<!--// 배송지 없음 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_fixed">
+		<div class="btn_wrap" btn-type="main_bt">
+			<a href="#none" class="btn" bt_role="confirm" onclick="closeModal(event,'full_01')">닫기</a><!-- 2022-11-24_수정 --><!-- 2022-10-31_수정 -->
+			<!-- 2022-11-24_수정 -->
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+
+</section>
+<!--// 팝업:배송지관리 -->
+
+
+
+<!-- #WRAP -->
+<div id="wrap" class="mypage main"><!-- [마이페이지 class="mypage", 메인 class="main"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 마이페이지(메인) -->
+			<div class="sub">
+				<div class="my_main_cont">
+					 <!--  상단영역 -->
+					 <div class="member_info_wrap">
+						 <div class="memb_area">
+							<div class="mem_info">
+								<div class="mem_rating">
+									<div class="my_badge img">
+										<img src="../assets/images/temp/badge_g.png" alt="">
+									</div>
+									<!-- 기업, 임직원 등급뱃지 --->
+									<!-- <div class="my_badge txt">
+									  <p>기업</p>
+									</div> -->
+									<!--// 기업, 임직원 등급뱃지 --->
+								</div>
+								<div class="mem_name">
+									<p>홍길동님</p>
+									<a href="../service/M_Cou_201.html" class="txt_link more">
+										<i class="icon_12"></i>
+										<span>등급별 혜택 보기</span>
+									</a>
+								</div>
+							</div>
+							 <div class="btn_wrap" btn-type="sub_bt">
+								<a href="../member/my_info/M_Mem_104.html" class="btn bc_bk h_24">추천인 코드</a>
+							</div>
+						 </div>
+					 </div>
+					 <!--// 상단영역 -->
+					 <div class="my_info_deta bg_gy">
+						<div class="box_bor_wh save_area">
+							<ul>
+								<li>
+									<h3>적립금</h3>
+									<p>
+										<a href="../mypage/benefit/M_Myp_801.html"><!-- 2022-11-14_수정 -->
+											<span>2,000P</span>
+										</a>
+									</p>
+								</li>
+								<li>
+									<h3>적립예정</h3><!-- 2022-11-14_수정 -->
+									<p>
+										<span>500P</span>
+									</p>
+								</li>
+								<li>
+									<h3>할인쿠폰</h3>
+									<p>
+										<a href="./coupon/M_Myp_901.html"><!-- 2022-11-14_수정 -->
+											<span>2장</span>
+										</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+						 <div class="box_bor_wh my_ord_area">
+							 <div class="tit">
+								 <h3>
+									 <strong class="tit_14">주문/배송조회</strong>
+									 <span>최근 1개월 기준</span>
+								 </h3>
+								 <a href="./order/M_Myp_202.html" class="btn_arrow">
+									<i class="arrow_right"></i>
+									<span class="blind">주문/배송조회 상세보기</span>
+								 </a>
+							 </div>
+							 <div class="order_step">
+								 <ul>
+									 <li>
+										  <div class="order_num">
+											  <p>0</p>
+										  </div>
+										  <p class="txt_12_gy">입금대기</p>
+										  <a href="./order/M_Myp_202.html" class="go_view">
+											<span class="blind">페이지 이동</span>
+										  </a>
+									 </li>
+									 <li>
+										<div class="order_num">
+											<p>0</p>
+										</div>
+										<p class="txt_12_gy">결제완료</p>
+										<a href="./order/M_Myp_202.html" class="go_view">
+											<span class="blind">페이지 이동</span>
+										</a>
+									</li>
+									<li>
+										<div class="order_num">
+											<p>0</p>
+										</div>
+										<p class="txt_12_gy">배송준비중</p><!-- 2022-11-14_수정 -->
+										<a href="./order/M_Myp_202.html" class="go_view">
+										<span class="blind">페이지 이동</span>
+										</a>
+									 </li>
+									 <li>
+										<div class="order_num">
+											<p>0</p>
+										</div>
+										<p class="txt_12_gy">배송중</p>
+										<a href="./order/M_Myp_202.html" class="go_view">
+											<span class="blind">페이지 이동</span>
+										</a>
+									</li>
+									<li>
+										<div class="order_num">
+											<p>0</p>
+										</div>
+										<p class="txt_12_gy">배송완료</p>
+										<a href="./order/M_Myp_202.html" class="go_view">
+											<span class="blind">페이지 이동</span>
+										</a>
+									</li>
+								 </ul>
+							 </div>
+
+							 <div class="ord_sta_area">
+								 <div class="txt_status">
+									 <span>취소</span>
+									 <strong>1</strong>
+									 <a href="./order/M_Myp_301.html" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								 </div>
+								 <div class="txt_status">
+									<span>교환</span>
+									<strong>99+</strong>
+									<a href="./order/M_Myp_301.html" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								</div>
+								<div class="txt_status">
+									<span>반품</span>
+									<strong>99+</strong>
+									<a href="./order/M_Myp_301.html" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								</div>
+							 </div>
+						 </div>
+
+						 <div class="box_bor_wh my_menu_area">
+							<div class="my_menu">
+								<div class="amou_box">
+									<i class="icon_24 question"></i>
+									<span class="amount">1</span>
+								</div>
+								<p>최근 1:1문의</p>
+								<a href="./inquiry/M_Myp_1101.html" class="go_view">
+									<span class="blind">페이지 이동</span>
+								</a>
+							</div>
+							<div class="my_menu">
+								<div class="amou_box">
+									<i class="icon_24 review"></i>
+									<span class="amount">2</span>
+								</div>
+								<p>상품리뷰</p>
+								<a href="./review/M_Myp_1202.html" class="go_view">
+									<span class="blind">페이지 이동</span>
+								</a>
+								<!-- 툴팁 -->
+								<!-- 2022-12-19_수정 -->
+								<div class="tool_area">
+									<div class="tooltip_bk">
+										<p>작성할 리뷰가 있어요</p>
+									</div>
+								</div>
+								<!--// 2022-12-19_수정 -->
+								<!-- 툴팁 -->
+							</div>
+							<div class="my_menu">
+								<div class="amou_box">
+									  <i class="icon_24 purchase"></i>
+									  <span class="amount">9</span>
+								</div>
+								<p>최근구매</p>
+								<a href="./wish/M_Myp_607.html" class="go_view">
+									<span class="blind">페이지 이동</span>
+								</a>
+							</div>
+							<div class="my_menu">
+								<div class="amou_box">
+									  <i class="icon_24 interest"></i>
+									  <span class="amount">9</span>
+								</div>
+								<p>관심상품</p>
+								<a href="./wish/M_Myp_605.html" class="go_view">
+									<span class="blind">페이지 이동</span>
+								</a>
+							</div>
+						 </div>
+					 </div>
+
+					 <div class="my_link_area">
+						<div class="my_link">
+							<p>주문/배송</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./order/M_Myp_202.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>취소/교환/반품</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./order/M_Myp_301.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>정기배송관리</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./deliv/M_Myp_701.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>간편결제관리</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./order/M_Myp_1000.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<!-- 아코디언 메뉴 -->
+						<div class="my_link my_link_acc">
+							<div class="accodn_wrap">
+								<!-- 고정노출영역 -->
+								<div class="view_fix">
+									<P>나의 활동</P>
+									<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+								</div>
+								<!--// 고정노출영역 -->
+
+								<!-- 오픈컨텐츠 -->
+								<div class="open_cotn" style="display: none;">
+									<!-- 2depth 메뉴 -->
+									<div class="my_link_menu">
+										<ul>
+											<li>
+												<i class="arrow_right"></i>
+												<span>관심상품</span>
+												<a href="./wish/M_Myp_605.html" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+											<li>
+												<i class="arrow_right"></i>
+												<span>최근 본 상품</span>
+												<a href="./wish/M_Myp_609.html" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+											<li>
+												<i class="arrow_right"></i>
+												<span>최근 구매 상품</span>
+												<a href="./wish/M_Myp_607.html" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!--// 2depth 메뉴 -->
+								</div>
+								<!--// 오픈컨텐츠 -->
+							</div>
+						</div>
+						<!--// 아코디언 메뉴 -->
+						<div class="my_link">
+							<p>나의 적립금</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./benefit/M_Myp_801.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>나의 할인쿠폰</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./coupon/M_Myp_901.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>1:1 문의</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./inquiry/M_Myp_1101.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>상품 리뷰</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./review/M_Myp_1202.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>제휴/대량구매 문의</p><!-- 2022-11-16_수정 -->
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="./service/M_Big_100.html" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						  <!-- 아코디언 메뉴 -->
+						  <div class="my_link my_link_acc">
+							<div class="accodn_wrap">
+								<!-- 고정노출영역 -->
+								<div class="view_fix">
+									<P>나의 정보관리</P>
+									<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+								</div>
+								<!--// 고정노출영역 -->
+
+								<!-- 오픈컨텐츠 -->
+								<div class="open_cotn" style="display: none;">
+									<!-- 2depth 메뉴 -->
+									<div class="my_link_menu">
+										<ul>
+											<li>
+												<i class="arrow_right"></i>
+												<span>회원정보수정</span>
+												<a href="../member/my_info/M_Mem_102.html" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+											<li>
+												<i class="arrow_right"></i>
+												<!-- POP -->
+												<span>배송지 관리</span>
+												<a href="#none" onclick="openModal(event,'full_01')" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+											<li>
+												<i class="arrow_right"></i>
+												<!-- POP -->
+												<span>마케팅 정보 수신 동의</span><!-- 2022-11-14_수정 -->
+												<a href="../member/my_info/M_Mem_103.html" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+											<li>
+												<i class="arrow_right"></i>
+												<span>추천인 코드관리</span>
+												<a href="../member/my_info/M_Mem_104.html" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+											<li>
+												<i class="arrow_right"></i>
+												<span>회원탈퇴</span>
+												<a href="#none" class="go_view">
+													<span class="blind">페이지 이동</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!--// 2depth 메뉴 -->
+								</div>
+								<!--// 오픈컨텐츠 -->
+							</div>
+						</div>
+						<!--// 아코디언 메뉴 -->
+						<div class="my_link">
+							<p>앱 설정</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="#none" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<div class="my_link">
+							<p>고객센터</p>
+							<div>
+								<i class="arrow_right"></i>
+							</div>
+							<a href="#none" class="go_view">
+								<span class="blind">페이지 이동</span>
+							</a>
+						</div>
+						<!-- 2depth 메뉴 -->
+						<div class="my_link_menu">
+							<ul>
+								<li>
+									<i class="arrow_right"></i>
+									<span>자주 묻는 질문</span>
+									<a href="#none" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								</li>
+								<li>
+									<i class="arrow_right"></i>
+									<span>공지사항</span>
+									<a href="#none" class="go_view">
+										<span class="blind">페이지 이동</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--// 2depth 메뉴 -->
+					 </div>
+				</div>
+			<!--// 마이페이지(메인) -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

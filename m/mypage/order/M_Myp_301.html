@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../../assets/css/ui.public.css" />
+    <link rel="stylesheet" href="../../assets/css/ui.common.css" />
+    <script
+      type="text/javascript"
+      src="../../../assets/js/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../assets/js/jquery-ui.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../../assets/js/swiper-bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+    <script
+      type="text/javascript"
+      src="../../assets/js/mypage/order.js"
+    ></script>
+    <title>마이페이지 취소/교환/반품(목록)</title>
+    <link rel="stylesheet" href="../../assets/css/mypage.css" />
+    <!-- 마이페이지 -->
+  </head>
+
+  <body>
+    <!-- 취소/교환/반품 정보 -->
+    <section class="full_popup full_01 prd_return_pop">
+      <!-- 취소/교환/반품 정보 class="prd_return_pop" 추가, 팝업open : class="on"추가, style="display:block;" -->
+      <!-- 헤더 -->
+      <header class="head">
+        <h1 class="tit_head">취소 정보</h1>
+        <!-- 2022-11-18_수정 -->
+        <a
+          href="#none"
+          onclick="closeModal(event,'prd_return_pop')"
+          class="closed"
+        >
+          <span class="blind">팝업 닫기</span>
+        </a>
+      </header>
+      <!--// 헤더 -->
+
+      <!-- 컨텐츠 -->
+      <div class="contents">
+        <div class="prd_canl_cotn bg_gy">
+          <!-- 주문상품 -->
+          <div class="ord_top_sec">
+            <div class="top_ord_info">
+              <div class="ord_info_lef">
+                <p class="flag_bor bl">일반배송</p>
+                <!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" 클래쓰 추가 -->
+                <p class="txt_date">2022.03.05</p>
+                <p class="txt_prd_num">123456789</p>
+              </div>
+              <div>
+                <a href="./M_Myp_203.html" class="txt_link more">주문상세</a>
+              </div>
+            </div>
+            <!-- 주문상품 목록 -->
+            <div class="prd_acc_area">
+              <div class="accodn_wrap order_acc open">
+                <!-- 고정노출영역 -->
+                <div class="view_fix">
+                  <div class="tit_area">
+                    <div class="dl_layout">
+                      <div class="dl_div">
+                        <p class="tit">
+                          <strong class="tit_16">주문상품</strong>
+                        </p>
+                        <div class="rit_con">
+                          <p class="txt_ord_prd">
+                            <strong>2월 20% 추가할인 2월 20% 추가할인</strong>
+                            <span>외 99건 </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <i class="ctrl_trg"
+                    ><span class="blind">상세 컨텐츠영역 열기</span></i
+                  >
+                </div>
+                <!--// 고정노출영역 -->
+
+                <!-- 오픈컨텐츠 -->
+                <div class="open_cotn bg_gy" style="display: block">
+                  <!-- 세트 -->
+                  <div class="ord_list_sec">
+                    <!-- 주문 리스트 -->
+                    <div class="ord_list_wrap">
+                      <!--  상온/실온 -->
+                      <div class="ord_list_box">
+                        <div class="tit_ord_area">
+                          <div class="lef_state">
+                            <div class="ord_state">
+                              <p class="txt_14">반품 수거중</p>
+                            </div>
+                          </div>
+                          <div class="rit_state">
+                            <p class="tit_temp warm">상온/실온</p>
+                          </div>
+                        </div>
+                        <div class="ord_prd_cont">
+                          <div class="ord_prd_list">
+                            <div class="prod_h_wrap">
+                              <!-- 1세트 -->
+                              <div class="prd_group_h">
+                                <!-- 상태값필요할때 class="on_dim"추가 -->
+                                <div class="cotn">
+                                  <div class="prd_artic">
+                                    <!-- 이미지 -->
+                                    <div class="img_area">
+                                      <figure class="img">
+                                        <img
+                                          src="../../assets/images/temp/prd_01.jpg"
+                                          alt=""
+                                        />
+                                      </figure>
+                                      <p class="status_txt">품절</p>
+                                      <!-- 상품상태값:텍스트수정 -->
+                                    </div>
+                                    <!--// 이미지 -->
+
+                                    <!-- 판매정보 -->
+                                    <div class="prd_verti_info">
+                                      <!-- 상품명 -->
+                                      <div class="txt">
+                                        <h1 class="name">
+                                          락토핏 생유산균 베베 1박스 (2개월분)
+                                          일주일간 특가 오픈!!
+                                        </h1>
+                                      </div>
+                                      <!--// 상품명 -->
+                                      <div class="object_area">
+                                        <div class="sale_info">
+                                          <!-- 2022-11-17_수정 -->
+                                          <div class="price">
+                                            <p>37,500원</p>
+                                          </div>
+                                          <div class="prd_num">
+                                            <p>1개</p>
+                                          </div>
+                                          <!--// 2022-11-17_수정 -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--// 판매정보 -->
+                                  </div>
+                                  <a
+                                    href="../../product/M_Pro_201.html"
+                                    class="go_view"
+                                    ><span class="blind">상품상세 이동</span></a
+                                  >
+                                </div>
+                              </div>
+                              <!--// 1세트 -->
+                              <div class="prd_group_h">
+                                <!-- 상태값필요할때 class="on_dim"추가 -->
+                                <div class="cotn">
+                                  <div class="prd_artic">
+                                    <!-- 이미지 -->
+                                    <div class="img_area">
+                                      <figure class="img">
+                                        <img
+                                          src="../../assets/images/temp/prd_01.jpg"
+                                          alt=""
+                                        />
+                                      </figure>
+                                      <p class="status_txt">품절</p>
+                                      <!-- 상품상태값:텍스트수정 -->
+                                    </div>
+                                    <!--// 이미지 -->
+
+                                    <!-- 판매정보 -->
+                                    <div class="prd_verti_info">
+                                      <!-- 상품명 -->
+                                      <div class="txt">
+                                        <h1 class="name">
+                                          락토핏 생유산균 베베 1박스 (2개월분)
+                                          일주일간 특가 오픈!!
+                                        </h1>
+                                      </div>
+                                      <!--// 상품명 -->
+                                      <div class="object_area">
+                                        <div class="sale_info">
+                                          <!-- 2022-11-17_수정 -->
+                                          <div class="price">
+                                            <p>37,500원</p>
+                                          </div>
+                                          <div class="prd_num">
+                                            <p>1개</p>
+                                          </div>
+                                          <!--// 2022-11-17_수정 -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--// 판매정보 -->
+                                  </div>
+                                  <a
+                                    href="../../product/M_Pro_201.html"
+                                    class="go_view"
+                                    ><span class="blind">상품상세 이동</span></a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--//  상온/실온 -->
+
+                      <!--  냉동/냉장 -->
+                      <div class="ord_list_box">
+                        <div class="tit_ord_area">
+                          <div class="lef_state">
+                            <div class="ord_state">
+                              <p class="txt_14">반품완료</p>
+                              <p class="txt_date_c">
+                                <i class="icon_stick"></i>2022.03.15
+                              </p>
+                            </div>
+                          </div>
+                          <div class="rit_state">
+                            <p class="tit_temp ice">냉동/냉장</p>
+                          </div>
+                        </div>
+                        <div class="ord_prd_cont">
+                          <div class="ord_prd_list">
+                            <div class="prod_h_wrap">
+                              <!-- 1세트 -->
+                              <div class="prd_group_h">
+                                <!-- 상태값필요할때 class="on_dim"추가 -->
+                                <div class="cotn">
+                                  <div class="prd_artic">
+                                    <!-- 이미지 -->
+                                    <div class="img_area">
+                                      <figure class="img">
+                                        <img
+                                          src="../../assets/images/temp/prd_01.jpg"
+                                          alt=""
+                                        />
+                                      </figure>
+                                      <p class="status_txt">품절</p>
+                                      <!-- 상품상태값:텍스트수정 -->
+                                    </div>
+                                    <!--// 이미지 -->
+
+                                    <!-- 판매정보 -->
+                                    <div class="prd_verti_info">
+                                      <!-- 상품명 -->
+                                      <div class="txt">
+                                        <h1 class="name">
+                                          락토핏 생유산균 베베 1박스 (2개월분)
+                                          일주일간 특가 오픈!!
+                                        </h1>
+                                      </div>
+                                      <!--// 상품명 -->
+                                      <div class="object_area">
+                                        <div class="sale_info">
+                                          <!-- 2022-11-17_수정 -->
+                                          <div class="price">
+                                            <p>37,500원</p>
+                                          </div>
+                                          <div class="prd_num">
+                                            <p>1개</p>
+                                          </div>
+                                          <!--// 2022-11-17_수정 -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!--// 판매정보 -->
+                                  </div>
+                                  <a
+                                    href="../../product/M_Pro_201.html"
+                                    class="go_view"
+                                    ><span class="blind">상품상세 이동</span></a
+                                  >
+                                </div>
+                              </div>
+                              <!--// 1세트 -->
+                            </div>
+                          </div>
+                          <!-- 사유 -->
+                          <div class="box_gy bg_f9fafc box_reason">
+                            <div class="dl_layout">
+                              <div class="dl_div">
+                                <p class="tit">
+                                  <span>반품사유</span>
+                                  <i class="icon_stick"></i>
+                                </p>
+                                <div class="txt">
+                                  <p>직접입력</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--// 사유 -->
+                          <!-- <div class="btn_wrap" btn-type="sub_bt">
+																							<a href="#none" class="btn bc_fff h_32">반품정보</a>
+																					</div> -->
+                        </div>
+                      </div>
+                      <!--//  냉동/냉장 -->
+                    </div>
+                    <!--// 주문 리스트 -->
+                  </div>
+                  <!--// 세트 -->
+                </div>
+                <!--// 오픈컨텐츠 -->
+              </div>
+            </div>
+            <!--// 주문상품 목록 -->
+          </div>
+          <!--// 주문상품 -->
+
+          <!-- 사유 -->
+          <div class="retn_son_sec">
+            <div class="reason_artc">
+              <div class="tit_sec_wrap">
+                <p class="tit_field">
+                  <span>취소사유</span>
+                </p>
+              </div>
+              <div class="box_bor_wh">
+                <p>직접입력</p>
+              </div>
+            </div>
+            <div class="reason_artc">
+              <div class="tit_sec_wrap">
+                <p class="tit_field">
+                  <span>상세사유</span>
+                </p>
+              </div>
+              <div class="box_bor_wh">
+                <p>상품을 두번 주문해서 한가지 상품 취소합니다.</p>
+              </div>
+              <!-- 사진목록 -->
+              <div class="rv_photo swiper">
+                <div class="swiper-wrapper">
+                  <!-- 1세트 -->
+                  <div class="img_wrap swiper-slide">
+                    <figure class="img">
+                      <a href="#none">
+                        <img src="../../assets/images/temp/prd_02.jpg" alt="" />
+                      </a>
+                    </figure>
+                  </div>
+                  <!--// 1세트 -->
+                  <div class="img_wrap swiper-slide">
+                    <figure class="img">
+                      <a href="#none">
+                        <img src="../../assets/images/temp/prd_01.jpg" alt="" />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="img_wrap swiper-slide">
+                    <figure class="img">
+                      <a href="#none">
+                        <img src="../../assets/images/temp/prd_03.jpg" alt="" />
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <!--// 사진목록 -->
+            </div>
+          </div>
+          <div class="retn_son_sec">
+            <div class="tit_sec_wrap flex_betw">
+              <p class="tit_field">
+                <span>거절사유</span>
+              </p>
+              <a
+                href="#none"
+                onclick="deepOpenModal(event,'btm_cs')"
+                class="txt_link"
+                >고객센터로 문의하기</a
+              >
+            </div>
+            <div class="box_bor_wh">
+              <p>
+                안녕하세요 종근당건강몰입니다.<br />
+                고객님 상품이 이미 발송되어 주문을 취소하실 수 없습니다.
+                상품수령 후 반품 절차를 진행하여 취소하실 수 있습니다.
+              </p>
+            </div>
+          </div>
+          <!--// 사유 -->
+
+          <!-- 유의사항 -->
+          <div class="retn_son_sec">
+            <div class="noti_copy gray_02">
+              <p>판매자 승인 후 환불절차가 진행됩니다.</p>
+              <p>카드사의 사정에 따라 승인취소 후 환불이 지연될 수 있습니다.</p>
+
+              <p>
+                환불내역은 마이페이지>주문/배송조회>주문상세 에서 확인하실 수
+                있습니다.
+              </p>
+              <p>
+                안내드린 환불금액은 실제 환불금액과 차익가 있을 수 있습니다.
+              </p>
+            </div>
+          </div>
+          <!--// 유의사항 -->
+        </div>
+      </div>
+      <!--// 컨텐츠 -->
+
+      <!-- 하단버튼 -->
+      <div class="btn_fixed">
+        <div class="btn_wrap" btn-type="main_bt">
+          <a
+            href="#none"
+            onclick="closeModal(event,'prd_return_pop')"
+            class="btn"
+            bt_role="confirm"
+            >확인</a
+          >
+        </div>
+      </div>
+      <!--// 하단버튼 -->
+    </section>
+    <!--// 취소/교환/반품 정보 -->
+
+    <!-- 문의선택 팝업 -->
+    <section class="btm_popup btm_cs bdr" style="display: block">
+      <!-- 팝업open : class="on"추가, style="display:block;" -->
+      <!-- 헤더 -->
+      <header class="head">
+        <div class="head_wrap">
+          <h1 class="tit_16">문의 선택</h1>
+
+          <!-- 버튼 -->
+          <div class="btn_area">
+            <a
+              href="#none"
+              onclick="deepCloseModal(event,'btm_cs')"
+              class="btn_head closed"
+            >
+              <span class="blind">팝업 닫기</span>
+            </a>
+          </div>
+          <!--// 버튼 -->
+        </div>
+      </header>
+      <!--// 헤더 -->
+
+      <!-- 컨텐츠 -->
+      <div class="contents">
+        <!-- 문의선택버튼 -->
+        <div class="cs_wrap">
+          <ul>
+            <li>
+              <a href="../inquiry/M_Myp_1101.html" class="btn_cs">
+                <i class="icon_cs qna"></i>
+                <span class="tit_cs">1:1 문의</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="btn_cs">
+                <i class="icon_cs chat"></i>
+                <span class="tit_cs">채팅상담</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="btn_cs">
+                <i class="icon_cs faq"></i>
+                <span class="tit_cs">FAQ</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:1677-4265" class="btn_cs">
+                <i class="icon_cs tel"></i>
+                <span class="tit_cs">
+                  고객센터
+                  <strong>1677-4265</strong>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--// 문의선택버튼 -->
+      </div>
+      <!--// 컨텐츠 -->
+    </section>
+    <!--// 문의선택 팝업 -->
+
+    <!-- #WRAP -->
+    <div id="wrap" class="mypage my_order bg_gy">
+      <!-- [마이페이지 class="mypage", 주문/배송조회 class="my_order"] --><!-- 목록화면(BG) class="bg_gy" 추가 -->
+      <!-- #HEADER -->
+      <!-- 헤더 영역 : /layout/header.html에서 확인 -->
+      <!--// #HEADER -->
+
+      <!-- #CONTAINER -->
+      <div id="container">
+        <!-- #CONTENTS -->
+        <div id="contents">
+          <!-- 취소/교환/반품(목록) -->
+          <div class="sub">
+            <div class="ord_deli_cont">
+              <!-- 2022-11-15_수정 -->
+              <div class="date_area">
+                <!-- 조회하기 -->
+                <div class="ord_search">
+                  <div class="search_inp">
+                    <span class="form_txt"
+                      ><input type="text" placeholder="상품명을 입력해 주세요."
+                    /></span>
+                    <!-- <button type="button" class="del"><span class="blind">입력텍스트삭제</span></button> -->
+                  </div>
+                  <div class="btn_wrap" btn-type="sub_bt">
+                    <a href="#none" class="btn jkd_b_w">기간조회</a>
+                  </div>
+                </div>
+                <!--// 조회하기 -->
+                <!-- 기간조회 레이어팝업-->
+                <section class="date_layer_pop">
+                  <div class="ord_search">
+                    <div class="search_inp">
+                      <span class="form_txt"
+                        ><input
+                          type="text"
+                          placeholder="상품명을 입력해 주세요."
+                      /></span>
+                      <button type="button" class="del">
+                        <span class="blind">입력텍스트삭제</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="txt_12_gy">최대 5년까지 조회가 가능합니다.</p>
+                  <!-- 기간설정 -->
+                  <div class="blue_btn_set">
+                    <a href="#none" class="on">1개월</a
+                    ><!-- 활성화 시 class="on" 추가 -->
+                    <a href="#none">3개월</a>
+                    <a href="#none">6개월</a>
+                    <a href="#none">기간조회</a>
+                  </div>
+                  <!--// 기간설정 -->
+                  <div class="form_date">
+                    <div class="form_inpt">
+                      <div class="txt">
+                        <input type="text" placeholder="" value="2022-02-17" />
+                        <i class="icon_calen"></i>
+                      </div>
+                    </div>
+                    <span>~</span>
+                    <div class="form_inpt">
+                      <div class="txt">
+                        <input
+                          type="text"
+                          placeholder=""
+                          value="2022-02-17"
+                          disabled=""
+                        />
+                        <i class="icon_calen"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_wrap" btn-type="sub_bt">
+                    <!-- 비활성화 class="inactv" 추가 -->
+                    <a href="#none" class="btn jkd_b">조회</a>
+                  </div>
+                </section>
+                <!--// 기간조회 레이어팝업 -->
+              </div>
+              <!--// 2022-11-15_수정 -->
+              <hr class="div_gap" />
+              <!-- 탭메뉴(1depth) -->
+              <div class="tab_menu line">
+                <div class="btn_tab on">
+                  <a href="#none">
+                    <span>취소</span>
+                  </a>
+                </div>
+                <div class="btn_tab">
+                  <a href="#none">
+                    <span>교환</span>
+                  </a>
+                </div>
+                <div class="btn_tab">
+                  <a href="#none">
+                    <span>반품</span>
+                  </a>
+                </div>
+              </div>
+              <!--// 탭메뉴(1depth) -->
+
+              <!-- 주문상품 목록 -->
+              <div class="ord_prd_area">
+                <!-- 배송 구분 :: 일반 / 선물 / 교환-->
+                <div class="ord_list_sec">
+                  <div class="top_ord_info">
+                    <div class="ord_info_lef">
+                      <p class="flag_bor jg">일반배송</p>
+                      <!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" / 교환배송 class="jg" 추가 -->
+                      <p class="txt_date">2022.03.05</p>
+                      <p class="txt_prd_num">123456789</p>
+                    </div>
+                    <div>
+                      <a href="./M_Myp_203.html" class="txt_link more"
+                        >주문상세</a
+                      >
+                    </div>
+                  </div>
+                  <!-- 주문 리스트 -->
+                  <div class="ord_list_wrap">
+                    <!-- 
+							< ------ dep1 ------ >
+							common : 일반배송 + gift : 성물상품
+							routine : 정기배송 
+							
+							< ------ dep2 조합용 ------ >
+							wait : 입금대기
+							complete : 결제완료 (판매자 주문확인 전)
+							complete_ck : 결제완료 (판매자 주문확인 후)
+							ready :  배송준비중 
+							shipping : 배송중
+							finish : 배송완료 
+							confirm : 구매확정
+							* confirm_review : 구매확정 + 리뷰작성완료 (깍두기)
+
+							application : 취소신청
+							cancel : 배송중(취소거절)
+							cancel_return : 취소완료
+
+							not_received : 미수령신고
+							received : 배송완료
+
+							change_ck_b : 교환신청
+							change_ck : 배송중(교환거절)
+							change_ck_a : 교환수거중
+							change_ready : 상품검수중
+							change_shipping : 배송중
+							change_confirm : 교환완료
+
+							retrun_ck_b : 반품신청
+							retrun : 배송중(반품거절)
+							retrun_ck : 반품수거중
+							retrun_ck_a : 상품검수중
+							return_confirm : 반품완료
+							
+							// gift 와 같이써야함 --------------------------------------------------------------------------------
+							gift_complete : 결제완료(주소미입력)
+							gift_ready : 배송준비중
+							gift_shipping : 배송중
+							gift_finish : 배송완료
+							gift_confirm : 구매확정
+							
+						-->
+                    <!-- ---------------------------------------- 주문 아이템 (여러 아이템인 경우 추가) ---------------------------------------- -->
+                    <div class="ord_list_box item common change_ck_a">
+                      <!-- 아이템 header -->
+                      <div class="tit_ord_area">
+                        <div class="lef_state tooltip_wrap">
+                          <!-- tooltip_wrap 배송조회 시 추가 -->
+                          <div class="ord_state">
+                            <!-- 일반배송 || 정기배송 || 선물배송 -->
+                            <p class="txt_14 wait">입금대기</p>
+                            <p class="txt_14 complete">complete_ck</p>
+                            <p class="txt_14 complete_ck">결제완료</p>
+                            <p class="txt_14 ready gift_ready">배송준비중</p>
+                            <p class="txt_14 shipping gift_shipping">배송중</p>
+                            <p class="txt_14 finish gift_finish">배송완료</p>
+                            <p class="txt_14 confirm gift_confirm">구매확정</p>
+                            <p class="txt_14 confirm_review">구매확정</p>
+                            <!-- 일반배송 : 주문취소/취소신청//미수령신고 -->
+                            <p class="txt_14 application">취소신청</p>
+                            <p class="txt_14 cancel">배송중(취소거절)</p>
+                            <p class="txt_14 cancel_return">취소완료</p>
+                            <!-- 미수령 신고 -->
+                            <p class="txt_14 not_received">미수령신고</p>
+                            <p class="txt_14 received">배송완료</p>
+                            <!-- 일반배송 : 교환 -->
+                            <p class="txt_14 change_ck_b">교환신청</p>
+                            <p class="txt_14 change_ck">배송중(교환거절)</p>
+                            <p class="txt_14 change_ck_a">교환수거중</p>
+                            <p class="txt_14 change_ready">상품검수중</p>
+                            <p class="txt_14 change_shipping">배송중</p>
+                            <p class="txt_14 change_confirm">교환완료</p>
+                            <!-- 일반배송 : 반품 -->
+                            <p class="txt_14 retrun_ck_b">반품신청</p>
+                            <p class="txt_14 retrun">배송중(반품거절)</p>
+                            <p class="txt_14 retrun_ck">반품수거중</p>
+                            <p class="txt_14 retrun_ck_a">상품검수중</p>
+                            <p class="txt_14 return_confirm">반품완료</p>
+                            <!-- 선물배송 -->
+                            <p class="txt_14 gift_complete">
+                              결제완료(주소미입력)
+                            </p>
+
+                            <!-- 날짜 (취소신청|교환신청|반품신청) -->
+                            <p class="txt_date_c create_date">
+                              <i class="icon_stick"></i>2022.03.15
+                            </p>
+
+                            <!-- 배송조회 팁 -->
+                            <div class="btn_tool_wrap btn_deliv_tip">
+                              <div class="btn_wrap" btn-type="sub_bt">
+                                <a
+                                  href="#none"
+                                  class="btn bc_fff_03 h_24 btn_tooltip"
+                                  >배송조회</a
+                                >
+                              </div>
+                              <div class="tooltip_box">
+                                <div class="tooltip">
+                                  <div class="deliv_num">
+                                    <p>
+                                      <a href="#none" class="txt_link"
+                                        >123456789-1 배송조회</a
+                                      >
+                                    </p>
+                                    <p>
+                                      <a href="#none" class="txt_link"
+                                        >123456789-1 배송조회</a
+                                      >
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 보관상태 -->
+                        <div class="rit_state">
+                          <!-- <p class="tit_temp warm">상온/실온</p> -->
+                          <p class="tit_temp ice">냉동/냉장</p>
+                        </div>
+                      </div>
+                      <!-- // 아이템 header -->
+
+                      <div class="ord_prd_cont">
+                        <!-- 기본구조 -->
+                        <div class="ord_prd_list">
+                          <div class="prod_h_wrap">
+                            <div class="prd_group_h">
+                              <!-- 상품상태값 class="on_dim"추가 -->
+                              <div class="cotn">
+                                <div class="prd_artic">
+                                  <!-- 상품 이미지 -->
+                                  <div class="img_area">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_01.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                    <p class="status_txt">품절</p>
+                                    <!-- 상품상태값:텍스트수정 -->
+                                  </div>
+                                  <!--// 상품 이미지  -->
+
+                                  <!-- 판매정보 -->
+                                  <div class="prd_verti_info">
+                                    <!-- 상품명 -->
+                                    <div class="txt">
+                                      <h1 class="name">
+                                        락토핏 생유산균 베베 1박스 (2개월분)
+                                        일주일간 특가 오픈!!
+                                      </h1>
+                                    </div>
+                                    <!--// 상품명 -->
+                                    <div class="object_area">
+                                      <div class="sale_info">
+                                        <div class="prd_num_12">
+                                          <p>
+                                            <span>1개</span>
+                                            <strong>외 3건</strong>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--// 판매정보 -->
+                                </div>
+                                <a href="./M_Myp_203.html" class="go_view"
+                                  ><span class="blind">상품상세 이동</span></a
+                                >
+                              </div>
+
+                              <!-- 적립금 && 사은품 -->
+                              <div class="ord_gift_wrap">
+                                <div class="box_gy gift_box">
+                                  <div class="gift_line">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/common/icon_point.svg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                    <div class="txt_area">
+                                      <h4>추가 적립금</h4>
+                                      <div class="gift_txt">
+                                        <p>10% 추가적립</p>
+                                      </div>
+                                    </div>
+                                    <p class="amount">
+                                      <strong>14,500</strong><span>P</span>
+                                    </p>
+                                  </div>
+                                  <div class="gift_line">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_01.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                    <div class="txt_area">
+                                      <h4>사은품</h4>
+                                      <div class="gift_txt">
+                                        <p>
+                                          2월 20%추가할인 락토핏 생유산균
+                                          골드골드골드골드골드
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <p class="amount">
+                                      <strong>99</strong><span>개</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--// 적립금&사은품 -->
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- 선물 전용 -->
+                        <div class="recip_wrap">
+                          <div class="box_gy bg_f9fafc recip_area">
+                            <div class="dl_layout">
+                              <div class="dl_div">
+                                <p class="tit">선물 받는 분</p>
+                                <div class="txt_con">
+                                  <p>홍길동(010****1234)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="btn_wrap" btn-type="sub_bt">
+                              <a
+                                href="#none"
+                                onclick="openModal(event,'alert_03')"
+                                class="btn bc_fff_03 h_24"
+                                >SMS 재전송</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!--// 선물 전용 -->
+
+                        <!-- 일반 : 입금대기 -->
+                        <div class="btn_wrap wait" btn-type="sub_bt">
+                          <!-- <a href="./M_Myp_303.html" class="btn bc_fff h_32" onclick="openModal(event,'alert_03')">주문취소</a> -->
+                          <a
+                            href="./M_Myp_303.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >주문취소</a
+                          >
+                        </div>
+
+                        <!-- 일반 : 결제완료 (판매자 주문확인 전) -->
+                        <div class="btn_wrap complete" btn-type="sub_bt">
+                          <a
+                            href="#none"
+                            onclick="openModal(event,'alert_03','pop_deliv')"
+                            class="btn bc_fff h_32"
+                            >배송지 변경</a
+                          >
+                          <a
+                            href="./M_Myp_303.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >주문취소</a
+                          >
+                        </div>
+
+                        <!-- 일반 : 결제완료 (판매자 주문확인 후) -->
+                        <!-- 일반 : 배송준비중 -->
+                        <div
+                          class="btn_wrap complete_ck ready"
+                          btn-type="sub_bt"
+                        >
+                          <a
+                            href="./M_Myp_303.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >취소신청</a
+                          >
+                        </div>
+
+                        <!-- 일반 : 배송완료 -->
+                        <!-- 교환완료 ( 교환송장입력 후 배송완료 처리 및 14일 초과 ) -->
+                        <div
+                          class="btn_wrap btn_num05 change_confirm finish"
+                          btn-type="sub_bt"
+                        >
+                          <a
+                            href="./M_Myp_601.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >미수령신고</a
+                          >
+                          <a
+                            href="./M_Myp_403.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >교환신청</a
+                          >
+                          <a
+                            href="./M_Myp_503.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >반품신청</a
+                          >
+                          <a
+                            href="#none"
+                            onclick="openModal(event,'purc_comt_pop')"
+                            class="btn bc_fff_02 h_32"
+                            >구매확정</a
+                          >
+                        </div>
+
+                        <!-- 일반 : 구매확정 -->
+                        <div class="btn_wrap confirm" btn-type="sub_bt">
+                          <a
+                            href="../../cart/M_Bag_601.html"
+                            class="btn bc_fff h_32"
+                            >재구매</a
+                          >
+                          <a
+                            href="../review/M_Myp_1204.html"
+                            class="btn jkd_b h_32 btn_revw"
+                          >
+                            리뷰쓰기
+                            <div class="tool_area">
+                              <div class="tooltip_bk">
+                                <p>최대 적립 100P</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <!-- 일반 : 구매확정 & 리뷰작성 완 -->
+                        <div class="btn_wrap confirm_review" btn-type="sub_bt">
+                          <a
+                            href="../../cart/M_Bag_601.html"
+                            class="btn bc_fff h_32"
+                            >재구매</a
+                          >
+                        </div>
+
+                        <!-- 주문취소/취소신청 -->
+                        <div class="btn_wrap application" btn-type="sub_bt">
+                          <a
+                            href="#none"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'prd_return_pop')"
+                            >취소정보</a
+                          >
+                          <a
+                            href="#none"
+                            class="btn bc_fff_02 h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >신청철회</a
+                          >
+                        </div>
+
+                        <!-- 취소완료 ( 주문취소 / 취소신청 완료 ) -->
+                        <div class="btn_wrap cancel_return" btn-type="sub_bt">
+                          <a
+                            href="#none"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'prd_return_pop')"
+                            >취소정보</a
+                          >
+                          <a
+                            href="../../cart/M_Bag_601.html"
+                            class="btn bc_fff h_32"
+                            >재구매</a
+                          >
+                        </div>
+
+                        <!-- 미수령신고접수 ( 미수령신고 접수상태 ) -->
+                        <div class="btn_wrap not_received" btn-type="sub_bt">
+                          <a
+                            href="./M_Myp_303.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >신고철회</a
+                          >
+                          <a
+                            href="./M_Myp_303.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >반품신청</a
+                          >
+                        </div>
+
+                        <!-- 미수령신고철회 ( 미수령신고 철회상태 ) -->
+                        <div class="btn_wrap received" btn-type="sub_bt">
+                          <a
+                            href="./M_Myp_403.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >교환신청</a
+                          >
+                          <a
+                            href="./M_Myp_503.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >반품신청</a
+                          >
+                          <a
+                            href="#none"
+                            class="btn bc_fff_02 h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >수취확인</a
+                          >
+                        </div>
+
+                        <!-- 교환신청 ( 교환신청후 관리자확인전 ) -->
+                        <div class="btn_wrap change_ck_b" btn-type="sub_bt">
+                          <a
+                            href="#none"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'prd_return_pop')"
+                            >교환정보</a
+                          >
+                          <a
+                            href="#none"
+                            class="btn bc_fff_02 h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >신청철회</a
+                          >
+                        </div>
+
+                        <!-- 교환수거중 ( 교환단계 진행 ) -->
+                        <!-- 상품검수중 ( 수거완료 후 교환상품 배송 전 ) -->
+                        <div
+                          class="btn_wrap change_ck_a change_ready"
+                          btn-type="sub_bt"
+                        >
+                          <a
+                            href="#none"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'prd_return_pop')"
+                            >교환정보</a
+                          >
+                        </div>
+
+                        <!-- 일반 배송중 -->
+                        <!-- 교환거절 ( 수거상품 하자 미확인 ) -->
+                        <!-- 교환배송중 ( 검수 후 교환상품 송장 입력 완료 ) -->
+                        <!-- 반품 거절 ( 반품 하자 미확인 및 사유입력 완료) -->
+                        <!-- 배송중 (취소거절) -->
+                        <div
+                          class="btn_wrap btn_num05 shipping change_ck change_shipping retrun cancel"
+                          btn-type="sub_bt"
+                        >
+                          <a
+                            href="./M_Myp_601.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >미수령신고</a
+                          >
+                          <a
+                            href="./M_Myp_403.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >교환신청</a
+                          >
+                          <a
+                            href="./M_Myp_503.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >반품신청</a
+                          >
+                          <a
+                            href="#none"
+                            class="btn bc_fff_02 h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >수취확인</a
+                          >
+                        </div>
+
+                        <!-- 반품신청 ( 반품신청후 관리자확인전 ) -->
+                        <div class="btn_wrap retrun_ck_b" btn-type="sub_bt">
+                          <a
+                            href="#none"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'prd_return_pop')"
+                            >반품정보</a
+                          >
+                          <a
+                            href="#none"
+                            class="btn bc_fff_02 h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >신청철회</a
+                          >
+                        </div>
+
+                        <!-- 반품 수거중 ( 반품신청 승인단계 ) -->
+                        <!-- 상품검수중 ( 수거완료 후 반품 완료 처리 전 ) -->
+                        <!-- 반품완료 -->
+                        <div
+                          class="btn_wrap retrun_ck retrun_ck_a return_confirm"
+                          btn-type="sub_bt"
+                        >
+                          <a
+                            href="#none"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'prd_return_pop')"
+                            >반품정보</a
+                          >
+                          <a
+                            href="../../cart/M_Bag_601.html"
+                            class="btn bc_fff h_32"
+                            >재구매</a
+                          >
+                        </div>
+
+                        <!-- 배송중 -->
+                        <div
+                          class="btn_wrap routine_shipping"
+                          btn-type="sub_bt"
+                        >
+                          <a
+                            href="./M_Myp_601.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >미수령신고</a
+                          >
+                          <a
+                            href="#none"
+                            class="btn bc_fff_02 h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >수취확인</a
+                          >
+                        </div>
+
+                        <!-- 구매확정 : 리뷰전 -->
+                        <div class="btn_wrap routine_finish" btn-type="sub_bt">
+                          <a
+                            href="./M_Myp_601.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >미수령신고</a
+                          >
+                          <a
+                            href="#none"
+                            onclick="openModal(event,'purc_comt_pop')"
+                            class="btn bc_fff_02 h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >구매확정</a
+                          >
+                        </div>
+
+                        <!-- 구매확정 : 리뷰전 -->
+                        <div class="btn_wrap routine_confirm" btn-type="sub_bt">
+                          <a href="./M_Myp_601.html" class="btn bc_fff h_32"
+                            >고객센터 문의</a
+                          >
+                          <a
+                            href="../review/M_Myp_1204.html"
+                            class="btn jkd_b h_32 btn_revw"
+                          >
+                            리뷰쓰기
+                            <div class="tool_area">
+                              <div class="tooltip_bk">
+                                <p>최대 적립 100P</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <!-- 선물 배송중 -->
+                        <!-- 선물 배송완료 -->
+                        <div
+                          class="btn_wrap gift_shipping gift_finish"
+                          btn-type="sub_bt"
+                        >
+                          <a
+                            href="./M_Myp_601.html"
+                            class="btn bc_fff h_32"
+                            onclick="openModal(event,'alert_03')"
+                            >미수령신고</a
+                          >
+                        </div>
+
+                        <!-- 선물 구매확정 -->
+                        <div class="btn_wrap gift_confirm" btn-type="sub_bt">
+                          <a
+                            href="../../cart/M_Bag_601.html"
+                            class="btn bc_fff h_32"
+                            >재구매</a
+                          >
+                          <a
+                            href="../review/M_Myp_1204.html"
+                            class="btn jkd_b h_32 btn_revw"
+                          >
+                            리뷰쓰기
+                            <div class="tool_area">
+                              <div class="tooltip_bk">
+                                <p>최대 적립 100P</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ---------------------------------------- // 주문 아이템 (여러 아이템인 경우 추가) ---------------------------------------- -->
+                  </div>
+                  <!-- // 주문 리스트 -->
+
+                  <!-- 주문 액션 -->
+                  <section class="list">
+                    <!-- 입금대기 -->
+                    <div class="btn_wrap" btn-type="sub_bt">
+                      <a
+                        href="#none"
+                        onclick="openModal(event,'alert_03','pop_deliv')"
+                        class="btn bc_fff h_32"
+                        >배송지 변경</a
+                      >
+                    </div>
+                    <!-- 입금대기 제외 -->
+                    <div class="btn_wrap" btn-type="sub_bt">
+                      <a
+                        href="#none"
+                        onclick="openModal(event,'pop_reord')"
+                        class="btn bc_fff h_32"
+                        >재구매 알림</a
+                      >
+                    </div>
+                    <!-- 정기배송 -->
+                    <div class="btn_wrap" btn-type="sub_bt">
+                      <a href="../deliv/M_Myp_701.html" class="btn bc_fff h_32"
+                        >정기배송관리</a
+                      >
+                    </div>
+                    <!-- 선물 -->
+                    <div class="btn_wrap" btn-type="sub_bt">
+                      <a href="./M_Myp_303.html" class="btn bc_fff h_32"
+                        >주문취소</a
+                      >
+                    </div>
+                  </section>
+                  <!-- 주문 액션 -->
+
+                  <!-- 최종 결제금액 -->
+                  <div class="final_payment">
+                    <div class="dl_layout">
+                      <div class="dl_div">
+                        <p class="tit">최종 결제금액</p>
+                        <div class="amount">
+                          <p>
+                            <strong>145,000</strong>
+                            <span>원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 최종 결제금액 -->
+                </div>
+                <!--// 배송 구분 :: 일반 / 선물 / 교환 -->
+                <!-- 일반배송:관리자교환승인완료 -->
+                <div class="ord_list_sec">
+                  <div class="top_ord_info">
+                    <div class="ord_info_lef">
+                      <p class="flag_bor bl">일반배송</p>
+                      <!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" 클래쓰 추가 -->
+                      <p class="txt_date">2022.03.05</p>
+                      <p class="txt_prd_num">123456789</p>
+                    </div>
+                    <div>
+                      <a href="#none" class="txt_link more">주문상세</a>
+                    </div>
+                  </div>
+                  <!-- 주문 리스트 -->
+                  <div class="ord_list_wrap">
+                    <!-- 상온/실온 -->
+                    <div class="ord_list_box">
+                      <div class="tit_ord_area">
+                        <div class="lef_state">
+                          <div class="ord_state">
+                            <p class="txt_14">교환수거중</p>
+                          </div>
+                        </div>
+                        <div class="rit_state">
+                          <p class="tit_temp warm">상온/실온</p>
+                        </div>
+                      </div>
+                      <div class="ord_prd_cont">
+                        <div class="ord_prd_list">
+                          <div class="prod_h_wrap">
+                            <!-- 1세트 -->
+                            <div class="prd_group_h">
+                              <div class="cotn">
+                                <div class="prd_artic">
+                                  <!-- 이미지 -->
+                                  <div class="img_area">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_01.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                  </div>
+                                  <!--// 이미지 -->
+
+                                  <!-- 판매정보 -->
+                                  <div class="prd_verti_info">
+                                    <!-- 상품명 -->
+                                    <div class="txt">
+                                      <h1 class="name">
+                                        락토핏 생유산균 베베 1박스 (2개월분)
+                                        일주일간 특가 오픈!!
+                                      </h1>
+                                    </div>
+                                    <!--// 상품명 -->
+                                    <div class="object_area">
+                                      <div class="sale_info">
+                                        <div class="prd_num_12">
+                                          <p>
+                                            <span>1개</span>
+                                            <strong>외 3건</strong>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--// 판매정보 -->
+                                </div>
+                                <a href="#none" class="go_view"
+                                  ><span class="blind">상품상세 이동</span></a
+                                >
+                              </div>
+                            </div>
+                            <!--// 1세트 -->
+                          </div>
+                        </div>
+                        <div class="btn_wrap" btn-type="sub_bt">
+                          <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                          <a href="#none" class="btn bc_fff h_32">교환정보</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--// 상온/실온 -->
+
+                    <!-- 냉동/냉장 -->
+                    <div class="ord_list_box">
+                      <div class="tit_ord_area">
+                        <div class="lef_state tooltip_wrap">
+                          <div class="ord_state">
+                            <p class="txt_14">교환수거중</p>
+                          </div>
+                        </div>
+                        <div class="rit_state">
+                          <p class="tit_temp ice">냉동/냉장</p>
+                        </div>
+                      </div>
+                      <div class="ord_prd_cont">
+                        <div class="ord_prd_list">
+                          <div class="prod_h_wrap">
+                            <div class="prd_group_h">
+                              <!-- 상태값필요할때 class="on_dim"추가 -->
+                              <div class="cotn">
+                                <div class="prd_artic">
+                                  <!-- 이미지 -->
+                                  <div class="img_area">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_05.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                    <p class="status_txt">품절</p>
+                                    <!-- 상품상태값:텍스트수정 -->
+                                  </div>
+                                  <!--// 이미지 -->
+
+                                  <!-- 판매정보 -->
+                                  <div class="prd_verti_info">
+                                    <!-- 상품명 -->
+                                    <div class="txt">
+                                      <h1 class="name">
+                                        락토핏 생유산균 베베 1박스 (2개월분)
+                                        일주일간 특가 오픈!!
+                                      </h1>
+                                    </div>
+                                    <!--// 상품명 -->
+                                    <div class="object_area">
+                                      <div class="sale_info">
+                                        <div class="prd_num_12">
+                                          <p>
+                                            <span>1개</span>
+                                            <strong>외 3건</strong>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--// 판매정보 -->
+                                </div>
+                                <a href="#none" class="go_view"
+                                  ><span class="blind">상품상세 이동</span></a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 2022-11-24_수정 -->
+                          <div class="btn_wrap" btn-type="sub_bt">
+                            <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                            <a href="#none" class="btn bc_fff h_32">교환정보</a>
+                          </div>
+                          <!--// 2022-11-24_수정 -->
+                        </div>
+                      </div>
+                    </div>
+                    <!--// 냉동/냉장 -->
+                  </div>
+                  <!--// 주문 리스트 -->
+                  <div class="btn_wrap" btn-type="sub_bt">
+                    <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                    <a href="#none" class="btn bc_fff h_32">재구매 알림</a>
+                  </div>
+                  <!-- 최종 결제금액 -->
+                  <div class="final_payment">
+                    <div class="dl_layout">
+                      <div class="dl_div">
+                        <p class="tit">최종 결제금액</p>
+                        <div class="amount">
+                          <p>
+                            <strong>145,000</strong>
+                            <span>원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 최종 결제금액 -->
+                </div>
+                <!--// 일반배송:관리자교환승인완료 -->
+
+                <!-- 교환배송상품 -->
+                <div class="ord_list_sec">
+                  <div class="top_ord_info">
+                    <div class="ord_info_lef">
+                      <p class="flag_bor jg">교환배송</p>
+                      <!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" / 교환배송 class="jg" 추가 -->
+                      <p class="txt_date">2023.01.04</p>
+                      <p class="txt_prd_num">987654321</p>
+                    </div>
+                    <div>
+                      <a href="#none" class="txt_link more">주문상세</a>
+                    </div>
+                  </div>
+                  <!-- 주문 리스트 -->
+                  <div class="ord_list_wrap">
+                    <!-- 상온/실온 -->
+                    <div class="ord_list_box">
+                      <div class="tit_ord_area">
+                        <div class="lef_state tooltip_wrap">
+                          <!-- 배송조회툴팁생성시 class="tooltip_wrap" 추가 -->
+                          <div class="ord_state">
+                            <p class="txt_14">배송중</p>
+                            <!-- 배송조회툴팁 -->
+                            <div class="btn_tool_wrap btn_deliv_tip">
+                              <div class="btn_wrap" btn-type="sub_bt">
+                                <a
+                                  href="#none"
+                                  class="btn bc_fff_03 h_24 btn_tooltip"
+                                  >배송조회</a
+                                >
+                              </div>
+                              <div class="tooltip_box">
+                                <div class="tooltip">
+                                  <div class="deliv_num">
+                                    <p>
+                                      <a href="#none" class="txt_link"
+                                        >123456789-1 배송조회</a
+                                      >
+                                    </p>
+                                    <p>
+                                      <a href="#none" class="txt_link"
+                                        >123456789-1 배송조회</a
+                                      >
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--// 배송조회툴팁 -->
+                          </div>
+                        </div>
+                        <div class="rit_state">
+                          <p class="tit_temp warm">상온/실온</p>
+                        </div>
+                      </div>
+                      <div class="ord_prd_cont">
+                        <div class="ord_prd_list">
+                          <div class="prod_h_wrap">
+                            <div class="prd_group_h">
+                              <div class="cotn">
+                                <div class="prd_artic">
+                                  <!-- 이미지 -->
+                                  <div class="img_area">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_03.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                  </div>
+                                  <!--// 이미지 -->
+
+                                  <!-- 판매정보 -->
+                                  <div class="prd_verti_info">
+                                    <!-- 상품명 -->
+                                    <div class="txt">
+                                      <h1 class="name">
+                                        락토핏 생유산균 베베 1박스 (2개월분)
+                                        일주일간 특가 오픈!!
+                                      </h1>
+                                    </div>
+                                    <!--// 상품명 -->
+                                    <div class="object_area">
+                                      <div class="sale_info">
+                                        <div class="prd_num_12">
+                                          <p>
+                                            <span>1개</span>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--// 판매정보 -->
+                                </div>
+                                <a href="#none" class="go_view"
+                                  ><span class="blind">상품상세 이동</span></a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn_wrap" btn-type="sub_bt">
+                          <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                          <a href="#none" class="btn bc_fff h_32">미수령신고</a>
+                          <a href="#none" class="btn bc_fff_02 h_32"
+                            >수취확인</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--// 상온/실온 -->
+                  </div>
+                  <!--// 주문 리스트 -->
+                  <div class="btn_wrap" btn-type="sub_bt">
+                    <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                    <a href="#none" class="btn bc_fff h_32">재구매 알림</a>
+                  </div>
+                </div>
+                <!--// 교환배송상품 -->
+
+                <!-- 일반배송:관리자교환승인거절 -->
+                <div class="ord_list_sec">
+                  <div class="top_ord_info">
+                    <div class="ord_info_lef">
+                      <p class="flag_bor bl">일반배송</p>
+                      <!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" / 교환배송 class="jg" 추가 -->
+                      <p class="txt_date">2022.03.05</p>
+                      <p class="txt_prd_num">123456789</p>
+                    </div>
+                    <div>
+                      <a href="#none" class="txt_link more">주문상세</a>
+                    </div>
+                  </div>
+                  <!-- 주문 리스트 -->
+                  <div class="ord_list_wrap">
+                    <!-- 상온/실온 -->
+                    <div class="ord_list_box">
+                      <div class="tit_ord_area">
+                        <div class="lef_state tooltip_wrap">
+                          <div class="ord_state">
+                            <p class="txt_14">배송중(교환거절)</p>
+                            <!-- 배송조회툴팁 -->
+                            <div class="btn_tool_wrap btn_deliv_tip">
+                              <div class="btn_wrap" btn-type="sub_bt">
+                                <a
+                                  href="#none"
+                                  class="btn bc_fff_03 h_24 btn_tooltip"
+                                  >배송조회</a
+                                >
+                              </div>
+                              <div class="tooltip_box">
+                                <div class="tooltip">
+                                  <div class="deliv_num">
+                                    <p>
+                                      <a href="#none" class="txt_link"
+                                        >123456789-1 배송조회</a
+                                      >
+                                    </p>
+                                    <p>
+                                      <a href="#none" class="txt_link"
+                                        >123456789-1 배송조회</a
+                                      >
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--// 배송조회툴팁 -->
+                          </div>
+                        </div>
+                        <div class="rit_state">
+                          <p class="tit_temp warm">상온/실온</p>
+                        </div>
+                      </div>
+                      <div class="ord_prd_cont">
+                        <div class="ord_prd_list">
+                          <div class="prod_h_wrap">
+                            <!-- 1세트 -->
+                            <div class="prd_group_h">
+                              <div class="cotn">
+                                <div class="prd_artic">
+                                  <!-- 이미지 -->
+                                  <div class="img_area">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_01.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                  </div>
+                                  <!--// 이미지 -->
+
+                                  <!-- 판매정보 -->
+                                  <div class="prd_verti_info">
+                                    <!-- 상품명 -->
+                                    <div class="txt">
+                                      <h1 class="name">
+                                        락토핏 생유산균 베베 1박스 (2개월분)
+                                        일주일간 특가 오픈!!
+                                      </h1>
+                                    </div>
+                                    <!--// 상품명 -->
+                                    <div class="object_area">
+                                      <div class="sale_info">
+                                        <div class="prd_num_12">
+                                          <p>
+                                            <span>1개</span>
+                                            <strong>외 3건</strong>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--// 판매정보 -->
+                                </div>
+                                <a href="#none" class="go_view"
+                                  ><span class="blind">상품상세 이동</span></a
+                                >
+                              </div>
+                            </div>
+                            <!--// 1세트 -->
+                          </div>
+                        </div>
+                        <div class="btn_wrap" btn-type="sub_bt">
+                          <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                          <a href="#none" class="btn bc_fff h_32">미수령신고</a>
+                          <a href="#none" class="btn bc_fff h_32">사유확인</a>
+                          <a href="#none" class="btn bc_fff h_32">반품신청</a>
+                          <a href="#none" class="btn bc_fff_02 h_32"
+                            >수취확인</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--// 상온/실온 -->
+                  </div>
+                  <!--// 주문 리스트 -->
+                  <div class="btn_wrap" btn-type="sub_bt">
+                    <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                    <a href="#none" class="btn bc_fff h_32">재구매 알림</a>
+                  </div>
+                  <!-- 최종 결제금액 -->
+                  <div class="final_payment">
+                    <div class="dl_layout">
+                      <div class="dl_div">
+                        <p class="tit">최종 결제금액</p>
+                        <div class="amount">
+                          <p>
+                            <strong>145,000</strong>
+                            <span>원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 최종 결제금액 -->
+                </div>
+                <!--// 일반배송:관리자교환승인거절 -->
+
+                <!-- 취소신청 -->
+                <div class="ord_list_sec">
+                  <div class="top_ord_info">
+                    <div class="ord_info_lef">
+                      <p class="flag_bor bl">일반배송</p>
+                      <!-- 일반배송 class="bl" / 정기배송 class="ye" / 선물상품 class="or" 클래쓰 추가 -->
+                      <p class="txt_date">2022.03.05</p>
+                      <p class="txt_prd_num">123456789</p>
+                    </div>
+                    <div>
+                      <a href="#none" class="txt_link more">주문상세</a>
+                    </div>
+                  </div>
+                  <!-- 주문 리스트 -->
+                  <div class="ord_list_wrap">
+                    <!-- 상온/실온 -->
+                    <div class="ord_list_box">
+                      <div class="tit_ord_area">
+                        <div class="lef_state">
+                          <div class="ord_state">
+                            <p class="txt_14">취소신청</p>
+                            <p class="txt_date_c">
+                              <i class="icon_stick"></i>2022.03.15
+                            </p>
+                          </div>
+                        </div>
+                        <div class="rit_state">
+                          <p class="tit_temp warm">상온/실온</p>
+                        </div>
+                      </div>
+                      <div class="ord_prd_cont">
+                        <div class="ord_prd_list">
+                          <div class="prod_h_wrap">
+                            <!-- 1세트 -->
+                            <div class="prd_group_h">
+                              <!-- 상태값필요할때 class="on_dim"추가 -->
+                              <div class="cotn">
+                                <div class="prd_artic">
+                                  <!-- 이미지 -->
+                                  <div class="img_area">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_01.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                    <p class="status_txt">품절</p>
+                                    <!-- 상품상태값:텍스트수정 -->
+                                  </div>
+                                  <!--// 이미지 -->
+
+                                  <!-- 판매정보 -->
+                                  <div class="prd_verti_info">
+                                    <!-- 상품명 -->
+                                    <div class="txt">
+                                      <h1 class="name">
+                                        락토핏 생유산균 베베 1박스 (2개월분)
+                                        일주일간 특가 오픈!!
+                                      </h1>
+                                    </div>
+                                    <!--// 상품명 -->
+                                    <div class="object_area">
+                                      <div class="sale_info">
+                                        <div class="prd_num_12">
+                                          <p>
+                                            <span>1개</span>
+                                            <strong>외 3건</strong>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 2022-11-15_수정 -->
+                                  </div>
+                                  <!--// 판매정보 -->
+                                </div>
+                                <a href="#none" class="go_view"
+                                  ><span class="blind">상품상세 이동</span></a
+                                >
+                              </div>
+                            </div>
+                            <!--// 1세트 -->
+                          </div>
+                        </div>
+                        <div class="btn_wrap" btn-type="sub_bt">
+                          <!-- 5개 버튼일 때 class="btn_num05" 추가 -->
+                          <a
+                            href="#none"
+                            onclick="openModal(event,'prd_return_pop')"
+                            class="btn bc_fff h_32"
+                            >취소정보</a
+                          >
+                          <a href="#none" class="btn bc_fff_02 h_32"
+                            >신청철회</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--// 상온/실온 -->
+
+                    <!-- 냉동/냉장 -->
+                    <div class="ord_list_box">
+                      <div class="tit_ord_area">
+                        <div class="lef_state tooltip_wrap">
+                          <div class="ord_state">
+                            <p class="txt_14">취소완료</p>
+                          </div>
+                        </div>
+                        <div class="rit_state">
+                          <p class="tit_temp ice">냉동/냉장</p>
+                        </div>
+                      </div>
+                      <div class="ord_prd_cont">
+                        <div class="ord_prd_list">
+                          <div class="prod_h_wrap">
+                            <!-- 1세트 -->
+                            <div class="prd_group_h">
+                              <!-- 상태값필요할때 class="on_dim"추가 -->
+                              <div class="cotn">
+                                <div class="prd_artic">
+                                  <!-- 이미지 -->
+                                  <div class="img_area">
+                                    <figure class="img">
+                                      <img
+                                        src="../../assets/images/temp/prd_01.jpg"
+                                        alt=""
+                                      />
+                                    </figure>
+                                    <p class="status_txt">품절</p>
+                                    <!-- 상품상태값:텍스트수정 -->
+                                  </div>
+                                  <!--// 이미지 -->
+
+                                  <!-- 판매정보 -->
+                                  <div class="prd_verti_info">
+                                    <!-- 상품명 -->
+                                    <div class="txt">
+                                      <h1 class="name">
+                                        락토핏 생유산균 베베 1박스 (2개월분)
+                                        일주일간 특가 오픈!!
+                                      </h1>
+                                    </div>
+                                    <!--// 상품명 -->
+                                    <div class="object_area">
+                                      <div class="sale_info">
+                                        <div class="prd_num_12">
+                                          <p>
+                                            <span>1개</span>
+                                            <strong>외 3건</strong>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 2022-11-15_수정 -->
+                                  </div>
+                                  <!--// 판매정보 -->
+                                </div>
+                                <a href="#none" class="go_view"
+                                  ><span class="blind">상품상세 이동</span></a
+                                >
+                              </div>
+                            </div>
+                            <!--// 1세트 -->
+                          </div>
+                        </div>
+                        <div class="btn_wrap" btn-type="sub_bt">
+                          <a
+                            href="#none"
+                            onclick="openModal(event,'prd_return_pop')"
+                            class="btn bc_fff h_32"
+                            >취소정보</a
+                          >
+                          <a href="#none" class="btn bc_fff_02 h_32">재구매</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--// 냉동/냉장 -->
+                  </div>
+                  <!--// 주문 리스트 -->
+
+                  <!-- 최종 결제금액 -->
+                  <div class="final_payment">
+                    <div class="dl_layout">
+                      <div class="dl_div">
+                        <p class="tit">최종 결제금액</p>
+                        <div class="amount">
+                          <p>
+                            <strong>145,000</strong>
+                            <span>원</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--// 최종 결제금액 -->
+                </div>
+                <!--// 취소신청 -->
+              </div>
+              <!--// 주문상품 목록 -->
+
+              <!-- 데이터 없음 -->
+              <div class="data_none">
+                <div class="cotn">
+                  <i class="icon_none"></i>
+                  <p class="mn_copy">내역이 없습니다.</p>
+                </div>
+              </div>
+              <!--// 데이터 없음 -->
+
+              <!-- 유의사항 -->
+              <div class="noti_sec">
+                <div class="noti_copy gray_02">
+                  <p>
+                    주문 부분취소시 결제수단 상관없이 취소신청 후 3-7일 이내에
+                    결제금액 환불처리가 됩니다.
+                  </p>
+                  <p>
+                    할인쿠폰을 이용한 주문을 취소/반품하실 때 일부 쿠폰의 경우
+                    재발급되지 않습니다.
+                  </p>
+                </div>
+              </div>
+              <!--// 유의사항 -->
+            </div>
+          </div>
+          <!--// 취소/교환/반품(목록) -->
+        </div>
+        <!--// #CONTENTS -->
+      </div>
+      <!--// #CONTAINER -->
+    </div>
+    <!--// #WRAP -->
+  </body>
+</html>

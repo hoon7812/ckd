@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 Popup Style 》
+************************************************************************************************************************************************************ */
+
+/*
+	[z-index 위계]
+	#딤드:class="dim"					9980
+	#알럿								9990
+	#팝업								999
+	#토스트팝업							9999
+*/
+
+/* ============================== [ 팝업딤드 ] ========================================================================================== */
+body.dim {overflow:hidden;}
+body.dim:before {background-color:rgba(18, 20, 29, 0.6); content:""; position:fixed; left:0; top:0; height:100vh; width:100%; z-index:9980;}
+
+/* ============================== [ 알럿 ] ========================================================================================== */
+.alert_pop {background-color:#FFFFFF; border-radius:18px; display:none; overflow:hidden; position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); width:440px; z-index:9990;}
+.alert_pop > .cotn {background-color:#ffffff; box-sizing:border-box; overflow:hidden; padding:42px 24px 16px; width:100%;}
+.alert_pop > .cotn p {text-align:center;}
+.alert_pop > .cotn p ~ p {margin-top:24px;}
+.alert_pop > .cotn > .sb_txt {overflow-y:auto; font-size:16px; line-height:1.375em;}
+.alert_pop > .cotn .icon_wrn {display:block; background:url(../images/common/icon_wrn.png) no-repeat 0 0; background-size:48px; height:48px; width:48px; margin:24px auto 0;}
+.alert_pop > .btn_wrap {background-color:#ffffff; overflow:hidden; box-sizing:border-box; padding:16px;}
+.alert_pop > .btn_wrap[btn-type="main_bt_02"] .btn {padding:16px 0; height:52px; width:auto; flex:1; font-size:18px; position:relative; right:0; top:0;}
+.alert_pop .closed {display:block; height:24px; width:24px; position:absolute; right:16px; top:16px;}
+
+/* ============================== [ 팝업 ] ========================================================================================== */
+.full_pop {background-color:#fff; border-radius:18px; box-sizing:border-box; overflow:hidden; opacity:0; position:fixed; right:0; left:0; top:100%; margin:0 auto; height:calc(100% - 80px); width:560px;}
+.full_pop {transition:top 0.4s, opacity 0.2s;}
+.full_pop.on {opacity:1; top:40px; z-index:9990;}
+.full_pop .head {box-sizing:border-box; position:relative; padding:32px 24px 32px; text-align:center;}
+.full_pop .head .tit_22 {line-height:1.182em;}
+.full_pop .head .closed {display:block; position:absolute; right:16px; top:16px; height:24px; width:24px;}
+.full_pop > .cotn {box-sizing:border-box; overflow-x:hidden; overflow-y:auto; height:100%; max-height:calc(100% - 166px); padding-bottom:32px;}
+.full_pop > .btn_wrap {box-shadow:0px -8px 16px rgba(0, 0, 0, 0.08); padding:16px;}
+.full_pop > .btn_wrap[btn-type="main_bt_02"] .btn {padding:16px 0; height:52px; width:auto; flex:1; font-size:18px;}
+
+/* ============================== [ 토스트팝업 ] ========================================================================================== */
+.toast_pop {position:fixed; bottom:50%; left:50%; transform:translate(-50%, -50%); width:440px; padding:20px; border-radius:10px; box-sizing:border-box; opacity:0; overflow:hidden; visibility:hidden; background-color:rgba(0, 66, 191, 0.8); z-index:9999;}
+.toast_pop {transition:opacity .3s, visibility .3s;}
+.toast_pop.active {opacity:1; visibility:visible;}
+.toast_pop p {color:#ffffff; font-size:16px; text-align:center; line-height:1.375em;}
+
+
+/* ============================== [ 정기배송 시작일선택 팝업 ] ========================================================================================== */
+.deliv_start_pop.full_pop .cotn{padding-left:24px;padding-right:24px;}
+.deliv_start_pop .bg_box{margin-top:24px;}
+/* -------------------- 달력 - 년월선택 ---------------------------------------- */
+.deliv_start_pop .date_area {text-align:center;margin-bottom:32px;}
+.date_sel{display:flex;justify-content:center;align-items:center;}
+.date_sel > div{position:relative;width:20px;height:20px;}
+.btn_mon.prev .sp_icon{transform:rotate(90deg);}
+.btn_mon.next .sp_icon{transform:rotate(-90deg);}
+.date_sel p{margin:0 8px;}
+.month_area{display:flex;justify-content:space-between;padding:0 8px 24px;}
+.pop_calendar .txt_mon_info p{display:inline-block;text-align:left;width:auto;}
+.btn_mon{display:inline-block;vertical-align:middle;}
+.rit_btn_mon .btn_mon ~ .btn_mon{margin-left:12px;}
+/* -------------------- 달력 - 테이블  ---------------------------------------- */
+.tb_calendar th {padding:11px 0 12px; color:#666; text-align:center; font-size:14px;line-height:1.214em;}
+.tb_calendar td {text-align:center; font-size:16px; height:60px; vertical-align:top; font-family:lato; box-sizing:border-box;}
+.tb_calendar td button {width:100%; box-sizing:border-box;}
+.tb_calendar td button .date {padding:3px 0 4px; display:block; margin-bottom:2px;font-size:16px;}
+/* 오늘 */
+.tb_calendar .today .date {color:#0080FF}
+/* 선택됨 */
+.tb_calendar .select_date {position:relative;}
+.tb_calendar .select_date::before{border-radius:26px;width:26px;height:26px;background-color:#111;content:'';position:absolute;z-index:2;top:-1px;left:50%;transform:translateX(-50%);}
+.tb_calendar .select_date .date {color:#fff; font-weight:bold; z-index:3; position:relative;}
+.tb_calendar .select_date.payment .date {color:#fff;}
+/* 지난날 */
+.tb_calendar .disabled .date {color:#999}
+/* 기간설정 */
+.tb_calendar .selected {position:relative;}
+.tb_calendar .selected::after {width:100%; height:19px; background-color:#0080FF; content:''; position:absolute; z-index:1; top:3px; left:0; opacity:0.07;}
+.tb_calendar .selected.start::after {border-radius:19px 0 0 19px;}
+.tb_calendar .selected.end::after {border-radius:0 19px 19px 0;}
+.tb_calendar .selected.start.end::after {border-radius:19px;}
+.tb_calendar tr td:first-child .selected::after {border-radius:19px 0 0 19px;}
+.tb_calendar tr td:first-child .selected.end::after{border-radius:19px;}
+.tb_calendar tr td:last-child .selected::after{border-radius:0 19px 19px 0;}
+.tb_calendar tr td:last-child .selected.start::after{border-radius:19px;}
+
+/* ============================== [ 리뷰이미지 크게보기 ] ========================================================================================== */
+.photo_view.full_pop {background-color:transparent; overflow:visible; border-radius:0; height:560px;}
+.photo_view > .cotn {overflow:inherit; position:relative; padding:0; max-height:100%;}
+.photo_view .closed {background:url(../images/common/icon_closed.png) no-repeat 0 0; display:block; position:absolute; right:0; top:-48px; height:36px; width:36px;}
+
+.photo_view.on {top:50%; margin-top:-280px;}
+
+/* -------------------- 스와이프영역 ---------------------------------------- */
+.photo_view .pt_slide_wrap {position:absolute; left:50%; top:0; height:100%; width:100%; transform:translateX(-50%);}
+.photo_view .swiper-wrapper {align-items:center;}
+.photo_view .swiper-slide {height:auto;}
+
+/* -------------------- 이미지 ---------------------------------------- */
+.photo_view .pt_slide_list {height:100%; width:100%;}
+.photo_view .pt_slide_list .img_wrap {overflow:hidden;}
+.photo_view .pt_slide_list .img_wrap img {display:block; object-fit:cover; height:100%; width:100%;}
+
+/* -------------------- 페이지넘버 ---------------------------------------- */
+.photo_view .pt_slide_list .page_num {background-color:#333333; box-sizing:border-box; border-radius:16px; bottom:16px; left:50%; transform:translateX(-50%); padding:6px 20px; width:auto;}
+.photo_view .pt_slide_list .page_num span {color:#C7C7C7; font-family:lato;}
+.photo_view .pt_slide_list .page_num .current {color:#ffffff; font-weight:700;}
+
+/* -------------------- 좌우버튼 ---------------------------------------- */
+.photo_view .swp_btn {top:50%; margin-top:-21px;}
+.photo_view .swp_btn[class*="next"] {right:16px;}
+.photo_view .swp_btn[class*="prev"] {left:16px;}
+
+/* ============================== [ 배송지 관리 ] ========================================================================================== */
+/* 상단 탭 */
+.adr_pop .per_tab_wrap {padding:0 24px;}
+
+/* -------------------- 배송지목록 ---------------------------------------- */
+.adr_pop .adr_li_wrap {padding:0 24px;}
+.adr_li_wrap .form_rdo.box input:checked ~ .cotn {padding:23px;}
+.adr_li_wrap .form_rdo .group {cursor:unset;}
+.adr_li_wrap .form_rdo.box .group ~ .group {margin-top:16px;}
+.adr_li_wrap .form_rdo.box .cotn {padding:24px; height:100%; position:relative;}
+.adr_li_wrap .form_rdo.box .btn_wrap[btn-type="sub_bt"] {margin:16px 0 24px 0;}
+.adr_li_wrap .form_rdo.box .btn_wrap[btn-type="sub_bt"] .txt {display:inline-block; vertical-align:middle; float:none; margin-top:-4px;}
+.adr_li_wrap .form_rdo.box .btn_wrap[btn-type="sub_bt"] .plus {display:inline-block; vertical-align:middle; margin:-4px 10px 0 0;}
+.adr_li_wrap.select_adr .form_rdo .group {cursor:pointer;}
+
+/* 주소영역 */
+.adr_li_wrap .adr_wrap {overflow:hidden;}
+.adr_li_wrap .adr_wrap .tit_18 {margin-bottom:12px;}
+.adr_li_wrap .adr_wrap .adr_info {margin-bottom:16px;}
+.adr_li_wrap .adr_wrap .adr_info p {font-size:14px;}
+.adr_li_wrap .adr_wrap .adr_info p ~ p {margin-top:8px;}
+.adr_li_wrap .adr_wrap .adr_txt {margin-bottom:16px;}
+.adr_li_wrap .adr_wrap .adr_txt p {color:#666; font-size:14px; line-height:1.561em;}
+.adr_li_wrap .adr_wrap .adr_txt p ~ p {margin-top:8px}
+.adr_li_wrap .adr_wrap .adr_btn {float:right;}
+.adr_li_wrap .adr_wrap .adr_btn a {font-size:12px; z-index:2;}
+.adr_li_wrap .adr_wrap .adr_btn a ~ a {margin-left:25px;}
+.adr_li_wrap .adr_wrap .adr_btn .del:after {content:''; background-color:#e2e5eb; height:12px; width:1px; position:absolute; top:2px; left:-13px;}
+.adr_li_wrap .form_rdo.box .adr_status {position:absolute; top:24px; right:24px;}
+.adr_li_wrap .form_rdo.box input:checked ~ .cotn .adr_status {top:23px; right:23px;}
+
+/* 기본배송지 */
+.adr_li_wrap .cotn .adr_status .flag_adr {display:none;}
+.adr_li_wrap .adr_status .btn_wrap {display:block;}
+.adr_li_wrap .adr_status .btn_wrap .btn.h_32 {padding:9px 12px; z-index:2;}
+.adr_li_wrap .group.normal .adr_status .flag_adr {background-color:#F4F6FB; border-radius:5px; box-sizing:border-box; color:#3182F6; display:block; font-weight:700; font-size:12px; width:76px; padding:9px 12px;}
+.adr_li_wrap .group.normal .adr_status .btn_wrap {display:none;}
+.adr_li_wrap .group.normal .adr_btn .del {display:none;}
+
+/* 데이터 없음 */
+.adr_pop .data_none {background-color:#fff; height:calc(100% - 84px); padding:0 24px;}
+.adr_pop .data_none .btn_wrap[btn-type="sub_bt"] .plus {display:inline-block; vertical-align:middle; margin:-3px 10px 0 0;}
+.adr_pop .data_none p {line-height:1.5em;}
+
+/* -------------------- 배송지등록 ---------------------------------------- */
+.adr_pop .adr_reg_wrap {padding:0 24px;}
+.adr_pop .adr_reg_wrap .form_chk {margin-top:32px;}
+.adr_pop .adr_form .form_inpt ~ .form_inpt {margin-top:32px;}
+/* 받는분 */
+.form_inpt.trio .txt span {display:block; position:relative;}
+.form_inpt.trio .txt span:first-child input {border-bottom:none; border-radius:10px 10px 0 0;}
+.form_inpt.trio .txt span:nth-child(2) input {border-top:none; border-radius:0;}
+.form_inpt.trio .txt span:nth-child(3) input {border-top:none; border-radius:0 0 10px 10px;}
+.form_inpt.trio .txt .bdr {background-color:#e2e5eb; position:absolute; left:0; height:1px; width:100%;}
+.form_inpt.trio .txt input:focus ~ .bdr {background-color:rgba(0, 66, 191, 0.6); z-index:1;}
+.form_inpt.trio .txt span:nth-child(2) input + .bdr {top:0;}
+.form_inpt.trio .txt span:nth-child(2) .bdr ~ .bdr {bottom:0;}
+.form_inpt.trio .txt span:nth-child(3) input + .bdr {top:-1px;}
+.form_inpt.trio .txt span:nth-child(3) .bdr ~ .bdr {bottom:0;}
+/* 배송요청사항 */
+.form_inpt.form_req .txt ~ .txt {margin-top:8px;}
+
+/* ============================== [ 메인:일반/임직원팝업 ] ========================================================================================== */
+.main_pop > .cotn {padding:0;}
+.main_pop_wrap .bnr_set {height:312px; width:100%;}
+.main_pop_wrap .bnr_set img {height:100%; width:100%; object-fit:cover; display:block;}
+.main_pop_wrap .num_paging {background-color:rgba(0,0,0,0.6); box-sizing:border-box; border-radius:41px; color:#fff; font-family:lato; font-size:12px; font-weight:700; line-height:1.167em; padding:2px 8px 3px; height:19px; width:49px; position:absolute; left:50%; bottom:20px; transform:translateX(-50%);}
+
+/* ============================== [ 리뷰사진팝업 ] ========================================================================================== */
+/* -------------------- 포토리뷰모아보기 ---------------------------------------- */
+.photo_collct_popup {width:1192px;}
+.photo_collct_popup > .cotn {max-height:calc(100% - 90px);}
+.photo_collct_popup .rv_photo {box-sizing:border-box; flex-wrap:wrap; margin:-8px 0 0 -8px; padding-left:26px;}
+.photo_collct_popup .rv_photo .img_wrap {border-radius:0; margin:8px 0 0 8px; height:156px; width:156px;}
+.photo_collct_popup .rv_photo .img_wrap:before {border-radius:0;}
+.photo_collct_popup .thum_coll .img_wrap .num {border-radius:0; font-size:16px; line-height:2em; height:32px; width:32px;}
+
+/* -------------------- 포토리뷰상세 ---------------------------------------- */
+.photo_rv_view {overflow:visible; width:1192px;}
+.photo_rv_view.on {top:50%; margin-top:-337px; height:674px;}
+.photo_rv_view > .cotn {overflow:visible; padding-bottom:0; max-height:calc(100% - 90px);}
+
+.rv_detail_wrap {box-sizing:border-box; position:relative; padding:0 24px 32px;}
+.rv_detail_wrap .dtl_set {overflow:hidden; height:552px;}
+.rv_detail_wrap .photo_area,
+.rv_detail_wrap .rv_list_wrap {float:left; width:calc(50% - 12px);}
+
+/* 리뷰사진영역 */
+.rv_detail_wrap .photo_area {position:relative; height:100%;}
+.rv_detail_wrap .photo_area .img_big {overflow:hidden; border-radius:10px; position:relative; height:100%;}
+.rv_detail_wrap .photo_area .img_big:before {background:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.7) 135.1%); content:""; position:absolute; left:0; bottom:0; height:265px; width:100%;}
+.rv_detail_wrap .photo_area .img_big img {display:block; object-fit:none; height:100%; width:100%;}
+.rv_detail_wrap .photo_area .rv_photo {box-sizing:border-box; position:absolute; left:0; bottom:0; padding:0 24px 24px; width:100%;}
+.rv_detail_wrap .photo_area .rv_photo .img_wrap {height:56px; width:56px;}
+
+/* 리뷰텍스트영역 */
+.rv_detail_wrap .rv_list_wrap {border-radius:10px; box-sizing:border-box; margin-left:24px; height:100%;}
+.rv_detail_wrap .rv_list_wrap .rv_set {height:100%;}
+.rv_detail_wrap .rv_list_wrap .rv_set .rv_info {overflow-y:auto; max-height:calc(552px - 92px);}
+
+/* 스와이프 */
+.rv_detail_wrap .swiper {position:static;}
+.rv_detail_wrap .swp_btn {top:50%; margin-top:-21px;}
+.rv_detail_wrap .swp_btn[class*="prev"] {left:-82px;}
+.rv_detail_wrap .swp_btn[class*="next"] {right:-82px;}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>종근당건강몰 PC: 상품 Q&A 작성 팝업</title>
+    <link rel="stylesheet" href="../assets/css/product.css"><!-- 상품 -->
+
+</head>
+
+<body class="dim"><!-- 팝업open : class="dim" 추가 -->
+<!-- #WRAP -->
+<div id="wrap">
+    <!-- 상품 Q&A 작성 팝업 -->
+	<section class="qa_write_pop full_pop full_01 on" style="display:block"><!-- 팝업open : class="on"추가, style="display:block;" --><!-- 상품 Q&A 작성 팝업 class="qa_write_pop" -->
+		<!-- 헤더 -->
+		<header class="head">
+			<!-- 타이틀 -->
+			<h1 class="tit_22">상품 Q&A</h1>
+			<!--// 타이틀 -->
+
+			<!-- 닫기 -->
+			<a href="#none" class="closed">
+				<i class="i_sp_24 cross"></i>
+				<span class="blind">팝업 닫기</span>
+			</a>
+			<!--// 닫기 -->
+		</header>
+		<!--// 헤더 -->
+		<!-- 컨텐츠 -->
+		<div class="cotn">
+            <!-- 상품 -->
+            <div class="prd_h_wrap">
+                <!-- 1세트 -->
+                <div class="prd_group"><!-- 상태값필요할때 class="on_dim"추가 -->
+                    <div class="cotn">
+                        <!-- 이미지 -->
+                        <div class="img_area">
+                            <figure class="img">
+                                <img src="../assets/images/temp/prd_01.jpg" alt="">
+                            </figure>
+                            <i class="i_badge new"><span class="blind">신상품</span></i><!-- 상품뱃지:NEW -->
+                            <i class="i_badge hot"><span class="blind">핫딜상품</span></i><!-- 상품뱃지:핫딜 -->
+                            <p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+                        </div>
+                        <!--// 이미지 -->
+
+                        <div class="txt_area">
+                            <!-- 상품명 -->
+                            <div class="txt">
+                                <p class="brand">락토핏</p>
+                                <h1 class="name">프로메가 오메가3 1박스 (5개월)</h1>
+                            </div>
+                            <!--// 상품명 -->
+                            <!-- 상품라벨 -->
+                            <div class="prd_label">
+                                <p class="icon_label cp">
+                                    <i class="icon cp"></i>
+                                    20%
+                                </p>
+                                <p class="add">추가적립금</p>
+                                <p class="gift">사은품</p>
+                                <p class="deliv">무료배송</p>
+                            </div>
+                            <!--// 상품라벨 -->
+                        </div>
+                        <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                    </div>
+                </div>
+                <!--// 1세트 -->
+            </div>
+            <!--// 상품 -->
+            <div class="qa_wrt_sec">
+                <div class="form_text_area ">
+                    <div class="text_area">
+                        <textarea placeholder="내용을 10자 이상 입력해 주세요.
+*이메일, 휴대폰번호, 주민등록번호와 같은 개인정보 입력은 금지되어 있습니다."></textarea>
+                        <div class="wrd_length">
+                            <p>
+                                <span>0</span>
+                                <em>1,000</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="msg_wrap">
+                        <p class="err_msg">내용을 10자 이상 입력해 주세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="qa_chk_sec">
+                <div class="chk_div">
+                    <div class="sub_tit_16">
+                        <h1 class="tit_16">비밀글 여부</h1>
+                    </div>
+                    <div class="form_chk">
+                        <label class="group">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                            <span class="txt">비밀글로 문의하기</span>
+                            <span class="blind">선택</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="chk_div">
+                    <div class="sub_tit_16">
+                        <h1 class="tit_16">답변 알림 수신 여부</h1>
+                    </div>
+                    <div class="form_chk">
+                        <label class="group">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                            <span class="txt">문자 및 카카오톡으로 알림받기</span>
+                            <span class="blind">선택</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="info_txt fs_14">
+                <p>고객님의 보유 마일리지 사용을 제외한 최대 할인 가격입니다.</p>
+                <p>상품 1개를 기준으로 계산된 금액입니다.</p>
+                <p>쿠폰 사용 기간이 끝나면 할인을 받으실 수 없습니다.</p>
+            </div>
+		</div>
+		<!--// 컨텐츠 -->
+
+		<!-- 하단버튼 -->
+		<div class="btn_wrap" btn-type="main_bt_02">
+			<div class="btn_cotn">
+                <button type="button" class="btn" bt_role="cancel">취소</button>
+                <button type="button" class="btn" bt_role="confirm">확인</button>
+			</div>
+		</div>
+		<!--// 하단버튼 -->
+	</section>
+	<!--// 상품 Q&A 작성 팝업 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

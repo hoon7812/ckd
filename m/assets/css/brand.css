@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* -------------------- 브랜드 ---------------------------------------- */
+/* 브랜드 전체 */
+.brand_wrap {padding:6.667vw 5.556vw;}
+.cat_brand ~ .cat_brand {margin-top:8.889vw;}
+.cat_brand .tit_22 {margin-bottom:4.444vw;}
+.cat_brand .brand_li .brand {position:relative;}
+.cat_brand .brand_li .brand ~ .brand {margin-top:4.444vw;}
+.cat_brand .brand_li .img_wrap {border-radius:3.333vw; box-shadow:0 1.667vw 4.444vw rgba(0, 0, 0, 0.12); width:100%; height:100%; overflow:hidden;}
+.cat_brand .brand_li .img_wrap img {display:block; width:100%;}
+/* 브랜드 카테고리 */
+.brand .category_wrap {margin-bottom:0;}
+.brand_cat_wrap .brand_bnr {margin-bottom:8.889vw;}
+.brand_cat_wrap .brand_bnr .img_wrap {width:100%;}
+.brand_cat_wrap .brand_bnr .img_wrap img {display:block; height:100%; width:100%; object-fit:cover;}
+.brand_cat_wrap .cat_brand {padding:0 5.556vw;}
+.brand_prd_wrap {display:flex; flex-wrap:wrap; margin:-2.222vw 0 0 -2.222vw;}
+.brand_prd_wrap .brand_prd {position:relative; display:block; text-align:center; width:20.556vw; margin:2.222vw 0 0 2.222vw;}
+.brand_prd_wrap .brand_prd .img {border-radius:2.778vw; width:20.556vw; height:20.556vw; overflow:hidden;}
+.brand_prd_wrap .brand_prd .img img {display:block; width:100%;}
+.brand_prd_wrap .brand_prd .txt {overflow:hidden; font-size:3.889vw; line-height:1.143em; padding-top:3.333vw; display:-webkit-box; text-overflow:ellipsis; white-space:normal; word-wrap:normal; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+.brand_cat_wrap .btn_wrap {margin-top:11.111vw; padding:0 5.556vw;}
+/* 브랜드:상품 리스트 */
+.brand .category_wrap .tab_menu.btn {margin-top:4.444vw; padding-left:5.556vw;}

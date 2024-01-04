@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>마이페이지 나의 적립금(사용)</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage my_saved"><!-- [마이페이지 class="mypage", 적립금 class="my_saved"] --><!-- 목록화면(BG) class="bg_gy" 추가 -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 나의 적립금(전체) -->
+            <div class="sub">
+				<div class="saved_cont">
+                    <div class="sd_top_wrap bg_gy">
+                        <div class="sd_money_info">
+                            <div>
+                                <!-- 2022-10-31_수정 -->
+                                <h4 class="tooltip_wrap">
+                                    <span>사용가능 적립금</span>
+                                    <div class="btn_tool_wrap">
+                                        <a href="#none" class="btn_tooltip">
+                                            <i class="icon_16 question"></i>
+                                            <span class="blind">적립금 유의사항 안내</span>
+                                        </a>
+                                        <div class="tooltip_box">
+                                            <div class="tooltip">
+                                                <p>
+                                                    지급 된 적립금 별 유효기간이 다르므로 반드시<br>
+                                                    유효기간을 확인 후 소멸되지 않도록 이용바랍니다.
+                                                 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h4>
+                                <!--// 2022-10-31_수정 -->
+                                <p>0P</p>
+                            </div>
+                            <div>
+                                <!-- 2022-10-31_수정 -->
+                                <h4 class="tooltip_wrap tip_right">
+                                    <span>소멸예정 적립금</span>
+                                    <div class="btn_tool_wrap">
+                                        <a href="#none" class="btn_tooltip">
+                                            <i class="icon_16 question"></i>
+                                            <span class="blind">소멸예정 적립금 안내</span>
+                                        </a>
+                                        <div class="tooltip_box">
+                                            <div class="tooltip">
+                                                <p>
+                                                    유효기간이 7일 이내인 적립금 입니다.<br>
+                                                    적립금 소멸은 해당일 24:00에 소멸됩니다.
+                                                 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </h4>
+                                <!--// 2022-10-31_수정 -->
+                                <p>0P</p>
+                            </div>
+                        </div>
+                        <div class="box_bor_wh">
+                             <h3 class="tit_14">적립금 이용내역</h3>
+                             <div class="blue_btn_set">
+                                <a href="#none" class="on">1개월</a><!-- 활성화 시 class="on" 추가 -->
+                                <a href="#none">3개월</a>
+                                <a href="#none">6개월</a>
+                                <a href="#none">기간조회</a><!-- 2022-10-31_수정 -->
+                            </div>
+                            <div class="form_date">
+                                <div class="form_inpt">
+                                    <div class="txt">
+                                        <input type="text" placeholder="" value="2022-02-17">
+                                         <i class="icon_calen"></i>
+                                    </div>
+                                </div>
+                                <span>~</span>
+                                <div class="form_inpt">
+                                    <div class="txt">
+                                        <input type="text" placeholder="" value="2022-02-17" disabled="">
+                                        <i class="icon_calen"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sd_cotn_wrap">
+                        <!-- 탭메뉴 -->
+                        <div class="tab_menu line">
+                            <div class="btn_tab">
+                                <a href="#none">
+                                    <span>전체</span>
+                                </a>
+                            </div>
+                            <div class="btn_tab">
+                                <a href="#none">
+                                    <span>적립</span>
+                                </a>
+                            </div>
+                            <div class="btn_tab on">
+                                <a href="#none">
+                                    <span>사용</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!--// 탭메뉴 -->
+
+                        <div class="sd_list_sec">
+                            <!-- 세트 -->
+                            <div class="sd_artic">  <!-- 만료된 적립금 표기 class="on_dim" 추가  -->
+                                <div class="lef_cotn">
+                                    <p class="tit">생유산균 골드 50포 2통 구매 적립</p>
+                                    <div class="txt">
+                                        <p>사용일: 2023.03.04 12:00</p>
+                                    </div>
+                                </div>
+                                <div class="rit_cotn">
+                                    <p class="color_bl">+2,800P</p>
+                                </div>
+                            </div>
+                            <!--// 세트 -->
+                            <div class="sd_artic on_dim">
+                                <div class="lef_cotn">
+                                    <p class="tit">[락토핏] 생유산균 골드 50포 2통 적립금 사용만료</p>
+                                    <div class="txt">
+                                        <p>
+                                            <span>만료일: 2022.03.04</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rit_cotn">
+                                    <p class="color_or">-2,800P</p>
+                                </div>
+                            </div>
+                            <div class="sd_artic">
+                                <div class="lef_cotn">
+                                    <p class="tit">신규회원가입</p>
+                                    <div class="txt">
+                                        <p>사용일: 2023.03.04 12:00</p>
+                                    </div>
+                                </div>
+                                <div class="rit_cotn">
+                                    <p class="color_bl">+40,000P</p>
+                                </div>
+                            </div>
+                            <div class="sd_artic on_dim">
+                                <div class="lef_cotn">
+                                    <p class="tit">[락토핏] 생유산균 골드 50포 2통 적립금 사용만료</p>
+                                    <div class="txt">
+                                        <p>만료일: 2023.03.04 12:00</p>
+                                    </div>
+                                </div>
+                                <div class="rit_cotn">
+                                    <p class="color_or">-2,800P</p>
+                                </div>
+                            </div>
+                            <div class="sd_artic on_dim">
+                                <div class="lef_cotn">
+                                    <p class="tit">[락토핏] 생유산균 골드 50포 2통 적립금 사용만료</p>
+                                    <div class="txt">
+                                        <p>만료일: 2023.03.04 12:00</p>
+                                    </div>
+                                </div>
+                                <div class="rit_cotn">
+                                    <p class="color_or">-400P</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 데이터 없음 -->
+                        <div class="data_none">
+                            <div class="cotn">
+                                <i class="icon_none"></i>
+                                <p class="mn_copy">이용내역이 없습니다.</p><!-- 2022-10-31_수정 -->
+                            </div>
+
+                            <!-- 버튼 -->
+                            <div class="btn_wrap" btn-type="sub_bt">
+                                <a href="../../main/M_Main_001.html" class="btn bc_fff_02">쇼핑하러 가기</a>
+                            </div>
+                            <!--// 버튼  -->
+                        </div>
+                        <!--// 데이터 없음 -->
+                    </div>
+                 </div>
+			</div>
+			<!--// 나의 적립금(사용) -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

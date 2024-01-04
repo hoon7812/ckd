@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>기업회원 가입</title>
+	<link rel="stylesheet" href="../assets/css/member.css"><!-- 회원 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="member"><!-- [회원 class="member" 추가] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 타이틀 -->
+			<div class="sub_tit_36">
+				<h1 class="tit_36">기업회원 가입</h1>
+			</div>
+			<!--// 타이틀 -->
+
+			<!-- 기업회원 가입 -->
+			<div class="sub">
+				<div class="wd_mem join_comp_wrap">
+					<!-- 상단영역 -->
+					<div class="mem_tit_area">
+						<p class="tit_18">지금 종근당건강의 기업회원으로 가입하시면<br>
+                            종근당건강의 제품을 할인된 가격으로 만나보실 수 있습니다.
+                        </p>
+					</div>
+					<!--// 상단영역 -->
+					<!-- 입력폼 -->
+					<div class="form_sec">
+                        <div class="form_inpt wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+                            <div class="tit_field">
+                                <p class="necd">
+                                    <span>사업자등록번호</span>
+                                </p>
+                                <p class="txt_14_gy">사업자등록번호는 추후 기업회원 로그인 시 ID로 사용됩니다.</p>
+                            </div>
+                            <div class="txt">
+                                <input type="text" placeholder="숫자 10자리를 입력해 주세요.">
+                                <button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+                            </div>
+                            <div class="msg_wrap">
+                                <p class="err_msg">사업자등록번호를 입력해 주세요.</p>
+                            </div>
+                        </div>
+					</div>
+					<!--// 입력폼 -->
+                    <!-- 버튼 -->
+                    <div class="mem_btn_wrap">
+                        <div class="btn_wrap" btn-type="main_bt_01">
+                            <div class="btn_cotn">
+                                <a href="#none" class="btn" bt_role="confirm">인증하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 버튼 -->
+					<!-- 2022-10-19_수정 -->
+					<!-- 유의사항 -->
+					<div class="bg_box">
+						<div class="info_txt fs_14">
+							<p>사업자등록번호를 도용하여 가입 시 형사처벌 대상에 해당됩니다.</p>
+							<p>기업회원 가입 시 사업자등록증 및 사용인감계 인증이 필요하오니, 해당 서류는 미리 준비해주시기 바랍니다.</p>
+							<p>사업자등록증의 생년월일은 개인정보 보호를 위해 보이지 않게 가려주세요.</p>
+							<p>사업자 정보는 사업자등록증에 기재된대로 정확히 입력해 주세요.</p>
+							<p>일부 제품은 할인이 제외됩니다.</p>
+						</div>
+					</div>
+					<!--// 유의사항 -->
+					<!--// 2022-10-19_수정 -->
+				</div>
+			</div>
+			<!--// 기업회원 가입 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

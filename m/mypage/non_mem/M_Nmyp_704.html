@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>비회원:환불계좌 등록/변경</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body class="up"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- 팝업:환불계좌 등록/수정 -->
+<section class="full_popup non_acct_reg on"><!-- 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">환불계좌 등록/변경</h1>
+		<a href="#none" class="closed">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+
+	<!-- 컨텐츠 -->
+	<div class="contents">
+		<!-- 환불계좌등록변경 -->
+		<div class="refund_acct">
+			<!-- 환불계좌정보 -->
+			<div class="acct_info">
+				<div class="form_inpt wrn"><!-- 에러 메세지 노출 class="wrn" 추가 -->
+					<div class="tit_area">
+						<div class="dl_layout">
+							<div class="dl_div">
+								<p class="tit">
+									<strong class="tit_16">환불계좌 정보</strong>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="txt">
+						<input type="text" placeholder="예금주 명을 정확히 입력해 주세요.">
+						<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+					</div>
+					<div class="msg_wrap">
+						<p class="err_msg">환불계좌는 본인 명의만 등록 가능합니다.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="acct_info">
+				<div class="btn_bank_pop">
+					<p class="tit">은행을 선택해 주세요.</p>
+					<a href="#none" class="go_view">
+						<span class="blind">은행선택</span>
+					</a>
+				</div>
+				<div class="form_inpt">
+					<div class="txt">
+						<input type="text" placeholder="계좌번호를 입력해 주세요. (14자리)">
+						<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+					</div>
+					<!-- 2022-07-19_수정 -->
+					<div class="msg_wrap">
+						<p class="err_msg">오류메세지 영역</p>
+					</div>
+					<!--// 2022-07-19_수정 -->
+				</div>
+			</div>
+
+			<!--// 환불계좌정보 -->
+
+			<hr class="div_gap">
+
+			<!-- 유의사항 -->
+			<div class="noti_copy gray_02">
+				<p>결제취소에 대해 현금으로 환불 받아야 하는 경우 등록하신 계좌로 환불 되오니 정확히 기입해 주시기 바랍니다.</p>
+			</div>
+			<!--// 유의사항 -->
+		</div>
+		<!--// 환불계좌등록변경 -->
+	</div>
+	<!--// 컨텐츠 -->
+
+	<!-- 하단버튼 -->
+	<div class="btn_fixed">
+		<div class="btn_wrap" btn-type="main_bt">
+			<a href="#none" class="btn" bt_role="cancel">취소</a>
+			<a href="#none" class="btn" bt_role="confirm">계좌등록</a>
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+
+</section>
+<!--// 팝업:환불계좌 등록/수정 -->
+
+</body>
+</html>

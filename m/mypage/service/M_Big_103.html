@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>제휴문의</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage large_pur"><!-- [마이페이지 class="mypage" 추가, 대량구매 class="large_pur" 추가] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 제휴문의 -->
+			<div class="sub">
+				<div class="large_pur_wrap">
+					<!-- 제목 -->
+					<div class="modi_sec">
+						<div class="tit_sec_wrap">
+							<p class="tit_field necd">
+								<span>제목</span>
+							</p>
+						</div>
+						<div class="form_inpt wrn"><!-- 에러 메세지 노출 class="wrn" 추가 -->
+							<div class="txt">
+								<input type="text" placeholder="제목을 입력해 주세요.">
+								<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+								<div class="msg_wrap">
+									<p class="err_msg">제목을 입력해 주세요.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 제목 -->
+
+					<div class="div_gap"></div>
+
+					<!-- 제휴내용 -->
+					<div class="modi_sec">
+						<div class="tit_sec_wrap">
+							<p class="tit_field necd">
+								<span>제휴내용</span>
+							</p>
+						</div>
+						<div class="form_text_area form_inpt wrn">
+							<div class="text_area">
+								<textarea cols="30" rows="10" placeholder="회사에 대한 간단한 소개와 제휴 목적 및 기대 효과 등 상세히 작성해 주세요."></textarea>
+								<div class="ltr_len">
+									<p>
+										<span>0</span>
+										<em>1000</em>
+									</p>
+								</div>
+							</div>
+							<div class="msg_wrap">
+								<p class="err_msg">제휴내용을 정확히 입력해 주세요.</p>
+							</div>
+						</div>
+					</div>
+					<!--// 제휴내용 -->
+
+					<div class="div_gap"></div>
+
+					<!-- 첨부파일 -->
+					<!-- 2022-11-07_수정 -->
+					<div class="modi_sec">
+						<div class="add_img_wrap">
+							<div class="tit_sec_wrap">
+								<div class="tit_field necd">
+									<span>첨부파일</span>
+								</div>
+								<p class="txt_12_gy">최대 3장까지 10MB 미만의 JPG, JPEG, PNG, PDF 파일만 가능합니다.</p><!-- 2022-11-04_수정 -->
+							</div>
+							<div class="form_inpt wrn">
+								<!-- 등록된 이미지 있음 -->
+								<!-- 2022-11-04_수정 -->
+								<div class="add_file">
+									<!-- 세트 -->
+									<div class="file_area"> <!-- 파일첨부 시  class="add" 추가 -->
+										<div class="btn_wrap" btn-type="sub_bt">
+											<div class="btn bc_fff_02 h_52">첨부</div>
+											<label for="add_file">
+												<span class="blind">첨부</span>
+											</label>
+											<input type="file" id="add_file">
+										</div>
+										<div class="txt">
+											<input type="text" placeholder="사업자등록증을 등록해 주세요.">
+											<button type="button" class="del"><span class="blind">첨부파일 삭제</span></button>
+										</div>
+									</div>
+									<!--// 세트 -->
+									<div class="file_area">
+										<div class="btn_wrap" btn-type="sub_bt">
+											<div class="btn bc_fff_02 h_52">첨부</div>
+											<label for="add_file">
+												<span class="blind">첨부</span>
+											</label>
+											<input type="file" id="add_file">
+										</div>
+										<div class="txt">
+											<input type="text" placeholder="파일을 등록해 주세요." value="">
+											<button type="button" class="del"><span class="blind">첨부파일 삭제</span></button>
+										</div>
+									</div>
+									<div class="file_area">
+										<div class="btn_wrap" btn-type="sub_bt">
+											<div class="btn bc_fff_02 h_52">첨부</div>
+											<label for="add_file">
+												<span class="blind">첨부</span>
+											</label>
+											<input type="file" id="add_file">
+										</div>
+										<div class="txt">
+											<input type="text" placeholder="파일을 등록해 주세요." value="">
+											<button type="button" class="del"><span class="blind">첨부파일 삭제</span></button>
+										</div>
+									</div>
+									<div class="msg_wrap">
+										<p class="err_msg">사업자 등록증을 반드시 첨부해 주세요.</p>
+									</div>
+								</div>
+								<!--// 2022-11-04_수정 -->
+								<!--// 등록된 이미지 있음 -->
+							</div>
+						</div>
+					</div>
+					<!--// 2022-11-07_수정 -->
+					<!--// 첨부파일 -->
+
+					<div class="div_gap"></div>
+
+					<!-- 답변알림 -->
+					<div class="modi_sec">
+						<div class="tit_sec_wrap">
+							<p class="tit_field">
+								<span>답변알림</span>
+							</p>
+						</div>
+						<div class="answer_cnk_list">
+							<div class="form_chk">
+								<label class="group">
+									<input type="checkbox">
+									<i class="icon"></i>
+									<span class="txt">E-MAIL</span>
+									<span class="blind">선택</span>
+								</label>
+								<label class="group">
+									<input type="checkbox" checked="">
+									<i class="icon"></i>
+									<span class="txt">SMS</span>
+									<span class="blind">선택</span>
+								</label>
+								<label class="group">
+									<input type="checkbox">
+									<i class="icon"></i>
+									<span class="txt">PUSH</span>
+									<span class="blind">선택</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!--// 답변알림 -->
+				</div>
+
+				<!-- 하단고정버튼 -->
+				<div class="btn_fixed">
+					<div class="btn_wrap" btn-type="main_bt">
+						<a href="#none" class="btn" bt_role="cancel">취소</a>
+						<a href="#none" class="btn" bt_role="confirm">신청</a>
+					</div>
+				</div>
+				<!--// 하단고정버튼 -->
+			</div>
+			<!--// 제휴문의 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>출석체크</title>
+	<link rel="stylesheet" href="../assets/css/event.css"><!-- 이벤트 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="event"><!-- [이벤트 class="event"] -->
+	<!-- #HEADER -->
+	<!-- 헤더 영역 : /layout/header.html에서 확인 -->
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 출석체크 -->
+			<div class="sub">
+				<div class="event_wrap">
+					<!-- 출석체크이벤트 -->
+					<div class="chk_wrap">
+						<div class="chk_cotn">
+							<!-- 혜택 -->
+							<div class="chk_benefit">
+								<p class="tit_20">종근당건강몰이 드리는 혜택 3가지</p>
+								<div class="box_benefit">
+									<div class="bf_li">
+										<div class="bf_cotn bf_01">
+											<p class="num">혜택 1</p>
+											<p class="tit_16">매일 출석마다 100P 지급</p>
+											<p class="sb_txt">무료배송 쿠폰까지 받아가세요~</p>
+										</div>
+									</div>
+									<div class="bf_li">
+										<div class="bf_cotn bf_02">
+											<p class="num">혜택 2</p>
+											<p class="tit_16">5회 출석마다 500P 추가 지급 </p>
+											<p class="sb_txt">여기에 쿠폰 한장을 또 드려요! </p>
+										</div>
+									</div>
+									<div class="bf_li">
+										<div class="bf_cotn bf_03">
+											<p class="num">혜택 3</p>
+											<p class="tit_16">25회 출석 달성 시 3,500P 지급</p>
+											<p class="sb_txt">최대 적립금 놓치지 마세요~</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// 혜택 -->
+
+							<!-- 출석완료쿠폰 -->
+							<div class="chk_cp">
+								<p class="tit_20">오늘의 출석완료 쿠폰</p>
+								<!-- 쿠폰목록 -->
+								<div class="chk_cp_wrap">
+									<!-- 1세트 -->
+									<div class="chk_cp_set cmplt"><!-- 쿠폰지급완료 class="cmplt" 추가 -->
+										<div class="img_area">
+											<figure class="img">
+												<img src="../assets/images/event/bg_evt_cp_01.svg" alt="">
+											</figure>
+										</div>
+										<div class="cp_cotn">
+											<div class="info_cotn">
+												<p class="label">배송비 쿠폰</p>
+												<h1 class="tit_14">신락토핏 유산균 할인쿠폰 두 줄 이상 두 줄 이상 두 줄 이상 두 줄 이상 두 줄 이상 두 줄 이상 두 줄 이상</h1>
+												<div class="cp_info">
+													<p class="txt">1만원 이상 구매시</p>
+												</div>
+											</div>
+											<div class="state_area">
+												<div class="cp_state">
+													<p class="state">지급<br>완료</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--// 1세트 -->
+									<div class="chk_cp_set cmplt"><!-- 쿠폰지급완료 class="cmplt" 추가 -->
+										<div class="img_area">
+											<figure class="img">
+												<img src="../assets/images/event/bg_evt_cp_01.svg" alt="">
+											</figure>
+										</div>
+										<div class="cp_cotn">
+											<div class="info_cotn">
+												<p class="label">상품쿠폰</p>
+												<h1 class="tit_14">신락토핏 유산균 할인쿠폰</h1>
+												<div class="cp_info">
+													<p class="txt">1만원 이상 구매시</p>
+												</div>
+											</div>
+											<div class="state_area">
+												<div class="cp_state">
+													<p class="state">지급<br>완료</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="chk_cp_set"><!-- 쿠폰지급완료 class="cmplt" 추가 -->
+										<div class="img_area">
+											<figure class="img">
+												<img src="../assets/images/event/bg_evt_cp_01.svg" alt="">
+											</figure>
+										</div>
+										<div class="cp_cotn">
+											<div class="info_cotn">
+												<p class="label">배송비 쿠폰</p>
+												<h1 class="tit_14">신락토핏 유산균 할인쿠폰</h1>
+												<div class="cp_info">
+													<p class="txt">1만원 이상 구매시</p>
+												</div>
+											</div>
+											<div class="state_area">
+												<div class="cp_state">
+													<p class="state">오늘의<br>쿠폰</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="chk_cp_set"><!-- 쿠폰지급완료 class="cmplt" 추가 -->
+										<div class="img_area">
+											<figure class="img">
+												<img src="../assets/images/event/bg_evt_cp_01.svg" alt="">
+											</figure>
+										</div>
+										<div class="cp_cotn">
+											<div class="info_cotn">
+												<p class="label">상품쿠폰</p>
+												<h1 class="tit_14">신락토핏 유산균 할인쿠폰</h1>
+												<div class="cp_info">
+													<p class="txt">1만원 이상 구매시</p>
+												</div>
+											</div>
+											<div class="state_area">
+												<div class="cp_state">
+													<p class="state">5회<br>달성</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--// 쿠폰목록 -->
+
+								<!-- 유의사항 -->
+								<div class="chk_noti">
+									<p>추가로 적립되는 포인트는 익월 1일 오전 9시에<br>일괄 지급 됩니다.</p>
+								</div>
+								<!--// 유의사항 -->
+							</div>
+							<!--// 출석완료쿠폰 -->
+
+							<!-- 출석체크영역 -->
+							<div class="chk_wh">
+								<!-- 출석표 -->
+								<div class="chk_area chk_cmplt"><!-- 25회달성시 class="chk_cmplt" 추가 -->
+									<!-- 누적현황 -->
+									<div class="score_wrap">
+										<div class="cnt_wrap">
+											<p>
+												<span class="curt"><em>15</em>회</span>
+												<span class="tot"><em>/ 25</em>회</span> 출석
+											</p>
+										</div>
+										<div class="pt_wrap">
+											<p><strong>1,000P</strong> 달성</p>
+										</div>
+									</div>
+									<!--// 누적현황 -->
+
+									<!-- 스탬프영역 -->
+									<div class="stmp_box">
+										<div class="stmp_li">
+											<div class="stmp on"><!-- 출석체크시 class="on"추가 -->
+												<p class="num">1</p>
+											</div>
+											<div class="stmp on">
+												<p class="num">2</p>
+											</div>
+											<div class="stmp on">
+												<p class="num">3</p>
+											</div>
+											<div class="stmp on">
+												<p class="num">4</p>
+											</div>
+											<div class="stmp on">
+												<p class="num">5</p>
+											</div>
+											<div class="stmp on">
+												<p class="num">6</p>
+											</div>
+											<div class="stmp on">
+												<p class="num">7</p>
+											</div>
+											<div class="stmp">
+												<p class="num">8</p>
+											</div>
+											<div class="stmp">
+												<p class="num">9</p>
+											</div>
+											<div class="stmp">
+												<p class="num">10</p>
+											</div>
+											<div class="stmp">
+												<p class="num">11</p>
+											</div>
+											<div class="stmp">
+												<p class="num">12</p>
+											</div>
+											<div class="stmp">
+												<p class="num">13</p>
+											</div>
+											<div class="stmp">
+												<p class="num">14</p>
+											</div>
+											<div class="stmp">
+												<p class="num">15</p>
+											</div>
+											<div class="stmp">
+												<p class="num">16</p>
+											</div>
+											<div class="stmp">
+												<p class="num">17</p>
+											</div>
+											<div class="stmp">
+												<p class="num">18</p>
+											</div>
+											<div class="stmp">
+												<p class="num">19</p>
+											</div>
+											<div class="stmp">
+												<p class="num">20</p>
+											</div>
+											<div class="stmp">
+												<p class="num">21</p>
+											</div>
+											<div class="stmp">
+												<p class="num">22</p>
+											</div>
+											<div class="stmp">
+												<p class="num">23</p>
+											</div>
+											<div class="stmp">
+												<p class="num">24</p>
+											</div>
+											<div class="stmp">
+												<p class="num">25</p>
+											</div>
+										</div>
+									</div>
+									<!--// 스탬프영역 -->
+								</div>
+								<!--// 출석표 -->
+
+								<!-- 출석체크하단 -->
+								<div class="chk_btm">
+									<!-- 알림신청영역 -->
+									<div class="alarm_area">
+										<!-- 알림정보 -->
+										<div class="alarm_info">
+											<p class="tit_16">출석 알리미 신청하기</p>
+											<p class="sb_txt">매일 오후 1시의 출석 알림을 설정해보세요.</p>
+										</div>
+										<!--// 알림정보 -->
+
+										<!-- 스위치버튼 -->
+										<div class="btn_switch">
+											<label class="form_chk">
+												<input type="checkbox">
+												<i class="icon"></i>
+												<i class="bg"></i>
+											</label>
+										</div>
+										<!--// 스위치버튼 -->
+									</div>
+									<!--// 알림신청영역 -->
+
+									<!-- 참여안내버튼 -->
+									<div class="btn_evt">
+										<a href="#none" class="btn">출석체크 참여 안내</a>
+									</div>
+									<!--// 참여안내버튼 -->
+
+									<!-- 목록버튼 -->
+									<div class="btn_wrap" btn-type="sub_bt">
+										<a href="#none" class="btn bc_fff">목록</a>
+									</div>
+									<!--// 목록버튼 -->
+								</div>
+								<!--// 출석체크하단 -->
+							</div>
+							<!--// 출석체크영역 -->
+						</div>
+					</div>
+					<!--// 출석체크이벤트 -->
+
+					<hr class="div_gap">
+
+					<!-- 진행중인 이벤트 -->
+					<div class="svc_sec">
+						<h3 class="tit_20">진행중인 이벤트</h3>
+						<!-- 서비스베너 -->
+						<div class="bnr_svc_wrap swiper">
+							<div class="swiper-wrapper">
+								<!-- 1세트 -->
+								<div class="bnr_svc swiper-slide">
+									<figure class="img">
+										<img src="../assets/images/temp/bnr_svc_01.jpg" alt="">
+									</figure>
+									<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+								</div>
+								<!--// 1세트 -->
+								<div class="bnr_svc swiper-slide">
+									<figure class="img">
+										<img src="../assets/images/temp/bnr_svc_02.jpg" alt="">
+									</figure>
+									<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+								</div>
+								<div class="bnr_svc swiper-slide">
+									<figure class="img">
+										<img src="../assets/images/temp/bnr_svc_03.jpg" alt="">
+									</figure>
+									<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+								</div>
+								<div class="bnr_svc swiper-slide">
+									<figure class="img">
+										<img src="../assets/images/temp/bnr_svc_04.jpg" alt="">
+									</figure>
+									<a href="#none" class="go_view"><span class="blind">상세이동</span></a>
+								</div>
+							</div>
+						</div>
+						<!--// 서비스베너 -->
+					</div>
+					<!--// 진행중인 이벤트 -->
+				</div>
+
+				<!-- 하단고정버튼 -->
+				<div class="btn_fixed">
+					<div class="btn_wrap" btn-type="main_bt"><!-- 버튼 비활성화  class="inactv" 추가 -->
+						<a href="#none" class="btn" bt_role="confirm">출석체크</a>
+						<!-- <a href="#none" class="btn" bt_role="confirm">출석 완료! 내일도 출석해 주세요 :)</a> --> <!-- 출석버튼클릭시 -->
+						<!-- <a href="#none" class="btn" bt_role="confirm">출석완료! 25회 출석 모두 달성하셨습니다.</a> --> <!-- 출석완료시 -->
+					</div>
+				</div>
+				<!--// 하단고정버튼 -->
+			</div>
+			<!--// 출석체크 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 종근당건강몰 고객센터 스타일 》
+************************************************************************************************************************************************************ */
+.customer .tit_area {display:flex; align-items:center;}
+.customer .tit_area .txt_link {margin-left:auto;}
+
+/* ============================== [ 고객센터:메인 ] ========================================================================================== */
+
+/* -------------------- 자주묻는질문 ---------------------------------------- */
+.faq_rank_wrap {padding:4.444vw 5.556vw 6.667vw;}
+.faq_rank_wrap .faq_list {margin-top:4.444vw;}
+.faq_list li + li {margin-top:3.333vw;}
+.faq_list .tit_faq {width:calc(100% - 8.889vw);}
+.faq_list .sort {color:#999; font-size:3.056vw; font-weight:600; line-height:1.818em;}
+.faq_list .tit {font-size:3.889vw; line-height:1.571em; margin-top:1.111vw;}
+.faq_list .tit_ask {font-size:3.333vw; font-weight:700; line-height:1.167em;}
+.faq_list .txt_ask {color:#666; font-size:3.333vw; line-height:1.667em; margin-top:2.222vw;}
+/* 아코디언 */
+.faq_list .accodn_wrap .view_fix .ctrl_trg{background:none;width:100%;height:100%;top:0;}
+.faq_list .ctrl_trg:after{background:url(../images/common/arrow_down_bk.svg) no-repeat 0 0; background-size:cover; position:absolute; right:0;height:5.556vw; width:5.556vw; z-index:1;display:block;content:'';position:absolute;top:calc(50% - 2.778vw);right:0;}
+.faq_list .accodn_wrap.open .view_fix .ctrl_trg{transform:rotate(0deg);}
+.faq_list .accodn_wrap.open .view_fix .ctrl_trg:after{transform:rotate(180deg);}
+
+/* -------------------- 서비스바로가기 ---------------------------------------- */
+.svc_wrap {padding:6.667vw 6.667vw 0;}
+.svc_wrap .btn_svc {position:relative; box-sizing:border-box; border:0.278vw solid #E2E5EB; border-radius:2.778vw; display:flex; align-items:center;}
+
+/* 서비스목록 */
+.svc_wrap .svc_list {display:flex; flex-wrap:wrap; margin-top:4.444vw;}
+.svc_list .btn_svc {justify-content:center; flex-direction:column; height:30.278vw; width:calc(50% - 1.111vw);}
+.svc_list .btn_svc:nth-child(even) {margin-left:2.222vw;}
+.svc_list .btn_svc:nth-child(n+3) {margin-top:2.222vw;}
+.svc_list .btn_svc .svc {background-repeat:no-repeat; background-position:0 0; background-size:8.889vw auto; display:block; height:8.889vw; width:8.889vw;}
+.svc_list .btn_svc .svc.deliv {background-image:url(../images/common/icon_spot_05.svg);}
+.svc_list .btn_svc .svc.exch {background-image:url(../images/common/icon_spot_06.svg);}
+.svc_list .btn_svc .svc.info {background-image:url(../images/common/icon_spot_07.svg);}
+.svc_list .btn_svc .svc.qna {background-image:url(../images/common/icon_spot_02.svg);}
+.svc_list .btn_svc .tit_svc {margin-top:3.333vw; font-size:3.889vw; line-height:1.214em;}
+
+/* 전화문의 */
+.svc_wrap .tel_wrap {margin-top:4.444vw;}
+.tel_wrap .btn_svc {padding:4.444vw;}
+.tel_wrap .btn_svc .tit_tel p {font-size:3.333vw; line-height:1.167em;}
+.tel_wrap .btn_svc .tit_tel strong {display:block; color:#3182F6; font:700 5.000vw/6.111vw lato; margin-top:0.833vw;}
+.tel_wrap .btn_svc .sub_txt {position:relative; padding-left:4.444vw; margin-left:6.667vw;}
+.tel_wrap .btn_svc .sub_txt:after {display:block; content:''; background-color:#eee; height:100%; width:0.278vw; position:absolute; left:0; top:0;}
+.tel_wrap .btn_svc .sub_txt p {font-size:3.333vw; line-height:1.667em;}
+
+/* -------------------- 공지사항 ---------------------------------------- */
+.notice_area {padding:0 6.667vw;}
+.notice_area .notice_list {margin-top:4.444vw;}
+.notice_list li + li {border-top:0.278vw solid #eeeeee;}
+.notice_list li .noti_info {display:flex; padding:2.222vw 0; position:relative;}
+.notice_list li .tit_14 {line-height:1.571em;}
+.notice_list li .noti_tit {color:#333; font-size:3.889vw; line-height:1.571em; margin-left:2.222vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1;}
+
+/* ============================== [ 자주묻는질문 ] ========================================================================================== */
+
+/* 검색영역 */
+.faq .cs_search {background-color:#fff; display:flex; align-items:center; padding:0 5.833vw 0 6.667vw;}
+.faq .cs_search .search_keyword {width:calc(100% - 10.556vw);}
+.faq .cs_search .del {font-size:3.889vw; line-height:1.214em; color:#333; margin-left:auto;}
+
+/* 고정탭메뉴 */
+.faq .tab_menu {background-color:#fff; padding:6.667vw 5.556vw; overflow:hidden;}
+
+/* 자주묻는질문목록 */
+.faq .faq_wrap {border-top:0.278vw solid #E2E5EB; padding:6.667vw 5.556vw 0; overflow:hidden;}
+.faq .faq_wrap .list_num {padding:0;}
+.faq .faq_wrap .btn_wrap {margin-top:8.889vw;}
+
+/* 검색결과 */
+.faq .faq_wrap .result_area ~ .faq_list {margin-top:4.444vw;}
+
+/* ============================== [ 공지사항 ] ========================================================================================== */
+
+/* -------------------- 공지사항 목록 ---------------------------------------- */
+.notice .sub_top {background-color:#fff; box-sizing:border-box; border-bottom:0.278vw solid #E2E5EB; position:fixed; top:auto; right:0; left:0; margin:0 auto; padding:4.444vw 5.556vw; min-width:320px; max-width:767px; width:100%; z-index:1;}
+.notice .board_list {border-top:none; padding-top:23.597vw;}

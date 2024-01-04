@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ui.common.js"></script>
+	<title>비회원 주문조회:비회원 반품신청완료</title>
+	<link rel="stylesheet" href="../../assets/css/mypage.css"><!-- 마이페이지 -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mypage non_mem"><!-- [마이페이지 class="mypage", 비회원 class="non_mem"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container" class="lnb_ui">
+		<!-- #LNB -->
+		<nav id="lnb">
+			<div class="sub_tit_28">
+				<h1 class="tit_28">비회원 주문조회</h1><!-- 2022-11-28_수정 -->
+			</div>
+			<div class="cotn">
+				<!-- 메뉴:1세트 -->
+				<div class="menu_group">
+					<!-- 1뎁스 -->
+					<div class="dep_01">
+						<!-- 1뎁스링크 -->
+						<a href="#none" class="dep01_link">
+							<span>주문/배송조회</span>
+							<i class="i_sp_16 arr_gray_right"></i>
+						</a>
+						<!--// 1뎁스링크 -->
+					</div>
+					<!--// 1뎁스 -->
+				</div>
+				<!--// 메뉴:1세트 -->
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>취소/교환/반품</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+				<div class="menu_group">
+					<a href="#none" class="dep01_link">
+						<span>고객센터</span>
+						<i class="i_sp_16 arr_gray_right"></i>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--// #LNB -->
+
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<div class="sub_tit_24">
+				<h2 class="tit_24">신청완료</h2>
+			</div>
+			<!-- 마이페이지:반품신청완료 -->
+			<div class="sub">
+				<div class="ord_vw_cotn">
+					<!-- 완료메세지 -->
+					<div class="ord_vw_sec">
+						<section class="cmplt_msg">
+							<figure class="img">
+								<img src="../../assets/images/common/icon_compt_04.png" alt="">
+							</figure>
+							<p class="tit_24">반품신청이 완료되었습니다.</p>
+						</section>
+					</div>
+					<!-- 완료메세지 -->
+
+					<!-- 주문상품 -->
+					<div class="ord_vw_sec">
+						<!-- 주문정보 -->
+						<!-- 2022-11-28_수정 -->
+						<div class="ord_top_area">
+							<!-- 왼쪽영역 -->
+							<div class="lef_area">
+								<span class="flag_bor bl">일반배송</span>
+								<div class="ord_info">
+									<p class="ff_lato txt_date">
+										<span>주문일</span>
+										<span>2022.03.05</span>
+									</p>
+									<i class="icon_stick"></i>
+									<p class="ff_lato prd_num">
+										<span>주문번호</span>
+										<span>123456789</span>
+									</p>
+								</div>
+							</div>
+							<!--// 왼쪽영역 -->
+						</div>
+						<!--// 2022-11-28_수정 -->
+						<!-- 주문정보 -->
+
+						<!-- 주문내역박스 -->
+						<div class="ord_list_sec stick">
+							<!-- 상온/실온 -->
+							<div class="ord_list_wrap">
+								<div class="ord_list_box">
+									<!-- 타이틀 -->
+									<div class="tit_ord_area">
+										<!-- 왼쪽영역 -->
+										<div class="lef_state">
+											<div class="tit_temp">
+												<i class="i_sp_16 temp"></i>
+												<span>상온/실온</span>
+											</div>
+										</div>
+										<!--// 왼쪽영역 -->
+
+										<!-- 오른쪽영역 -->
+										<div class="rigt_area">
+											<p class="txt">반품신청</p>
+											<p class="date">2023.01.27</p><!-- 2023-01-27_수정 -->
+										</div>
+										<!--// 오른쪽영역 -->
+									</div>
+									<!--// 타이틀 -->
+
+									<!-- 주문상품 -->
+									<div class="ord_prd_cotn">
+										<div class="ord_tb_wrap">
+											<!-- 1세트 -->
+											<div class="tr_line">
+												<!-- 상품 -->
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<!-- 이미지 -->
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<!--// 이미지 -->
+
+																	<div class="txt_area">
+																		<!-- 상품명 -->
+																		<div class="txt">
+																			<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																		<!--// 상품명 -->
+																		<!-- 금액 -->
+																		<!-- 2022-11-28_수정 -->
+																		<div class="sale_info">
+																			<div class="price">
+																				<p>
+																					<strong>29,900</strong>원
+																				</p>
+																			</div>
+																		</div>
+																		<!--// 2022-11-28_수정 -->
+																		<!--// 금액 -->
+																	</div>
+																	<a href="../../product/P_Pro_201.html" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+
+																<!-- 추가적립금/사은품 -->
+																<div class="ord_gift_wrap">
+																	<!-- 2022-11-28_수정 -->
+
+																	<!-- 사은품 -->
+																	<div class="gift_set">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_02.jpg" alt="">
+																		</figure>
+																		<div class="txt_area">
+																			<p class="tit_14">사은품</p>
+																			<p class="gift_txt">2월 20%추가할인 락토핏 생유산균 베베 1박스</p>
+																		</div>
+																		<div class="amount">
+																			<p>
+																				<strong>100</strong>개
+																			</p>
+																		</div>
+																	</div>
+																	<!--// 사은품 -->
+																</div>
+																<!--// 추가적립금/사은품 -->
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--// 상품 -->
+
+												<!-- 수량 -->
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<!--// 수량 -->
+											</div>
+											<!--// 1세트 -->
+											<div class="tr_line">
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<div class="txt_area">
+																		<div class="txt">
+																			<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																		<!-- 금액 -->
+																		<!-- 2022-11-28_수정 -->
+																		<div class="sale_info">
+																			<div class="price">
+																				<p>
+																					<strong>29,900</strong>원
+																				</p>
+																			</div>
+																		</div>
+																		<!--// 2022-11-28_수정 -->
+																		<!--// 금액 -->
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--// 주문상품 -->
+								</div>
+							</div>
+							<!--// 상온/실온 -->
+
+							<!-- 냉동/냉장 -->
+							<div class="ord_list_wrap">
+								<div class="ord_list_box">
+									<!-- 타이틀 -->
+									<div class="tit_ord_area">
+										<!-- 왼쪽영역 -->
+										<div class="lef_state">
+											<div class="tit_temp">
+												<i class="i_sp_16 cold"></i>
+												<span>냉동/냉장</span>
+											</div>
+										</div>
+										<!--// 왼쪽영역 -->
+
+										<!-- 오른쪽영역 -->
+										<div class="rigt_area">
+											<p class="txt">반품신청</p>
+										</div>
+										<!--// 오른쪽영역 -->
+									</div>
+									<!--// 타이틀 -->
+
+									<!-- 주문상품 -->
+									<div class="ord_prd_cotn">
+										<div class="ord_tb_wrap">
+											<!-- 1세트 -->
+											<div class="tr_line">
+												<!-- 상품 -->
+												<div class="td_div">
+													<div class="td_cotn">
+														<div class="prd_h_wrap">
+															<div class="prd_group">
+																<div class="cotn">
+																	<!-- 이미지 -->
+																	<div class="img_area">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_01.jpg" alt="">
+																		</figure>
+																	</div>
+																	<!--// 이미지 -->
+
+																	<div class="txt_area">
+																		<!-- 상품명 -->
+																		<div class="txt">
+																			<p class="brand">락토핏</p>
+																			<h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+																		</div>
+																		<!--// 상품명 -->
+																		<!-- 금액 -->
+																		<!-- 2022-11-28_수정 -->
+																		<div class="sale_info">
+																			<div class="price">
+																				<p>
+																					<strong>29,900</strong>원
+																				</p>
+																			</div>
+																		</div>
+																		<!--// 2022-11-28_수정 -->
+																		<!--// 금액 -->
+																	</div>
+																	<a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+																</div>
+
+																<!-- 추가적립금/사은품 -->
+																<div class="ord_gift_wrap">
+																	<!-- 2022-11-28_수정 -->
+
+																	<!-- 사은품 -->
+																	<div class="gift_set">
+																		<figure class="img">
+																			<img src="../../assets/images/temp/prd_02.jpg" alt="">
+																		</figure>
+																		<div class="txt_area">
+																			<p class="tit_14">사은품</p>
+																			<p class="gift_txt">2월 20%추가할인 락토핏 생유산균 베베 1박스</p>
+																		</div>
+																		<div class="amount">
+																			<p>
+																				<strong>100</strong>개
+																			</p>
+																		</div>
+																	</div>
+																	<!--// 사은품 -->
+																</div>
+																<!--// 추가적립금/사은품 -->
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--// 상품 -->
+
+												<!-- 수량 -->
+												<div class="td_div">
+													<div class="amount">
+														<p>
+															<strong>2</strong>개
+														</p>
+													</div>
+												</div>
+												<!--// 수량 -->
+											</div>
+											<!--// 1세트 -->
+										</div>
+									</div>
+									<!--// 주문상품 -->
+								</div>
+							</div>
+							<!--// 냉동/냉장 -->
+						</div>
+						<!--// 주문내역박스 -->
+
+						<!-- 2022-11-28_수정 -->
+					</div>
+					<!--// 주문상품 -->
+
+					<!-- 회수지 정보 -->
+					<div class="ord_vw_sec deliv_sec">
+						<div class="sub_tit_20">
+							<h1 class="tit_20">회수지 정보</h1>
+							<div class="msg_wrap">
+								<p class="err_msg">배송지 정보 변경을 원하실 경우 1:1문의 또는 고객센터를 통해 문의 바랍니다.</p>
+							</div>
+						</div>
+						<div class="tb_type01">
+							<table>
+								<caption>회수지 정보</caption>
+								<colgroup>
+									<col style="width:164px;">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">받는사람</th>
+										<td>홍길동</td>
+									</tr>
+									<tr>
+										<th scope="row">연락처</th>
+										<td>
+											<p class="ff_lato">010-1234-1234</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td>서울시 학동로 146 Wylie 타워 1층 컨버전스 기획팀</td>
+									</tr>
+									<tr>
+										<th scope="row">요청사항</th>
+										<td>
+											<!-- 2022-09-27_수정 -->
+											<p class="txt_requ">
+												<span>부재시 문앞에 놓아주세요.</span>
+												<i class="icon_stick"></i>
+												<span>공동현관 비밀번호 #1301+1234입니다.</span>
+											</p>
+											<!--// 2022-09-27_수정 -->
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--// 회수지 정보 -->
+
+					<!-- 결제/환불 금액 -->
+					<div class="ord_vw_sec">
+						<div class="pymnt_sec">
+							<div class="item">
+								<p class="tit">총 결제금액</p>
+								<div class="price">
+									<p>
+										<strong>72,500</strong>
+										<span>원</span>
+									</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">취소 후 결제금액</p>
+								<div class="price">
+									<p>
+										<strong>0</strong>
+										<span>원</span>
+									</p>
+								</div>
+							</div>
+							<div class="item bdr_or">
+								<p class="tit">차감금액</p>
+								<div class="price">
+									<p class="color_or">
+										<strong>-5,000</strong>
+										<span>원</span>
+									</p>
+								</div>
+							</div>
+							<div class="item bdr_bl">
+								<p class="tit">환불 예정금액</p>
+								<div class="price">
+									<p class="color_bl">
+										<strong>67,500</strong>
+										<span>원</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 결제/환불 금액 -->
+
+					<!-- 환불상세정보 -->
+					<div class="ord_vw_sec refud_info">
+						<div class="tbl_ui_wrap half">
+							<div class="cotn">
+								<div class="sub_tit_20">
+									<h1 class="tit_20">환불 상세정보</h1>
+								</div>
+								<div class="dl_layout">
+									<div class="dl_div">
+										<p class="tit">환불신청 상품금액</p>
+										<div class="price">
+											<p>
+												<strong>180,000</strong>
+												<span>원</span>
+											</p>
+										</div>
+									</div>
+									<div class="dl_div">
+										<p class="tit">할인쿠폰 적용금액 차감</p>
+										<div class="price">
+											<p>
+												<strong class="color_or">-5,000</strong>
+												<span>원</span>
+											</p>
+										</div>
+									</div>
+									<div class="dl_div depth_ui">
+										<p class="tit">상품쿠폰명이 들어갑니다.</p>
+										<div class="price">
+											<p>
+												<strong>-5,000</strong>
+												<span>원</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cotn">
+								<div class="dl_layout">
+									<div class="dl_div">
+										<p class="tit">환불 배송비 차감</p>
+										<div class="price">
+											<p>
+												<strong>0</strong>
+												<span>원</span>
+											</p>
+										</div>
+									</div>
+									<div class="dl_div">
+										<p class="tit">적립금 환급</p>
+										<div class="point">
+											<p>
+												<strong>1,000</strong>
+												<span>P</span>
+											</p>
+										</div>
+									</div>
+									<div class="dl_div">
+										<p class="tit">환불상태</p>
+										<p>
+											<strong class="color_or">주문 취소 후</strong>
+											<strong>평균 3~7일 이내</strong>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// 환불상세정보 -->
+
+					<!-- 유의사항 -->
+					<div class="ord_vw_sec">
+						<div class="bg_box">
+							<div class="info_txt fs_14">
+								<p>교환반품 시 판매자 귀책사유에 해당할 경우 배송비 발생하지 않습니다. 그 외 해당사항의 경우 추가 배송비가 발생할 수 있습니다.</p>
+							</div>
+							<div class="cs_txt">
+								<p class="txt_link fs_14">
+									<a href="#none">고객센터로 문의하기</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!--// 유의사항 -->
+
+					<!-- 버튼 -->
+					<div class="my_btn_wrap">
+						<div class="btn_wrap" btn-type="main_bt_02">
+							<div class="btn_cotn">
+								<!-- 2022-11-28_수정 -->
+								<!-- 2023-02-08_수정 -->
+								<a href="./P_NMyp_201.html" class="btn" bt_role="cancel">목록</a>
+								<a href="./P_NMyp_202.html" class="btn" bt_role="confirm">주문상세</a>
+								<!--// 2023-02-08_수정 -->
+								<!--// 2022-11-28_수정 -->
+							</div>
+						</div>
+					</div>
+					<!--// 버튼 -->
+				</div>
+			</div>
+			<!--// 마이페이지:반품신청완료 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

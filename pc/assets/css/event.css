@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 PC Web 이벤트 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 출석체크 ] ========================================================================================== */
+
+/* -------------------- 앱안내 ---------------------------------------- */
+.chk_evt {border-radius:30px; height:1192px; overflow:hidden;}
+.chk_evt .img {overflow:hidden; height:100%; width:100%;}
+.chk_evt .img img {display:block; height:100%; width:100%;}
+
+/* ============================== [ 이벤트 ] ========================================================================================== */
+.evnt_view {margin-top:32px;}
+.event .paging {margin-top:40px;}
+.event .btn_list {margin-top:40px;}
+.event .admin_bnr_area {margin-top:100px;}
+
+/* -------------------- 목록 ---------------------------------------- */
+/* 이벤트목록 */
+.evnt_list .bnr_list {display:flex; flex-wrap:wrap; margin:-8px 0 0 -32px;}
+.evnt_list .bnr_list .bnr_set {overflow:hidden; border-radius:10px; width:calc(50% - 32px); margin:32px 0 0 32px; position:relative; box-shadow:0px 7.05725px 18.8193px rgba(0, 0, 0, 0.12);}
+.evnt_list .bnr_list .bnr_set img {display:block;}
+
+/* 종료이벤트라벨 */
+.evnt_list .bnr_set.end_evnt:before {background-color:#FF5F01; content:"종료"; border-radius:12px; box-sizing:border-box; color:#fff; font-size:16px; font-weight:700; line-height:1em; position:absolute; right:16px; bottom:16px; padding:7px 16px 6px 16px; min-width:60px;}
+
+/* -------------------- 상세 ---------------------------------------- */
+/* 진행상태 */
+.term_area {padding:0 24px; margin-bottom:24px;}
+.term_area .term_box {display:flex; margin-bottom:24px;}
+.term_box .evt_term {box-sizing:border-box; border-top:1px solid #E2E5EB; border-bottom:1px solid #E2E5EB; position:relative; padding:15px 0 15px 24px; flex:1;}
+.term_box .evt_term:first-child {border-radius:10px 0 0 10px; border-left:1px solid #E2E5EB;}
+.term_box .evt_term:last-child {border-radius:0 10px 10px 0; border-right:1px solid #E2E5EB;}
+.term_box .evt_term .cotn {background-repeat:no-repeat; background-size:24px; background-position:left center; padding-left:40px;}
+.term_box .evt_term.ing .cotn {background-image:url(../images/event/icon_term_ing.png);}
+.term_box .evt_term.ing.on .cotn {background-image:url(../images/event/icon_term_ing_on.png);}
+.term_box .evt_term.end .cotn {background-image:url(../images/event/icon_term_end.png);}
+.term_box .evt_term.end.on .cotn {background-image:url(../images/event/icon_term_end_on.png);}
+.term_box .evt_term.win .cotn {background-image:url(../images/event/icon_term_win.png);}
+.term_box .evt_term.win.on .cotn {background-image:url(../images/event/icon_term_win_on.png);}
+.term_box .evt_term.rv .cotn {background-image:url(../images/event/icon_term_rv.png);}
+.term_box .evt_term.rv.on .cotn {background-image:url(../images/event/icon_term_rv_on.png);}
+.term_box .evt_term.prchs .cotn {background-image:url(../images/event/icon_term_prchs.png);}
+.term_box .evt_term.prchs.on .cotn {background-image:url(../images/event/icon_term_prchs_on.png);}
+.term_box .evt_term.pt .cotn {background-image:url(../images/event/icon_term_pt.png);}
+.term_box .evt_term.pt.on .cotn {background-image:url(../images/event/icon_term_pt_on.png);}
+.term_box .evt_term.evt_end {border-radius:10px; padding:15px 0;}
+.term_box .evt_term.evt_end .cotn {background-image:url(../images/event/icon_evt_end.png); background-position:top center; padding:30px 0 0 0; text-align:center;}
+.term_box .evt_term .cotn .tit {color:#666; font-size:14px; font-weight:700; line-height:1.215em;}
+.term_box .evt_term .cotn .term_date {color:#666; margin-top:4px; line-height:1.188em;}
+.term_box .evt_term.on .cotn .tit,
+.term_box .evt_term.on .cotn .term_date {color:#3182F6;}
+.term_box .evt_term .bdr {background-color:#E2E5EB; position:absolute; top:-1px; height:72px; width:1px;}
+.term_box .evt_term .bdr:nth-of-type(1) {right:-1px;}
+.term_box .evt_term .bdr:nth-of-type(2) {left:0;}
+.term_box .evt_term:last-child .bdr {left:0;}
+.term_box .evt_term.on {border-color:#3182F6;}
+.term_box .evt_term.on .bdr {background-color:#3182F6; z-index:1;}
+.term_area .btn_wrap {margin-bottom:56px;}
+
+/* 당첨자확인버튼 */
+.btn_evt {margin-top:24px; text-align:center;}
+.btn_evt .btn {background:url(../images/common/arrow_right_blue_16x16.png) no-repeat right center; background-size:16px; color:#3182f3; display:inline-block; font-weight:700; font-size:16px; padding-right:22px; line-height:1.188em;}
+
+/* 유의사항 */
+.noti_wrap {margin-top:24px; padding:0 16px;}
+
+/* 공유하기툴팁 */
+.evnt_wrap .evnt_view .share_tooltip {top:48px;}
+
+/* -------------------- 댓글 ---------------------------------------- */
+.rv_area {border-top:1px solid #111; margin-top:56px; padding-top:24px;}
+
+/* 댓글작성 */
+.rv_area .rv_write_wrap {padding:0 16px; overflow:hidden;}
+.rv_write_wrap .form_text_area {float:left; width:calc(100% - 126px);}
+.rv_write_wrap .form_text_area .text_area {height:110px;}
+.rv_write_wrap .btn_wrap {float:right; margin-left:16px;}
+.rv_write_wrap .btn_wrap .btn {height:110px; width:110px;}
+.rv_area .btn_cs {margin-top:32px;}
+
+/* 댓글목록 */
+.rv_wrap {margin-top:56px;}
+.rv_wrap .btn_wrap {margin-top:40px;}
+.rv_wrap .sort_area {display:flex; align-items:center;}
+.rv_wrap .sort_area .tit_20 {line-height:1em;}
+.rv_wrap .sort_area .tit_20 em {color:#3182f6;}
+.rv_wrap .sort_area .rv_sort {margin-left:auto; overflow:hidden;}
+.rv_wrap .sort_area .rv_sort .tab {color:#999; font-weight:700; font-size:20px; float:left; position:relative; line-height:1em;}
+.rv_wrap .sort_area .rv_sort .tab.on {color:#3182f6;}
+.rv_wrap .sort_area .rv_sort .tab ~ .tab {margin-left:22px;}
+.rv_wrap .sort_area .rv_sort .tab ~ .tab:before {background-color:#D8D8D8; border-radius:50%; content:''; position:absolute; left:-13px; top:7px; height:6px; width:6px; z-index:-1;}
+.rv_wrap .rv_li_wrap {border-top:1px solid #E2E5EB; margin-top:16px; padding-top:24px;}
+.rv_li_wrap .rv_set {display:flex; align-items:center; margin:0 16px; padding:24px;}
+.rv_li_wrap .rv_set ~ .rv_set {margin-top:12px;}
+.rv_li_wrap .rv_set .rv_info {width:calc(100% - 308px);}
+.rv_li_wrap .rv_set .rv_info .rv_txt p {font-size:18px; line-height:1.444em;}
+.rv_li_wrap .rv_set .rv_info .btn_wrap {margin-top:16px;}
+.rv_li_wrap .rv_set .write_info {margin-left:24px;}
+.rv_li_wrap .rv_set .write_info p {color:#666; text-align:center;}
+.rv_li_wrap .rv_set .user {width:160px;}
+.rv_li_wrap .rv_set .date {width:100px;}
+.rv_wrap .list_menu {margin-top:100px;}
+
+/* 이벤트 상세 dim처리 */
+.evnt_view .view_ui {position:relative;}
+.evnt_view .view_ui .evt_end_area {background-color:rgba(0, 0, 0, 0.6); display:none; align-items:center; border-radius:10px; justify-content:center; position:absolute; left:0; right:0; top:0; margin:0 auto; height:100%; width:calc(100% - 32px);}
+.evnt_view .view_ui .evt_end_area p {color:#fff; font-size:30px; font-weight:700;}
+.evnt_view.on_dim .view_ui .evt_end_area {display:flex;}
+
+/* -------------------- 구매달성 ---------------------------------------- */
+.pt_info_area {margin-top:100px;}
+
+/* 상단영역 */
+.achv_area .achv_tit_box {background:linear-gradient(270deg, #003EDD 0%, #3182F6 100%); border-radius:10px; display:flex; align-items:center; justify-content:center; padding:31px 32px;}
+.achv_tit_box p {color:#fff; font-weight:700; font-size:24px; line-height:1em;}
+.achv_tit_box .achv_pt {margin-left:auto;}
+
+/* 포인트단계 */
+.achv_area .achv_list {display:flex; margin-top:24px; padding:0 24px;}
+.achv_list .item {box-sizing:border-box; background-color:#fff; border:1px solid #e2e5eb; border-radius:10px; position:relative; flex:1;}
+.achv_list .item ~ .item {margin-left:16px;}
+.achv_list .item .achv_info {box-sizing:border-box; padding:8px 0 16px; height:169px;}
+.achv_list .item .achv_info .icon_achv {background-size:80px; background-position:0 0; background-repeat:no-repeat; display:block; height:80px; width:80px; margin:0 auto;}
+.achv_list .item:nth-child(1) .achv_info .icon_achv {background-image:url(../images/event/icon_achv_01.png);}
+.achv_list .item:nth-child(2) .achv_info .icon_achv {background-image:url(../images/event/icon_achv_02.png);}
+.achv_list .item:nth-child(3) .achv_info .icon_achv {background-image:url(../images/event/icon_achv_03.png);}
+.achv_list .item:nth-child(4) .achv_info .icon_achv {background-image:url(../images/event/icon_achv_04.png);}
+.achv_list .item:nth-child(5) .achv_info .icon_achv {background-image:url(../images/event/icon_achv_05.png);}
+.achv_list .item .achv_info .txt_area {margin-top:8px; text-align:center;}
+.achv_list .item .achv_info .txt_area .tit {display:inline-block; font-size:18px; color:#333; line-height:1.222em;}
+.achv_list .item .achv_info .txt_area .tit strong {font-size:26px; line-height:1.192em;}
+.achv_list .item .achv_info .txt_area .fail_txt {font-size:14px; color:#333; margin-top:2px;}
+.achv_list .item .achv_info .txt_area .fail_txt strong {font-size:20px; line-height:1.2em; color:#3182f6;}
+.achv_list .achv_pt {border-top:1px solid #E2E5EB; padding:16px 0 24px;}
+.achv_list .achv_pt p {color:#333; text-align:center; line-height:1.167em;}
+
+/* 툴팁 */
+.achv_tooltip_wrap {box-sizing:border-box; display:none; position:absolute; left:0; top:-16px; width:100%; text-align:center;}
+.achv_tooltip_wrap .tooltip {display:inline-block; position:relative; background-color:#111; border-radius:5px; padding:5px 12px 6px;}
+.achv_tooltip_wrap .tooltip:after {content:''; display:block; background:url(../images/event/icon_evnt_tooltip.png) no-repeat 0 0; background-size:8px 6px; position:absolute; left:50%; bottom:-6px; margin-left:-4px; height:6px; width:8px;}
+.achv_tooltip_wrap p {color:#fff; font-weight:600; font-size:14px; line-height:1.214em;}
+
+/* 달성완료 */
+.achv_list .item.cmplt {background: #F9FAFC;}
+.achv_list .item.cmplt .fail_txt {display:none;}
+.achv_list .item.cmplt .achv_info .txt_area .tit {background:url(../images/event/icon_achv_check.png) no-repeat left center; background-size:24px; padding-left:30px;}
+.achv_list .item.cmplt .achv_pt p {color:#111;}
+
+/* 진행중 */
+.achv_list .item.active {border-color:#3182f6; border-width:2px;}
+.achv_list .item.active .achv_info {padding:7px 0 15px;}
+.achv_list .item.active .achv_pt {border-color:#3182f6; border-width:2px; padding:15px 0 23px;}
+.achv_list .item.active .achv_tooltip_wrap {display:block;}
+
+/* 비회원 */
+.pt_info_area.non_login .achv_list .achv_pt p {color:#3182f6;}
+
+/* 유의사항 */
+.achv_area .noti_wrap {margin-top:32px; padding:0 24px;}
+
+/* 베스트상품 */
+.evnt_wrap .list_menu {margin-top:100px;}
+.evnt_wrap .list_menu .sub_tit_32 {display:flex; align-items:center;}
+.evnt_wrap .list_menu .sub_tit_32 .tit_32 {margin-right:auto;}
+.evnt_wrap .list_menu .sub_tit_32 .txt_link {margin-left:auto;}
+
+/* -------------------- 복권 ---------------------------------------- */
+.scrah_wrap {margin-top:56px;}
+.scrah_wrap .scrah_cotn {box-sizing:border-box; background-color:#ecf1ff; background-image:url(../images/event/bg_scrah.png); background-repeat:no-repeat; background-size:100% auto; background-position:top center; border-radius:10px; padding:40px 0;}
+
+/* 타이틀 */
+.scrah_cotn .tit_area {padding-left:32px;}
+.scrah_cotn .tit_area .sub_txt {color:#333; margin-bottom:8px; line-height:1.188em;}
+
+/* 당첨아이콘 */
+.icon_win {background-repeat:no-repeat; background-position:0 0; display:block;}
+.icon_win.cp {background-image:url(../images/event/icon_win_cp.svg);}
+.icon_win.pt {background-image:url(../images/event/icon_win_pt.svg);}
+.icon_win.gf {background-image:url(../images/event/icon_win_gf.svg);}
+
+/* 복권슬라이드 */
+.scrah_slide_area {margin-top:32px; position:relative;}
+.scrah_slide_area .scrah_slide_wrap {position:static;}
+.scrah_slide_area .scrah_slide_wrap .swp_btn {display:flex;}
+.scrah_slide_area .btn_wrap {margin-top:16px;}
+.scrah_slide_area .scrah_item {width:40%; transform:scale(0.88); opacity:0.6;}
+.scrah_slide_area .scrah_item {transition:transform 0.5s, opacity 0.5s}
+.scrah_slide_area .scrah_item[class*=active] {transform:scale(1); opacity:1;}
+.scrah_slide_area .scrah_item .cotn {box-sizing:border-box; background-color:#fff; border-radius:10px; padding:32px; position:relative;}
+.scrah_item .cotn .txt_area .brand {color:#3182f6; line-height:1.2em;}
+.scrah_item .cotn .txt_area .tit {font-weight:700; font-size:30px; line-height:1.2em; margin-top:16px;}
+.scrah_item .cotn .txt_area .tit .num {color:#ff5f01;}
+.scrah_item .cotn .txt_area .label {box-sizing:border-box; background-color:#f4f6fb; border-radius:4px; padding:8px 12px; position:absolute; right:32px; top:32px;}
+.scrah_item .cotn .txt_area .label p {font-weight:600; font-size:18px; line-height:1.222em;}
+.scrah_item .cotn .scrahpad_wrap {border-radius:10px; margin-top:34px; position:relative; height:96px;}
+.scrah_item .cotn .scrahpad_wrap:before {content:''; display:block; height:100%; width:100%; position:absolute; left:0; top:0; background:url(../images/event/scrah.jpg); background-size:100% 100%; border-radius:10px; z-index:10; overflow:hidden;}
+.scrah_item .cotn .scrahpad_wrap .scrahpad {box-sizing:border-box; border-radius:10px; height:100%; overflow:hidden; position:relative;}
+.scrah_item .cotn .scrahpad_wrap .scrahpad .res_area {background-color:#fff; border-radius:10px; height:100%; width:calc(100% - 2px); margin:0 auto; overflow:hidden;}
+.scrah_item .cotn .scrahpad_wrap .scrahpad .res_area .icon_win_wrap {display:flex; align-items:center; justify-content:center; height:100%;}
+.scrah_item .cotn .scrahpad_wrap .scrahpad .res_area .icon_win_wrap i {background-size:56px; height:56px; width:56px;}
+.scrah_item .cotn .scrahpad_wrap .scrahpad .res_area .icon_win_wrap i ~ i {margin-left:32px;}
+.scrah_item .cotn .scrahpad_wrap .scrahpad canvas {left:0; top:0; border-radius:10px;}
+.scrah_item .cotn .scrahpad_wrap .scrahpad canvas:after {display:block; content:''; width:100%; height:96px;}
+.scrah_slide_wrap.active .scrah_item[class*=active] .cotn {background-color:#3182f6;}
+.scrah_slide_wrap.active .scrah_item[class*=active] .cotn .brand,
+.scrah_slide_wrap.active .scrah_item[class*=active] .cotn .tit,
+.scrah_slide_wrap.active .scrah_item[class*=active] .cotn .tit .num {color:#fff;}
+.scrah_slide_wrap.active .scrah_item[class*=active] .txt_area .label {background-color:#fff;}
+.scrah_slide_wrap.active .scrah_item[class*=active] .txt_area .label p {color:#3182f6;}
+.scrah_slide_wrap.active .scrah_item[class*=active] .cotn .scrahpad_wrap:before {display:none;}
+
+/* 당첨정보 */
+.scrah_info {margin-top:32px; padding:0 40px;}
+.scrah_info .cotn {background-color:#fff; border:1px solid #E2E5EB; border-radius:10px; display:flex;}
+.scrah_info .item {box-sizing:border-box; width:25%; padding:40px 50px;}
+.scrah_info .item ~ .item {border-left:1px solid #E2E5EB;}
+.scrah_info .item .icon_win_wrap {display:flex; align-items:center; justify-content:center;}
+.scrah_info .item .icon_win_wrap i {background-size:32px; height:32px; width:32px;}
+.scrah_info .item .icon_win_wrap i ~ i {margin-left:24px;}
+.scrah_info .item p {margin-top:24px; font-size:18px; line-height:1.111em; text-align:center;}
+
+/* 유의사항 */
+.noti_wrap.evnt_noti {padding:0;}
+
+/* ************************************************************************************************************************************************************
+						《 팝업 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 이벤트 당첨 ] ========================================================================================== */
+.evt_win_pop .img_area {overflow:hidden; box-sizing:border-box; position:relative; height:248px; width:248px; margin:0 auto 24px;}
+.evt_win_pop .img_area .img {overflow:hidden; height:100%;}
+.evt_win_pop .img_area .img img {display:block; object-fit:cover; height:100%; width:100%;}

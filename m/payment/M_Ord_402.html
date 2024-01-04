@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>주문결제 선물하기: 선물 받기 완료</title>
+    <link rel="stylesheet" href="../assets/css/ui.order.css"><!-- 장바구니주문결제공통UI -->
+</head>
+
+<body class="up"><!-- 알럿/바닥 팝업open : class="dim" 추가, 전체팝업open : class="up" 추가 -->
+<!-- 선물받기완료 팝업 -->
+<section class="full_popup full_01 ord_gift_pop on"><!-- 주문결제: 선물하기 팝업 class="gift_pop" 추가, 팝업open : class="on"추가, style="display:block;" -->
+	<!-- 헤더 -->
+	<header class="head">
+		<h1 class="tit_head">선물 받기 완료</h1>
+		<a href="#none" class="closed">
+			<span class="blind">팝업 닫기</span>
+		</a>
+	</header>
+	<!--// 헤더 -->
+	<!-- 컨텐츠 -->
+	<div class="contents">
+        <div class="gift_pop_wrap bg_gy">
+            <section class="cmplt_msg">
+                <figure class="img">
+                    <img src="../assets/images/common/icon_cmplt_03.png" alt="">
+                </figure>
+                <p class="mn_copy tit_20">
+                    홍길동 님의 선물을 수락하였습니다.
+                </p>
+                <p class="sb_copy">입력하신 배송지로 선물이 배송됩니다.</p>
+                <div class="noti_copy gray_02">
+                    <p>배송진행 상태는 선물 알림 문자에서 배송조회 링크를 통해 확인 할 수 있습니다.</p>
+                </div>
+            </section>
+
+            <div class="ord_vw_sec gift_get_sec">
+                <div class="gift_info_area">
+                    <div class="img_wrap">
+                        <img src="../assets/images/temp/gift_temp_img02.jpg" alt="">
+                    </div>
+                    <div class="form_text_area">
+                        <div class="text_area">
+                            <textarea cols="30" rows="10" placeholder="" readonly>TO. 김하나
+    선물메세지 선물메세지 선물메세지 선물메세지 선물메세지 선물 메세지 선물메세지 선물메세지 선물메세지 선물메세지 선물메세지 선물메세지
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 선물 상품 -->
+            <div class="ord_vw_sec gift_prd_sec">
+                <div class="tit_area">
+                    <div class="dl_layout">
+                        <div class="dl_div">
+                            <p class="tit">
+                                <strong class="tit_16">선물 상품</strong>
+                            </p>
+                            <div class="gift_state">
+                                <span>상품 배송 준비중 입니다.</span>
+                                <i class="icon_stick"></i>
+                                <strong>상품 준비중</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="box_bor_wh">
+                        <div class="prod_h_wrap">
+                            <!-- 세트 -->
+                            <div class="prd_group_h">
+                                <div class="cotn">
+                                    <div class="prd_artic">
+                                        <!-- 이미지 -->
+                                        <div class="img_area">
+                                            <figure class="img">
+                                                <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                            </figure>
+                                            <p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+                                        </div>
+                                        <!--// 이미지 -->
+
+                                        <!-- 상품정보 -->
+                                        <div class="prd_verti_info">
+                                            <!-- 상품명 -->
+                                            <div class="txt">
+                                                <h1 class="name">락토핏 생유산균 베베 1박스 (2개월분) 일주일간 특가 오픈!!</h1>
+                                                <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                            </div>
+                                            <!--// 상품명 -->
+                                        </div>
+                                        <!--// 상품정보 -->
+                                    </div>
+                                    <!-- 사은품 -->
+                                    <div class="ord_gift_wrap">
+                                        <div class="box_gy gift_box">
+                                            <div class="gift_line">
+                                                <figure class="img">
+                                                    <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                                </figure>
+                                                <div class="txt_area">
+                                                    <h4>사은품</h4>
+                                                    <div class="gift_txt">
+                                                        <p>2월 20%추가할인 락토핏 생유산균 골드골드골드골드골드</p>
+                                                    </div>
+                                                </div>
+                                                <p class="amount">
+                                                    <strong>99</strong><span>개</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 사은품 -->
+                                </div>
+                            </div>
+                            <!--// 세트 -->
+                        </div>
+                    </div>
+                    <p class="txt_12_gy">배송지 입력 완료: 선물 수락일 04.03</p>
+                    <div class="btn_wrap" btn-type="sub_bt">
+                        <a href="#none" class="btn bc_bk">배송 추적</a>
+                    </div>
+                </div>
+            </div>
+            <!--// 선물 상품 -->
+
+            <!-- 배송지 정보 -->
+            <div class="ord_vw_sec deliv_sec">
+                <div class="tit_area">
+                    <div class="dl_layout">
+                        <div class="dl_div">
+                            <p class="tit">
+                                <strong class="tit_16">배송지 정보</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="dl_layout">
+                        <div class="dl_div">
+                            <p class="tit">
+                                받는분
+                            </p>
+                            <div class="txt">
+                                <p>홍길동</p>
+                            </div>
+                        </div>
+                        <div class="dl_div">
+                            <p class="tit">
+                                휴대폰
+                            </p>
+                            <div class="txt">
+                                <p>010-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="dl_div">
+                            <p class="tit">
+                                배송지
+                            </p>
+                            <div class="txt">
+                                <p>서울시 강남구 학동로 146 와일리 타워 2층</p>
+                            </div>
+                        </div>
+                        <div class="dl_div">
+                            <p class="tit">
+                                요청사항
+                            </p>
+                            <div class="txt">
+                                <p>문앞에 놓아주세요. 문 앞 비밀번호는123456 입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="noti_copy gray_02">
+                        <p>교환/반품 문의는 고객센터 (1668-4265)로 연락주세요.</p>
+                    </div>
+                </div>
+            </div>
+            <!--// 배송지 정보 -->
+        </div>
+	</div>
+	<!--// 컨텐츠 -->
+    <!-- 하단버튼 -->
+	<div class="btn_fixed">
+		<div class="btn_wrap" btn-type="main_bt">
+			<a href="#none" class="btn" bt_role="confirm">메인으로</a>
+		</div>
+	</div>
+	<!--// 하단버튼 -->
+</section>
+<!--// 선물받기완료 팝업 -->
+
+</body>
+</html>

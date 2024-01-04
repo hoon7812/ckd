@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8,IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<title>종근당건강몰 PC: 주문결제(회원)</title>
+    <link rel="stylesheet" href="../assets/css/ui.order.css"><!-- 장바구니/주문결제 공통UI -->
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="order payment"><!-- [장바구니/주문결제 공통 class="order", 주문결제 class="payment"] -->
+	<!-- #HEADER -->
+	<header id="header">
+		<!-- 상단영역 -->
+		<div class="head_wrap">
+			<h1 class="logo">
+				<a href="#none"><span class="blind">종근당건강몰</span></a>
+			</h1>
+			<!-- 검색 -->
+			<div class="head_search">
+				<div class="form_cotn">
+					<div class="input_set">
+						<input type="text" placeholder="검색어를 입력하세요">
+					</div>
+					<button type="button" class="bt_search"><span class="blind">검색하기</span></button><!-- 검색결과페이지:숨김 -->
+				</div>
+			</div>
+			<!--// 검색 -->
+
+			<!-- 아이콘메뉴 -->
+			<div class="icon_menu">
+				<div class="div_set my">
+					<p>마이페이지</p>
+					<a href="#none" class="go_view"><span class="blind">마이페이지로 이동</span></a>
+				</div>
+				<div class="div_set cart">
+					<p>장바구니</p>
+					<p class="number">15</p>
+					<a href="#none" class="go_view"><span class="blind">장바구니로 이동</span></a>
+				</div>
+				<div class="div_set odr">
+					<p>주문배송</p>
+					<p class="number">7</p>
+					<a href="#none" class="go_view"><span class="blind">주문배송조회 메뉴로 이동</span></a>
+				</div>
+			</div>
+			<!--// 아이콘메뉴 -->
+
+			<!-- 유틸메뉴 -->
+			<div class="utill_menu">
+				<a href="#none" class="name">
+					<i class="grade class_01"></i>
+					<strong>홍길동</strong>님
+				</a>
+				<a href="#none">로그아웃</a>
+				<a href="#none">고객센터</a>
+			</div>
+			<!--// 유틸메뉴 -->
+		</div>
+		<!--// 상단영역 -->
+
+		<!-- #GNB -->
+		<nav id="gnb">
+			<div class="all">
+				<span class="deco top"></span>
+				<span class="deco mdl"></span>
+				<span class="deco btm"></span>
+				<a href="#none" class="btn"><span class="blind">전체메뉴</span></a>
+			</div>
+			<ul class="main">
+				<li class="on"><a href="#none"><span>핫딜</span></a></li>
+				<li class=""><a href="#none"><span>베스트</span></a></li>
+				<li class=""><a href="#none"><span>기획전</span></a></li>
+				<li class=""><a href="#none"><span>신제품</span></a></li>
+				<li class=""><a href="#none"><span>선물하기</span></a></li>
+				<li class=""><a href="#none"><span>정기배송</span></a></li>
+			</ul>
+			<ul class="etc">
+				<li class="benft"><a href="#none"><span>쿠폰혜택</span></a></li>
+				<li class="event"><a href="#none"><span>이벤트</span></a></li>
+			</ul>
+		</nav>
+		<!--// #GNB -->
+	</header>
+	<!--// #HEADER -->
+
+	<!-- #CONTAINER -->
+	<div id="container">
+		<!-- #CONTENTS -->
+		<div id="contents">
+			<!-- 타이틀 -->
+			<div class="sub_tit_36">
+				<h1 class="tit_36">주문결제</h1>
+			</div>
+			<!--// 타이틀 -->
+			<!-- 주문결제: 회원 -->
+			<div class="sub">
+				<div class="wd_auto">
+                    <div class="sub_tit_24">
+                        <h1 class="tit_24">주문상품</h1>
+                    </div>
+                    <div class="ord_contai_wrap">
+                        <div class="ord_lef_area">
+                            <div class="paymt_cotn">
+                                <!-- 결제상품목록 영역-->
+                                <div class="ord_list_sec stick">
+                                     <!--  상온/실온 -->
+                                     <div class="ord_list_wrap">
+                                        <div class="ord_list_box">
+                                            <!-- 타이틀 -->
+                                            <div class="tit_ord_area">
+                                                <!-- 왼쪽영역 -->
+                                                <div class="lef_state">
+                                                    <div class="tit_temp">
+                                                        <i class="i_sp_16 temp"></i>
+                                                        <span>상온/실온</span>
+                                                    </div>
+                                                </div>
+                                                <!--// 왼쪽영역 -->
+                                            </div>
+                                            <!--// 타이틀 -->
+                                            <!-- 주문상품 -->
+                                            <div class="ord_prd_cotn">
+                                                <div class="ord_tb_wrap">
+                                                    <!-- 1세트 -->
+                                                    <div class="tr_line">
+                                                        <!-- 상품 -->
+                                                        <div class="td_div">
+                                                            <div class="td_cotn">
+                                                                <div class="prd_h_wrap">
+                                                                    <div class="prd_group">
+                                                                        <div class="cotn">
+                                                                            <!-- 이미지 -->
+                                                                            <div class="img_area">
+                                                                                <figure class="img">
+                                                                                    <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                                                                </figure>
+                                                                            </div>
+                                                                            <!--// 이미지 -->
+
+                                                                            <div class="txt_area">
+                                                                                <!-- 상품명 -->
+                                                                                <div class="txt">
+                                                                                    <p class="brand">락토핏</p>
+                                                                                    <h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+                                                                                </div>
+                                                                                <!--// 상품명 -->
+                                                                            </div>
+                                                                            <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                                                        </div>
+
+                                                                        <!-- 추가적립금/사은품 -->
+                                                                        <div class="ord_gift_wrap">
+                                                                            <!-- 적립금 -->
+                                                                            <div class="gift_set">
+                                                                                <figure class="img">
+                                                                                    <img src="../assets/images/common/icon_point.png" alt="적립금">
+                                                                                </figure>
+                                                                                <div class="txt_area">
+                                                                                    <p class="tit_14">추가 적립금</p>
+                                                                                    <p class="gift_txt">10% 추가적립</p>
+                                                                                </div>
+                                                                                <div class="point">
+                                                                                    <p>
+                                                                                        <strong>1,000</strong>
+                                                                                        <span>P</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--// 적립금 -->
+
+                                                                            <!-- 사은품 -->
+                                                                            <div class="gift_set">
+                                                                                <figure class="img">
+                                                                                    <img src="../assets/images/temp/prd_02.jpg" alt="">
+                                                                                </figure>
+                                                                                <div class="txt_area">
+                                                                                    <p class="tit_14">사은품</p>
+                                                                                    <p class="gift_txt">2월 20%추가할인 락토핏 생유산균 베베 1박스</p>
+                                                                                </div>
+                                                                                <div class="amount">
+                                                                                    <p>
+                                                                                        <strong>100</strong>개
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--// 사은품 -->
+                                                                        </div>
+                                                                        <!--// 추가적립금/사은품 -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 상품 -->
+
+                                                        <!-- 수량 -->
+                                                        <div class="td_div">
+                                                            <div class="amount">
+                                                                <p>
+                                                                    <strong>2</strong>개
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 수량 -->
+                                                        <!-- 금액 -->
+                                                        <div class="td_div">
+                                                            <div class="price">
+                                                                <p>
+                                                                    <strong>21,800</strong><span>원</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 금액 -->
+                                                    </div>
+                                                    <!--// 1세트 -->
+                                                    <div class="tr_line">
+                                                        <div class="td_div">
+                                                            <div class="td_cotn">
+                                                                <div class="prd_h_wrap">
+                                                                    <div class="prd_group">
+                                                                        <div class="cotn">
+                                                                            <div class="img_area">
+                                                                                <figure class="img">
+                                                                                    <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                                                                </figure>
+                                                                            </div>
+                                                                            <div class="txt_area">
+                                                                                <div class="txt">
+                                                                                    <p class="brand">락토핏</p>
+                                                                                    <h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+                                                                                </div>
+                                                                            </div>
+                                                                            <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="td_div">
+                                                            <div class="amount">
+                                                                <p>
+                                                                    <strong>2</strong>개
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                         <div class="td_div">
+                                                            <div class="price">
+                                                                <p>
+                                                                    <strong>21,800</strong><span>원</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 주문상품 -->
+                                        </div>
+                                    </div>
+                                    <!--// 상온/실온 -->
+
+                                    <!-- 냉동/냉장 -->
+                                    <div class="ord_list_wrap">
+                                        <div class="ord_list_box">
+                                            <!-- 타이틀 -->
+                                            <div class="tit_ord_area">
+                                                <div class="lef_state">
+                                                    <div class="tit_temp">
+                                                        <i class="i_sp_16 cold"></i>
+                                                        <span>냉동/냉장</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--// 타이틀 -->
+                                            <!-- 주문상품 -->
+                                            <div class="ord_prd_cotn">
+                                                <div class="ord_tb_wrap">
+                                                    <!-- 1세트 -->
+                                                    <div class="tr_line">
+                                                        <!-- 상품 -->
+                                                        <div class="td_div">
+                                                            <div class="td_cotn">
+                                                                <div class="prd_h_wrap">
+                                                                    <div class="prd_group">
+                                                                        <div class="cotn">
+                                                                            <!-- 이미지 -->
+                                                                            <div class="img_area">
+                                                                                <figure class="img">
+                                                                                    <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                                                                </figure>
+                                                                            </div>
+                                                                            <!--// 이미지 -->
+
+                                                                            <div class="txt_area">
+                                                                                <!-- 상품명 -->
+                                                                                <div class="txt">
+                                                                                    <p class="brand">락토핏</p>
+                                                                                    <h1 class="name">★할인율UP★락토바이옴 솔루션1 둔감한 장엔 장유산균 450mg x 30캡슐 3박스(3개월분)</h1>
+                                                                                </div>
+                                                                                <!--// 상품명 -->
+                                                                            </div>
+                                                                            <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                                                        </div>
+
+                                                                        <!-- 추가적립금/사은품 -->
+                                                                        <div class="ord_gift_wrap">
+                                                                            <!-- 적립금 -->
+                                                                            <div class="gift_set">
+                                                                                <figure class="img">
+                                                                                    <img src="../assets/images/common/icon_point.png" alt="적립금">
+                                                                                </figure>
+                                                                                <div class="txt_area">
+                                                                                    <p class="tit_14">추가 적립금</p>
+                                                                                    <p class="gift_txt">10% 추가적립</p>
+                                                                                </div>
+                                                                                <div class="point">
+                                                                                    <p>
+                                                                                        <strong>1,000</strong>
+                                                                                        <span>P</span>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--// 적립금 -->
+
+                                                                            <!-- 사은품 -->
+                                                                            <div class="gift_set">
+                                                                                <figure class="img">
+                                                                                    <img src="../assets/images/temp/prd_02.jpg" alt="">
+                                                                                </figure>
+                                                                                <div class="txt_area">
+                                                                                    <p class="tit_14">사은품</p>
+                                                                                    <p class="gift_txt">2월 20%추가할인 락토핏 생유산균 베베 1박스</p>
+                                                                                </div>
+                                                                                <div class="amount">
+                                                                                    <p>
+                                                                                        <strong>100</strong>개
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--// 사은품 -->
+                                                                        </div>
+                                                                        <!--// 추가적립금/사은품 -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 상품 -->
+
+                                                        <!-- 수량 -->
+                                                        <div class="td_div">
+                                                            <div class="amount">
+                                                                <p>
+                                                                    <strong>2</strong>개
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 수량 -->
+                                                        <!-- 금액 -->
+                                                        <div class="td_div">
+                                                            <div class="price">
+                                                                <p>
+                                                                    <strong>21,800</strong><span>원</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 금액 -->
+                                                    </div>
+                                                    <!--// 1세트 -->
+                                                </div>
+                                            </div>
+                                            <!--// 주문상품 -->
+                                        </div>
+                                    </div>
+                                    <!--// 냉동/냉장 -->
+                                </div>
+                                <!--// 결제상품목록 영역 -->
+
+                                <!-- 주문자 정보 -->
+                                <div class="ord_pay_sec ord_info_sec">
+                                    <div class="sub_tit_24">
+                                        <h1 class="tit_24">주문자 정보</h1>
+                                    </div>
+                                    <div class="tb_type01">
+                                        <table>
+                                            <caption>주문자 정보</caption>
+                                            <colgroup>
+                                                <col style="width:204px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">주문자명</th>
+                                                    <td>
+                                                        <div class="form_inpt">
+                                                            <div class="txt">
+                                                                <input type="text" placeholder="" value="홍길동">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--// 주문자 정보 -->
+                                <!-- 배송지 정보 -->
+                                <div class="ord_pay_sec deliv_sec">
+                                    <div class="sub_tit_24">
+                                        <h1 class="tit_24">배송지 정보</h1>
+                                    </div>
+                                    <div class="tb_type01">
+                                        <table>
+                                            <caption>배송지 정보</caption>
+                                            <colgroup>
+                                                <col style="width:204px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">배송지</th>
+                                                    <td>
+                                                        <div class="form_rdo">
+                                                            <label for="rd1" class="group">
+                                                                <input type="radio" id="rd1" name="temp1" checked>
+                                                                <i class="icon"></i>
+                                                                <span class="txt">배송지 선택</span>
+                                                                <span class="blind">선택</span>
+                                                            </label>
+                                                            <label for="rd2" class="group">
+                                                                <input type="radio" id="rd2" name="temp1">
+                                                                <i class="icon"></i>
+                                                                <span class="txt">배송지 등록</span>
+                                                                <span class="blind">선택</span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">받는분</th>
+                                                    <td>
+                                                        홍길동(기본배송지)
+                                                        <div class="btn_deliv_area">
+                                                            <div class="btn_wrap" btn-type="sub_bt">
+                                                                <div class="btn_cotn">
+                                                                    <a href="#none" class="btn bc_fff_02 h_32">배송지변경</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">배송지</th>
+                                                    <td>서울시 강남구 학동로 146 와일리 타워 2층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">연락처</th>
+                                                    <td>010-1234-5678</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">연락처2 (선택)</th>
+                                                    <td>010-1234-5678</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">요청사항</th>
+                                                    <td>
+                                                        <!-- 2022-09-27_수정 -->
+                                                        <p class="txt_requ">
+                                                            <span>부재시 문앞에 놓아주세요.</span>
+                                                            <i class="icon_stick"></i>
+                                                            <span>공동현관 비밀번호 #1301+1234입니다.</span>
+                                                        </p>
+                                                        <!--// 2022-09-27_수정 -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--// 배송지 정보 -->
+                                <!-- 추가 사은품 -->
+                                <div class="ord_pay_sec gift_sec">
+                                    <div class="sub_tit_24">
+                                        <h1 class="tit_24">추가 사은품</h1>
+                                    </div>
+                                    <div class="ord_gift_cotn">
+                                        <p class="tit_18">금액대별 사은품 - 10만원 이상 구매 시 지급</p>
+                                        <div class="prd_h_wrap">
+                                            <!-- 세트 -->
+                                            <div class="prd_group">
+                                                <div class="cotn">
+                                                    <!-- 이미지 -->
+                                                    <div class="img_area">
+                                                        <figure class="img">
+                                                            <img src="../assets/images/temp/prd_01.jpg" alt="">
+                                                        </figure>
+                                                        <p class="status_txt">품절</p><!-- 상품상태값:텍스트수정 -->
+                                                    </div>
+                                                    <!--// 이미지 -->
+
+                                                    <div class="txt_area">
+                                                        <!-- 상품명 -->
+                                                        <div class="txt">
+                                                            <!-- <p class="brand">락토핏</p> -->
+                                                            <h1 class="name">2월 20%추가할인 락토핏 생유산균 베베(2개월분)</h1>
+                                                        </div>
+                                                        <!--// 상품명 -->
+
+                                                        <!-- 수량 -->
+                                                        <div class="qty">
+                                                            <p>1개</p>
+                                                        </div>
+                                                        <!--// 수량 -->
+                                                    </div>
+                                                    <a href="#none" class="go_view"><span class="blind">상품상세 이동</span></a>
+                                                </div>
+                                            </div>
+                                            <!--// 세트 -->
+                                        </div>
+                                        <div class="bg_box">
+                                            <div class="info_txt fs_14">
+                                                <p>사은품은 이미지와 상이 할 수 있습니다.</p>
+                                                <p>사은품의 교환이나 추가 증정은 불가하며, 본품의 반품, 환불 시 사은품도 동봉해 주셔야 합니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// 추가 사은품 -->
+
+                                <!-- 할인혜택 -->
+                                <div class="ord_pay_sec sale_sec ui_rdo_wrap">
+                                    <div class="sub_tit_24">
+                                        <h1 class="tit_24">할인혜택</h1>
+                                        <div class="price">
+                                            <strong class="color_or">-79,250</strong><span>원</span>
+                                        </div>
+                                    </div>
+                                    <div class="tb_type01 border">
+                                        <table>
+                                            <caption>할인혜택</caption>
+                                            <colgroup>
+                                                <col style="width:240px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">상품할인(회원)</th>
+                                                    <td class="al_right">
+                                                        <div class="price">
+                                                            <strong class="color_or">-79,250</strong><span>원</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">핫딜할인</th>
+                                                    <td class="al_right">
+                                                        <div class="price">
+                                                            <strong class="color_or">-79,250</strong><span>원</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="2">쿠폰 할인금액</th>
+                                                    <td>
+                                                        <div class="ord_coup_area rdo_tab">
+                                                            <div class="form_rdo">
+                                                                <label for="rd3" class="group" data-rdo-cotn="rdo_cotn01">
+                                                                    <input type="radio" id="rd3" name="temp2" checked="">
+                                                                    <i class="icon"></i>
+                                                                    <span class="txt">최대할인추천</span>
+                                                                    <span class="blind">선택</span>
+                                                                </label>
+                                                                <label for="rd4" class="group" data-rdo-cotn="rdo_cotn02">
+                                                                    <input type="radio" id="rd4" name="temp2">
+                                                                    <i class="icon"></i>
+                                                                    <span class="txt">직접선택</span>
+                                                                    <span class="blind">선택</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="price">
+                                                                <strong class="color_or">-79,250</strong><span>원</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <!-- 최대할인 추천 -->
+                                                        <div class="ord_rdo_cotn rdo_cotn01" style="display:block;">
+                                                            <div class="info_txt">
+                                                                <p>최대할인 혜택이 적용 되었습니다. 보유하신 쿠폰 중 <span class="color_bl">4장의 쿠폰</span>이 적용되었습니다.</p>
+                                                            </div>
+                                                            <div class="coup_sec">
+                                                                <div class="coup_dc_g">
+                                                                    <h4 class="tit_16">상품쿠폰</h4>
+                                                                    <p class="txt_gy">3월 20% 추가할인 락토핏 생유산균 골드 5X 7</p>
+                                                                    <div class="obj_wrap">
+                                                                       <div class="obj_div">
+                                                                           <div class="tit">기획전 쿠폰 5% 할인쿠폰</div>
+                                                                           <div class="price">
+                                                                               <p><strong>225,200</strong><span>원</span></p>
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="obj_div">
+                                                                            <div class="tit">기획전 쿠폰 5% 할인쿠폰</div>
+                                                                            <div class="price">
+                                                                                <p><strong>-225,200</strong><span>원</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="coup_sec">
+                                                                <div class="coup_dc_g">
+                                                                    <h4 class="tit_16">장바구니 쿠폰</h4>
+                                                                    <div class="obj_wrap">
+                                                                       <div class="obj_div">
+                                                                           <div class="tit">앱 다운 5% 할인쿠폰</div>
+                                                                           <div class="price">
+                                                                               <p><strong>-3,000</strong><span>원</span></p>
+                                                                           </div>
+                                                                       </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="coup_sec">
+                                                                <div class="coup_dc_g">
+                                                                    <h4 class="tit_16">배송비 할인쿠폰</h4>
+                                                                    <div class="obj_wrap">
+                                                                       <div class="obj_div">
+                                                                           <div class="tit">배송비 할인쿠폰</div>
+                                                                           <div class="price">
+                                                                               <p><strong>-3,000</strong><span>원</span></p>
+                                                                           </div>
+                                                                       </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 최대할인 추천 -->
+
+                                                        <!-- 직접선택 -->
+                                                        <div class="ord_rdo_cotn rdo_cotn02">
+                                                            <div class="info_txt">
+                                                                <p>최대할인 혜택이 적용 되었습니다. 보유하신 쿠폰 중 <span class="color_bl">4장의 쿠폰</span>이 적용되었습니다.</p>
+                                                                <div class="btn_reset">
+                                                                    <div class="btn_wrap" btn-type="sub_bt">
+                                                                        <div class="btn_cotn">
+                                                                            <a href="#none" class="btn jkd_b_w h_40">초기화</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="coup_sec">
+                                                                <div class="coup_dc_g">
+                                                                    <h4 class="tit_16">상품쿠폰</h4>
+                                                                    <p class="txt_gy">3월 20% 추가할인 락토핏 생유산균 골드 5X 7</p>
+                                                                    <!-- 설렉트박스 -->
+                                                                    <div class="select_btn_wrap"><!-- 쿠폰없음 class="inactv" 추가 -->
+                                                                        <div class="ui_select select_btn_area">
+                                                                            <div class="ui_selt_layout">
+                                                                                <div class="ui_selt_ctrl btn_select">
+                                                                                    <p>쿠폰을 선택하세요.</p>
+                                                                                    <div class="price">
+                                                                                        <p>
+                                                                                            <strong>0</strong><span>원</span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="sp_icon">
+                                                                                        <i class="i_sp_20 arr_down"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ui_selt_cotn option_cotn">
+                                                                               <div class="cou_option_area">
+                                                                                    <ul>
+                                                                                        <!-- 세트 -->
+                                                                                        <li class="on"><!-- 선택시 class="on" 추가 -->
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>핫딜 30% 상품쿠폰 할인</p>
+                                                                                                <p>15,000원 이상 구매 시, 최대 30,000원 할인 ~2022.04.05 까지</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd5" class="group">
+                                                                                                    <input type="radio" id="rd5" name="temp3" checked>
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <!--// 세트 -->
+                                                                                        <li>
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>15,000원 이상 구매 시, 최대 30,000원 할인 ~2022.04.05 까지</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd6" class="group">
+                                                                                                    <input type="radio" id="rd6" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>핫딜 30% 상품쿠폰 할인</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd7" class="group">
+                                                                                                    <input type="radio" id="rd7" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="txt">
+                                                                                                <p>선택 안함</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd8" class="group">
+                                                                                                    <input type="radio" id="rd8" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                               </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--// 설렉트박스 -->
+                                                                    <!-- 설렉트박스 -->
+                                                                    <div class="select_btn_wrap inactv">
+                                                                        <div class="ui_select select_btn_area">
+                                                                            <div class="ui_selt_layout">
+                                                                                <div class="ui_selt_ctrl btn_select">
+                                                                                    <p>중복할인쿠폰을 선택하세요.</p><!-- 2022-09-26_수정 -->
+                                                                                    <div class="price">
+                                                                                        <p>
+                                                                                            <strong>0</strong><span>원</span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="sp_icon">
+                                                                                        <i class="i_sp_20 arr_down"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ui_selt_cotn option_cotn">
+                                                                               <div class="cou_option_area">
+                                                                                    <ul>
+                                                                                        <!-- 세트 -->
+                                                                                        <li><!-- 선택시 class="on" 추가 -->
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>핫딜 30% 상품쿠폰 할인</p>
+                                                                                                <p>15,000원 이상 구매 시, 최대 30,000원 할인 ~2022.04.05 까지</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd5" class="group">
+                                                                                                    <input type="radio" id="rd5" name="temp4">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <!--// 세트 -->
+                                                                                        <li>
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>15,000원 이상 구매 시, 최대 30,000원 할인 ~2022.04.05 까지</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd6" class="group">
+                                                                                                    <input type="radio" id="rd6" name="temp4">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>핫딜 30% 상품쿠폰 할인</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd7" class="group">
+                                                                                                    <input type="radio" id="rd7" name="temp4">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="txt">
+                                                                                                <p>선택 안함</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd8" class="group">
+                                                                                                    <input type="radio" id="rd8" name="temp4">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                               </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--// 설렉트박스 -->
+                                                                    <div class="info_txt">
+                                                                        <p>다운로드 가능한 쿠폰을 확인하시고 다양한 혜택이 담긴 쿠폰을 다운로드 하실 수 있습니다.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="coup_sec">
+                                                                <div class="coup_dc_g">
+                                                                    <h4 class="tit_16">장바구니 쿠폰</h4>
+                                                                    <!-- 설렉트박스 -->
+                                                                    <div class="select_btn_wrap"><!-- 쿠폰없음 class="inactv" 추가 -->
+                                                                        <div class="ui_select select_btn_area">
+                                                                            <div class="ui_selt_layout">
+                                                                                <div class="ui_selt_ctrl btn_select">
+                                                                                    <p>쿠폰을 선택하세요.</p>
+                                                                                    <div class="price">
+                                                                                        <p>
+                                                                                            <strong>0</strong><span>원</span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="sp_icon">
+                                                                                        <i class="i_sp_20 arr_down"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ui_selt_cotn option_cotn">
+                                                                               <div class="cou_option_area">
+                                                                                    <ul>
+                                                                                        <!-- 세트 -->
+                                                                                        <li><!-- 선택시 class="on" 추가 -->
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>핫딜 30% 상품쿠폰 할인</p>
+                                                                                                <p>15,000원 이상 구매 시, 최대 30,000원 할인 ~2022.04.05 까지</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd5" class="group">
+                                                                                                    <input type="radio" id="rd5" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <!--// 세트 -->
+                                                                                        <li>
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>15,000원 이상 구매 시, 최대 30,000원 할인 ~2022.04.05 까지</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd6" class="group">
+                                                                                                    <input type="radio" id="rd6" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>핫딜 30% 상품쿠폰 할인</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd7" class="group">
+                                                                                                    <input type="radio" id="rd7" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <div class="txt">
+                                                                                                <p>선택 안함</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd8" class="group">
+                                                                                                    <input type="radio" id="rd8" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                               </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--// 설렉트박스 -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="coup_sec">
+                                                                <div class="coup_dc_g">
+                                                                    <h4 class="tit_16">배송비 할인쿠폰</h4>
+                                                                    <!-- 설렉트박스 -->
+                                                                    <div class="select_btn_wrap inactv"><!-- 쿠폰없음 class="inactv" 추가 -->
+                                                                        <div class="ui_select select_btn_area">
+                                                                            <div class="ui_selt_layout">
+                                                                                <div class="ui_selt_ctrl btn_select">
+                                                                                    <p>쿠폰을 선택하세요.</p>
+                                                                                    <div class="price">
+                                                                                        <p>
+                                                                                            <strong>0</strong><span>원</span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <div class="sp_icon">
+                                                                                        <i class="i_sp_20 arr_down"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="ui_selt_cotn option_cotn">
+                                                                               <div class="cou_option_area">
+                                                                                    <ul>
+                                                                                        <!-- 세트 -->
+                                                                                        <li><!-- 선택시 class="on" 추가 -->
+                                                                                            <div class="price">
+                                                                                                <p>
+                                                                                                    <strong>20,000</strong><span>원</span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="txt">
+                                                                                                <p>핫딜 30% 상품쿠폰 할인</p>
+                                                                                                <p>15,000원 이상 구매 시, 최대 30,000원 할인 ~2022.04.05 까지</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd5" class="group">
+                                                                                                    <input type="radio" id="rd5" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <!--// 세트 -->
+                                                                                        <li>
+                                                                                            <div class="txt">
+                                                                                                <p>선택 안함</p>
+                                                                                            </div>
+                                                                                            <div class="form_rdo">
+                                                                                                <label for="rd8" class="group">
+                                                                                                    <input type="radio" id="rd8" name="temp3">
+                                                                                                    <i class="icon"></i>
+                                                                                                    <span class="blind">선택</span>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                               </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--// 설렉트박스 -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 직접선택 -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--// 할인혜택 -->
+                                <!-- 적립금 사용 -->
+                                <div class="ord_pay_sec save_sec">
+                                    <div class="sub_tit_24">
+                                        <h1 class="tit_24">적립금 사용</h1>
+                                    </div>
+                                    <div class="tb_type01">
+                                        <table>
+                                            <caption>적립금 사용</caption>
+                                            <colgroup>
+                                                <col style="width:204px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">사용가능 적립금</th>
+                                                    <td class="al_right">
+                                                        <div class="price">
+                                                            <p>
+                                                                <strong class="color_or">10,000</strong><span>P</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="form_inpt save_mon">
+                                                            <div class="txt">
+                                                                <input type="tel" placeholder="" value="" maxlength="">
+                                                            </div>
+                                                            <div class="btn_wrap" btn-type="sub_bt">
+                                                                <div class="btn_cotn">
+                                                                    <button type="button" class="btn bc_fff_02">적용취소</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--// 적립금 사용 -->
+                                <!-- 결제수단 선택 -->
+                                <div class="ord_pay_sec payment_sec ui_rdo_wrap">
+                                    <div class="sub_tit_24">
+                                        <h1 class="tit_24">결제수단 선택</h1>
+                                    </div>
+                                    <div class="tb_type01 border">
+                                        <table>
+                                            <caption>결제수단 선택</caption>
+                                            <colgroup>
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="tooltip_wrap tip_top">
+                                                            <div class="cotn_wrap">
+                                                                <div class="rdo_tab">
+                                                                    <div class="form_rdo">
+                                                                        <label for="rd10" class="group" data-rdo-cotn="rdo_cotn03">
+                                                                            <input type="radio" id="rd10" name="temp5" checked="">
+                                                                            <i class="icon"></i>
+                                                                            <span class="txt">간편결제</span>
+                                                                            <span class="blind">선택</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="btn_tool_wrap">
+                                                                <a href="#none" class="btn_tooltip">
+                                                                    <i class="i_sp_18 tool"></i>
+                                                                </a>
+                                                                <div class="tooltip_box">
+                                                                    <div class="tooltip">
+                                                                        <p>간편결제 카드 설정은 마이페이지에서 확인 및 수정이 가능합니다.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 간편결제 -->
+                                                        <div class="ord_rdo_cotn rdo_cotn03" style="display:block">
+                                                            <!-- 카드목록 -->
+                                                            <section class="select_card">
+                                                                <div class="swiper">
+                                                                    <div class="swiper-wrapper">
+                                                                        <!-- 1세트 -->
+                                                                        <div class="card_set swiper-slide">
+                                                                            <!-- 카드이미지 -->
+                                                                            <figure class="img">
+                                                                                <img src="../assets/images/temp/card_01.png" alt="">
+                                                                            </figure>
+                                                                            <!--// 카드이미지 -->
+
+                                                                            <!-- 카드명/카드번호 -->
+                                                                            <div class="txt_area">
+                                                                                <p class="name">신한카드 Deep Dream[모베러웍스]</p>
+                                                                                <p class="number">3564 14** **** 9026</p>
+                                                                            </div>
+                                                                            <!--// 카드명/카드번호 -->
+
+                                                                            <!-- 체크박스 -->
+                                                                            <div class="form_chk">
+                                                                                <label class="group">
+                                                                                    <input type="checkbox">
+                                                                                    <i class="icon"></i>
+                                                                                    <span class="blind">카드선택</span>
+                                                                                </label>
+                                                                            </div>
+                                                                            <!--// 체크박스 -->
+                                                                        </div>
+                                                                        <!--// 1세트 -->
+
+                                                                        <div class="card_set swiper-slide">
+                                                                            <figure class="img">
+                                                                                <img src="../assets/images/temp/card_01.png" alt="">
+                                                                            </figure>
+                                                                            <div class="txt_area">
+                                                                                <p class="name">삼성카드</p>
+                                                                                <p class="number">3564 14** **** 9026</p>
+                                                                            </div>
+                                                                            <div class="form_chk">
+                                                                                <label class="group">
+                                                                                    <input type="checkbox">
+                                                                                    <i class="icon"></i>
+                                                                                    <span class="blind">카드선택</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- 카드등록 -->
+                                                                        <div class="card_set add_box_wrap swiper-slide">
+                                                                            <div class="add_box box_bor_wh bg_f9fafc">
+                                                                                <p class="info_txt">카드 등록</p>
+                                                                                <i class="icon_add"></i>
+                                                                            </div>
+                                                                            <a href="#none" class="go_view">
+                                                                                <span class="blind">카드 등록</span>
+                                                                            </a>
+                                                                        </div>
+                                                                        <!--// 카드등록 -->
+                                                                    </div>
+                                                                   <div class="slide_nav">
+                                                                        <div class="swiper-button-prev"><i class="i_sp_24 arr_left"></i></div>
+                                                                        <div class="swiper-button-next"><i class="i_sp_24 arr_right"></i></div>
+                                                                   </div>
+                                                                </div>
+                                                            </section>
+                                                            <!--// 카드목록 -->
+                                                            <!-- 할부선택 -->
+                                                            <div class="card_paymt">
+                                                                <div class="form_select">
+                                                                    <select>
+                                                                        <option>일시불</option>
+                                                                        <option>3개월</option>
+                                                                        <option>4개월</option>
+                                                                    </select>
+                                                                    <i class="i_sp_20 arr_down"></i>
+                                                                </div>
+                                                                <div class="one_touch tooltip_wrap tip_top">
+                                                                    <div class="btn_switch">
+                                                                        <label class="form_chk">
+                                                                            <input type="checkbox" checked="">
+                                                                            <i class="icon"></i>
+                                                                            <i class="bg"></i>
+                                                                        </label>
+                                                                    </div>
+                                                                    <span class="txt">원터치결제 사용</span>
+                                                                    <div class="btn_tool_wrap">
+                                                                        <a href="#none" class="btn_tooltip">
+                                                                            <i class="i_sp_18 tool"></i>
+                                                                        </a>
+                                                                        <div class="tooltip_box">
+                                                                            <div class="tooltip">
+                                                                                <p>비밀번호 입력 없이 결제 하실 수 있는 서비스 입니다.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--// 할부선택 -->
+                                                        </div>
+                                                        <!--// 간편결제  -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="rdo_tab">
+                                                            <div class="form_rdo">
+                                                                <label for="rd11" class="group" data-rdo-cotn="rdo_cotn04">
+                                                                    <input type="radio" id="rd11" name="temp5">
+                                                                    <i class="icon"></i>
+                                                                    <span class="txt">일반결제수단</span>
+                                                                    <span class="blind">선택</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <!--  일반결제수단 -->
+                                                        <div class="ord_rdo_cotn rdo_cotn04">
+                                                            <div class="paymt_way">
+                                                                <ul>
+                                                                    <li class="on">
+                                                                        <a href="#none">
+                                                                            <p>신용카드</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <img src="../assets/images/common/pay_img_n.png" alt="네이버페이">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <img src="../assets/images/common/pay_img_k.png" alt="카카오페이">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <img src="../assets/images/common/pay_img_s.png" alt="삼성페이">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <img src="../assets/images/common/pay_img_p.png" alt="토스">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <img src="../assets/images/common/pay_img_t.png" alt="네이버페이">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <p>실시간 계좌이체</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <p>가상계좌</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#none">
+                                                                            <p>무통장입금</p>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="bg_box">
+                                                                <!-- 안내문구: 네이버 페이 -->
+                                                                <div class="info_txt fs_14">
+                                                                    <p>네이버페이는 네이버ID로 별도 앱 설치 없이 신용카드 또는 은행계좌 정보를 등록하여 네이버페이 비밀번호로 결제할 수 있는 간편결제
+                                                                        서비스 입니다.</p>
+                                                                    <p>네이버페이 카드 간편결제는 네이버페이에서 제공하는 카드사 별 무이자, 청구할인 혜택을 받을 수 있습니다.</p>
+                                                                    <p>주문 변경 시 카드사 혜택 및 할부 적용 여부는 해당 카드사 정책에 따라 변경될 수 있습니다.</p>
+                                                                    <p>결제 가능 카드 : 신한, 삼성, 현대, BC, 국민, 하나, 롯데, NH농협, 씨티, 카카오뱅크</p>
+                                                                    <p>결제 가능 은행 : NH농협, 국민, 신한, 우리, 기업, SC제일, 부산, 경남, 수협, 우체국, 미래에셋대우, 광주, 대구, 전북, 새마을금고, 제주,
+                                                                        신협, 하나, 케이뱅크, 카카오뱅크, 삼성증권, KDB산업</p>
+                                                                </div>
+                                                                <!--// 안내문구: 네이버 페이 -->
+
+                                                                <!-- 안내문구: 카카오 페이 -->
+                                                                <div class="info_txt fs_14" style="display:none;">
+                                                                    <p>카카오페이는 카카오톡에 개인 신용/체크 카드를 등록하여 간단하게
+                                                                        비밀번호 만으로 결제할 수 있는 모바일 결제 서비스입니다.
+                                                                        등록 시 휴대폰과 카드 명의자가 동일해야 합니다.
+                                                                        </p>
+                                                                    <p>무이자 할부 서비스 및 신용카드 전용쿠폰 서비스는 이용이 제한 됩니다.
+                                                                    </p>
+                                                                    <p>카카오머니로 결제 시, 현금영수증 발급은 ㈜카카오페이에서
+                                                                        발급가능합니다.
+                                                                        </p>
+                                                                </div>
+                                                                <!--// 안내문구: 카카오 페이 -->
+
+                                                                <!-- 안내문구: 삼성페이 -->
+                                                                <div class="info_txt fs_14"  style="display:none;">
+                                                                    <p>삼성페이는 본인명의 신용카드 / 체크카드 등록 후 결제할 수 있는 모바일 결제 서비스입니다.
+                                                                    </p>
+                                                                    <p>지원카드 : 삼성페이가 지원하는 국내 신용/체크카드
+                                                                    </p>
+                                                                </div>
+                                                                <!--// 안내문구: 삼성페이 -->
+
+                                                                <!-- 안내문구: 페이코 -->
+                                                                <div class="info_txt fs_14" style="display:none;">
+                                                                    <p>※ 생애 첫 결제 시 최대 6,500원 혜택
+                                                                    </p>
+                                                                    <p>PAYCO는 온/오프라인 쇼핑은 물론 송금, 멤버십 적립까지 가능한 통합 서비스 입니다.
+                                                                    </p>
+                                                                    <p>휴대폰과 카드 명의가 동일해야 결제 가능하며, 결제금액 제한은 없습니다. </p>
+                                                                </div>
+                                                                <!--// 안내문구: 페이코 -->
+
+                                                                <!-- 안내문구: 실시간 계좌이체 -->
+                                                                <div class="info_txt fs_14" style="display:none;">
+                                                                    <p>실시간 계좌이체로 결제 완료시 본인 계좌에서 즉시 이체 처리됩니다.
+                                                                    </p>
+                                                                    <p>실시간 계좌이체 은행별 이용시간이 다를 수 있습니다. </p>
+                                                                </div>
+                                                                <!--// 안내문구: 실시간 계좌이체 -->
+
+                                                                <!--  안내문구: 가상계좌 -->
+                                                                <div class="info_txt fs_14" style="display:none;">
+                                                                    <p>주문자명과 입금자명이 다르더라도 발급된 가상계좌번호로 정확한 금액을 입금하시면 정상 입금확인이 가능합니다.
+                                                                    </p>
+                                                                    <p>무통장입금 시 일부 은행(농협 및 국민은행)의 경우 ATM기기 입금이 불가할 수 있습니다.. 이 경우 은행 창구 또는 인터넷 뱅킹을 이용해 주시기 바랍니다.
+                                                                    </p>
+                                                                </div>
+                                                                <!--//  안내문구: 가상계좌 -->
+
+                                                                <!-- 안내문구: 무통장입금 -->
+                                                                <div class="info_txt fs_14" style="display:none;">
+                                                                    <p>
+                                                                        계좌번호<br>
+                                                                        기업은행 439- 1234-1234-123 예금주: 종근당건강<br>
+                                                                        농협 3021-1234-123456 예금주: 종근당건강
+                                                                    </p>
+                                                                    <p>무통장입금 시 일부 은행(농협 및 국민은행)의 경우 ATM기기 입금이 불가할 수 있습니다.. 이 경우 은행 창구 또는 인터넷 뱅킹을 이용해 주시기 바랍니다.
+                                                                    </p>
+                                                                    <p>주문 후 5영엽일 이내에 입금확인이 되지 않으면 주문이 자동으로 취소됩니다.</p>
+                                                                </div>
+                                                                <!--// 안내문구: 무통장입금 -->
+                                                            </div>
+                                                        </div>
+                                                        <!--//  일반결제수단 -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="form_chk">
+                                        <label class="group">
+                                            <input type="checkbox">
+                                            <i class="icon"></i>
+                                            <span class="txt">선택한 결제 수단을 다음에도 사용</span>
+                                            <span class="blind">선택</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!--// 결제수단 선택 -->
+
+                                <!-- 구매 안전 서비스 제공 안내 -->
+                                <div class="ord_pay_sec buy_guide_sec">
+                                    <section class="policy_wrap">
+                                        <div class="group_div">
+                                            <div class="sub_tit_24">
+                                                <h1 class="tit_24">구매 안전 서비스 제공 안내</h1>
+                                            </div>
+                                            <div class="cotn">
+                                                <div class="info_txt">
+                                                    <p>고객님의 안전 거래를 위해 현금성 결제수단으로 결제한 거래에 대해 이니시스 에스크로 구매안전 서비스를 자동 적용하고 있습니다.</p><!-- 2022-09-23_수정 -->
+                                                </div>
+                                                <p class="agree_copy">주문 내용을 확인하였으며, 정보 제공 등에 동의합니다.</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--// 구매 안전 서비스 제공 안내 -->
+                            </div>
+                        </div>
+                        <div class="ord_rit_area">
+                            <!-- 결제 예정 금액 -->
+                            <div class="ord_info_wrap">
+                                <div class="sub_tit_24">
+                                    <h1 class="tit_18">결제 예정 금액</h1>
+                                </div>
+                                <div class="paymt_amt_wrap">
+                                    <div class="paymt_amt">
+                                        <div class="obj_wrap">
+                                             <!-- 세트 -->
+                                            <div class="obj_div">
+                                                <div class="tit">총 상품금액</div>
+                                                <div class="price">
+                                                    <p><strong>225,200</strong><span>원</span></p>
+                                                </div>
+                                            </div>
+                                            <!--// 세트 -->
+                                            <div class="obj_div ui_drop_layout btn_acc">
+                                                <div class="tit">
+                                                    총 할인금액
+                                                    <div class="ui_ctrl"><i class="i_sp_16 arr_down"></i></div>
+                                                </div>
+                                                <div class="price">
+                                                    <p><strong class="color_or">-225,200</strong><span>원</span></p>
+                                                </div>
+                                            </div>
+                                            <!-- 아코디언 컨테츠영역 -->
+                                            <div class="ui_drop_cotn btn_acc_cotn">
+                                                 <!-- 결제금액 상세 -->
+                                                <div class="obj_pymnt_det">
+                                                    <div class="dl_layout">
+                                                        <!-- 세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">상품할인(회원)</p>
+                                                            <div class="price">
+                                                                <p><strong>-5,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">핫딜할인</p>
+                                                            <div class="price">
+                                                                <p><strong>-5,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dl_div">
+                                                            <p class="tit">상품쿠폰 할인</p>
+                                                            <div class="price">
+                                                                <p><strong>-5,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dl_div">
+                                                            <p class="tit">중복쿠폰 할인</p>
+                                                            <div class="price">
+                                                                <p><strong>-5,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dl_div">
+                                                            <p class="tit">장바구니쿠폰 할인</p>
+                                                            <div class="price">
+                                                                <p><strong>-5,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dl_div">
+                                                            <p class="tit">배송비할인쿠폰 할인</p>
+                                                            <div class="price">
+                                                                <p><strong>-5,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--// 결제금액 상세 -->
+                                            </div>
+                                            <!--// 아코디언 컨테츠영역 -->
+                                            <div class="obj_div">
+                                                <div class="tit">적립금 사용</div>
+                                                <div class="txt">
+                                                    <p><strong class="color_or">-3,000</strong><span>P</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="obj_div ui_drop_layout btn_acc">
+                                                <div class="tit">총 배송비
+                                                    <div class="ui_ctrl"><i class="i_sp_16 arr_down"></i></div>
+                                                </div>
+                                                <div class="price">
+                                                    <p><strong>3,000</strong><span>원</span></p>
+                                                </div>
+                                            </div>
+                                            <!-- 아코디언 컨테츠영역 -->
+                                            <div class="ui_drop_cotn btn_acc_cotn">
+                                                <!-- 결제금액 상세 -->
+                                               <div class="obj_pymnt_det">
+                                                   <div class="dl_layout">
+                                                        <!-- 세트 -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">상온/실온 배송비</p>
+                                                            <div class="price">
+                                                               <p><strong>0</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 세트 -->
+                                                        <!-- 2depth -->
+                                                        <div class="dl_div dl_2depth">
+                                                            <p class="tit">도서산간 배송비</p>
+                                                            <div class="price">
+                                                                <p><strong>3,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 2depth -->
+                                                        <div class="dl_div">
+                                                            <p class="tit">냉동/냉장 배송비</p>
+                                                            <div class="price">
+                                                                <p><strong>0</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 2depth -->
+                                                        <div class="dl_div dl_2depth">
+                                                            <p class="tit">도서산간 배송비</p>
+                                                            <div class="price">
+                                                                <p><strong>3,000</strong><span>원</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <!--// 2depth -->
+                                                   </div>
+                                               </div>
+                                               <!--// 결제금액 상세 -->
+                                           </div>
+                                           <!--// 아코디언 컨테츠영역 -->
+                                        </div>
+                                        <!-- 세트 -->
+                                    </div>
+                                    <!-- 총 결제예정 금액  -->
+                                    <div class="paymt_amt_total">
+                                        <div class="obj_wrap">
+                                            <div class="obj_div">
+                                                <div class="tit">총 결제예정 금액</div>
+                                                <div class="price">
+                                                    <p><strong class="color_bl">22,167,450</strong><span>원</span></p>
+                                                </div>
+                                            </div>
+                                             <!-- 결제금액 상세 -->
+                                             <div class="obj_pymnt_det">
+                                                <div class="dl_layout">
+                                                     <!-- 세트 -->
+                                                     <div class="dl_div">
+                                                         <p class="tit">적립예정 적립금</p>
+                                                         <div class="price">
+                                                             <p><strong>5,000</strong><span>P</span></p>
+                                                         </div>
+                                                     </div>
+                                                     <!--// 세트 -->
+                                                     <div class="dl_div">
+                                                         <p class="tit">추가 적립예정 적립금</p>
+                                                         <div class="price">
+                                                             <p><strong>5,000</strong><span>P</span></p>
+                                                         </div>
+                                                     </div>
+                                                </div>
+                                             </div>
+                                             <!--// 결제금액 상세 -->
+                                        </div>
+                                    </div>
+                                    <!--// 총 결제예정 금액  -->
+                                    <div class="agree_area">
+                                        <p>주문 내용을 확인 하였으며, 정보 제공 등에
+                                            동의합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap" btn-type="main_bt_02"><!-- 비활성화 class="inactv" 추가 -->
+                                    <div class="btn_cotn">
+                                        <a href="#none" class="btn w_100" bt_role="confirm">결제하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 결제 예정 금액 -->
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<!--// 주문결제: 회원 -->
+		</div>
+		<!--// #CONTENTS -->
+	</div>
+	<!--// #CONTAINER -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

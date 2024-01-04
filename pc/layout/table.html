@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css"><!-- PC Web 공통CSS -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>테이블UI</title>
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" style="">
+	<p class="g_tit">테이블 타입 1 - 주로 데이터 값을 불러오는 테이블</p>
+	<!-- 테이블 -->
+	<div class="tb_type01">
+		<table class="">
+			<caption>테이블 타입 1</caption>
+			<colgroup>
+				<col style="width:204px;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">받는 분</th>
+					<td>홍길동(기본배송지)</td>
+				</tr>
+				<tr>
+					<th scope="row">배송지</th>
+					<td>서울시 강남구 학동로 146 와일리 타워 2층</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--// 테이블 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">테이블 타입 1:보더 - 주로 데이터를 입력하는 테이블</p>
+	<!-- 테이블 -->
+	<div class="tb_type01 border">
+		<table>
+			<caption>테이블 타입 1:보더</caption>
+			<colgroup>
+				<col style="width:204px;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">받는 분</th>
+					<td>홍길동(기본배송지)</td>
+				</tr>
+				<tr>
+					<th scope="row">배송지</th>
+					<td>서울시 강남구 학동로 146 와일리 타워 2층</td>
+				</tr>
+				<tr>
+					<th scope="row"><span class="necd">배송지</span></th>
+					<td>
+						<div class="form_inpt">
+							<div class="txt">
+								<input type="text" placeholder="입력필드">
+								<button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button><!-- 텍스트입력시노출 -->
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--// 테이블 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">테이블 타입 2</p>
+	<!-- 테이블타입2 -->
+	<div class="tb_type02">
+		<!-- 테이블 -->
+		<div class="cotn">
+			<table>
+				<caption>테이블타입2</caption>
+				<colgroup>
+					<col style="width:8%;" />
+					<col style="width:17%;" />
+					<col style="width:43%;" />
+					<col style="width:9%;" />
+					<col style="width:23%;" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" colspan="2">구분</th>
+						<th scope="col">조건</th>
+						<th scope="col">적립금</th>
+						<th scope="col">사용기간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<p class="color_or"><strong>사용</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>15,000</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="fc_b6"><strong>만료</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">이벤트참여</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>100</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="color_bl"><strong>적립</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>15,000</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="fc_b6"><strong>만료</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">이벤트참여</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>100</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="color_or"><strong>사용</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>15,000</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="fc_b6"><strong>만료</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">이벤트참여</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>100</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="color_or"><strong>사용</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>15,000</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="fc_b6"><strong>만료</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">이벤트참여</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>100</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="color_or"><strong>사용</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">종근당건강 신규 회원가입 종근당건강 신규 회원가입 종근당건강 신규 회원가입</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>15,000</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="fc_b6"><strong>만료</strong></p>
+						</td>
+						<td>
+							<p class="date">2022.07.19 17:56</p>
+						</td>
+						<td class="t_l">
+							<p class="t_hd_01">이벤트참여</p>
+						</td>
+						<td>
+							<div class="point">
+								<p>
+									<span>100</span>
+									<span>P</span>
+								</p>
+							</div>
+						</td>
+						<td>~20022.04.03 24:00 까지</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--// 테이블 -->
+
+		<!-- paging -->
+		<div class="paging">
+			<a href="#none" class="i_sp_24 arr_left prev"></a>
+			<a href="#none" class="on">1</a><!-- 현재페이지class="on"추가 -->
+			<a href="#none">2</a>
+			<a href="#none">3</a>
+			<a href="#none">4</a>
+			<a href="#none">5</a>
+			<a href="#none">6</a>
+			<a href="#none">7</a>
+			<a href="#none">8</a>
+			<a href="#none"class="i_sp_24 arr_right next"></a>
+		</div>
+		<!--// paging -->
+	</div>
+	<!--// 테이블타입2 -->
+
+	<hr class="div_gap">
+	<p class="g_tit">테이블 타입 3</p>
+	<!-- 테이블타입3 -->
+	<div class="tb_type03">
+		<table>
+			<caption>테이블 타입 3</caption>
+			<colgroup>
+				<col style="width:300px;">
+				<col style="width:595px;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">아이디</th>
+					<td colspan="2">
+						<div class="form_inpt h_62">
+							<div class="txt">
+								<input type="text" placeholder="아이디 입력" value="bellbell1234" disabled="">
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">이름</th>
+					<td colspan="2">
+						<div class="form_inpt h_62">
+							<div class="txt">
+								<input type="text" placeholder="이름 입력" value="홍길동" disabled="">
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">
+						<span class="necd">휴대전화</span>
+					</th>
+					<td>
+						<div class="form_inpt h_62">
+							<div class="txt">
+								<input type="tel" placeholder="휴대전화 입력" value="010-1234-5678" disabled="">
+								<button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+						</div>
+					</td>
+					<td>
+						<p class="txt_link more_bk">
+							<a href="#none">변경</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="th_line_h"><!-- 제목 2줄일때 class="th_line_h" 추가 -->
+						<span class="necd">사업장 주소<br>(사업자등록증에 기재된 주소)</span>
+					</th>
+					<td>
+						<div class="form_inpt h_62">
+							<div class="txt">
+								<input type="tel" placeholder="" value="010-1234-5678" disabled="">
+								<button type="button" class="i_sp_20 del"><span class="blind">입력텍스트삭제</span></button>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!--// 테이블타입3 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

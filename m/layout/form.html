@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../../assets/css/ui.public.css">
+	<link rel="stylesheet" href="../assets/css/ui.common.css">
+	<script type="text/javascript" src="../../assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/ui.common.js"></script>
+	<link rel="stylesheet" href="guide.css"><!-- 가이드전용CSS -->
+	<title>폼 요소</title>
+</head>
+<body>
+<!-- #WRAP -->
+<div id="wrap">
+	<p class="tit">👉 Input Text</p>
+	<div class="form_inpt wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+		<p class="tit_field necd">
+			<span>필드타이틀</span>
+		</p>
+		<div class="txt">
+			<input type="text" placeholder="입력필드">
+			<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+	<div class="form_inpt pass"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+		<p class="tit_field necd">
+			<span>필드타이틀</span>
+		</p>
+		<div class="txt">
+			<input type="text" placeholder="disabled" value="disabled" disabled>
+			<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+	<div class="form_inpt">
+		<p class="tit_field">
+			<span>필드타이틀</span>
+		</p>
+		<div class="txt">
+			<input type="text" placeholder="입력필드" value="readonly" readonly>
+			<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+		</div>
+	</div>
+	<div class="form_inpt error wrn"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+		<p class="tit_field necd">
+			<span>필드타이틀</span>
+		</p>
+		<div class="txt">
+			<input type="password" placeholder="암호입력" value="암호입력">
+			<button type="button" class="btn_pw show"><span class="blind">암호보기</span></button>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+	<div class="form_inpt">
+		<p class="tit_field necd">
+			<span>필드타이틀</span>
+		</p>
+		<div class="txt">
+			<input type="tel" placeholder="숫자입력" value="123456">
+			<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+		</div>
+	</div>
+	<div class="form_inpt duo">
+		<p class="tit_field necd">
+			<span>필드타이틀</span>
+		</p>
+		<div class="txt">
+			<span>
+				<input type="text" placeholder="입력필드">
+				<i class="bdr"></i>
+				<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+			</span>
+			<span>
+				<input type="text" placeholder="입력필드">
+				<i class="bdr"></i>
+				<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+			</span>
+		</div>
+	</div>
+	<div class="form_inpt trio">
+		<p class="tit_field necd">
+			<span>필드타이틀</span>
+		</p>
+		<div class="txt">
+			<span>
+				<input type="text" placeholder="입력필드">
+				<i class="bdr"></i>
+				<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+			</span>
+			<span>
+				<input type="text" placeholder="입력필드">
+				<i class="bdr"></i>
+				<i class="bdr"></i>
+				<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+			</span>
+			<span>
+				<input type="text" placeholder="입력필드">
+				<i class="bdr"></i>
+				<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+			</span>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+	<p class="tit">👉 입력한 텍스트 삭제버튼 노출 샘플</p>
+	<div class="form_inpt wrn">
+		<p class="tit_field necd">
+			<span>입력한 텍스트 삭제버튼 샘플</span>
+		</p>
+		<div class="txt">
+			<input type="text" placeholder="입력필드">
+			<button type="button" class="del" style="display:block;"><span class="blind">입력텍스트삭제</span></button>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+	<p class="tit">암호 show / hide 아이콘 노출 샘플</p>
+	<div class="form_inpt">
+		<p class="tit_field necd">
+			<span>암호해제 샘플</span>
+		</p>
+		<div class="txt">
+			<input type="password" placeholder="암호입력" value="암호입력">
+			<button type="button" class="btn_pw show" style="display:block;"><span class="blind">암호보기</span></button>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+
+	<div class="form_inpt">
+		<p class="tit_field necd">
+			<span>암호숨기기 샘플</span>
+		</p>
+		<div class="txt">
+			<input type="text" placeholder="암호입력" value="암호입력">
+			<button type="button" class="btn_pw hide" style="display:block;"><span class="blind">암호보기</span></button>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+	<p class="tit">👉아이디/비밀번호 입력 공통 (단계별 입력의 경우)</p>
+	<div class="form_inpt wrn error"><!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" 추가, 입력값 오류 class="error" 추가 -->
+		<p class="tit_field necd">
+			<span>아이디</span>
+		</p>
+		<div class="txt">
+			<input type="text" placeholder="입력필드">
+			<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+		</div>
+		<div class="val_check">
+			<span class="pass">영문소문자</span><!--  조건 충족 시 class="pass" -->
+			<span>숫자</span>
+			<span>조합 4~20자</span>
+			<span>아이디중복확인</span>
+			<span class="pass">일치</span>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">아이디가 중복되었습니다.</p>
+		</div>
+	</div>
+
+	<div class="form_inpt wrn"> <!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+		<p class="tit_field necd">
+			<span>비밀번호</span>
+		</p>
+		<div class="txt">
+			<input type="password" placeholder="암호입력" value="암호입력">
+			<button class="btn_pw show"><span class="blind">암호보기</span></button>
+			<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+		</div>
+		<div class="val_check">
+			<span class="pass">영문</span><!-- 조건 충족 시 class="pass" -->
+			<span class="pass">숫자</span>
+			<span>특수문자</span>
+			<span>조합 8~16자</span>
+			<span class="pass">일치</span>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">특수문자를 입력해 주세요.</p>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+	<p class="tit">👉인증번호</p>
+	<div class="form_inpt wrn"> <!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+		<p class="tit_field necd">
+			<span>인증번호</span>
+		</p>
+		<div class="cert_numbber">
+			<div class="txt">
+				<input type="tel" placeholder="" value="000000" maxlength="6">
+				<p class="time">
+					<span>남은시간</span>
+					<strong>09:58</strong>
+				</p>
+			</div>
+			<div class="btn_wrap" btn-type="sub_bt">
+				<a href="#none" class="btn bc_fff_02 h_52">인증번호 확인</a>
+			</div>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+	<hr class="div_gap">
+
+	<p class="tit">👉파일 첨부</p>
+	<div class="form_inpt add_file wrn"> <!-- 에러 메세지 노출 class="wrn" 추가, 일치 메세지 노출 class="pass" -->
+		<div class="tit_sec_wrap">
+			<div class="tit_field necd">
+				<span>첨부파일</span>
+			</div>
+			<p class="txt_12_gy">사업자 등록증을 반드시 첨부해 주세요.</p>
+		</div>
+		<!-- 세트 -->
+		<div class="file_area"> <!-- 파일첨부 시  class="add" 추가 -->
+			<div class="btn_wrap" btn-type="sub_bt">
+			 	 <div class="btn bc_fff_02 h_52">첨부</div>
+				 <label for="add_file">
+					 <span class="blind">첨부</span>
+				 </label>
+				 <input type="file" id="add_file">
+			</div>
+			<div class="txt">
+				<input type="text" placeholder="사업자등록증을 등록해 주세요.">
+				<button type="button" class="del"><span class="blind">첨부파일 삭제</span></button>
+			</div>
+		</div>
+		<!--// 세트 -->
+		<div class="file_area">
+			<div class="btn_wrap" btn-type="sub_bt">
+				<div class="btn bc_fff_02 h_52">첨부</div>
+				 <label for="add_file">
+					 <span class="blind">첨부</span>
+				 </label>
+				 <input type="file" id="add_file">
+			</div>
+			<div class="txt">
+				<input type="text" placeholder="사업자등록증을 등록해 주세요.">
+				<button type="button" class="del"><span class="blind">첨부파일 삭제</span></button>
+			</div>
+		</div>
+		<div class="file_area add">
+			<div class="btn_wrap" btn-type="sub_bt">
+				<div class="btn bc_fff_02 h_52">첨부</div>
+			   <label for="add_file">
+				   <span class="blind">첨부</span>
+			   </label>
+			   <input type="file" id="add_file">
+		  	</div>
+			<div class="txt">
+				<input type="text" placeholder="사업자등록증을 등록해 주세요." value="사업자등록증.jpg" readonly>
+				<button type="button" class="del"><span class="blind">첨부파일 삭제</span></button>
+			</div>
+		</div>
+		<div class="msg_wrap">
+			<p class="err_msg">얼럿메시지 영역</p>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+	<p class="tit">👉주소 검색(기본)</p>
+	<!-- 주소검색 기본 -->
+	<div class="tit_sec_wrap flex_betw deliv_tit">
+		<p class="tit_field necd">
+			<span>배송지 주소</span>
+		</p>
+		<!-- <div class="btn_wrap" btn-type="sub_bt">
+			<a href="#none" class="btn bc_fff h_24">주소변경</a>
+		</div> -->
+	</div>
+	<div class="btn_wrap" btn-type="sub_bt">
+		<a href="#none" class="btn bc_bk">주소찾기</a>
+	</div>
+	<!--// 주소검색 기본 -->
+
+	<br>
+
+	<p class="tit">👉주소 검색(검색후)</p>
+	<div class="form_inpt duo">
+		<div class="tit_sec_wrap flex_betw deliv_tit">
+			<p class="tit_field necd">
+				<span>배송지 주소</span>
+			</p>
+			<div class="btn_wrap" btn-type="sub_bt">
+				<a href="#none" class="btn bc_fff h_24">주소변경</a>
+			</div>
+		</div>
+		<!-- 주소검색 후-->
+		<div class="txt">
+			<span>
+				<input type="text" readonly="" value="서울시 강남구 학동로 146 와일리타워">
+				<i class="bdr"></i>
+			</span>
+			<span>
+				<input type="text" placeholder="상세주소를 입력해 주세요.">
+				<i class="bdr"></i>
+				<button type="button" class="del"><span class="blind">입력텍스트삭제</span></button>
+			</span>
+		</div>
+		<!--// 주소검색 후-->
+	</div>
+	<!--// 주소검색 후-->
+
+	<hr class="div_gap">
+	<p class="tit">👉 Input Date</p>
+	<div class="form_date">
+		<div class="form_inpt">
+			<div class="txt">
+				<input type="text" placeholder="" value="2022-02-17">
+				 <i class="icon_calen"></i>
+			</div>
+		</div>
+		<span>~</span>
+		<div class="form_inpt">
+			<div class="txt">
+				<input type="text" placeholder="" value="2022-02-17" disabled>
+				<i class="icon_calen"></i>
+			</div>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+	<p class="tit">👉 Calendar Table</p>
+	<table class="tb_calendar">
+		<colgroup></colgroup>
+		<thead>
+			<tr>
+				<th scope="col" class="sun">일</th>
+				<th scope="col">월</th>
+				<th scope="col">화</th>
+				<th scope="col">수</th>
+				<th scope="col">목</th>
+				<th scope="col">금</th>
+				<th scope="col" class="sat">토</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--
+				[달력 표기]
+				지난날 class="disabled" ,
+				결제일 class="payment" ,
+				오늘 class="today" ,
+				사용자가 선택한 날짜 class=" select_date" ,
+				여신기간 표시 class="selected" 시작일 class="start" 종료일 class="end" ,
+			 -->
+			<tr>
+				<td class="sun">
+					<button class="disabled">
+						<span class="date">1</span>
+					</button>
+				</td>
+				<td>
+					<button class="disabled">
+						<span class="date">2</span>
+					</button>
+				</td>
+				<td>
+					<button class="disabled">
+						<span class="date">3</span>
+					</button>
+				</td>
+				<td>
+					<button class="today">
+						<span class="date">4</span>
+						<span class="price">9,990,000</span>
+					</button>
+				</td>
+				<td>
+					<button class="selected start">
+						<span class="date">5</span>
+					</button>
+				</td>
+				<td>
+					<button class="payment selected">
+						<span class="date">6</span>
+						<span class="tit_pay">결제일</span>
+						<span class="price">9,990,000</span>
+					</button>
+				</td>
+				<td class="sat">
+					<button class="selected">
+						<span class="date">7</span>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="sun">
+					<button class="selected">
+						<span class="date">8</span>
+					</button>
+				</td>
+				<td>
+					<button class="selected select_date end">
+						<span class="date">9</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">10</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">11</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">12</span>
+					</button>
+				</td>
+				<td>
+					<button class="payment select_date">
+						<span class="date">13</span>
+						<span class="tit_pay">결제일</span>
+						<span class="price">9,990,000</span>
+					</button>
+				</td>
+				<td class="sat">
+					<button>
+						<span class="date">14</span>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="sun">
+					<button>
+						<span class="date">8</span>
+						<span class="price">9,990,000</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">9</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">10</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">11</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">12</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">13</span>
+					</button>
+				</td>
+				<td class="sat">
+					<button>
+						<span class="date">14</span>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="sun">
+					<button>
+						<span class="date">8</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">9</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">10</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">11</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">12</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">13</span>
+					</button>
+				</td>
+				<td class="sat">
+					<button>
+						<span class="date">14</span>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="sun">
+					<button>
+						<span class="date">8</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">9</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">10</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">11</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">12</span>
+					</button>
+				</td>
+				<td>
+					<button>
+						<span class="date">13</span>
+					</button>
+				</td>
+				<td class="sat">
+					<button>
+						<span class="date">14</span>
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr class="div_gap">
+
+	<p class="tit">👉 SelectBox</p>
+	<div class="form_select">
+		<select>
+			<option>대한민국은 민주공화국이다. 대한민국의 주권은 국민에게 있고,</option>
+			<option>선택해 주세요.</option>
+			<option>선택해 주세요.</option>
+		</select>
+		<i class="i_select"></i>
+	</div>
+	<div class="form_select">
+		<select disabled>
+			<option>선택해 주세요.</option>
+			<option>선택해 주세요.</option>
+			<option>선택해 주세요.</option>
+		</select>
+		<i class="i_select"></i>
+	</div>
+	<div class="form_select">
+		<select>
+			<optgroup label="그룹1">
+				<option name="" id="">그룹1-1</option>
+				<option name="" id="">그룹1-2</option>
+				<option name="" id="">그룹1-3</option>
+			</optgroup>
+			<optgroup label="그룹2">
+				<option name="" id="">그룹2-1</option>
+				<option name="" id="">그룹2-2</option>
+				<option name="" id="">그룹2-3</option>
+			</optgroup>
+		</select>
+		<i class="i_select"></i>
+	</div>
+	<hr class="div_gap">
+
+
+
+	<p class="tit">👉 TextArea</p>
+	<!-- 활성화 -->
+	<div class="form_text_area">
+		<div class="text_area">
+			<textarea cols="30" rows="10" placeholder="내용을 입력해 주세요.(최대 1000자)"></textarea>
+			<div class="ltr_len">
+				<p>
+					<span>0</span>
+					<em>1,000</em>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--// 활성화 -->
+
+	<!-- 비활성화 -->
+	<div class="form_text_area">
+		<div class="text_area">
+			<textarea cols="30" rows="10" placeholder="내용을 입력해 주세요.(최대 1000자)" disabled></textarea>
+			<div class="ltr_len">
+				<p>
+					<span>0</span>
+					<em>1,000</em>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--// 비활성화 -->
+
+	<hr class="div_gap">
+
+	<p class="tit">👉 체크박스</p>
+	<div class="form_chk">
+		<label class="group">
+			<input type="checkbox">
+			<i class="icon"></i>
+			<strong class="txt">체크박스</strong>
+			<span class="blind">선택</span>
+		</label>
+		<label class="group">
+			<input type="checkbox" checked>
+			<i class="icon"></i>
+			<strong class="txt">체크박스</strong>
+			<span class="blind">선택</span>
+		</label>
+		<label class="group">
+			<input type="checkbox" disabled>
+			<i class="icon"></i>
+			<strong class="txt">체크박스</strong>
+			<span class="blind">선택</span>
+		</label>
+	</div>
+	<div class="form_chk">
+		<label class="group">
+			<input type="checkbox">
+			<i class="icon"></i>
+			<span class="txt">체크박스</span>
+			<span class="blind">선택</span>
+		</label>
+		<label class="group">
+			<input type="checkbox" checked>
+			<i class="icon"></i>
+			<span class="txt">체크박스</span>
+			<span class="blind">선택</span>
+		</label>
+		<label class="group">
+			<input type="checkbox" disabled>
+			<i class="icon"></i>
+			<span class="txt">체크박스</span>
+			<span class="blind">선택</span>
+		</label>
+	</div>
+	<div class="form_chk box"><!-- 박스형선택 class="on"추가 -->
+		<label class="group">
+			<input type="checkbox">
+			<i class="icon"></i>
+			<span class="blind">선택</span>
+		</label>
+		<div class="cotn">
+			<p class="mn_txt">박스형 체크 박스</p>
+			<p class="sub_txt">박스형 체크 박스</p>
+		</div>
+	</div>
+	<div class="form_chk box on">
+		<label class="group">
+			<input type="checkbox" checked>
+			<i class="icon"></i>
+			<span class="blind">선택</span>
+		</label>
+		<div class="cotn">
+			<p class="mn_txt">박스형 체크 박스</p>
+			<p class="sub_txt">박스형 체크 박스</p>
+		</div>
+	</div>
+	<div class="form_chk box">
+		<label class="group">
+			<input type="checkbox" disabled>
+			<i class="icon"></i>
+			<span class="blind">선택</span>
+		</label>
+		<div class="cotn">
+			<p class="mn_txt">박스형 체크 박스</p>
+			<p class="sub_txt">박스형 체크 박스</p>
+		</div>
+	</div>
+	<div class="form_chk box_slim">
+		<label class="group">
+			<input type="checkbox">
+			<i class="icon"></i>
+			<span class="blind">선택</span>
+		</label>
+		<div class="cotn">
+			<p class="txt">슬림 박스형 체크 박스</p>
+		</div>
+	</div>
+	<div class="form_chk box_slim on">
+		<label class="group">
+			<input type="checkbox" checked>
+			<i class="icon"></i>
+			<span class="blind">선택</span>
+		</label>
+		<div class="cotn">
+			<p class="txt">슬림 박스형 체크 박스</p>
+		</div>
+	</div>
+	<div class="form_chk box_slim">
+		<label class="group">
+			<input type="checkbox" disabled>
+			<i class="icon"></i>
+			<span class="blind">선택</span>
+		</label>
+		<div class="cotn">
+			<p class="txt">슬림 박스형 체크 박스</p>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+
+	<p class="tit">👉 라디오버튼</p>
+	<div class="form_rdo">
+		<label for="rd1" class="group">
+			<input type="radio" id="rd1" name="temp1">
+			<i class="icon"></i>
+			<strong class="txt">라디오버튼</strong>
+			<span class="blind">선택</span>
+		</label>
+		<label for="rd2" class="group">
+			<input type="radio" id="rd2" name="temp1" checked>
+			<i class="icon"></i>
+			<strong class="txt">라디오버튼</strong>
+			<span class="blind">선택</span>
+		</label>
+		<label for="rd3" class="group">
+			<input type="radio" id="rd3" name="temp1" disabled>
+			<i class="icon"></i>
+			<strong class="txt">라디오버튼</strong>
+			<span class="blind">선택</span>
+		</label>
+	</div>
+	<div class="form_rdo">
+		<label for="tem1" class="group">
+			<input type="radio" id="tem1" name="temp2">
+			<i class="icon"></i>
+			<span class="txt">라디오버튼</span>
+			<span class="blind">선택</span>
+		</label>
+		<label for="tem2" class="group">
+			<input type="radio" id="tem2" name="temp2" checked>
+			<i class="icon"></i>
+			<span class="txt">라디오버튼</span>
+			<span class="blind">선택</span>
+		</label>
+		<label for="tem3" class="group">
+			<input type="radio" id="tem3" name="temp2" disabled>
+			<i class="icon"></i>
+			<span class="txt">라디오버튼</span>
+			<span class="blind">선택</span>
+		</label>
+	</div>
+	<div class="form_rdo box">
+		<div class="group">
+			<input type="radio" id="bx1" name="box">
+			<i class="icon"></i>
+			<div class="cotn">
+				<p class="mn_txt">박스형 라디오버튼</p>
+				<span class="blind">선택</span>
+			</div>
+		</div>
+		<div class="group">
+			<input type="radio" id="bx1" name="box" checked>
+			<i class="icon"></i>
+			<div class="cotn">
+				<p class="mn_txt">박스형 라디오버튼</p>
+				<span class="blind">선택</span>
+			</div>
+		</div>
+		<div class="group">
+			<input type="radio" id="bx1" name="box" disabled>
+			<i class="icon"></i>
+			<div class="cotn">
+				<p class="mn_txt">박스형 라디오버튼</p>
+				<span class="blind">선택</span>
+			</div>
+		</div>
+	</div>
+	<div class="form_rdo box_slim">
+		<div class="group">
+			<input type="radio" id="bxs1" name="box_slim">
+			<i class="icon"></i>
+			<div class="cotn">
+				<span class="txt">슬림 박스형 라디오버튼</span>
+			</div>
+			<span class="blind">선택</span>
+		</div>
+		<div class="group">
+			<input type="radio" id="bxs2" name="box_slim" checked>
+			<i class="icon"></i>
+			<div class="cotn">
+				<span class="txt">슬림 박스형 라디오버튼</span>
+			</div>
+			<span class="blind">선택</span>
+		</div>
+		<div class="group">
+			<input type="radio" id="bxs3" name="box_slim" disabled>
+			<i class="icon"></i>
+			<div class="cotn">
+				<span class="txt">슬림 박스형 라디오버튼</span>
+			</div>
+			<span class="blind">선택</span>
+		</div>
+	</div>
+
+	<hr class="div_gap">
+
+	<p class="tit">👉 텍스트검색</p>
+
+	<div class="search_keyword">
+		<span class="form_txt"><input type="text" placeholder="궁금하신 사항을 입력해 주세요."></span>
+		<button type="button" class="btn_search">
+			<span class="blind">검색</span>
+		</button>
+	</div>
+
+	<p class="tit">👉 첨부파일</p>
+
+	<div class="add_img_wrap">
+		<div class="tit_area">
+			<h4>
+				<strong class="tit_16">첨부파일</strong>
+				<span class="tit_14">(필수)</span>
+			</h4>
+			<div class="btn_wrap">
+				<label for="file" class="btn bc_fff h_24">이미지등록</label>
+				<input type="file" id="file" class="input_file">
+			</div>
+		</div>
+		<p class="txt_12_gy">최대 3장까지 10MB 미만의 JPG, JPEG, PNG, PDF 파일만 가능합니다.</p><!-- 2022-11-16_수정 -->
+		<div class="add_li_area">
+			<!-- 세트 -->
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_01.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+			<!--// 세트 -->
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_02.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_01.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_01.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_01.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_02.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_01.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+			<div class="add_li">
+				<a href="#none">
+					<div class="add_img">
+						<img src="../assets/images/temp/prd_02.jpg" alt="">
+					</div>
+				</a>
+				<button type="button" class="btn_del">
+					<span class="blind">첨부파일 삭제</span>
+				</button>
+			</div>
+		</div>
+		<!-- 등록된 이미지 없음 -->
+		<div class="data_none no_image">
+			<div class="cotn">
+				<i class="icon_none"></i>
+				<p class="mn_copy">등록된 이미지가 없습니다.</p>
+			</div>
+		</div>
+		<!--// 등록된 이미지 없음 -->
+		<div class="add_noti">
+			<i class="icon_16 info"></i>
+			<p>최대 3장까지, 10MB 미만의 jpg, jpeg, png 파일만 가능합니다.</p>
+		</div>
+	</div>
+
+	<div class="div_gap"></div>
+	<p class="tit">👉약관동의 단품</p>
+
+	<!--  약관동의 단품 -->
+	<div class="form_policy">
+		<!-- 체크박스_문구 -->
+		<div class="input_chk">
+			<div class="form_chk necd">
+				<label class="group">
+					<input type="checkbox">
+					<i class="icon"></i>
+					<strong class="txt">개인정보 수집, 이용동의(필수)</strong>
+					<span class="blind">선택</span>
+				</label>
+			</div>
+		</div>
+		<!--// 체크박스_문구 -->
+
+		<!-- 약관보기버튼 -->
+		<div class="btn_policy">
+			<a href="#none" class="btn_poli_vw">
+				<span class="blind">약관 보기</span>
+			</a>
+		</div>
+		<!--// 약관보기버튼 -->
+	</div>
+	<!--// 약관동의 단품 -->
+	<div class="div_gap"></div>
+
+	<p class="tit">👉약관동의 아코디언</p>
+	<!-- 아코디언 약관동의 -->
+	<div class="policy_wrap">
+		<!-- 세트 -->
+		<div class="accodn_wrap">
+			<!-- 고정노출영역 -->
+			<div class="view_fix">
+				<div class="input_chk">
+					<div class="form_chk">
+						<label class="group">
+							<input type="checkbox">
+							<i class="icon"></i>
+							<strong class="txt">개인정보 수집, 이용동의(필수)</strong>
+							<span class="blind">선택</span>
+						</label>
+					</div>
+				</div>
+				<i class="ctrl_trg"><span class="blind">상세 컨텐츠영역 열기</span></i>
+			</div>
+			<!--// 고정노출영역 -->
+
+			<!-- 오픈컨텐츠 -->
+			<div class="open_cotn" style="display: none;">
+				<p>약관동의 내용 미확정<br>(2022-05-12 설계&디자인 검토중)</p>
+				<br>
+				<div class="policy_cont">
+					<div class="poli_sec">
+						<div class="form_chk">
+							<label class="group">
+								<input type="checkbox" checked="">
+								<i class="icon"></i>
+								<span class="txt">(필수) 만 14세 이상 회원입니다</span>
+								<span class="blind">선택</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--// 오픈컨텐츠 -->
+		</div>
+		<!--// 세트 -->
+	</div>
+	<!--// 아코디언 약관동의 -->
+	<div class="div_gap"></div>
+</div>
+<!--// #WRAP -->
+</body>
+</html>

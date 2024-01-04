@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.wrap{
+	margin:0 auto;
+	padding:20px 0 100px;
+}
+.guide-wrap{box-sizing:border-box; padding:20px 20px 40px;}
+.guide-wrap .tit_32 {font-size:30px; text-align:center;}
+.guide-sec{display:flex; flex-wrap:wrap; flex-direction:column; margin:0 auto;width:1255px;}
+.guide-box {margin-top:30px;}
+.guide-box + .guide-box{padding-top:36px;}
+.guide-box h1,
+.guide-box p {font-size:16px; display:inline-block;}
+.iframe-box{box-sizing:border-box;margin:0 auto;width:100%;height:500px;border:1px solid #999;}
+.iframe-box iframe{height:100%;width:100%;}
+.guide-wrap .guide-box p {color:#0042BF;
+	font-family:consolas;
+	font-size:14px;
+	font-weight:bold;}
+
+.g_tit {font-size:15px; font-weight:bold; margin:10px 0 10px;}
+.g_tit:before {content:"👉 ";}
+#wrap {box-sizing:border-box; margin:0 auto; padding:2em 0 20em 0; width:1192px;}
+.g_ex {margin:15px 0;}
+.g_ex p {position:relative; padding-left:22px; font-size:13px; font-weight:500;}
+.g_ex p:before {content:'📌'; position:absolute; left:0; top:0; width:5px; height:5px;}
+.g_ex p + p {padding-top:4px;}
+
+.gap {margin-top:16px;}
+.div_gap {background-color:#ffffff; display:block; border:none; position:relative; margin:32px 0; height:8px; width:100%;}
+.div_gap:before {background-color:#f8f8f8; content:""; position:absolute; left:0; top:0; height:8px; width:100%;}
+.btn_wrap ~ .btn_wrap {margin-top:8px;}
+
+.sp_icon {overflow:hidden;}
+.sp_icon [class^="i_sp_"] {background-color:#f0f0f0; float:left; margin-right:10px;}
+
+.go_menu {background-color:#ffffff; border:1px solid #e2e5eb; border-radius:10px; box-sizing:border-box; position:fixed; right:140px; top:50%; transform:translateY(-50%); padding:16px;}
+.go_menu li ~ li {margin-top:12px;}
+.go_menu a {display:block; font-size:14px; position:relative; padding-left:8px;}
+.go_menu a:before {background-color:#ddd; content:""; border-radius:50%; position:absolute; left:0; top:50%; margin-top:-2px; height:4px; width:4px;}
+.go_menu a:hover {background-color:#f8f8f8; color:#3182F6;}
+
+#header.guide-box {width:100%;}
+
+/* ------------------------------ 헤더영역 CSS 제어 예시 ------------------------------ */
+#header .temp_main .head_wrap .sub_head {display:none;}
+
+#header .temp_main .head_wrap .idx_head {display:flex;}
+#header .temp_main .head_wrap .menu_wrap .btn_menu.alarm,
+#header .temp_main .head_wrap .menu_wrap .btn_menu.cart {display:block;}
+
+#header .temp_home {}
+#header .temp_home .head_wrap .menu_wrap .btn_menu.home {display:block;}
+#header .temp_home .head_wrap .menu_wrap .btn_menu.alarm,
+#header .temp_home .head_wrap .menu_wrap .btn_menu.cart {display:none;}
+
+#header .temp_prd {}
+#header .temp_prd .sub_tit {overflow:hidden; font-size:3.889vw; text-align:left; text-overflow:ellipsis; word-wrap:normal; white-space:nowrap; margin-left:7.778vw; width:calc(100% - 26.389vw);}
+#header .temp_prd .head_wrap .menu_wrap .alarm {display:none;}
+#header .temp_prd .head_wrap .menu_wrap .search {display:block;}
+
+#header .temp_service .head_wrap .go_back,
+#header .temp_service .head_wrap .btn_menu.share{display:block;}
+#header .temp_service .head_wrap .menu_wrap .btn_menu.alarm,
+#header .temp_service .head_wrap .menu_wrap .btn_menu.cart{display:none;}
+
+#header .temp_search .head_wrap .sub_tit {display:none;}
+#header .temp_search .head_wrap .srch_form {display:block;}
+#header .temp_search .head_wrap .menu_wrap {display:none;}
